@@ -1,0 +1,44 @@
+{
+  "scenario_id": "gl_0011_extra_ornament",
+  "ok": true,
+  "violations": [
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 3,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 4,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 5,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 13,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 22,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    }
+  ],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "APPROVAL_PENDING"
+  ]
+}

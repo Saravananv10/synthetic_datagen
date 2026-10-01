@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0144_bullet_scheme+wrong_email_otp_first",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_OTP",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

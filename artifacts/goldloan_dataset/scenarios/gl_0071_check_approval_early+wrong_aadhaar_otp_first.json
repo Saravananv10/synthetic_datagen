@@ -1,0 +1,91 @@
+{
+  "id": "gl_0071_check_approval_early+wrong_aadhaar_otp_first",
+  "seed": 200071,
+  "start_epoch": 1790126217,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6977161343",
+    "name": "Sai Joshi",
+    "email": "sai.joshi59@example.com",
+    "aadhaar": "6447 3846 7346",
+    "pan": "GZKPJ8986U",
+    "address": "Flat No- 580, MG Road, Kochi, Kerala - 682090",
+    "pincode": "682090",
+    "dob": "13/08/1991",
+    "father": "Deepa Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP91",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Rohan Joshi",
+      "phone": "7715769390",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 80.61,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 80.61,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 98500.0,
+        "name": "Sai Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 98500.0,
+        "name": "Sai Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 99000.0,
+        "name": "Sai Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 52,
+    "occupation": "factory supervisor",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 780
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "84863438697",
+    "ifsc": "SBIN0460617"
+  },
+  "flags": {
+    "check_approval_early": true,
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "check_approval_early",
+    "wrong_aadhaar_otp_first"
+  ]
+}

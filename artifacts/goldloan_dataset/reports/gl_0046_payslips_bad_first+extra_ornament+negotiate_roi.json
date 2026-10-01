@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0046_payslips_bad_first+extra_ornament+negotiate_roi",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

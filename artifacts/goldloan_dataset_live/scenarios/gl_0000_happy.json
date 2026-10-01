@@ -1,0 +1,87 @@
+{
+  "id": "gl_0000_happy",
+  "seed": 200000,
+  "start_epoch": 1790125014,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9737954125",
+    "name": "Naveen Pillai",
+    "email": "naveen.pillai78@example.com",
+    "aadhaar": "9399 2438 4100",
+    "pan": "SCNPP6074V",
+    "address": "Flat No- 203, Lake View Road, Bengaluru, Karnataka - 560067",
+    "pincode": "560067",
+    "dob": "02/06/1999",
+    "father": "Ramesh Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP93",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Ramesh Pillai",
+      "phone": "9983622775",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 110.19,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 110.19,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 30000.0,
+        "name": "Naveen Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 30500.0,
+        "name": "Naveen Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 30000.0,
+        "name": "Naveen Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 54,
+    "occupation": "accounts executive",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 709
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "049923229619",
+    "ifsc": "UBIN0417732"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

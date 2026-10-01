@@ -1,0 +1,87 @@
+{
+  "id": "gl_0038_happy",
+  "seed": 200038,
+  "start_epoch": 1790177882,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9297279676",
+    "name": "Sai Pillai",
+    "email": "sai.pillai57@example.com",
+    "aadhaar": "9470 4222 2547",
+    "pan": "PWLPP9437S",
+    "address": "Flat No- 806, Ashok Colony, Kochi, Kerala - 682054",
+    "pincode": "682054",
+    "dob": "01/02/1984",
+    "father": "Ramesh Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP62",
+    "language": "English",
+    "nominee": {
+      "name": "Divya Pillai",
+      "phone": "9155067636",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 120.99,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 120.99,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 65000.0,
+        "name": "Sai Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 65500.0,
+        "name": "Sai Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 64500.0,
+        "name": "Sai Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 49,
+    "occupation": "staff nurse",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 791
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "968348926496",
+    "ifsc": "SBIN0886915"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "happy"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0270_extra_ornament+sanction_email_retry+check_approval_early+inv",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INVALID_APPOINTMENT",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "APPROVAL_PENDING"
+  ]
+}

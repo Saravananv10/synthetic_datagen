@@ -1,0 +1,65 @@
+{
+  "scenario_id": "gl_0000_happy",
+  "ok": false,
+  "violations": [
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 3,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 4,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 5,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 15,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 16,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 21,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "BUTTON_NOT_ALLOWED",
+      "turn": 22,
+      "msg": "stage 5 showed ['GL_FULL_BULLET_12', 'GL_FULL_EMI_12', 'GL_REV_EMI_12']",
+      "severity": "error"
+    },
+    {
+      "code": "HUMAN_SKIPPED_UPLOAD",
+      "turn": 26,
+      "msg": "asked to upload but human said \"don't have it\" instead",
+      "severity": "error"
+    },
+    {
+      "code": "OUTCOME_MISMATCH",
+      "turn": null,
+      "msg": "outcome 'exited' but scenario implies 'completed'",
+      "severity": "error"
+    }
+  ],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED"
+  ]
+}

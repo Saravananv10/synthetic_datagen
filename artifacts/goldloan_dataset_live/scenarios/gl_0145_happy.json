@@ -1,0 +1,94 @@
+{
+  "id": "gl_0145_happy",
+  "seed": 200145,
+  "start_epoch": 1790173465,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7367245459",
+    "name": "Meena Nair",
+    "email": "meena.nair65@example.com",
+    "aadhaar": "6840 3682 1924",
+    "pan": "NSTPN8373A",
+    "address": "Flat No- 528, Lake View Road, Pune, Maharashtra - 411045",
+    "pincode": "411045",
+    "dob": "22/06/1983",
+    "father": "Sneha Nair"
+  },
+  "profile": {
+    "appointment_id": "AP76",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Venkat Nair",
+      "phone": "6522260878",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 96.71,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 96.71,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 139000.0,
+        "name": "Meena Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 138500.0,
+        "name": "Meena Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 139000.0,
+        "name": "Meena Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 31,
+    "occupation": "logistics coordinator",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 726
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "78846568679454",
+    "ifsc": "UBIN0521825"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "happy"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0185_wrong_mobile_otp_first",
+  "seed": 200185,
+  "start_epoch": 1790157773,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9246903479",
+    "name": "Ganesh Gupta",
+    "email": "ganesh.gupta93@example.com",
+    "aadhaar": "4412 4406 1571",
+    "pan": "VUAPG6309D",
+    "address": "Flat No- 75, Rajaji Street, Vijayawada, Andhra Pradesh - 520092",
+    "pincode": "520092",
+    "dob": "14/02/1967",
+    "father": "Meena Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP58",
+    "language": "English",
+    "nominee": {
+      "name": "Aditya Gupta",
+      "phone": "9350200293",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 76.42,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 76.42,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 36000.0,
+        "name": "Ganesh Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 35500.0,
+        "name": "Ganesh Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 35500.0,
+        "name": "Ganesh Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 28,
+    "occupation": "staff nurse",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 731
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "34555862948504",
+    "ifsc": "HDFC0391462"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "wrong_mobile_otp_first"
+  ]
+}

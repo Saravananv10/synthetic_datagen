@@ -1,0 +1,14 @@
+{
+  "scenario_id": "gl_0094_nominee_duplicate_first+cash_disbursement+negotiate_roi_over",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "DUPLICATE_FOUND",
+    "INGEST_GOLD",
+    "NEGOTIATION_LIMIT",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

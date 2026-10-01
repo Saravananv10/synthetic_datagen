@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0066_extra_ornament+mobile_invalid_first",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_MOBILE",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

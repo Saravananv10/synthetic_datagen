@@ -1,0 +1,87 @@
+{
+  "id": "gl_0027_low_cibil",
+  "seed": 200027,
+  "start_epoch": 1790131856,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9133899131",
+    "name": "Sai Reddy",
+    "email": "sai.reddy5@example.com",
+    "aadhaar": "6184 9890 0491",
+    "pan": "PSJPR6713M",
+    "address": "Flat No- 518, Ashok Colony, Pune, Maharashtra - 411019",
+    "pincode": "411019",
+    "dob": "21/07/1981",
+    "father": "Karthik Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP18",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Kavya Reddy",
+      "phone": "6277860301",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 76.23,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 76.23,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 115000.0,
+        "name": "Sai Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 114000.0,
+        "name": "Sai Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 114000.0,
+        "name": "Sai Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 25,
+    "occupation": "school teacher",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 573
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "69134144222012",
+    "ifsc": "UBIN0972903"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "low_cibil"
+  ]
+}

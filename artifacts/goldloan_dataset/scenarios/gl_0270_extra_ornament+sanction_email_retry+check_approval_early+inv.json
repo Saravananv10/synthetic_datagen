@@ -1,0 +1,110 @@
+{
+  "id": "gl_0270_extra_ornament+sanction_email_retry+check_approval_early+inv",
+  "seed": 200270,
+  "start_epoch": 1790128385,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9483326876",
+    "name": "Mahesh Patel",
+    "email": "mahesh.patel62@example.com",
+    "aadhaar": "5618 0386 4203",
+    "pan": "TCXPP1605Y",
+    "address": "Flat No- 678, Lake View Road, Chennai, Tamil Nadu - 600028",
+    "pincode": "600028",
+    "dob": "15/09/1998",
+    "father": "Meena Patel"
+  },
+  "profile": {
+    "appointment_id": "AP24",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Ananya Patel",
+      "phone": "7627743047",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 67.74,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 67.74,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 58.72,
+        "stone_deduction": 0.5,
+        "karat": 20,
+        "scale_reading": 58.72,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 147000.0,
+        "name": "Mahesh Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 147000.0,
+        "name": "Mahesh Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 146500.0,
+        "name": "Mahesh Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 35,
+    "occupation": "staff nurse",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 729
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "760801347011",
+    "ifsc": "HDFC0885375"
+  },
+  "flags": {
+    "check_approval_early": true,
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "extra_ornament",
+    "sanction_email_retry",
+    "check_approval_early",
+    "invalid_appointment_first"
+  ]
+}

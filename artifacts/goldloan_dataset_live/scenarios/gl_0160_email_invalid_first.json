@@ -1,0 +1,89 @@
+{
+  "id": "gl_0160_email_invalid_first",
+  "seed": 200160,
+  "start_epoch": 1790107295,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7485235796",
+    "name": "Ramesh Das",
+    "email": "ramesh.das71@example.com",
+    "aadhaar": "2714 4669 9216",
+    "pan": "LRIPD1662G",
+    "address": "Flat No- 293, Green Park, Bengaluru, Karnataka - 560081",
+    "pincode": "560081",
+    "dob": "14/08/1976",
+    "father": "Harish Das"
+  },
+  "profile": {
+    "appointment_id": "AP94",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Arjun Das",
+      "phone": "9201955062",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 131.91,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 131.91,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 98000.0,
+        "name": "Ramesh Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 99000.0,
+        "name": "Ramesh Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 98000.0,
+        "name": "Ramesh Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 56,
+    "occupation": "school teacher",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 783
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "980585581764",
+    "ifsc": "HDFC0796060"
+  },
+  "flags": {
+    "email_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "email_invalid_first"
+  ]
+}

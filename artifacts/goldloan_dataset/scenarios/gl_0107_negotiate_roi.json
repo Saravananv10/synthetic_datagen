@@ -1,0 +1,90 @@
+{
+  "id": "gl_0107_negotiate_roi",
+  "seed": 200107,
+  "start_epoch": 1790162808,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8178431593",
+    "name": "Lakshmi Das",
+    "email": "lakshmi.das23@example.com",
+    "aadhaar": "5676 6495 6047",
+    "pan": "UUPPD8651P",
+    "address": "Flat No- 308, Temple Street, Chennai, Tamil Nadu - 600037",
+    "pincode": "600037",
+    "dob": "12/10/1994",
+    "father": "Harish Das"
+  },
+  "profile": {
+    "appointment_id": "AP85",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Deepa Das",
+      "phone": "8895892179",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 91.3,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 91.3,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 142500.0,
+        "name": "Lakshmi Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 142500.0,
+        "name": "Lakshmi Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 142000.0,
+        "name": "Lakshmi Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 52,
+    "occupation": "software support engineer",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 714
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "621220390093",
+    "ifsc": "ICIC0535068",
+    "requested_roi": 10.7
+  },
+  "flags": {
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "negotiate_roi"
+  ]
+}

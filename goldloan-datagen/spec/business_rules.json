@@ -1,0 +1,91 @@
+{
+  "_comment": "Every value carries provenance. 'observed' = recovered exactly from the demo recording; 'assumed' = not shown in the demo, chosen so the flow is complete. Change assumed values freely; the client's real business rules replace this file.",
+
+  "gold": {
+    "rate_per_22k_gram": 6000.0,
+    "rate_per_22k_gram_provenance": "observed: 83.1636 g x 6000 = 498,981.82 (demo)",
+    "fine_weight_formula": "net_weight_g * karat / 22",
+    "fine_weight_formula_provenance": "observed: certificate note 'Fine Weight = Net x (K/22)'; 91.48 g @ 20K -> 83.1636 g",
+    "ltv_tiers": [
+      {"up_to_loan": 250000, "ltv_pct": 85},
+      {"up_to_loan": 500000, "ltv_pct": 80},
+      {"up_to_loan": null,   "ltv_pct": 75}
+    ],
+    "ltv_provenance": "observed: max eligible 399,185.46 = 80% of 498,981.82 (a flat 80% in the demo). That loan sits in the 2.5-5 lakh slab of the RBI gold-loan directions effective 1 Apr 2026 (85% up to 2.5 lakh, 80% up to 5 lakh, 75% above), so the tiers are used; the demo's number is reproduced exactly. Where a higher-LTV slab would overshoot its cap the loan plateaus at the cap.",
+    "min_karat": 14,
+    "min_karat_provenance": "assumed",
+    "max_items": 5,
+    "max_items_provenance": "assumed",
+    "weight_match_tolerance_g": 0.05,
+    "weight_match_tolerance_provenance": "assumed: scale reading vs certificate gross weight"
+  },
+
+  "schemes": [
+    {"offer_id": "GL_FULL_EMI_12",    "scheme_type": "Full",    "roi": 12.0, "tenure_months": 12, "repayment": "EMI",    "processing_fee_pct": 1},
+    {"offer_id": "GL_REV_EMI_12",     "scheme_type": "Revised", "roi": 11.0, "tenure_months": 12, "repayment": "EMI",    "processing_fee_pct": 1},
+    {"offer_id": "GL_FULL_BULLET_12", "scheme_type": "Full",    "roi": 11.5, "tenure_months": 12, "repayment": "Bullet", "processing_fee_pct": 1}
+  ],
+  "schemes_provenance": "observed: the three offers shown in the demo (processing_fee_pct 1 seen on GL_FULL_BULLET_12, applied to all)",
+
+  "emi_formula": "reducing balance at roi/12 over tenure_months (Bullet: interest-only monthly, principal at maturity)",
+  "emi_provenance": "observed for EMI: 399,185.46 @ 11% x 12m = 35,280.67. Bullet formula assumed.",
+  "apr_formula": "(total_interest + processing_fee) / principal / (tenure_months / 12) * 100",
+  "apr_provenance": "observed: reproduces the demo's ~7.058% exactly",
+
+  "roi_negotiation": {
+    "enabled": true,
+    "max_discount_pct_points": 0.5,
+    "provenance": "assumed: demo narration says the customer 'can negotiate the ROI' but no negotiation was shown"
+  },
+
+  "income": {
+    "income_required_above_loan": 250000,
+    "income_required_provenance": "observed: INCOME_REQUIRED error 'Loan above Rs 250,000 requires income capture'",
+    "payslips_required": 3,
+    "payslips_provenance": "observed: 3 consecutive monthly payslips",
+    "max_payslip_age_months": 6,
+    "max_payslip_age_provenance": "observed (narration): not older than 6 months",
+    "foir_check_enabled": false,
+    "foir_max_pct": 60,
+    "foir_provenance": "observed as ABSENT: demo EMI 35,280 vs avg net pay 48,900 (72%) still passed. Flip on to generate FOIR-rejection scenarios (threshold assumed)",
+    "self_employed_supported": false,
+    "self_employed_provenance": "assumed: not shown; routed to branch / manual underwriting"
+  },
+
+  "bureau": {
+    "min_score_for_loan": 650,
+    "tiers": [
+      {"min": 750, "tier": "Excellent"},
+      {"min": 700, "tier": "Good"},
+      {"min": 650, "tier": "Fair"},
+      {"min": 300, "tier": "Poor"}
+    ],
+    "provenance": "observed: 742 -> 'Good'. Other tier boundaries and the 650 floor are assumed"
+  },
+
+  "otp": {
+    "length": 6,
+    "max_attempts": 3,
+    "provenance": "observed: 6-digit OTPs. Attempt limit assumed"
+  },
+
+  "closing": {
+    "cooling_off_seconds": 60,
+    "cooling_off_provenance": "observed (narration): 60-second waiting period before approval check",
+    "disbursement_modes": ["NEFT", "IMPS", "CASH"],
+    "disbursement_modes_provenance": "observed: 'NEFT, IMPS, or CASH'",
+    "processing_fee_pct": 1,
+    "note": "The agent only soft-allocates: real money movement is done by the client's payment gateway (demo correction at 14:44). allocate_and_disburse therefore records a mock transaction."
+  },
+
+  "appointments": {
+    "valid_id_pattern": "^AP[0-9]{2,4}$",
+    "provenance": "assumed: demo used 'AP01'"
+  },
+
+  "languages": ["English", "Hindi", "Telugu", "Tamil", "Kannada", "Marathi", "Bengali", "Gujarati", "Malayalam"],
+  "languages_provenance": "assumed (demo used English)",
+
+  "nominee_relations": ["spouse", "child", "parent", "sibling", "other"],
+  "nominee_relations_provenance": "observed: 'spouse/child/parent/sibling/other'"
+}

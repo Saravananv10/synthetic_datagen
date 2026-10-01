@@ -1,0 +1,89 @@
+{
+  "id": "gl_0039_identity_upload_incomplete_first",
+  "seed": 200039,
+  "start_epoch": 1790165131,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7402877853",
+    "name": "Naveen Naidu",
+    "email": "naveen.naidu93@example.com",
+    "aadhaar": "3401 7372 3600",
+    "pan": "RXNPN4116D",
+    "address": "Flat No- 860, Lake View Road, Kochi, Kerala - 682015",
+    "pincode": "682015",
+    "dob": "27/06/1983",
+    "father": "Aarav Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP46",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Suresh Naidu",
+      "phone": "9638986916",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 90.48,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 90.48,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 29000.0,
+        "name": "Naveen Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 29000.0,
+        "name": "Naveen Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 30000.0,
+        "name": "Naveen Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 46,
+    "occupation": "logistics coordinator",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 783
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "34808531212356",
+    "ifsc": "HDFC0208445"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

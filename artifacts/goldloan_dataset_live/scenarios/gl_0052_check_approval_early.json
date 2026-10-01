@@ -1,0 +1,89 @@
+{
+  "id": "gl_0052_check_approval_early",
+  "seed": 200052,
+  "start_epoch": 1790121751,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8881356929",
+    "name": "Divya Naidu",
+    "email": "divya.naidu27@example.com",
+    "aadhaar": "7010 3694 2434",
+    "pan": "UTLPN1902E",
+    "address": "Flat No- 747, Gandhi Nagar, Chennai, Tamil Nadu - 600002",
+    "pincode": "600002",
+    "dob": "02/07/1970",
+    "father": "Sneha Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP12",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Vivaan Naidu",
+      "phone": "9529458489",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 86.91,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 86.91,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 139000.0,
+        "name": "Divya Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 138000.0,
+        "name": "Divya Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 138000.0,
+        "name": "Divya Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 59,
+    "occupation": "logistics coordinator",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 788
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "055550492990",
+    "ifsc": "ICIC0580950"
+  },
+  "flags": {
+    "check_approval_early": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "check_approval_early"
+  ]
+}

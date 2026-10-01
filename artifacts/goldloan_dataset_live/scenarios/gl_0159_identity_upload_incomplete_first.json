@@ -1,0 +1,89 @@
+{
+  "id": "gl_0159_identity_upload_incomplete_first",
+  "seed": 200159,
+  "start_epoch": 1790165479,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6407653582",
+    "name": "Mahesh Joshi",
+    "email": "mahesh.joshi24@example.com",
+    "aadhaar": "7961 0938 6791",
+    "pan": "KWMPJ1795C",
+    "address": "Flat No- 442, Green Park, Kochi, Kerala - 682056",
+    "pincode": "682056",
+    "dob": "10/07/1983",
+    "father": "Aditya Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP90",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Suresh Joshi",
+      "phone": "7090878265",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 67.75,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 67.75,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 113000.0,
+        "name": "Mahesh Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 113000.0,
+        "name": "Mahesh Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 113500.0,
+        "name": "Mahesh Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 44,
+    "occupation": "accounts executive",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 815
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "87024617600",
+    "ifsc": "ICIC0676704"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

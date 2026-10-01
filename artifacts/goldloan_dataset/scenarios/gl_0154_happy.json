@@ -1,0 +1,94 @@
+{
+  "id": "gl_0154_happy",
+  "seed": 200154,
+  "start_epoch": 1790148628,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7033136675",
+    "name": "Meena Gupta",
+    "email": "meena.gupta31@example.com",
+    "aadhaar": "5917 2528 2536",
+    "pan": "SRBPG6416P",
+    "address": "Flat No- 26, Lake View Road, Kochi, Kerala - 682041",
+    "pincode": "682041",
+    "dob": "15/06/1997",
+    "father": "Lakshmi Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP04",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Karthik Gupta",
+      "phone": "8411728049",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 99.26,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 99.26,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 52000.0,
+        "name": "Meena Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 51500.0,
+        "name": "Meena Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 51500.0,
+        "name": "Meena Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 34,
+    "occupation": "accounts executive",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 757
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "226707105784",
+    "ifsc": "ICIC0986631"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "happy"
+  ]
+}

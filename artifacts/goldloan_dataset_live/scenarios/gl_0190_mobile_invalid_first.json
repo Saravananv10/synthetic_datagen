@@ -1,0 +1,89 @@
+{
+  "id": "gl_0190_mobile_invalid_first",
+  "seed": 200190,
+  "start_epoch": 1790106709,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6731936629",
+    "name": "Ganesh Sharma",
+    "email": "ganesh.sharma35@example.com",
+    "aadhaar": "4307 1436 3131",
+    "pan": "YFMPS8791S",
+    "address": "Flat No- 159, Green Park, Bengaluru, Karnataka - 560075",
+    "pincode": "560075",
+    "dob": "14/06/1984",
+    "father": "Sneha Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP80",
+    "language": "English",
+    "nominee": {
+      "name": "Suresh Sharma",
+      "phone": "8324538353",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 121.88,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 121.88,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 48500.0,
+        "name": "Ganesh Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 49000.0,
+        "name": "Ganesh Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 48000.0,
+        "name": "Ganesh Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "factory supervisor",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 729
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "32040738375",
+    "ifsc": "UBIN0320460"
+  },
+  "flags": {
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "mobile_invalid_first"
+  ]
+}

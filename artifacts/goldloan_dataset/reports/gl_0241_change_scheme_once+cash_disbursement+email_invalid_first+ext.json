@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0241_change_scheme_once+cash_disbursement+email_invalid_first+ext",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_EMAIL",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

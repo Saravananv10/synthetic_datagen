@@ -1,0 +1,17 @@
+{
+  "stages": [
+    {"id": 1, "name": "Onboarding",            "agent_label": "Onboarding State Store",     "prompt": "prompts/stage1_onboarding.md",
+     "welcome": "Welcome to Stage 1: Gold Loan Onboarding.\nPlease enter customer's 10-digit mobile number"},
+    {"id": 2, "name": "Identity Verification", "agent_label": "Identity State Store",       "prompt": "prompts/stage2_identity.md",
+     "welcome": "Welcome to Stage 2: Identity Verification Please upload Aadhaar and PAN images."},
+    {"id": 3, "name": "Profile Details",       "agent_label": "Address State Store",        "prompt": "prompts/stage3_profile.md",
+     "welcome": "Welcome to Stage 3: Profile Details Confirm address from Aadhaar, or override with proof upload."},
+    {"id": 4, "name": "Gold Valuation",        "agent_label": "Gold Valuation State Store", "prompt": "prompts/stage4_gold.md",
+     "welcome": "Welcome to Stage 4: Gold Valuation.\nPlease upload BOTH:\n- a clear photo of the ornament on the weighing scale, AND\n- the purchase bill OR valuation certificate."},
+    {"id": 5, "name": "Offer Selection",       "agent_label": "Gold offer State Store",     "prompt": "prompts/stage5_offer.md",
+     "welcome": "Welcome to Stage 5: Offer Selection. Offers will be loaded."},
+    {"id": 6, "name": "Closing and Disbursal", "agent_label": "Closing State Store",        "prompt": "prompts/stage6_closing.md",
+     "welcome": "Welcome to Stage 6: Closing and Disbursal. Has the Personal Discussion (PD) checklist been completed with the customer?"}
+  ],
+  "_comment": "Stage entry is triggered when the human sends PROCEED after the previous stage's completion message. Stage 1 starts on the first message (a greeting). Tool sets come from tools.json (`stage` field)."
+}

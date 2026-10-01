@@ -1,0 +1,87 @@
+{
+  "id": "gl_0078_happy",
+  "seed": 200078,
+  "start_epoch": 1790134974,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8755925621",
+    "name": "Divya Pillai",
+    "email": "divya.pillai22@example.com",
+    "aadhaar": "3351 2416 2494",
+    "pan": "ETVPP1001I",
+    "address": "Flat No- 44, Gandhi Nagar, Kochi, Kerala - 682023",
+    "pincode": "682023",
+    "dob": "09/05/1990",
+    "father": "Divya Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP14",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Ramesh Pillai",
+      "phone": "8659358414",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 128.33,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 128.33,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 54500.0,
+        "name": "Divya Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 54000.0,
+        "name": "Divya Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 54000.0,
+        "name": "Divya Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 43,
+    "occupation": "logistics coordinator",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 769
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "00925308711178",
+    "ifsc": "UBIN0390595"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

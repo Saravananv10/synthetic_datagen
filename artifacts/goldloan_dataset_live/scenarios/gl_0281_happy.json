@@ -1,0 +1,94 @@
+{
+  "id": "gl_0281_happy",
+  "seed": 200281,
+  "start_epoch": 1790120028,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8086693588",
+    "name": "Venkat Das",
+    "email": "venkat.das39@example.com",
+    "aadhaar": "7349 5564 2261",
+    "pan": "DJJPD6052Y",
+    "address": "Flat No- 651, Rajaji Street, Pune, Maharashtra - 411070",
+    "pincode": "411070",
+    "dob": "03/08/1977",
+    "father": "Ganesh Das"
+  },
+  "profile": {
+    "appointment_id": "AP88",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Vivaan Das",
+      "phone": "8967588834",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 139.92,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 139.92,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 60000.0,
+        "name": "Venkat Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 60000.0,
+        "name": "Venkat Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 59500.0,
+        "name": "Venkat Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "staff nurse",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 805
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "36385370802",
+    "ifsc": "UBIN0463335"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "happy"
+  ]
+}

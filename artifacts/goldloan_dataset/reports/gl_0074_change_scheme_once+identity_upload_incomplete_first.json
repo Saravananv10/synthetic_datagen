@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0074_change_scheme_once+identity_upload_incomplete_first",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

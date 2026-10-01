@@ -1,0 +1,87 @@
+{
+  "id": "gl_0254_happy",
+  "seed": 200254,
+  "start_epoch": 1790100539,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7761968949",
+    "name": "Ganesh Singh",
+    "email": "ganesh.singh21@example.com",
+    "aadhaar": "6815 1047 5502",
+    "pan": "DFYPS3938V",
+    "address": "Flat No- 736, MG Road, Kochi, Kerala - 682053",
+    "pincode": "682053",
+    "dob": "22/11/1990",
+    "father": "Aditya Singh"
+  },
+  "profile": {
+    "appointment_id": "AP95",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Sai Singh",
+      "phone": "9813173825",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 65.51,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 65.51,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 40000.0,
+        "name": "Ganesh Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 40000.0,
+        "name": "Ganesh Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 39500.0,
+        "name": "Ganesh Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "accounts executive",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 731
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "698245584559",
+    "ifsc": "SBIN0596426"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

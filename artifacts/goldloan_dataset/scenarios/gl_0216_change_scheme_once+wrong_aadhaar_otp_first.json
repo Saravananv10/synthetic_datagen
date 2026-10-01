@@ -1,0 +1,92 @@
+{
+  "id": "gl_0216_change_scheme_once+wrong_aadhaar_otp_first",
+  "seed": 200216,
+  "start_epoch": 1790122426,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9567087408",
+    "name": "Sneha Nair",
+    "email": "sneha.nair21@example.com",
+    "aadhaar": "6434 2494 7997",
+    "pan": "MIKPN7486B",
+    "address": "Flat No- 814, Lake View Road, Vijayawada, Andhra Pradesh - 520052",
+    "pincode": "520052",
+    "dob": "06/10/1987",
+    "father": "Ramesh Nair"
+  },
+  "profile": {
+    "appointment_id": "AP60",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Naveen Nair",
+      "phone": "7593997370",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 111.38,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 111.38,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 60000.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 60000.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 59500.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 42,
+    "occupation": "school teacher",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 716
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "126943595648",
+    "ifsc": "HDFC0880232",
+    "first_offer_id": "GL_FULL_BULLET_12"
+  },
+  "flags": {
+    "change_scheme_once": true,
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "change_scheme_once",
+    "wrong_aadhaar_otp_first"
+  ]
+}

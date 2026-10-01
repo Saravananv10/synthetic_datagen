@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0121_wrong_email_otp_first+gold_weight_mismatch_first+override_ad",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_OTP",
+    "INGEST_IDENTITY",
+    "INGEST_ADDRESS_PROOF",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0026_pledged",
+  "seed": 200026,
+  "start_epoch": 1790156869,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6314904767",
+    "name": "Lakshmi Singh",
+    "email": "lakshmi.singh83@example.com",
+    "aadhaar": "9155 9835 1269",
+    "pan": "JSNPS1661A",
+    "address": "Flat No- 364, Temple Street, Chennai, Tamil Nadu - 600061",
+    "pincode": "600061",
+    "dob": "16/01/2000",
+    "father": "Mahesh Singh"
+  },
+  "profile": {
+    "appointment_id": "AP11",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Arjun Singh",
+      "phone": "9538409885",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 129.7,
+        "stone_deduction": 0.9,
+        "karat": 18,
+        "scale_reading": 129.7,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 30500.0,
+        "name": "Lakshmi Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 30500.0,
+        "name": "Lakshmi Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 30500.0,
+        "name": "Lakshmi Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 51,
+    "occupation": "factory supervisor",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 764
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "20213048504",
+    "ifsc": "SBIN0146536"
+  },
+  "flags": {
+    "pledged": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "pledged"
+  ]
+}

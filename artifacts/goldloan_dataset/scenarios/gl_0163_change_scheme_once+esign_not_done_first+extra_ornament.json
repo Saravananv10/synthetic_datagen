@@ -1,0 +1,103 @@
+{
+  "id": "gl_0163_change_scheme_once+esign_not_done_first+extra_ornament",
+  "seed": 200163,
+  "start_epoch": 1790139492,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7611061748",
+    "name": "Naveen Gupta",
+    "email": "naveen.gupta54@example.com",
+    "aadhaar": "2978 5806 0271",
+    "pan": "CQUPG0603K",
+    "address": "Flat No- 462, Ashok Colony, Bengaluru, Karnataka - 560035",
+    "pincode": "560035",
+    "dob": "11/12/1995",
+    "father": "Ramesh Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP74",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Ganesh Gupta",
+      "phone": "8425704451",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 130.6,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 130.6,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 54.77,
+        "stone_deduction": 1.2,
+        "karat": 18,
+        "scale_reading": 54.77,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 111000.0,
+        "name": "Naveen Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 111000.0,
+        "name": "Naveen Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 111000.0,
+        "name": "Naveen Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 42,
+    "occupation": "school teacher",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 773
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "89560991345",
+    "ifsc": "ICIC0489002",
+    "first_offer_id": "GL_FULL_BULLET_12"
+  },
+  "flags": {
+    "change_scheme_once": true,
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "change_scheme_once",
+    "esign_not_done_first",
+    "extra_ornament"
+  ]
+}

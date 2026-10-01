@@ -1,0 +1,89 @@
+{
+  "id": "gl_0210_wrong_aadhaar_otp_first",
+  "seed": 200210,
+  "start_epoch": 1790119915,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7350079754",
+    "name": "Rohan Kumar",
+    "email": "rohan.kumar98@example.com",
+    "aadhaar": "8357 1077 0088",
+    "pan": "CDAPK3714E",
+    "address": "Flat No- 311, Temple Street, Chennai, Tamil Nadu - 600017",
+    "pincode": "600017",
+    "dob": "02/02/1993",
+    "father": "Kavya Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP36",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Aarav Kumar",
+      "phone": "6664109070",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 78.48,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 78.48,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 36000.0,
+        "name": "Rohan Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 35000.0,
+        "name": "Rohan Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 36000.0,
+        "name": "Rohan Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 46,
+    "occupation": "factory supervisor",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 790
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "155138826793",
+    "ifsc": "SBIN0930543"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "wrong_aadhaar_otp_first"
+  ]
+}

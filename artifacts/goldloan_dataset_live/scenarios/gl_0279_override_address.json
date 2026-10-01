@@ -1,0 +1,89 @@
+{
+  "id": "gl_0279_override_address",
+  "seed": 200279,
+  "start_epoch": 1790115771,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6279875624",
+    "name": "Venkat Reddy",
+    "email": "venkat.reddy62@example.com",
+    "aadhaar": "8776 8903 5311",
+    "pan": "ZYJPR8755X",
+    "address": "Flat No- 741, Temple Street, Chennai, Tamil Nadu - 600030",
+    "pincode": "600030",
+    "dob": "25/04/1992",
+    "father": "Kavya Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP47",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Divya Reddy",
+      "phone": "9102278852",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 126.65,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 126.65,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 74000.0,
+        "name": "Venkat Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 74500.0,
+        "name": "Venkat Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 73500.0,
+        "name": "Venkat Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "accounts executive",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 705
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "19135800389461",
+    "ifsc": "UBIN0425389"
+  },
+  "flags": {
+    "override_address": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "override_address"
+  ]
+}

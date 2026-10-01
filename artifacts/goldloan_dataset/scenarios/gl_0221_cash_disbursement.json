@@ -1,0 +1,87 @@
+{
+  "id": "gl_0221_cash_disbursement",
+  "seed": 200221,
+  "start_epoch": 1790165431,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7026752325",
+    "name": "Anjali Naidu",
+    "email": "anjali.naidu24@example.com",
+    "aadhaar": "8179 5016 5476",
+    "pan": "FSWPN9746H",
+    "address": "Flat No- 456, Temple Street, Kochi, Kerala - 682041",
+    "pincode": "682041",
+    "dob": "25/06/1966",
+    "father": "Naveen Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP18",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Anjali Naidu",
+      "phone": "6467217364",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 137.9,
+        "stone_deduction": 2.1,
+        "karat": 22,
+        "scale_reading": 137.9,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 73500.0,
+        "name": "Anjali Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 73500.0,
+        "name": "Anjali Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 72500.0,
+        "name": "Anjali Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 38,
+    "occupation": "logistics coordinator",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 796
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "cash_disbursement"
+  ]
+}

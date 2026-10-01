@@ -1,0 +1,94 @@
+{
+  "id": "gl_0247_invalid_appointment_first+email_invalid_first+negotiate_roi",
+  "seed": 200247,
+  "start_epoch": 1790117722,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9221238596",
+    "name": "Karthik Kumar",
+    "email": "karthik.kumar6@example.com",
+    "aadhaar": "2594 5290 3323",
+    "pan": "YFHPK1584F",
+    "address": "Flat No- 599, MG Road, Bengaluru, Karnataka - 560060",
+    "pincode": "560060",
+    "dob": "26/08/1984",
+    "father": "Vivaan Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP44",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Venkat Kumar",
+      "phone": "9909654767",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 139.67,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 139.67,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 139500.0,
+        "name": "Karthik Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 139500.0,
+        "name": "Karthik Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 140000.0,
+        "name": "Karthik Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 32,
+    "occupation": "school teacher",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 767
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "29330688189528",
+    "ifsc": "SBIN0750784",
+    "requested_roi": 11.2
+  },
+  "flags": {
+    "invalid_appointment_first": true,
+    "email_invalid_first": true,
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "invalid_appointment_first",
+    "email_invalid_first",
+    "negotiate_roi"
+  ]
+}

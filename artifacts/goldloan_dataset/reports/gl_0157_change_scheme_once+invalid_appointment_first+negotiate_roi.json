@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0157_change_scheme_once+invalid_appointment_first+negotiate_roi",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INVALID_APPOINTMENT",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

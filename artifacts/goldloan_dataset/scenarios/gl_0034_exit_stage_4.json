@@ -1,0 +1,89 @@
+{
+  "id": "gl_0034_exit_stage_4",
+  "seed": 200034,
+  "start_epoch": 1790133124,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8365519307",
+    "name": "Aditya Rao",
+    "email": "aditya.rao29@example.com",
+    "aadhaar": "5460 6706 3975",
+    "pan": "UOYPR8506H",
+    "address": "Flat No- 614, Gandhi Nagar, Pune, Maharashtra - 411025",
+    "pincode": "411025",
+    "dob": "18/11/1997",
+    "father": "Karthik Rao"
+  },
+  "profile": {
+    "appointment_id": "AP16",
+    "language": "English",
+    "nominee": {
+      "name": "Naveen Rao",
+      "phone": "7108707261",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 136.82,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 136.82,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 101000.0,
+        "name": "Aditya Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 100500.0,
+        "name": "Aditya Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 100500.0,
+        "name": "Aditya Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 41,
+    "occupation": "accounts executive",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 809
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "15526430370",
+    "ifsc": "UBIN0078657"
+  },
+  "flags": {
+    "exit_at_stage": 4
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "exit_stage_4"
+  ]
+}

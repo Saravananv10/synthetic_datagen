@@ -1,0 +1,96 @@
+{
+  "id": "gl_0113_payslips_bad_first",
+  "seed": 200113,
+  "start_epoch": 1790102550,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6600522493",
+    "name": "Sneha Nair",
+    "email": "sneha.nair40@example.com",
+    "aadhaar": "3944 9280 4430",
+    "pan": "FBBPN3167I",
+    "address": "Flat No- 617, Gandhi Nagar, Pune, Maharashtra - 411069",
+    "pincode": "411069",
+    "dob": "22/04/1978",
+    "father": "Arjun Nair"
+  },
+  "profile": {
+    "appointment_id": "AP72",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Kavya Nair",
+      "phone": "8781297903",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 104.04,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 104.04,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 135500.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 134500.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 134500.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 28,
+    "occupation": "staff nurse",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 755
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "358408315636",
+    "ifsc": "UBIN0455780"
+  },
+  "flags": {
+    "payslips_bad_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "payslips_bad_first"
+  ]
+}

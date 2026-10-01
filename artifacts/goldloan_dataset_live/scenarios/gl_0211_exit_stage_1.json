@@ -1,0 +1,89 @@
+{
+  "id": "gl_0211_exit_stage_1",
+  "seed": 200211,
+  "start_epoch": 1790154079,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8059509665",
+    "name": "Ananya Das",
+    "email": "ananya.das65@example.com",
+    "aadhaar": "5205 4611 2840",
+    "pan": "MVPPD5378W",
+    "address": "Flat No- 603, Lake View Road, Pune, Maharashtra - 411084",
+    "pincode": "411084",
+    "dob": "22/07/1997",
+    "father": "Mahesh Das"
+  },
+  "profile": {
+    "appointment_id": "AP49",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Rohan Das",
+      "phone": "9163803012",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 126.39,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 126.39,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 91000.0,
+        "name": "Ananya Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 90500.0,
+        "name": "Ananya Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 91000.0,
+        "name": "Ananya Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 30,
+    "occupation": "logistics coordinator",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 728
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "233926455032",
+    "ifsc": "ICIC0133998"
+  },
+  "flags": {
+    "exit_at_stage": 1
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "exit_stage_1"
+  ]
+}

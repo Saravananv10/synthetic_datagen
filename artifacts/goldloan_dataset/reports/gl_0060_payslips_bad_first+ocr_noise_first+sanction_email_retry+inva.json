@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0060_payslips_bad_first+ocr_noise_first+sanction_email_retry+inva",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_IDENTITY",
+    "INVALID_APPOINTMENT",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

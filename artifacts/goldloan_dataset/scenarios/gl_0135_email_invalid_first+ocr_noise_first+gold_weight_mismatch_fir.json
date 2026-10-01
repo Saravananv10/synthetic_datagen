@@ -1,0 +1,93 @@
+{
+  "id": "gl_0135_email_invalid_first+ocr_noise_first+gold_weight_mismatch_fir",
+  "seed": 200135,
+  "start_epoch": 1790106066,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6725440201",
+    "name": "Ananya Rao",
+    "email": "ananya.rao36@example.com",
+    "aadhaar": "5661 1015 9727",
+    "pan": "ZBYPR9626Z",
+    "address": "Flat No- 614, Temple Street, Chennai, Tamil Nadu - 600048",
+    "pincode": "600048",
+    "dob": "24/10/1981",
+    "father": "Meena Rao"
+  },
+  "profile": {
+    "appointment_id": "AP98",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Pooja Rao",
+      "phone": "7369046470",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 78.44,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 78.44,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 124500.0,
+        "name": "Ananya Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 123500.0,
+        "name": "Ananya Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 124000.0,
+        "name": "Ananya Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "staff nurse",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 726
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "617560336906",
+    "ifsc": "ICIC0403896"
+  },
+  "flags": {
+    "email_invalid_first": true,
+    "ocr_noise_first": true,
+    "gold_weight_mismatch_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "email_invalid_first",
+    "ocr_noise_first",
+    "gold_weight_mismatch_first"
+  ]
+}

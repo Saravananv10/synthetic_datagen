@@ -1,0 +1,93 @@
+{
+  "id": "gl_0054_bullet_scheme+change_scheme_once+payslips_bad_first",
+  "seed": 200054,
+  "start_epoch": 1790124627,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7766774070",
+    "name": "Meena Naidu",
+    "email": "meena.naidu23@example.com",
+    "aadhaar": "6728 0827 4517",
+    "pan": "GWJPN5986O",
+    "address": "Flat No- 758, Temple Street, Bengaluru, Karnataka - 560063",
+    "pincode": "560063",
+    "dob": "25/07/1994",
+    "father": "Meena Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP67",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Vivaan Naidu",
+      "phone": "8816002679",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 73.36,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 73.36,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 117500.0,
+        "name": "Meena Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 116500.0,
+        "name": "Meena Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 116500.0,
+        "name": "Meena Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 35,
+    "occupation": "software support engineer",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 715
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "17656594259354",
+    "ifsc": "UBIN0648931",
+    "first_offer_id": "GL_REV_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true,
+    "payslips_bad_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "bullet_scheme",
+    "change_scheme_once",
+    "payslips_bad_first"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "gl_0170_mobile_invalid_first+negotiate_roi",
+  "seed": 200170,
+  "start_epoch": 1790103703,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6004261788",
+    "name": "Arjun Gupta",
+    "email": "arjun.gupta13@example.com",
+    "aadhaar": "6207 9319 5027",
+    "pan": "KFPPG1977D",
+    "address": "Flat No- 10, Temple Street, Hyderabad, Telangana - 500003",
+    "pincode": "500003",
+    "dob": "07/05/1987",
+    "father": "Naveen Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP83",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Naveen Gupta",
+      "phone": "6603107153",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 88.23,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 88.23,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 125000.0,
+        "name": "Arjun Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 125000.0,
+        "name": "Arjun Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 125000.0,
+        "name": "Arjun Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 32,
+    "occupation": "software support engineer",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 714
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "92621639886778",
+    "ifsc": "ICIC0851940",
+    "requested_roi": 11.2
+  },
+  "flags": {
+    "mobile_invalid_first": true,
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "mobile_invalid_first",
+    "negotiate_roi"
+  ]
+}

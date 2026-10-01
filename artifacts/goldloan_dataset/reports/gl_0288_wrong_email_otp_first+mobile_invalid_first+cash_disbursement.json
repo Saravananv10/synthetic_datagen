@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0288_wrong_email_otp_first+mobile_invalid_first+cash_disbursement",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_MOBILE",
+    "INVALID_OTP",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "ESIGN_PENDING"
+  ]
+}

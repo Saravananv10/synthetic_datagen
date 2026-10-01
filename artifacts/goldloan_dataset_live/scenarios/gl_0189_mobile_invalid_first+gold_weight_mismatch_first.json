@@ -1,0 +1,91 @@
+{
+  "id": "gl_0189_mobile_invalid_first+gold_weight_mismatch_first",
+  "seed": 200189,
+  "start_epoch": 1790130457,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7629849320",
+    "name": "Anjali Menon",
+    "email": "anjali.menon81@example.com",
+    "aadhaar": "8377 5877 2333",
+    "pan": "IVZPM8359I",
+    "address": "Flat No- 877, Gandhi Nagar, Chennai, Tamil Nadu - 600096",
+    "pincode": "600096",
+    "dob": "24/08/1989",
+    "father": "Mahesh Menon"
+  },
+  "profile": {
+    "appointment_id": "AP97",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Venkat Menon",
+      "phone": "8652197778",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 76.11,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 76.11,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 100000.0,
+        "name": "Anjali Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 101000.0,
+        "name": "Anjali Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 100500.0,
+        "name": "Anjali Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "school teacher",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 775
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "50133768580",
+    "ifsc": "SBIN0325097"
+  },
+  "flags": {
+    "mobile_invalid_first": true,
+    "gold_weight_mismatch_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "mobile_invalid_first",
+    "gold_weight_mismatch_first"
+  ]
+}

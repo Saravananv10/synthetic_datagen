@@ -1,0 +1,96 @@
+{
+  "id": "gl_0234_override_address",
+  "seed": 200234,
+  "start_epoch": 1790101863,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8454088258",
+    "name": "Sneha Joshi",
+    "email": "sneha.joshi57@example.com",
+    "aadhaar": "4700 4108 5036",
+    "pan": "SEPPJ6568A",
+    "address": "Flat No- 403, Ashok Colony, Chennai, Tamil Nadu - 600047",
+    "pincode": "600047",
+    "dob": "08/08/1999",
+    "father": "Priya Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP93",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Aditya Joshi",
+      "phone": "6002693290",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 85.15,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 85.15,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 56000.0,
+        "name": "Sneha Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 55500.0,
+        "name": "Sneha Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 56000.0,
+        "name": "Sneha Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 29,
+    "occupation": "school teacher",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 812
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "55131133525",
+    "ifsc": "HDFC0844331"
+  },
+  "flags": {
+    "override_address": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "override_address"
+  ]
+}

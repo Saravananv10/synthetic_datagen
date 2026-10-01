@@ -1,0 +1,89 @@
+{
+  "id": "gl_0003_wrong_mobile_otp_first",
+  "seed": 200003,
+  "start_epoch": 1790147545,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8223267726",
+    "name": "Aarav Naidu",
+    "email": "aarav.naidu34@example.com",
+    "aadhaar": "7964 4506 9037",
+    "pan": "IVIPN3775Q",
+    "address": "Flat No- 104, Gandhi Nagar, Pune, Maharashtra - 411073",
+    "pincode": "411073",
+    "dob": "01/06/1985",
+    "father": "Anjali Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP41",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Ananya Naidu",
+      "phone": "9183616979",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 95.86,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 95.86,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 96000.0,
+        "name": "Aarav Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 96500.0,
+        "name": "Aarav Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 96000.0,
+        "name": "Aarav Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 53,
+    "occupation": "software support engineer",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 795
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "89769371905",
+    "ifsc": "SBIN0472005"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_mobile_otp_first"
+  ]
+}

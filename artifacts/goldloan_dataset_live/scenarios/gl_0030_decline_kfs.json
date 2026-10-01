@@ -1,0 +1,96 @@
+{
+  "id": "gl_0030_decline_kfs",
+  "seed": 200030,
+  "start_epoch": 1790142032,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7704804300",
+    "name": "Divya Pillai",
+    "email": "divya.pillai82@example.com",
+    "aadhaar": "6619 3340 1622",
+    "pan": "PGCPP1265W",
+    "address": "Flat No- 796, MG Road, Vijayawada, Andhra Pradesh - 520057",
+    "pincode": "520057",
+    "dob": "04/05/2000",
+    "father": "Ramesh Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP88",
+    "language": "English",
+    "nominee": {
+      "name": "Karthik Pillai",
+      "phone": "6892595726",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 138.03,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 138.03,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 107000.0,
+        "name": "Divya Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 107000.0,
+        "name": "Divya Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 106000.0,
+        "name": "Divya Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 54,
+    "occupation": "school teacher",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 785
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "078728206245",
+    "ifsc": "HDFC0754841"
+  },
+  "flags": {
+    "decline_kfs": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "decline_kfs"
+  ]
+}

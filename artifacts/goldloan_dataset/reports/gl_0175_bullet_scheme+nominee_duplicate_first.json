@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0175_bullet_scheme+nominee_duplicate_first",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "DUPLICATE_FOUND",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

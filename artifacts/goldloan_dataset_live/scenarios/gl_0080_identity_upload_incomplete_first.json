@@ -1,0 +1,89 @@
+{
+  "id": "gl_0080_identity_upload_incomplete_first",
+  "seed": 200080,
+  "start_epoch": 1790137113,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6364351694",
+    "name": "Arjun Iyer",
+    "email": "arjun.iyer10@example.com",
+    "aadhaar": "5758 8729 0957",
+    "pan": "SKNPI4299O",
+    "address": "Flat No- 341, Rajaji Street, Kochi, Kerala - 682040",
+    "pincode": "682040",
+    "dob": "16/07/2000",
+    "father": "Anjali Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP57",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Venkat Iyer",
+      "phone": "7095915586",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 135.5,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 135.5,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 130000.0,
+        "name": "Arjun Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 130500.0,
+        "name": "Arjun Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 130500.0,
+        "name": "Arjun Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 29,
+    "occupation": "accounts executive",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 749
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "61786953258",
+    "ifsc": "HDFC0229725"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

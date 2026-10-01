@@ -1,0 +1,89 @@
+{
+  "id": "gl_0148_wrong_mobile_otp_first",
+  "seed": 200148,
+  "start_epoch": 1790129335,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7357157184",
+    "name": "Venkat Singh",
+    "email": "venkat.singh88@example.com",
+    "aadhaar": "7500 0556 4813",
+    "pan": "XYVPS5732L",
+    "address": "Flat No- 95, Green Park, Vijayawada, Andhra Pradesh - 520041",
+    "pincode": "520041",
+    "dob": "04/10/1973",
+    "father": "Kavya Singh"
+  },
+  "profile": {
+    "appointment_id": "AP09",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Aarav Singh",
+      "phone": "7013461131",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 135.59,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 135.59,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 98500.0,
+        "name": "Venkat Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 99000.0,
+        "name": "Venkat Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 99000.0,
+        "name": "Venkat Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "school teacher",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 782
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "572123402454",
+    "ifsc": "SBIN0415307"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "wrong_mobile_otp_first"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0275_email_invalid_first",
+  "seed": 200275,
+  "start_epoch": 1790121905,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9129011493",
+    "name": "Venkat Iyer",
+    "email": "venkat.iyer12@example.com",
+    "aadhaar": "6774 0749 0880",
+    "pan": "XEEPI8092O",
+    "address": "Flat No- 45, MG Road, Chennai, Tamil Nadu - 600081",
+    "pincode": "600081",
+    "dob": "21/10/1968",
+    "father": "Anjali Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP17",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Aditya Iyer",
+      "phone": "7508889691",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 98.73,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 98.73,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 120500.0,
+        "name": "Venkat Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 121000.0,
+        "name": "Venkat Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 121500.0,
+        "name": "Venkat Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 33,
+    "occupation": "staff nurse",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 712
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "17551129112",
+    "ifsc": "ICIC0774155"
+  },
+  "flags": {
+    "email_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "email_invalid_first"
+  ]
+}

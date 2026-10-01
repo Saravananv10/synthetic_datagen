@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0170_mobile_invalid_first+negotiate_roi",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_MOBILE",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

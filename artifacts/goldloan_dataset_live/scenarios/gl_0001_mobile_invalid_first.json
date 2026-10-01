@@ -1,0 +1,89 @@
+{
+  "id": "gl_0001_mobile_invalid_first",
+  "seed": 200001,
+  "start_epoch": 1790150756,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9638415858",
+    "name": "Suresh Nair",
+    "email": "suresh.nair64@example.com",
+    "aadhaar": "3734 0070 2235",
+    "pan": "KSTPN6863U",
+    "address": "Flat No- 248, MG Road, Kochi, Kerala - 682091",
+    "pincode": "682091",
+    "dob": "02/10/1974",
+    "father": "Venkat Nair"
+  },
+  "profile": {
+    "appointment_id": "AP38",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Meena Nair",
+      "phone": "9676433308",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 104.02,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 104.02,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 149000.0,
+        "name": "Suresh Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 149000.0,
+        "name": "Suresh Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 148000.0,
+        "name": "Suresh Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 29,
+    "occupation": "accounts executive",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 769
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "26204847085519",
+    "ifsc": "ICIC0195547"
+  },
+  "flags": {
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "mobile_invalid_first"
+  ]
+}

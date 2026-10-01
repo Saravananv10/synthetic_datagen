@@ -1,0 +1,89 @@
+{
+  "id": "gl_0173_borrower_duplicate",
+  "seed": 200173,
+  "start_epoch": 1790171464,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8503930311",
+    "name": "Harish Reddy",
+    "email": "harish.reddy9@example.com",
+    "aadhaar": "8033 0993 8304",
+    "pan": "LBXPR2928W",
+    "address": "Flat No- 879, Ashok Colony, Vijayawada, Andhra Pradesh - 520074",
+    "pincode": "520074",
+    "dob": "18/11/1997",
+    "father": "Deepa Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP59",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Harish Reddy",
+      "phone": "6849470180",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 73.17,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 73.17,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 111500.0,
+        "name": "Harish Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 112000.0,
+        "name": "Harish Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 111000.0,
+        "name": "Harish Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "logistics coordinator",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 748
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "47515538338",
+    "ifsc": "ICIC0238561"
+  },
+  "flags": {
+    "borrower_duplicate": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "borrower_duplicate"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0273_invalid_appointment_first",
+  "seed": 200273,
+  "start_epoch": 1790102249,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6083776767",
+    "name": "Priya Iyer",
+    "email": "priya.iyer75@example.com",
+    "aadhaar": "4452 5601 6910",
+    "pan": "FCIPI6808D",
+    "address": "Flat No- 94, MG Road, Vijayawada, Andhra Pradesh - 520006",
+    "pincode": "520006",
+    "dob": "09/01/1978",
+    "father": "Aditya Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP91",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Sai Iyer",
+      "phone": "8689370905",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 89.64,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 89.64,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 79500.0,
+        "name": "Priya Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 80000.0,
+        "name": "Priya Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 80500.0,
+        "name": "Priya Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 49,
+    "occupation": "accounts executive",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 705
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "100549637008",
+    "ifsc": "UBIN0170148"
+  },
+  "flags": {
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "invalid_appointment_first"
+  ]
+}

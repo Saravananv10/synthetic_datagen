@@ -1,0 +1,89 @@
+{
+  "id": "gl_0252_wrong_email_otp_first",
+  "seed": 200252,
+  "start_epoch": 1790163635,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8641110640",
+    "name": "Arjun Menon",
+    "email": "arjun.menon61@example.com",
+    "aadhaar": "5137 5871 2386",
+    "pan": "ZWQPM4520P",
+    "address": "Flat No- 85, Temple Street, Bengaluru, Karnataka - 560087",
+    "pincode": "560087",
+    "dob": "25/08/1990",
+    "father": "Suresh Menon"
+  },
+  "profile": {
+    "appointment_id": "AP85",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Aditya Menon",
+      "phone": "8348201521",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 105.46,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 105.46,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 96000.0,
+        "name": "Arjun Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 96000.0,
+        "name": "Arjun Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 96500.0,
+        "name": "Arjun Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 48,
+    "occupation": "staff nurse",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 754
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "19677958851",
+    "ifsc": "SBIN0939717"
+  },
+  "flags": {
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_email_otp_first"
+  ]
+}

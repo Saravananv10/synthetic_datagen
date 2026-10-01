@@ -1,0 +1,101 @@
+{
+  "id": "gl_0060_payslips_bad_first+ocr_noise_first+sanction_email_retry+inva",
+  "seed": 200060,
+  "start_epoch": 1790161431,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9625709157",
+    "name": "Suresh Sharma",
+    "email": "suresh.sharma86@example.com",
+    "aadhaar": "9850 6280 2848",
+    "pan": "BXHPS4785B",
+    "address": "Flat No- 27, Temple Street, Kochi, Kerala - 682051",
+    "pincode": "682051",
+    "dob": "23/01/1973",
+    "father": "Aditya Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP23",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Aarav Sharma",
+      "phone": "6106351741",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 131.21,
+        "stone_deduction": 2.1,
+        "karat": 22,
+        "scale_reading": 131.21,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 85500.0,
+        "name": "Suresh Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 86000.0,
+        "name": "Suresh Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 85500.0,
+        "name": "Suresh Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 38,
+    "occupation": "school teacher",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 807
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "44401129105",
+    "ifsc": "HDFC0749374"
+  },
+  "flags": {
+    "payslips_bad_first": true,
+    "ocr_noise_first": true,
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "payslips_bad_first",
+    "ocr_noise_first",
+    "sanction_email_retry",
+    "invalid_appointment_first"
+  ]
+}

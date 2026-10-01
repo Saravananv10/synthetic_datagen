@@ -1,0 +1,89 @@
+{
+  "id": "gl_0131_wrong_email_otp_first",
+  "seed": 200131,
+  "start_epoch": 1790126229,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9843406838",
+    "name": "Ananya Das",
+    "email": "ananya.das23@example.com",
+    "aadhaar": "9754 3195 1946",
+    "pan": "FRNPD0336J",
+    "address": "Flat No- 124, Ashok Colony, Hyderabad, Telangana - 500045",
+    "pincode": "500045",
+    "dob": "03/04/2000",
+    "father": "Aditya Das"
+  },
+  "profile": {
+    "appointment_id": "AP36",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Lakshmi Das",
+      "phone": "6088391366",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 94.12,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 94.12,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 111000.0,
+        "name": "Ananya Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 111000.0,
+        "name": "Ananya Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 111000.0,
+        "name": "Ananya Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 53,
+    "occupation": "factory supervisor",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 795
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "44175239571",
+    "ifsc": "ICIC0744698"
+  },
+  "flags": {
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "wrong_email_otp_first"
+  ]
+}

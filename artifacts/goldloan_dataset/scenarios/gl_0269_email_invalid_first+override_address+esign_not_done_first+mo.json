@@ -1,0 +1,95 @@
+{
+  "id": "gl_0269_email_invalid_first+override_address+esign_not_done_first+mo",
+  "seed": 200269,
+  "start_epoch": 1790169860,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9320591170",
+    "name": "Venkat Das",
+    "email": "venkat.das88@example.com",
+    "aadhaar": "6004 0409 2875",
+    "pan": "ZHLPD3067M",
+    "address": "Flat No- 579, Green Park, Hyderabad, Telangana - 500022",
+    "pincode": "500022",
+    "dob": "10/01/2000",
+    "father": "Ananya Das"
+  },
+  "profile": {
+    "appointment_id": "AP87",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Pooja Das",
+      "phone": "7570955472",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 87.6,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 87.6,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 69500.0,
+        "name": "Venkat Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 69500.0,
+        "name": "Venkat Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 70000.0,
+        "name": "Venkat Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 55,
+    "occupation": "school teacher",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 778
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "96146991779710",
+    "ifsc": "SBIN0969322"
+  },
+  "flags": {
+    "email_invalid_first": true,
+    "override_address": true,
+    "esign_not_done_first": true,
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "email_invalid_first",
+    "override_address",
+    "esign_not_done_first",
+    "mobile_invalid_first"
+  ]
+}

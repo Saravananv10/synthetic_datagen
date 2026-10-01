@@ -1,0 +1,87 @@
+{
+  "id": "gl_0257_happy",
+  "seed": 200257,
+  "start_epoch": 1790166057,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8612150259",
+    "name": "Sneha Rao",
+    "email": "sneha.rao70@example.com",
+    "aadhaar": "7748 0147 5075",
+    "pan": "ZYNPR2850L",
+    "address": "Flat No- 2, Gandhi Nagar, Kochi, Kerala - 682003",
+    "pincode": "682003",
+    "dob": "19/01/1970",
+    "father": "Ramesh Rao"
+  },
+  "profile": {
+    "appointment_id": "AP88",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Venkat Rao",
+      "phone": "6404572783",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 134.67,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 134.67,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 93000.0,
+        "name": "Sneha Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 94000.0,
+        "name": "Sneha Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 93500.0,
+        "name": "Sneha Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 46,
+    "occupation": "staff nurse",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 787
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "363504020859",
+    "ifsc": "ICIC0746474"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "happy"
+  ]
+}

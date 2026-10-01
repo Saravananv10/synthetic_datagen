@@ -1,0 +1,89 @@
+{
+  "id": "gl_0191_esign_not_done_first",
+  "seed": 200191,
+  "start_epoch": 1790145556,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8121101561",
+    "name": "Kavya Das",
+    "email": "kavya.das5@example.com",
+    "aadhaar": "9905 9025 9270",
+    "pan": "KRQPD0966Z",
+    "address": "Flat No- 483, Gandhi Nagar, Bengaluru, Karnataka - 560059",
+    "pincode": "560059",
+    "dob": "12/04/1989",
+    "father": "Naveen Das"
+  },
+  "profile": {
+    "appointment_id": "AP33",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Arjun Das",
+      "phone": "9742457082",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 115.71,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 115.71,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 62000.0,
+        "name": "Kavya Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 62000.0,
+        "name": "Kavya Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 62000.0,
+        "name": "Kavya Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 46,
+    "occupation": "school teacher",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 811
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "79669929364",
+    "ifsc": "ICIC0170201"
+  },
+  "flags": {
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "esign_not_done_first"
+  ]
+}

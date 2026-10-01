@@ -1,0 +1,96 @@
+{
+  "id": "gl_0180_wrong_mobile_otp_first",
+  "seed": 200180,
+  "start_epoch": 1790121579,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9612243382",
+    "name": "Vivaan Das",
+    "email": "vivaan.das17@example.com",
+    "aadhaar": "7550 9042 2151",
+    "pan": "LOLPD5262I",
+    "address": "Flat No- 540, Ashok Colony, Pune, Maharashtra - 411010",
+    "pincode": "411010",
+    "dob": "19/11/1981",
+    "father": "Pooja Das"
+  },
+  "profile": {
+    "appointment_id": "AP38",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Ananya Das",
+      "phone": "9612081089",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 76.75,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 76.75,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 108500.0,
+        "name": "Vivaan Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 108500.0,
+        "name": "Vivaan Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 109000.0,
+        "name": "Vivaan Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 32,
+    "occupation": "accounts executive",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 723
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "83523598470",
+    "ifsc": "HDFC0782637"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "wrong_mobile_otp_first"
+  ]
+}

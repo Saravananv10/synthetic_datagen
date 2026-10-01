@@ -6,6 +6,7 @@
 .DS_Store
 /docs/
 /docs-site/
+.env
 
 # Benchmark run logs (keep template + sample committed)
 /bench/runs/runs.csv

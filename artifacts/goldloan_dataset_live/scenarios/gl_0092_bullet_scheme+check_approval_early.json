@@ -1,0 +1,90 @@
+{
+  "id": "gl_0092_bullet_scheme+check_approval_early",
+  "seed": 200092,
+  "start_epoch": 1790165975,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7548620899",
+    "name": "Ramesh Nair",
+    "email": "ramesh.nair2@example.com",
+    "aadhaar": "3271 0605 7308",
+    "pan": "ORPPN2766B",
+    "address": "Flat No- 443, Rajaji Street, Chennai, Tamil Nadu - 600030",
+    "pincode": "600030",
+    "dob": "01/07/1994",
+    "father": "Arjun Nair"
+  },
+  "profile": {
+    "appointment_id": "AP99",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Suresh Nair",
+      "phone": "6554642319",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 71.88,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 71.88,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 126500.0,
+        "name": "Ramesh Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 127500.0,
+        "name": "Ramesh Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 127000.0,
+        "name": "Ramesh Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 27,
+    "occupation": "staff nurse",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 738
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "91376967452",
+    "ifsc": "UBIN0194777"
+  },
+  "flags": {
+    "check_approval_early": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "bullet_scheme",
+    "check_approval_early"
+  ]
+}

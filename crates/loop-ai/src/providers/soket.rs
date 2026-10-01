@@ -10,7 +10,7 @@ pub const SOKET_PROVIDER_NAME: &str = "Soket";
 /// OpenAI-compatible base URL.
 pub const SOKET_BASE_URL: &str = "https://api.tensorstudio.ai/v1";
 /// Default model id (settings / first-run default).
-pub const SOKET_DEFAULT_MODEL_ID: &str = "qwen3-30b";
+pub const SOKET_DEFAULT_MODEL_ID: &str = "gpt";
 
 /// Env vars checked for the Soket API key (first wins).
 pub const SOKET_API_KEY_ENVS: &[&str] = &["SOKET_API_KEY", "TENSORSTUDIO_API_KEY", "LOOP_API_KEY"];

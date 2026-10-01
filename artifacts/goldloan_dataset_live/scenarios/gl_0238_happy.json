@@ -1,0 +1,87 @@
+{
+  "id": "gl_0238_happy",
+  "seed": 200238,
+  "start_epoch": 1790121137,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6090117568",
+    "name": "Meena Naidu",
+    "email": "meena.naidu10@example.com",
+    "aadhaar": "8793 7872 3840",
+    "pan": "RRIPN0616R",
+    "address": "Flat No- 636, Temple Street, Pune, Maharashtra - 411012",
+    "pincode": "411012",
+    "dob": "27/09/1998",
+    "father": "Ganesh Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP20",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Sai Naidu",
+      "phone": "8206217472",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 74.17,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 74.17,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 102500.0,
+        "name": "Meena Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 102500.0,
+        "name": "Meena Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 102500.0,
+        "name": "Meena Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 43,
+    "occupation": "accounts executive",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 788
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "80147009711212",
+    "ifsc": "ICIC0387294"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "happy"
+  ]
+}

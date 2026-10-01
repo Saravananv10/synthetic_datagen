@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0095_esign_not_done_first+wrong_aadhaar_otp_first+sanction_email_",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_EMAIL",
+    "INGEST_IDENTITY",
+    "INVALID_OTP",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "ESIGN_PENDING"
+  ]
+}

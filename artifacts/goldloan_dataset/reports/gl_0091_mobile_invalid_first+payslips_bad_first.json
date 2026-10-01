@@ -1,0 +1,14 @@
+{
+  "scenario_id": "gl_0091_mobile_invalid_first+payslips_bad_first",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_MOBILE",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

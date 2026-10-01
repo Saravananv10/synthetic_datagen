@@ -1,0 +1,89 @@
+{
+  "id": "gl_0084_exit_stage_4",
+  "seed": 200084,
+  "start_epoch": 1790178084,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7184520842",
+    "name": "Aditya Singh",
+    "email": "aditya.singh10@example.com",
+    "aadhaar": "9476 2528 2641",
+    "pan": "HPXPS8862F",
+    "address": "Flat No- 580, Ashok Colony, Vijayawada, Andhra Pradesh - 520085",
+    "pincode": "520085",
+    "dob": "26/06/1987",
+    "father": "Sai Singh"
+  },
+  "profile": {
+    "appointment_id": "AP37",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Aarav Singh",
+      "phone": "6737643083",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 93.23,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 93.23,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 121000.0,
+        "name": "Aditya Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 120000.0,
+        "name": "Aditya Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 120500.0,
+        "name": "Aditya Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 50,
+    "occupation": "logistics coordinator",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 779
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "51402183414127",
+    "ifsc": "HDFC0111315"
+  },
+  "flags": {
+    "exit_at_stage": 4
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "exit_stage_4"
+  ]
+}

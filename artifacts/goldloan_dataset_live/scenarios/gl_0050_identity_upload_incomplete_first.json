@@ -1,0 +1,96 @@
+{
+  "id": "gl_0050_identity_upload_incomplete_first",
+  "seed": 200050,
+  "start_epoch": 1790176519,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9949664696",
+    "name": "Mahesh Iyer",
+    "email": "mahesh.iyer47@example.com",
+    "aadhaar": "5168 3365 9928",
+    "pan": "CVYPI1434A",
+    "address": "Flat No- 104, Rajaji Street, Hyderabad, Telangana - 500091",
+    "pincode": "500091",
+    "dob": "18/11/1985",
+    "father": "Aarav Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP19",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Naveen Iyer",
+      "phone": "6802622813",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 111.68,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 111.68,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 52500.0,
+        "name": "Mahesh Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 52000.0,
+        "name": "Mahesh Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 52500.0,
+        "name": "Mahesh Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 31,
+    "occupation": "staff nurse",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 773
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "892015347350",
+    "ifsc": "ICIC0574630"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

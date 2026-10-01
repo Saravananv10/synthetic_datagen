@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0029_approval_rejected",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "APPROVAL_REJECTED"
+  ]
+}

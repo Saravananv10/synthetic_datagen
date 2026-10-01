@@ -1,0 +1,90 @@
+{
+  "id": "gl_0161_negotiate_roi",
+  "seed": 200161,
+  "start_epoch": 1790173495,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8474706229",
+    "name": "Harish Kumar",
+    "email": "harish.kumar94@example.com",
+    "aadhaar": "7720 1342 9697",
+    "pan": "MXHPK0530B",
+    "address": "Flat No- 652, Rajaji Street, Pune, Maharashtra - 411064",
+    "pincode": "411064",
+    "dob": "18/11/1982",
+    "father": "Meena Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP32",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Kavya Kumar",
+      "phone": "7991645034",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 127.3,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 127.3,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 60000.0,
+        "name": "Harish Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 60000.0,
+        "name": "Harish Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 60000.0,
+        "name": "Harish Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 61,
+    "occupation": "accounts executive",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 790
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "79415823107149",
+    "ifsc": "ICIC0395914",
+    "requested_roi": 10.7
+  },
+  "flags": {
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "negotiate_roi"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0245_wrong_email_otp_first",
+  "seed": 200245,
+  "start_epoch": 1790152209,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9664783160",
+    "name": "Ananya Naidu",
+    "email": "ananya.naidu45@example.com",
+    "aadhaar": "2301 3865 5516",
+    "pan": "AWNPN7487V",
+    "address": "Flat No- 803, Ashok Colony, Bengaluru, Karnataka - 560034",
+    "pincode": "560034",
+    "dob": "11/10/1975",
+    "father": "Arjun Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP53",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Lakshmi Naidu",
+      "phone": "8133705031",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 94.37,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 94.37,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 38500.0,
+        "name": "Ananya Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 39500.0,
+        "name": "Ananya Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 38500.0,
+        "name": "Ananya Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 43,
+    "occupation": "school teacher",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 734
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "396217677692",
+    "ifsc": "UBIN0614542"
+  },
+  "flags": {
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_email_otp_first"
+  ]
+}

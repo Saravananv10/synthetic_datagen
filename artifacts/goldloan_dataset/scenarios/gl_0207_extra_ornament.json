@@ -1,0 +1,107 @@
+{
+  "id": "gl_0207_extra_ornament",
+  "seed": 200207,
+  "start_epoch": 1790132803,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8343924426",
+    "name": "Harish Kumar",
+    "email": "harish.kumar59@example.com",
+    "aadhaar": "2414 1364 6335",
+    "pan": "FFLPK9212Z",
+    "address": "Flat No- 376, Gandhi Nagar, Kochi, Kerala - 682098",
+    "pincode": "682098",
+    "dob": "08/05/1984",
+    "father": "Sai Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP21",
+    "language": "English",
+    "nominee": {
+      "name": "Naveen Kumar",
+      "phone": "6741514512",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 100.81,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 100.81,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 15.11,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 15.11,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 18.99,
+        "stone_deduction": 1.2,
+        "karat": 20,
+        "scale_reading": 18.99,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 51000.0,
+        "name": "Harish Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 50500.0,
+        "name": "Harish Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 51000.0,
+        "name": "Harish Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 54,
+    "occupation": "accounts executive",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 713
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "85201408546",
+    "ifsc": "SBIN0941854"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "extra_ornament"
+  ]
+}

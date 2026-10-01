@@ -1,0 +1,97 @@
+{
+  "id": "gl_0058_change_scheme_once",
+  "seed": 200058,
+  "start_epoch": 1790139967,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8028778141",
+    "name": "Naveen Pillai",
+    "email": "naveen.pillai46@example.com",
+    "aadhaar": "4999 0204 8371",
+    "pan": "ZJOPP0205U",
+    "address": "Flat No- 46, Lake View Road, Hyderabad, Telangana - 500085",
+    "pincode": "500085",
+    "dob": "24/01/1985",
+    "father": "Sai Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP83",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Sneha Pillai",
+      "phone": "9612402856",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 133.68,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 133.68,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 139500.0,
+        "name": "Naveen Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 140500.0,
+        "name": "Naveen Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 140000.0,
+        "name": "Naveen Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 60,
+    "occupation": "software support engineer",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 739
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "06205506337",
+    "ifsc": "ICIC0017073",
+    "first_offer_id": "GL_REV_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "change_scheme_once"
+  ]
+}

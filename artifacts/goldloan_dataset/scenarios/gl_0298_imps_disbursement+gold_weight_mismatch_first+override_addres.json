@@ -1,0 +1,92 @@
+{
+  "id": "gl_0298_imps_disbursement+gold_weight_mismatch_first+override_addres",
+  "seed": 200298,
+  "start_epoch": 1790107847,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9351990983",
+    "name": "Kavya Sharma",
+    "email": "kavya.sharma32@example.com",
+    "aadhaar": "4010 0143 1948",
+    "pan": "VVTPS3909W",
+    "address": "Flat No- 611, Rajaji Street, Hyderabad, Telangana - 500058",
+    "pincode": "500058",
+    "dob": "20/01/1980",
+    "father": "Aarav Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP53",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Aditya Sharma",
+      "phone": "9369386074",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 118.81,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 118.81,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 139000.0,
+        "name": "Kavya Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 140000.0,
+        "name": "Kavya Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 139000.0,
+        "name": "Kavya Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "software support engineer",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 796
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "IMPS",
+    "account_number": "73125412302133",
+    "ifsc": "HDFC0312869"
+  },
+  "flags": {
+    "gold_weight_mismatch_first": true,
+    "override_address": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "imps_disbursement",
+    "gold_weight_mismatch_first",
+    "override_address"
+  ]
+}

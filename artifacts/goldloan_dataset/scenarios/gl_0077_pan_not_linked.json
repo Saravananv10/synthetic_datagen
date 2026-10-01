@@ -1,0 +1,89 @@
+{
+  "id": "gl_0077_pan_not_linked",
+  "seed": 200077,
+  "start_epoch": 1790126982,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6171355305",
+    "name": "Deepa Singh",
+    "email": "deepa.singh32@example.com",
+    "aadhaar": "7850 8859 0988",
+    "pan": "ESVPS4202I",
+    "address": "Flat No- 127, Gandhi Nagar, Chennai, Tamil Nadu - 600017",
+    "pincode": "600017",
+    "dob": "21/04/1997",
+    "father": "Vivaan Singh"
+  },
+  "profile": {
+    "appointment_id": "AP89",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Ananya Singh",
+      "phone": "6318038212",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 88.12,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 88.12,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 96000.0,
+        "name": "Deepa Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 96000.0,
+        "name": "Deepa Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 96000.0,
+        "name": "Deepa Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 27,
+    "occupation": "accounts executive",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 715
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "92805189728480",
+    "ifsc": "HDFC0048325"
+  },
+  "flags": {
+    "pan_not_linked": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "pan_not_linked"
+  ]
+}

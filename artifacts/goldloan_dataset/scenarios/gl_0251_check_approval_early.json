@@ -1,0 +1,89 @@
+{
+  "id": "gl_0251_check_approval_early",
+  "seed": 200251,
+  "start_epoch": 1790146803,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7639472935",
+    "name": "Venkat Pillai",
+    "email": "venkat.pillai18@example.com",
+    "aadhaar": "8018 3662 4930",
+    "pan": "EXTPP0073G",
+    "address": "Flat No- 147, Lake View Road, Pune, Maharashtra - 411073",
+    "pincode": "411073",
+    "dob": "26/12/1981",
+    "father": "Karthik Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP09",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Arjun Pillai",
+      "phone": "8392982892",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 90.28,
+        "stone_deduction": 0.9,
+        "karat": 18,
+        "scale_reading": 90.28,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 36500.0,
+        "name": "Venkat Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 36500.0,
+        "name": "Venkat Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 36500.0,
+        "name": "Venkat Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 35,
+    "occupation": "staff nurse",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 732
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "759300891195",
+    "ifsc": "HDFC0848453"
+  },
+  "flags": {
+    "check_approval_early": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "check_approval_early"
+  ]
+}

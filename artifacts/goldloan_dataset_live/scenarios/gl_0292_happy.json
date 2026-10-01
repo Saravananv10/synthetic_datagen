@@ -1,0 +1,87 @@
+{
+  "id": "gl_0292_happy",
+  "seed": 200292,
+  "start_epoch": 1790177044,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7437119231",
+    "name": "Mahesh Nair",
+    "email": "mahesh.nair72@example.com",
+    "aadhaar": "9577 6019 7802",
+    "pan": "FHJPN6315O",
+    "address": "Flat No- 288, Rajaji Street, Chennai, Tamil Nadu - 600070",
+    "pincode": "600070",
+    "dob": "20/03/1977",
+    "father": "Aditya Nair"
+  },
+  "profile": {
+    "appointment_id": "AP41",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Lakshmi Nair",
+      "phone": "6005159593",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 73.76,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 73.76,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 50000.0,
+        "name": "Mahesh Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 50000.0,
+        "name": "Mahesh Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 50000.0,
+        "name": "Mahesh Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 50,
+    "occupation": "staff nurse",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 815
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "43654497919239",
+    "ifsc": "HDFC0039207"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

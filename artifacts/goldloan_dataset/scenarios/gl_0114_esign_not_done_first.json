@@ -1,0 +1,89 @@
+{
+  "id": "gl_0114_esign_not_done_first",
+  "seed": 200114,
+  "start_epoch": 1790163703,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9815776614",
+    "name": "Divya Menon",
+    "email": "divya.menon97@example.com",
+    "aadhaar": "4877 1136 6984",
+    "pan": "ACMPM5111U",
+    "address": "Flat No- 766, Temple Street, Pune, Maharashtra - 411072",
+    "pincode": "411072",
+    "dob": "21/08/1998",
+    "father": "Ananya Menon"
+  },
+  "profile": {
+    "appointment_id": "AP84",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Aarav Menon",
+      "phone": "9533811316",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 91.14,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 91.14,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 123500.0,
+        "name": "Divya Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 124500.0,
+        "name": "Divya Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 124000.0,
+        "name": "Divya Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 32,
+    "occupation": "school teacher",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 752
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "40122849114233",
+    "ifsc": "UBIN0193481"
+  },
+  "flags": {
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "esign_not_done_first"
+  ]
+}

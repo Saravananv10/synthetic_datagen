@@ -1,0 +1,87 @@
+{
+  "id": "gl_0124_happy",
+  "seed": 200124,
+  "start_epoch": 1790118812,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8406886625",
+    "name": "Harish Reddy",
+    "email": "harish.reddy12@example.com",
+    "aadhaar": "7085 4081 1007",
+    "pan": "MOYPR7072A",
+    "address": "Flat No- 745, MG Road, Hyderabad, Telangana - 500067",
+    "pincode": "500067",
+    "dob": "03/12/1969",
+    "father": "Sneha Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP84",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Priya Reddy",
+      "phone": "8354463974",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 75.11,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 75.11,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 44000.0,
+        "name": "Harish Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 44500.0,
+        "name": "Harish Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 44000.0,
+        "name": "Harish Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 37,
+    "occupation": "school teacher",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 739
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "29673433413302",
+    "ifsc": "SBIN0500287"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "happy"
+  ]
+}

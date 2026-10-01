@@ -1,0 +1,89 @@
+{
+  "id": "gl_0240_invalid_appointment_first",
+  "seed": 200240,
+  "start_epoch": 1790122897,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6555976799",
+    "name": "Sai Rao",
+    "email": "sai.rao83@example.com",
+    "aadhaar": "8379 8107 1989",
+    "pan": "HTHPR4079R",
+    "address": "Flat No- 220, Rajaji Street, Chennai, Tamil Nadu - 600022",
+    "pincode": "600022",
+    "dob": "26/06/1987",
+    "father": "Aarav Rao"
+  },
+  "profile": {
+    "appointment_id": "AP11",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Harish Rao",
+      "phone": "6795916372",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 120.58,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 120.58,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 138000.0,
+        "name": "Sai Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 137500.0,
+        "name": "Sai Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 137500.0,
+        "name": "Sai Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 43,
+    "occupation": "factory supervisor",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 714
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "68427140094",
+    "ifsc": "UBIN0226257"
+  },
+  "flags": {
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "invalid_appointment_first"
+  ]
+}

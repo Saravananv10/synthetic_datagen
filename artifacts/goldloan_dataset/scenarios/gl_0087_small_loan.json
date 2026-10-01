@@ -1,0 +1,87 @@
+{
+  "id": "gl_0087_small_loan",
+  "seed": 200087,
+  "start_epoch": 1790118034,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6131807693",
+    "name": "Rohan Kumar",
+    "email": "rohan.kumar65@example.com",
+    "aadhaar": "7988 1684 2302",
+    "pan": "YILPK7126V",
+    "address": "Flat No- 706, MG Road, Bengaluru, Karnataka - 560051",
+    "pincode": "560051",
+    "dob": "13/08/1971",
+    "father": "Aditya Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP07",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Meena Kumar",
+      "phone": "8663899892",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 23.59,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 23.59,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 66500.0,
+        "name": "Rohan Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 66000.0,
+        "name": "Rohan Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 65500.0,
+        "name": "Rohan Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 40,
+    "occupation": "school teacher",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 715
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "56046728648",
+    "ifsc": "HDFC0401903"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "small_loan"
+  ]
+}

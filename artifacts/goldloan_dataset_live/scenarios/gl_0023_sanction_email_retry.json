@@ -1,0 +1,94 @@
+{
+  "id": "gl_0023_sanction_email_retry",
+  "seed": 200023,
+  "start_epoch": 1790160943,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7795945895",
+    "name": "Sneha Nair",
+    "email": "sneha.nair1@example.com",
+    "aadhaar": "9650 4360 8307",
+    "pan": "WSHPN7488L",
+    "address": "Flat No- 828, Temple Street, Chennai, Tamil Nadu - 600066",
+    "pincode": "600066",
+    "dob": "06/06/1994",
+    "father": "Divya Nair"
+  },
+  "profile": {
+    "appointment_id": "AP76",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Ananya Nair",
+      "phone": "9293465394",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 122.95,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 122.95,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 99000.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 99000.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 99500.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 37,
+    "occupation": "accounts executive",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 702
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "51323341829",
+    "ifsc": "SBIN0207909"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "sanction_email_retry"
+  ]
+}

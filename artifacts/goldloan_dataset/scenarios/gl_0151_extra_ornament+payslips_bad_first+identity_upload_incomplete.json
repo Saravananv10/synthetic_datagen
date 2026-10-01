@@ -1,0 +1,104 @@
+{
+  "id": "gl_0151_extra_ornament+payslips_bad_first+identity_upload_incomplete",
+  "seed": 200151,
+  "start_epoch": 1790148259,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9346366395",
+    "name": "Rohan Joshi",
+    "email": "rohan.joshi3@example.com",
+    "aadhaar": "7805 7835 3686",
+    "pan": "JOFPJ5746Y",
+    "address": "Flat No- 583, Ashok Colony, Vijayawada, Andhra Pradesh - 520096",
+    "pincode": "520096",
+    "dob": "08/04/1966",
+    "father": "Deepa Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP05",
+    "language": "English",
+    "nominee": {
+      "name": "Karthik Joshi",
+      "phone": "7206113402",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 105.1,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 105.1,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 29.9,
+        "stone_deduction": 0.5,
+        "karat": 20,
+        "scale_reading": 29.9,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 61500.0,
+        "name": "Rohan Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 62000.0,
+        "name": "Rohan Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 62000.0,
+        "name": "Rohan Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 39,
+    "occupation": "school teacher",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 736
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "58369177598979",
+    "ifsc": "ICIC0657852"
+  },
+  "flags": {
+    "payslips_bad_first": true,
+    "identity_upload_incomplete_first": true,
+    "check_approval_early": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "extra_ornament",
+    "payslips_bad_first",
+    "identity_upload_incomplete_first",
+    "check_approval_early"
+  ]
+}

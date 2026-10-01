@@ -1,0 +1,97 @@
+{
+  "id": "gl_0064_negotiate_roi_over_limit+gold_weight_mismatch_first+override",
+  "seed": 200064,
+  "start_epoch": 1790179571,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9568075581",
+    "name": "Deepa Das",
+    "email": "deepa.das86@example.com",
+    "aadhaar": "3665 5118 2543",
+    "pan": "OBRPD2696F",
+    "address": "Flat No- 123, Lake View Road, Kochi, Kerala - 682081",
+    "pincode": "682081",
+    "dob": "10/09/1978",
+    "father": "Naveen Das"
+  },
+  "profile": {
+    "appointment_id": "AP57",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Karthik Das",
+      "phone": "7132757660",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 135.54,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 135.54,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 75000.0,
+        "name": "Deepa Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 75000.0,
+        "name": "Deepa Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 74500.0,
+        "name": "Deepa Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 45,
+    "occupation": "software support engineer",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 730
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "97579870316339",
+    "ifsc": "UBIN0120827",
+    "requested_roi": 10.6
+  },
+  "flags": {
+    "negotiate_roi": true,
+    "gold_weight_mismatch_first": true,
+    "override_address": true,
+    "ocr_noise_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "negotiate_roi_over_limit",
+    "negotiation_refused",
+    "gold_weight_mismatch_first",
+    "override_address",
+    "ocr_noise_first"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0255_exit_stage_4",
+  "seed": 200255,
+  "start_epoch": 1790166374,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8707981395",
+    "name": "Divya Nair",
+    "email": "divya.nair67@example.com",
+    "aadhaar": "6315 7007 6227",
+    "pan": "ILVPN1678H",
+    "address": "Flat No- 439, Ashok Colony, Vijayawada, Andhra Pradesh - 520087",
+    "pincode": "520087",
+    "dob": "27/09/1973",
+    "father": "Divya Nair"
+  },
+  "profile": {
+    "appointment_id": "AP54",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Pooja Nair",
+      "phone": "7217206391",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 84.74,
+        "stone_deduction": 0.9,
+        "karat": 18,
+        "scale_reading": 84.74,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 67500.0,
+        "name": "Divya Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 66500.0,
+        "name": "Divya Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 67000.0,
+        "name": "Divya Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "software support engineer",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 711
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "656560662692",
+    "ifsc": "UBIN0306832"
+  },
+  "flags": {
+    "exit_at_stage": 4
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "exit_stage_4"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "gl_0287_wrong_aadhaar_otp_first",
+  "seed": 200287,
+  "start_epoch": 1790135073,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9585687037",
+    "name": "Arjun Reddy",
+    "email": "arjun.reddy85@example.com",
+    "aadhaar": "5266 7088 7045",
+    "pan": "VLDPR9397Q",
+    "address": "Flat No- 284, Gandhi Nagar, Vijayawada, Andhra Pradesh - 520048",
+    "pincode": "520048",
+    "dob": "16/02/1982",
+    "father": "Mahesh Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP65",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Deepa Reddy",
+      "phone": "8291986471",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 101.27,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 101.27,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 130500.0,
+        "name": "Arjun Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 130500.0,
+        "name": "Arjun Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 130500.0,
+        "name": "Arjun Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "factory supervisor",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 801
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "626263096894",
+    "ifsc": "SBIN0762314"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "wrong_aadhaar_otp_first"
+  ]
+}

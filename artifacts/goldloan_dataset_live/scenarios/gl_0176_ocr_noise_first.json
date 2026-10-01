@@ -1,0 +1,89 @@
+{
+  "id": "gl_0176_ocr_noise_first",
+  "seed": 200176,
+  "start_epoch": 1790105848,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8759926327",
+    "name": "Rohan Pillai",
+    "email": "rohan.pillai98@example.com",
+    "aadhaar": "4296 1111 9723",
+    "pan": "RBLPP8279G",
+    "address": "Flat No- 215, Gandhi Nagar, Pune, Maharashtra - 411025",
+    "pincode": "411025",
+    "dob": "19/06/1979",
+    "father": "Anjali Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP34",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Aditya Pillai",
+      "phone": "7070903024",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 73.02,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 73.02,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 143000.0,
+        "name": "Rohan Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 143000.0,
+        "name": "Rohan Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 144000.0,
+        "name": "Rohan Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 30,
+    "occupation": "logistics coordinator",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 772
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "52193974783076",
+    "ifsc": "HDFC0895677"
+  },
+  "flags": {
+    "ocr_noise_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "ocr_noise_first"
+  ]
+}

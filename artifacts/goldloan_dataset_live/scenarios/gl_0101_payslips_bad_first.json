@@ -1,0 +1,89 @@
+{
+  "id": "gl_0101_payslips_bad_first",
+  "seed": 200101,
+  "start_epoch": 1790115515,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6680500733",
+    "name": "Meena Menon",
+    "email": "meena.menon87@example.com",
+    "aadhaar": "3507 0771 0713",
+    "pan": "ANWPM6199G",
+    "address": "Flat No- 559, Rajaji Street, Pune, Maharashtra - 411082",
+    "pincode": "411082",
+    "dob": "11/12/2001",
+    "father": "Aarav Menon"
+  },
+  "profile": {
+    "appointment_id": "AP62",
+    "language": "English",
+    "nominee": {
+      "name": "Harish Menon",
+      "phone": "6112360582",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 75.58,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 75.58,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 127000.0,
+        "name": "Meena Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 127000.0,
+        "name": "Meena Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 127000.0,
+        "name": "Meena Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "school teacher",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 820
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "988140417434",
+    "ifsc": "ICIC0685924"
+  },
+  "flags": {
+    "payslips_bad_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "payslips_bad_first"
+  ]
+}

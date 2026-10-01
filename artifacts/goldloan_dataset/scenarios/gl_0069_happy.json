@@ -1,0 +1,87 @@
+{
+  "id": "gl_0069_happy",
+  "seed": 200069,
+  "start_epoch": 1790168063,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8785800856",
+    "name": "Ramesh Das",
+    "email": "ramesh.das78@example.com",
+    "aadhaar": "8436 9712 7850",
+    "pan": "XTPPD7899Q",
+    "address": "Flat No- 848, MG Road, Hyderabad, Telangana - 500074",
+    "pincode": "500074",
+    "dob": "25/08/1993",
+    "father": "Rohan Das"
+  },
+  "profile": {
+    "appointment_id": "AP56",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Naveen Das",
+      "phone": "6628953329",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 97.61,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 97.61,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 147000.0,
+        "name": "Ramesh Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 146500.0,
+        "name": "Ramesh Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 147000.0,
+        "name": "Ramesh Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 33,
+    "occupation": "accounts executive",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 724
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "23604787489",
+    "ifsc": "SBIN0715691"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "happy"
+  ]
+}

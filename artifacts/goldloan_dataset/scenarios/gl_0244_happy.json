@@ -1,0 +1,87 @@
+{
+  "id": "gl_0244_happy",
+  "seed": 200244,
+  "start_epoch": 1790177168,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6651026176",
+    "name": "Deepa Nair",
+    "email": "deepa.nair36@example.com",
+    "aadhaar": "4859 3704 4932",
+    "pan": "DVCPN5890O",
+    "address": "Flat No- 181, Ashok Colony, Vijayawada, Andhra Pradesh - 520005",
+    "pincode": "520005",
+    "dob": "28/07/1978",
+    "father": "Sai Nair"
+  },
+  "profile": {
+    "appointment_id": "AP17",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Aditya Nair",
+      "phone": "6270172622",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 87.7,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 87.7,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 124500.0,
+        "name": "Deepa Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 125000.0,
+        "name": "Deepa Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 124500.0,
+        "name": "Deepa Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 54,
+    "occupation": "school teacher",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 713
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "634808165704",
+    "ifsc": "ICIC0345025"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "happy"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "gl_0112_override_address+mobile_invalid_first",
+  "seed": 200112,
+  "start_epoch": 1790124400,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7486093735",
+    "name": "Vivaan Gupta",
+    "email": "vivaan.gupta6@example.com",
+    "aadhaar": "5316 2806 6335",
+    "pan": "ABUPG8521I",
+    "address": "Flat No- 671, Rajaji Street, Hyderabad, Telangana - 500090",
+    "pincode": "500090",
+    "dob": "05/02/1980",
+    "father": "Sneha Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP83",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Kavya Gupta",
+      "phone": "7888370744",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 138.06,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 138.06,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 93000.0,
+        "name": "Vivaan Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 93500.0,
+        "name": "Vivaan Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 93000.0,
+        "name": "Vivaan Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 28,
+    "occupation": "factory supervisor",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 757
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "741908518762",
+    "ifsc": "ICIC0211559"
+  },
+  "flags": {
+    "override_address": true,
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "override_address",
+    "mobile_invalid_first"
+  ]
+}

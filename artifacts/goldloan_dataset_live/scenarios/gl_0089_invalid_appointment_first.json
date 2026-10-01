@@ -1,0 +1,89 @@
+{
+  "id": "gl_0089_invalid_appointment_first",
+  "seed": 200089,
+  "start_epoch": 1790171999,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6066435709",
+    "name": "Naveen Singh",
+    "email": "naveen.singh87@example.com",
+    "aadhaar": "2744 0989 6663",
+    "pan": "GNCPS4657I",
+    "address": "Flat No- 253, Lake View Road, Pune, Maharashtra - 411044",
+    "pincode": "411044",
+    "dob": "25/07/1995",
+    "father": "Priya Singh"
+  },
+  "profile": {
+    "appointment_id": "AP66",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Divya Singh",
+      "phone": "9222140247",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 131.12,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 131.12,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 127500.0,
+        "name": "Naveen Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 128000.0,
+        "name": "Naveen Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 128000.0,
+        "name": "Naveen Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 28,
+    "occupation": "school teacher",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 785
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "37884047570",
+    "ifsc": "SBIN0283435"
+  },
+  "flags": {
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "invalid_appointment_first"
+  ]
+}

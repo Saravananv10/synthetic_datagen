@@ -1,0 +1,94 @@
+{
+  "id": "gl_0076_happy",
+  "seed": 200076,
+  "start_epoch": 1790120432,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9759685728",
+    "name": "Pooja Naidu",
+    "email": "pooja.naidu6@example.com",
+    "aadhaar": "7302 5004 0078",
+    "pan": "OSEPN4348J",
+    "address": "Flat No- 615, Rajaji Street, Kochi, Kerala - 682071",
+    "pincode": "682071",
+    "dob": "06/02/1967",
+    "father": "Kavya Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP39",
+    "language": "English",
+    "nominee": {
+      "name": "Suresh Naidu",
+      "phone": "8641783219",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 74.51,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 74.51,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 108000.0,
+        "name": "Pooja Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 108000.0,
+        "name": "Pooja Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 108500.0,
+        "name": "Pooja Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 58,
+    "occupation": "software support engineer",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 776
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "22074582100",
+    "ifsc": "HDFC0156565"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "happy"
+  ]
+}

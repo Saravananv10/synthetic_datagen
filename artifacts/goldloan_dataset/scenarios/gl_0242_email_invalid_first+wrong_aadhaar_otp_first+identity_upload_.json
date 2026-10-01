@@ -1,0 +1,95 @@
+{
+  "id": "gl_0242_email_invalid_first+wrong_aadhaar_otp_first+identity_upload_",
+  "seed": 200242,
+  "start_epoch": 1790117120,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9541354735",
+    "name": "Harish Rao",
+    "email": "harish.rao44@example.com",
+    "aadhaar": "4177 0765 3292",
+    "pan": "PXSPR2202G",
+    "address": "Flat No- 415, Green Park, Bengaluru, Karnataka - 560047",
+    "pincode": "560047",
+    "dob": "11/11/1979",
+    "father": "Vivaan Rao"
+  },
+  "profile": {
+    "appointment_id": "AP06",
+    "language": "English",
+    "nominee": {
+      "name": "Karthik Rao",
+      "phone": "9847617419",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 99.83,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 99.83,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 127000.0,
+        "name": "Harish Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 126500.0,
+        "name": "Harish Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 126500.0,
+        "name": "Harish Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 40,
+    "occupation": "software support engineer",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 814
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "088980731996",
+    "ifsc": "SBIN0021747"
+  },
+  "flags": {
+    "email_invalid_first": true,
+    "wrong_aadhaar_otp_first": true,
+    "identity_upload_incomplete_first": true,
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "email_invalid_first",
+    "wrong_aadhaar_otp_first",
+    "identity_upload_incomplete_first",
+    "wrong_mobile_otp_first"
+  ]
+}

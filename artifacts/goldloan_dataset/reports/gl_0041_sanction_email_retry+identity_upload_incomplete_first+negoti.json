@@ -1,0 +1,14 @@
+{
+  "scenario_id": "gl_0041_sanction_email_retry+identity_upload_incomplete_first+negoti",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "NEGOTIATION_LIMIT",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

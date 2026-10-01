@@ -1,0 +1,89 @@
+{
+  "id": "gl_0029_approval_rejected",
+  "seed": 200029,
+  "start_epoch": 1790140456,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8120216304",
+    "name": "Karthik Iyer",
+    "email": "karthik.iyer58@example.com",
+    "aadhaar": "6082 2161 0074",
+    "pan": "QEQPI8886Z",
+    "address": "Flat No- 106, Lake View Road, Pune, Maharashtra - 411005",
+    "pincode": "411005",
+    "dob": "04/05/1994",
+    "father": "Ananya Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP67",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Pooja Iyer",
+      "phone": "6376108379",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 99.91,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 99.91,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 101500.0,
+        "name": "Karthik Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 100500.0,
+        "name": "Karthik Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 101000.0,
+        "name": "Karthik Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "accounts executive",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 719
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "034607113066",
+    "ifsc": "UBIN0431148"
+  },
+  "flags": {
+    "approval_rejected": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "approval_rejected"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0061_exit_stage_5",
+  "seed": 200061,
+  "start_epoch": 1790109006,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8977047075",
+    "name": "Aditya Naidu",
+    "email": "aditya.naidu84@example.com",
+    "aadhaar": "5747 7117 0311",
+    "pan": "IAXPN3819Y",
+    "address": "Flat No- 435, Green Park, Kochi, Kerala - 682027",
+    "pincode": "682027",
+    "dob": "09/11/2000",
+    "father": "Priya Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP82",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Harish Naidu",
+      "phone": "7788784631",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 115.29,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 115.29,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 62500.0,
+        "name": "Aditya Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 63000.0,
+        "name": "Aditya Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 62500.0,
+        "name": "Aditya Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 46,
+    "occupation": "factory supervisor",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 703
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "51593609150306",
+    "ifsc": "ICIC0381292"
+  },
+  "flags": {
+    "exit_at_stage": 5
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "exit_stage_5"
+  ]
+}

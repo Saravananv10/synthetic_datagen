@@ -1,0 +1,94 @@
+{
+  "id": "gl_0090_happy",
+  "seed": 200090,
+  "start_epoch": 1790149075,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9286708600",
+    "name": "Arjun Sharma",
+    "email": "arjun.sharma44@example.com",
+    "aadhaar": "5309 6994 5523",
+    "pan": "CYNPS0938T",
+    "address": "Flat No- 868, Temple Street, Pune, Maharashtra - 411027",
+    "pincode": "411027",
+    "dob": "17/03/1997",
+    "father": "Aditya Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP37",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Aarav Sharma",
+      "phone": "8592957622",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 86.17,
+        "stone_deduction": 2.1,
+        "karat": 22,
+        "scale_reading": 86.17,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 61500.0,
+        "name": "Arjun Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 61000.0,
+        "name": "Arjun Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 61500.0,
+        "name": "Arjun Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 43,
+    "occupation": "staff nurse",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 736
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "44008022532185",
+    "ifsc": "ICIC0747886"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "happy"
+  ]
+}

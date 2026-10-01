@@ -1,0 +1,89 @@
+{
+  "id": "gl_0156_identity_upload_incomplete_first",
+  "seed": 200156,
+  "start_epoch": 1790175058,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9222872770",
+    "name": "Karthik Pillai",
+    "email": "karthik.pillai53@example.com",
+    "aadhaar": "9830 9147 2143",
+    "pan": "DNHPP7503H",
+    "address": "Flat No- 305, Ashok Colony, Hyderabad, Telangana - 500026",
+    "pincode": "500026",
+    "dob": "09/01/1982",
+    "father": "Ramesh Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP36",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Rohan Pillai",
+      "phone": "8614968259",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 116.24,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 116.24,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 149500.0,
+        "name": "Karthik Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 149500.0,
+        "name": "Karthik Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 149500.0,
+        "name": "Karthik Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 29,
+    "occupation": "staff nurse",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 764
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "74955268556",
+    "ifsc": "UBIN0959190"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

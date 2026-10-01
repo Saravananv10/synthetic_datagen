@@ -1,0 +1,111 @@
+{
+  "id": "gl_0248_cash_disbursement+extra_ornament+esign_not_done_first",
+  "seed": 200248,
+  "start_epoch": 1790102993,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9879666666",
+    "name": "Anjali Singh",
+    "email": "anjali.singh65@example.com",
+    "aadhaar": "6113 5353 5515",
+    "pan": "WVAPS4304T",
+    "address": "Flat No- 375, Ashok Colony, Hyderabad, Telangana - 500023",
+    "pincode": "500023",
+    "dob": "04/02/1986",
+    "father": "Naveen Singh"
+  },
+  "profile": {
+    "appointment_id": "AP64",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Meena Singh",
+      "phone": "8633216074",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 132.91,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 132.91,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 25.81,
+        "stone_deduction": 0.5,
+        "karat": 20,
+        "scale_reading": 25.81,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 25.31,
+        "stone_deduction": 1.2,
+        "karat": 22,
+        "scale_reading": 25.31,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 110500.0,
+        "name": "Anjali Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 111000.0,
+        "name": "Anjali Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 111000.0,
+        "name": "Anjali Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 55,
+    "occupation": "school teacher",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 738
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "cash_disbursement",
+    "extra_ornament",
+    "esign_not_done_first"
+  ]
+}

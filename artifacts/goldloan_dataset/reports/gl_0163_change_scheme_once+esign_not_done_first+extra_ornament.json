@@ -1,0 +1,14 @@
+{
+  "scenario_id": "gl_0163_change_scheme_once+esign_not_done_first+extra_ornament",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "ESIGN_PENDING"
+  ]
+}

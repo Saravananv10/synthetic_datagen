@@ -1,0 +1,94 @@
+{
+  "id": "gl_0009_nominee_duplicate_first",
+  "seed": 200009,
+  "start_epoch": 1790142667,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6001340783",
+    "name": "Anjali Singh",
+    "email": "anjali.singh27@example.com",
+    "aadhaar": "5100 1616 9968",
+    "pan": "UDRPS2939U",
+    "address": "Flat No- 25, Green Park, Kochi, Kerala - 682055",
+    "pincode": "682055",
+    "dob": "24/01/1976",
+    "father": "Sai Singh"
+  },
+  "profile": {
+    "appointment_id": "AP26",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Kavya Singh",
+      "phone": "8826315546",
+      "relation": "child"
+    },
+    "nominee_alt": {
+      "name": "Naveen Singh",
+      "phone": "8134123164",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 63.29,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 63.29,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 31500.0,
+        "name": "Anjali Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 32000.0,
+        "name": "Anjali Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 31500.0,
+        "name": "Anjali Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 39,
+    "occupation": "accounts executive",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 814
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "884129439120",
+    "ifsc": "SBIN0177090"
+  },
+  "flags": {
+    "nominee_duplicate_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "nominee_duplicate_first"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0132_wrong_email_otp_first",
+  "seed": 200132,
+  "start_epoch": 1790163709,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6735735774",
+    "name": "Arjun Sharma",
+    "email": "arjun.sharma87@example.com",
+    "aadhaar": "7181 2337 9437",
+    "pan": "XAXPS4409B",
+    "address": "Flat No- 716, Ashok Colony, Pune, Maharashtra - 411034",
+    "pincode": "411034",
+    "dob": "16/04/1992",
+    "father": "Sneha Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP19",
+    "language": "English",
+    "nominee": {
+      "name": "Kavya Sharma",
+      "phone": "8266324264",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 86.14,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 86.14,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 102000.0,
+        "name": "Arjun Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 101000.0,
+        "name": "Arjun Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 102000.0,
+        "name": "Arjun Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 27,
+    "occupation": "staff nurse",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 784
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "77785427095917",
+    "ifsc": "SBIN0876762"
+  },
+  "flags": {
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "wrong_email_otp_first"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0119_mobile_invalid_first+check_approval_early+wrong_email_otp_fi",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_MOBILE",
+    "INVALID_OTP",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "APPROVAL_PENDING"
+  ]
+}

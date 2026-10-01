@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0277_check_approval_early+sanction_email_retry+identity_upload_in",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_OTP",
+    "INGEST_IDENTITY",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "APPROVAL_PENDING"
+  ]
+}

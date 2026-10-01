@@ -1,0 +1,10 @@
+{
+  "scenario_id": "gl_0026_pledged",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "PLEDGE_FOUND"
+  ]
+}

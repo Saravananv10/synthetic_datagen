@@ -1,0 +1,96 @@
+{
+  "id": "gl_0134_negotiate_roi+override_address+wrong_email_otp_first+mobile_",
+  "seed": 200134,
+  "start_epoch": 1790140383,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8777107388",
+    "name": "Anjali Sharma",
+    "email": "anjali.sharma97@example.com",
+    "aadhaar": "5023 2729 0810",
+    "pan": "JDFPS2197P",
+    "address": "Flat No- 350, Temple Street, Pune, Maharashtra - 411006",
+    "pincode": "411006",
+    "dob": "17/11/1996",
+    "father": "Lakshmi Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP49",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Lakshmi Sharma",
+      "phone": "6239346528",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 71.01,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 71.01,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 108000.0,
+        "name": "Anjali Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 108000.0,
+        "name": "Anjali Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 108000.0,
+        "name": "Anjali Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 45,
+    "occupation": "factory supervisor",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 783
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "23413325444",
+    "ifsc": "SBIN0683886",
+    "requested_roi": 10.7
+  },
+  "flags": {
+    "negotiate_roi": true,
+    "override_address": true,
+    "wrong_email_otp_first": true,
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "negotiate_roi",
+    "override_address",
+    "wrong_email_otp_first",
+    "mobile_invalid_first"
+  ]
+}

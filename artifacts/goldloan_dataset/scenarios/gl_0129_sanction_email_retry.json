@@ -1,0 +1,94 @@
+{
+  "id": "gl_0129_sanction_email_retry",
+  "seed": 200129,
+  "start_epoch": 1790165336,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6310083935",
+    "name": "Aditya Iyer",
+    "email": "aditya.iyer6@example.com",
+    "aadhaar": "7728 8901 6054",
+    "pan": "XTMPI4765O",
+    "address": "Flat No- 855, Gandhi Nagar, Hyderabad, Telangana - 500050",
+    "pincode": "500050",
+    "dob": "03/01/1984",
+    "father": "Karthik Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP53",
+    "language": "English",
+    "nominee": {
+      "name": "Venkat Iyer",
+      "phone": "9747129521",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 83.14,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 83.14,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 76000.0,
+        "name": "Aditya Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 76500.0,
+        "name": "Aditya Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 76000.0,
+        "name": "Aditya Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 37,
+    "occupation": "logistics coordinator",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 773
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "06354206799",
+    "ifsc": "ICIC0015386"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "sanction_email_retry"
+  ]
+}

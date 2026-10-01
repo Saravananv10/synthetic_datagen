@@ -1,0 +1,89 @@
+{
+  "id": "gl_0037_pan_not_linked",
+  "seed": 200037,
+  "start_epoch": 1790127376,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6677021107",
+    "name": "Vivaan Kumar",
+    "email": "vivaan.kumar40@example.com",
+    "aadhaar": "4538 4444 5107",
+    "pan": "XZNPK4387H",
+    "address": "Flat No- 570, Lake View Road, Vijayawada, Andhra Pradesh - 520068",
+    "pincode": "520068",
+    "dob": "16/07/1972",
+    "father": "Mahesh Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP64",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Pooja Kumar",
+      "phone": "9274535576",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 120.65,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 120.65,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 145500.0,
+        "name": "Vivaan Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 146000.0,
+        "name": "Vivaan Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 145500.0,
+        "name": "Vivaan Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 38,
+    "occupation": "logistics coordinator",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 700
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "47160181552",
+    "ifsc": "ICIC0454320"
+  },
+  "flags": {
+    "pan_not_linked": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "pan_not_linked"
+  ]
+}

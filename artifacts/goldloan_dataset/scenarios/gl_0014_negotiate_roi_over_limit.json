@@ -1,0 +1,91 @@
+{
+  "id": "gl_0014_negotiate_roi_over_limit",
+  "seed": 200014,
+  "start_epoch": 1790112293,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7636937312",
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma72@example.com",
+    "aadhaar": "3533 5754 2784",
+    "pan": "KFMPS2994N",
+    "address": "Flat No- 557, MG Road, Kochi, Kerala - 682083",
+    "pincode": "682083",
+    "dob": "27/02/1966",
+    "father": "Sneha Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP70",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Ganesh Sharma",
+      "phone": "7231735314",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 85.74,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 85.74,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 103000.0,
+        "name": "Aarav Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 102000.0,
+        "name": "Aarav Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 103000.0,
+        "name": "Aarav Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 30,
+    "occupation": "school teacher",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 771
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "33664240687",
+    "ifsc": "HDFC0458912",
+    "requested_roi": 11.1
+  },
+  "flags": {
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "negotiate_roi_over_limit",
+    "negotiation_refused"
+  ]
+}

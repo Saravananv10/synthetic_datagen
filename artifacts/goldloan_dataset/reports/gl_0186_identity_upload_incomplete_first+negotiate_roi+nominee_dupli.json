@@ -1,0 +1,14 @@
+{
+  "scenario_id": "gl_0186_identity_upload_incomplete_first+negotiate_roi+nominee_dupli",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_IDENTITY",
+    "DUPLICATE_FOUND",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

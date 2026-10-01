@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0187_wrong_aadhaar_otp_first+email_invalid_first+identity_upload_",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_EMAIL",
+    "INGEST_IDENTITY",
+    "INGEST_IDENTITY",
+    "INVALID_OTP",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

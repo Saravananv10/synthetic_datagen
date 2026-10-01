@@ -1,0 +1,87 @@
+{
+  "id": "gl_0227_happy",
+  "seed": 200227,
+  "start_epoch": 1790150076,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6577977115",
+    "name": "Sai Nair",
+    "email": "sai.nair75@example.com",
+    "aadhaar": "7865 1408 0419",
+    "pan": "LHOPN4046N",
+    "address": "Flat No- 557, Lake View Road, Chennai, Tamil Nadu - 600010",
+    "pincode": "600010",
+    "dob": "09/01/1992",
+    "father": "Venkat Nair"
+  },
+  "profile": {
+    "appointment_id": "AP88",
+    "language": "English",
+    "nominee": {
+      "name": "Deepa Nair",
+      "phone": "9729521107",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 105.93,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 105.93,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 56500.0,
+        "name": "Sai Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 57000.0,
+        "name": "Sai Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 56000.0,
+        "name": "Sai Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 54,
+    "occupation": "school teacher",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 700
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "65340975337982",
+    "ifsc": "UBIN0136330"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0024_pan_not_linked",
+  "seed": 200024,
+  "start_epoch": 1790151284,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9720727616",
+    "name": "Ananya Pillai",
+    "email": "ananya.pillai72@example.com",
+    "aadhaar": "4431 1839 7437",
+    "pan": "SBVPP4939R",
+    "address": "Flat No- 587, Lake View Road, Bengaluru, Karnataka - 560079",
+    "pincode": "560079",
+    "dob": "11/07/1992",
+    "father": "Karthik Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP24",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Venkat Pillai",
+      "phone": "8374436536",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 126.25,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 126.25,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 130500.0,
+        "name": "Ananya Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 130500.0,
+        "name": "Ananya Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 130500.0,
+        "name": "Ananya Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 28,
+    "occupation": "software support engineer",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 701
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "617722437365",
+    "ifsc": "HDFC0338496"
+  },
+  "flags": {
+    "pan_not_linked": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "pan_not_linked"
+  ]
+}

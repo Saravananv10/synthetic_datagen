@@ -1,0 +1,87 @@
+{
+  "id": "gl_0166_cash_disbursement",
+  "seed": 200166,
+  "start_epoch": 1790115228,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7086598370",
+    "name": "Sneha Patel",
+    "email": "sneha.patel33@example.com",
+    "aadhaar": "2738 7373 2537",
+    "pan": "HJJPP3814Z",
+    "address": "Flat No- 513, MG Road, Hyderabad, Telangana - 500056",
+    "pincode": "500056",
+    "dob": "20/03/1987",
+    "father": "Suresh Patel"
+  },
+  "profile": {
+    "appointment_id": "AP67",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Ananya Patel",
+      "phone": "7156703448",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 138.72,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 138.72,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 40500.0,
+        "name": "Sneha Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 39500.0,
+        "name": "Sneha Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 40500.0,
+        "name": "Sneha Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 56,
+    "occupation": "accounts executive",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 710
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "cash_disbursement"
+  ]
+}

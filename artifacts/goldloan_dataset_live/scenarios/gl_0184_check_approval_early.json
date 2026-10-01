@@ -1,0 +1,96 @@
+{
+  "id": "gl_0184_check_approval_early",
+  "seed": 200184,
+  "start_epoch": 1790177248,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6699633755",
+    "name": "Lakshmi Rao",
+    "email": "lakshmi.rao15@example.com",
+    "aadhaar": "9565 2773 4543",
+    "pan": "EUHPR6633C",
+    "address": "Flat No- 765, Ashok Colony, Vijayawada, Andhra Pradesh - 520053",
+    "pincode": "520053",
+    "dob": "02/11/1994",
+    "father": "Aarav Rao"
+  },
+  "profile": {
+    "appointment_id": "AP92",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Ananya Rao",
+      "phone": "8736260222",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 120.21,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 120.21,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 67500.0,
+        "name": "Lakshmi Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 67000.0,
+        "name": "Lakshmi Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 66500.0,
+        "name": "Lakshmi Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 31,
+    "occupation": "logistics coordinator",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 761
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "05143084840",
+    "ifsc": "UBIN0344976"
+  },
+  "flags": {
+    "check_approval_early": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "check_approval_early"
+  ]
+}

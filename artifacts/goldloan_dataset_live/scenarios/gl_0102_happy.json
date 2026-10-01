@@ -1,0 +1,87 @@
+{
+  "id": "gl_0102_happy",
+  "seed": 200102,
+  "start_epoch": 1790143379,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7264711633",
+    "name": "Deepa Gupta",
+    "email": "deepa.gupta87@example.com",
+    "aadhaar": "8328 0705 1585",
+    "pan": "JRFPG6711Y",
+    "address": "Flat No- 838, Rajaji Street, Vijayawada, Andhra Pradesh - 520083",
+    "pincode": "520083",
+    "dob": "07/10/1996",
+    "father": "Deepa Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP95",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Arjun Gupta",
+      "phone": "7534653868",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 70.85,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 70.85,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 47500.0,
+        "name": "Deepa Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 47000.0,
+        "name": "Deepa Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 47000.0,
+        "name": "Deepa Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 25,
+    "occupation": "logistics coordinator",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 749
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "413102703345",
+    "ifsc": "ICIC0243783"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "happy"
+  ]
+}

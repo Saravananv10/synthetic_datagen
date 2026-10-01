@@ -1,0 +1,89 @@
+{
+  "id": "gl_0097_wrong_email_otp_first",
+  "seed": 200097,
+  "start_epoch": 1790116151,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9228791900",
+    "name": "Suresh Nair",
+    "email": "suresh.nair2@example.com",
+    "aadhaar": "6827 7040 2590",
+    "pan": "YLKPN0803C",
+    "address": "Flat No- 78, Lake View Road, Chennai, Tamil Nadu - 600046",
+    "pincode": "600046",
+    "dob": "21/05/1983",
+    "father": "Pooja Nair"
+  },
+  "profile": {
+    "appointment_id": "AP05",
+    "language": "English",
+    "nominee": {
+      "name": "Aditya Nair",
+      "phone": "6611057531",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 95.08,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 95.08,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 120500.0,
+        "name": "Suresh Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 121000.0,
+        "name": "Suresh Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 121000.0,
+        "name": "Suresh Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "staff nurse",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 790
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "376499794108",
+    "ifsc": "UBIN0171586"
+  },
+  "flags": {
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "wrong_email_otp_first"
+  ]
+}

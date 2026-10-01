@@ -1,0 +1,89 @@
+{
+  "id": "gl_0007_override_address",
+  "seed": 200007,
+  "start_epoch": 1790171619,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8326339384",
+    "name": "Lakshmi Gupta",
+    "email": "lakshmi.gupta71@example.com",
+    "aadhaar": "6942 0968 0073",
+    "pan": "CQRPG7842G",
+    "address": "Flat No- 568, Lake View Road, Pune, Maharashtra - 411093",
+    "pincode": "411093",
+    "dob": "10/12/1967",
+    "father": "Meena Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP43",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Rohan Gupta",
+      "phone": "6472815238",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 124.81,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 124.81,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 83000.0,
+        "name": "Lakshmi Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 83000.0,
+        "name": "Lakshmi Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 83500.0,
+        "name": "Lakshmi Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 51,
+    "occupation": "accounts executive",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 706
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "474840506326",
+    "ifsc": "UBIN0264120"
+  },
+  "flags": {
+    "override_address": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "override_address"
+  ]
+}

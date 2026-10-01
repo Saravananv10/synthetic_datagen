@@ -1,0 +1,75 @@
+{
+  "id": "gl_0197_self_employed",
+  "seed": 200197,
+  "start_epoch": 1790166700,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9148857362",
+    "name": "Sai Das",
+    "email": "sai.das1@example.com",
+    "aadhaar": "2239 8875 8342",
+    "pan": "LNEPD7945A",
+    "address": "Flat No- 341, Lake View Road, Kochi, Kerala - 682077",
+    "pincode": "682077",
+    "dob": "13/05/1980",
+    "father": "Priya Das"
+  },
+  "profile": {
+    "appointment_id": "AP01",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Deepa Das",
+      "phone": "7660716687",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 122.16,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 122.16,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "self_employed",
+    "employer": "Shree Ganesh Traders",
+    "payslips": []
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "small farmer",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 724
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "23067894249",
+    "ifsc": "ICIC0839532"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "self_employed"
+  ]
+}

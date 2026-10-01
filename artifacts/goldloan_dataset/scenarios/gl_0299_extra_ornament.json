@@ -1,0 +1,107 @@
+{
+  "id": "gl_0299_extra_ornament",
+  "seed": 200299,
+  "start_epoch": 1790144521,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9774406032",
+    "name": "Divya Rao",
+    "email": "divya.rao2@example.com",
+    "aadhaar": "8520 8876 6474",
+    "pan": "LHJPR5403I",
+    "address": "Flat No- 701, Green Park, Vijayawada, Andhra Pradesh - 520073",
+    "pincode": "520073",
+    "dob": "28/02/1996",
+    "father": "Divya Rao"
+  },
+  "profile": {
+    "appointment_id": "AP95",
+    "language": "English",
+    "nominee": {
+      "name": "Pooja Rao",
+      "phone": "9430845111",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 118.62,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 118.62,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 24.77,
+        "stone_deduction": 0.5,
+        "karat": 18,
+        "scale_reading": 24.77,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 20.74,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 20.74,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 109000.0,
+        "name": "Divya Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 108500.0,
+        "name": "Divya Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 109000.0,
+        "name": "Divya Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 27,
+    "occupation": "factory supervisor",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 820
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "147502852622",
+    "ifsc": "ICIC0983165"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "extra_ornament"
+  ]
+}

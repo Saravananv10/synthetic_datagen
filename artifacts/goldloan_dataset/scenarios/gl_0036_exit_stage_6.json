@@ -1,0 +1,89 @@
+{
+  "id": "gl_0036_exit_stage_6",
+  "seed": 200036,
+  "start_epoch": 1790161653,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9416010015",
+    "name": "Ganesh Nair",
+    "email": "ganesh.nair47@example.com",
+    "aadhaar": "2970 1471 6700",
+    "pan": "NBJPN6123I",
+    "address": "Flat No- 70, Lake View Road, Vijayawada, Andhra Pradesh - 520027",
+    "pincode": "520027",
+    "dob": "01/04/1975",
+    "father": "Ananya Nair"
+  },
+  "profile": {
+    "appointment_id": "AP11",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Karthik Nair",
+      "phone": "9973436509",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 80.94,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 80.94,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 74000.0,
+        "name": "Ganesh Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 74000.0,
+        "name": "Ganesh Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 74500.0,
+        "name": "Ganesh Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 55,
+    "occupation": "logistics coordinator",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 741
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "162425085987",
+    "ifsc": "SBIN0029522"
+  },
+  "flags": {
+    "exit_at_stage": 6
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "exit_stage_6"
+  ]
+}

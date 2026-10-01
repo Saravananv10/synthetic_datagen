@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0149_imps_disbursement+email_invalid_first+wrong_aadhaar_otp_firs",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_EMAIL",
+    "INGEST_IDENTITY",
+    "INVALID_OTP",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

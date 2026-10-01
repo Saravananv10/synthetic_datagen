@@ -1,0 +1,89 @@
+{
+  "id": "gl_0035_exit_stage_5",
+  "seed": 200035,
+  "start_epoch": 1790103211,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9397223781",
+    "name": "Deepa Patel",
+    "email": "deepa.patel48@example.com",
+    "aadhaar": "3139 4784 1798",
+    "pan": "LHKPP1038N",
+    "address": "Flat No- 810, Temple Street, Hyderabad, Telangana - 500028",
+    "pincode": "500028",
+    "dob": "16/11/1992",
+    "father": "Arjun Patel"
+  },
+  "profile": {
+    "appointment_id": "AP97",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Vivaan Patel",
+      "phone": "7852102754",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 66.28,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 66.28,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 127000.0,
+        "name": "Deepa Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 127000.0,
+        "name": "Deepa Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 127000.0,
+        "name": "Deepa Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 42,
+    "occupation": "software support engineer",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 809
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "89036752684",
+    "ifsc": "SBIN0255002"
+  },
+  "flags": {
+    "exit_at_stage": 5
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "exit_stage_5"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "gl_0203_nominee_duplicate_first",
+  "seed": 200203,
+  "start_epoch": 1790179425,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8044882934",
+    "name": "Ramesh Singh",
+    "email": "ramesh.singh63@example.com",
+    "aadhaar": "8694 8441 3212",
+    "pan": "MSFPS7949R",
+    "address": "Flat No- 337, Gandhi Nagar, Vijayawada, Andhra Pradesh - 520098",
+    "pincode": "520098",
+    "dob": "22/10/2000",
+    "father": "Aarav Singh"
+  },
+  "profile": {
+    "appointment_id": "AP15",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Vivaan Singh",
+      "phone": "6431791319",
+      "relation": "sibling"
+    },
+    "nominee_alt": {
+      "name": "Naveen Singh",
+      "phone": "8979402854",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 94.42,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 94.42,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 111500.0,
+        "name": "Ramesh Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 111500.0,
+        "name": "Ramesh Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 112500.0,
+        "name": "Ramesh Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 42,
+    "occupation": "school teacher",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 749
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "330537452483",
+    "ifsc": "UBIN0480757"
+  },
+  "flags": {
+    "nominee_duplicate_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "nominee_duplicate_first"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "gl_0006_identity_upload_incomplete_first",
+  "seed": 200006,
+  "start_epoch": 1790172703,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7563022226",
+    "name": "Ganesh Nair",
+    "email": "ganesh.nair20@example.com",
+    "aadhaar": "3467 0160 1036",
+    "pan": "TRWPN1189X",
+    "address": "Flat No- 2, Ashok Colony, Vijayawada, Andhra Pradesh - 520035",
+    "pincode": "520035",
+    "dob": "26/07/1985",
+    "father": "Arjun Nair"
+  },
+  "profile": {
+    "appointment_id": "AP23",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Suresh Nair",
+      "phone": "9671530516",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 72.54,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 72.54,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 37000.0,
+        "name": "Ganesh Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 37000.0,
+        "name": "Ganesh Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 37000.0,
+        "name": "Ganesh Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 60,
+    "occupation": "software support engineer",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 803
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "38449677646264",
+    "ifsc": "UBIN0869581"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "gl_0286_low_cibil",
+  "seed": 200286,
+  "start_epoch": 1790155608,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6770872770",
+    "name": "Karthik Joshi",
+    "email": "karthik.joshi87@example.com",
+    "aadhaar": "4696 4895 4648",
+    "pan": "YVIPJ1786G",
+    "address": "Flat No- 741, Ashok Colony, Chennai, Tamil Nadu - 600057",
+    "pincode": "600057",
+    "dob": "04/09/1996",
+    "father": "Naveen Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP33",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Harish Joshi",
+      "phone": "9076273008",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 75.63,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 75.63,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 109500.0,
+        "name": "Karthik Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 110000.0,
+        "name": "Karthik Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 110000.0,
+        "name": "Karthik Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 48,
+    "occupation": "factory supervisor",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 573
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "515769032237",
+    "ifsc": "ICIC0530062"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "low_cibil"
+  ]
+}

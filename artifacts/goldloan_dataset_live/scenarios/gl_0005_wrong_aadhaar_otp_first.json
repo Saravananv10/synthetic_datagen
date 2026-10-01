@@ -1,0 +1,89 @@
+{
+  "id": "gl_0005_wrong_aadhaar_otp_first",
+  "seed": 200005,
+  "start_epoch": 1790172500,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6052180276",
+    "name": "Rohan Gupta",
+    "email": "rohan.gupta87@example.com",
+    "aadhaar": "7744 1210 1252",
+    "pan": "GBWPG5702H",
+    "address": "Flat No- 308, Green Park, Bengaluru, Karnataka - 560060",
+    "pincode": "560060",
+    "dob": "19/11/1999",
+    "father": "Arjun Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP12",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Aarav Gupta",
+      "phone": "8141518925",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 86.78,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 86.78,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 136500.0,
+        "name": "Rohan Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 136500.0,
+        "name": "Rohan Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 136500.0,
+        "name": "Rohan Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 51,
+    "occupation": "logistics coordinator",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 792
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "51263605678",
+    "ifsc": "ICIC0281026"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "wrong_aadhaar_otp_first"
+  ]
+}

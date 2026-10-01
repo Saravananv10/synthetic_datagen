@@ -1,0 +1,116 @@
+{
+  "id": "gl_0218_extra_ornament+nominee_duplicate_first+cash_disbursement",
+  "seed": 200218,
+  "start_epoch": 1790128696,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8539635935",
+    "name": "Sneha Gupta",
+    "email": "sneha.gupta11@example.com",
+    "aadhaar": "2483 7055 2871",
+    "pan": "BUYPG5711W",
+    "address": "Flat No- 710, Lake View Road, Pune, Maharashtra - 411046",
+    "pincode": "411046",
+    "dob": "22/06/1984",
+    "father": "Vivaan Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP05",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Ganesh Gupta",
+      "phone": "8243222027",
+      "relation": "spouse"
+    },
+    "nominee_alt": {
+      "name": "Lakshmi Gupta",
+      "phone": "9985366344",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 90.56,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 90.56,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 12.24,
+        "stone_deduction": 0.5,
+        "karat": 22,
+        "scale_reading": 12.24,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 37.34,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 37.34,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 79500.0,
+        "name": "Sneha Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 80000.0,
+        "name": "Sneha Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 79000.0,
+        "name": "Sneha Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 50,
+    "occupation": "school teacher",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 795
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {
+    "nominee_duplicate_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "extra_ornament",
+    "nominee_duplicate_first",
+    "cash_disbursement"
+  ]
+}

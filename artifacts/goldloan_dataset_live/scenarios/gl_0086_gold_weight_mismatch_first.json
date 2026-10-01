@@ -1,0 +1,89 @@
+{
+  "id": "gl_0086_gold_weight_mismatch_first",
+  "seed": 200086,
+  "start_epoch": 1790111670,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9218370690",
+    "name": "Venkat Nair",
+    "email": "venkat.nair4@example.com",
+    "aadhaar": "8126 5643 2730",
+    "pan": "PXPPN3182E",
+    "address": "Flat No- 481, Ashok Colony, Bengaluru, Karnataka - 560012",
+    "pincode": "560012",
+    "dob": "08/03/1978",
+    "father": "Anjali Nair"
+  },
+  "profile": {
+    "appointment_id": "AP61",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Divya Nair",
+      "phone": "6586014844",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 95.08,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 95.08,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 132500.0,
+        "name": "Venkat Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 132500.0,
+        "name": "Venkat Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 132500.0,
+        "name": "Venkat Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 42,
+    "occupation": "software support engineer",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 716
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "64638069367",
+    "ifsc": "ICIC0246161"
+  },
+  "flags": {
+    "gold_weight_mismatch_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "gold_weight_mismatch_first"
+  ]
+}

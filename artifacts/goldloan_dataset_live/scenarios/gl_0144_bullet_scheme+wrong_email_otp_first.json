@@ -1,0 +1,97 @@
+{
+  "id": "gl_0144_bullet_scheme+wrong_email_otp_first",
+  "seed": 200144,
+  "start_epoch": 1790131587,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8635245575",
+    "name": "Sneha Nair",
+    "email": "sneha.nair41@example.com",
+    "aadhaar": "3872 7689 3997",
+    "pan": "VCXPN9338F",
+    "address": "Flat No- 680, Green Park, Vijayawada, Andhra Pradesh - 520098",
+    "pincode": "520098",
+    "dob": "07/03/1993",
+    "father": "Rohan Nair"
+  },
+  "profile": {
+    "appointment_id": "AP76",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Divya Nair",
+      "phone": "6595944018",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 110.33,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 110.33,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 125500.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 126000.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 126000.0,
+        "name": "Sneha Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "staff nurse",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 797
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "96764032160",
+    "ifsc": "ICIC0228522"
+  },
+  "flags": {
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "bullet_scheme",
+    "wrong_email_otp_first"
+  ]
+}

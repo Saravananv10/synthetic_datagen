@@ -1,0 +1,104 @@
+{
+  "id": "gl_0295_extra_ornament+email_invalid_first+override_address+wrong_em",
+  "seed": 200295,
+  "start_epoch": 1790118131,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7827368826",
+    "name": "Sneha Iyer",
+    "email": "sneha.iyer61@example.com",
+    "aadhaar": "2871 1828 4273",
+    "pan": "WAEPI0741M",
+    "address": "Flat No- 96, Green Park, Hyderabad, Telangana - 500044",
+    "pincode": "500044",
+    "dob": "26/10/1991",
+    "father": "Rohan Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP95",
+    "language": "English",
+    "nominee": {
+      "name": "Arjun Iyer",
+      "phone": "8525838749",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 78.76,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 78.76,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 48.93,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 48.93,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 144500.0,
+        "name": "Sneha Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 143500.0,
+        "name": "Sneha Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 144000.0,
+        "name": "Sneha Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 35,
+    "occupation": "accounts executive",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 706
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "48866125991",
+    "ifsc": "ICIC0642493"
+  },
+  "flags": {
+    "email_invalid_first": true,
+    "override_address": true,
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "extra_ornament",
+    "email_invalid_first",
+    "override_address",
+    "wrong_email_otp_first"
+  ]
+}

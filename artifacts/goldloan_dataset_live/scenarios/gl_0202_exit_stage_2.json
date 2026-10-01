@@ -1,0 +1,89 @@
+{
+  "id": "gl_0202_exit_stage_2",
+  "seed": 200202,
+  "start_epoch": 1790154961,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6132330658",
+    "name": "Harish Naidu",
+    "email": "harish.naidu6@example.com",
+    "aadhaar": "5127 8081 5833",
+    "pan": "UXDPN5822C",
+    "address": "Flat No- 139, MG Road, Vijayawada, Andhra Pradesh - 520045",
+    "pincode": "520045",
+    "dob": "20/10/1974",
+    "father": "Aditya Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP41",
+    "language": "English",
+    "nominee": {
+      "name": "Meena Naidu",
+      "phone": "9101766400",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 101.13,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 101.13,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 89000.0,
+        "name": "Harish Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 89500.0,
+        "name": "Harish Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 88500.0,
+        "name": "Harish Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 42,
+    "occupation": "accounts executive",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 805
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "22996341818523",
+    "ifsc": "ICIC0078475"
+  },
+  "flags": {
+    "exit_at_stage": 2
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "exit_stage_2"
+  ]
+}

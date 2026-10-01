@@ -1,0 +1,87 @@
+{
+  "id": "gl_0260_happy",
+  "seed": 200260,
+  "start_epoch": 1790148274,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6758895394",
+    "name": "Lakshmi Nair",
+    "email": "lakshmi.nair6@example.com",
+    "aadhaar": "8458 5773 7545",
+    "pan": "QQNPN6438X",
+    "address": "Flat No- 874, Rajaji Street, Hyderabad, Telangana - 500098",
+    "pincode": "500098",
+    "dob": "28/10/1999",
+    "father": "Deepa Nair"
+  },
+  "profile": {
+    "appointment_id": "AP04",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Aditya Nair",
+      "phone": "9624834089",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 79.36,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 79.36,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 127500.0,
+        "name": "Lakshmi Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 127500.0,
+        "name": "Lakshmi Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 128000.0,
+        "name": "Lakshmi Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 60,
+    "occupation": "accounts executive",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 809
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "83724087939",
+    "ifsc": "UBIN0232446"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "happy"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "gl_0053_payslips_bad_first+negotiate_roi_over_limit",
+  "seed": 200053,
+  "start_epoch": 1790166523,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6108869070",
+    "name": "Arjun Gupta",
+    "email": "arjun.gupta57@example.com",
+    "aadhaar": "5480 1429 4227",
+    "pan": "MIUPG3928W",
+    "address": "Flat No- 649, Ashok Colony, Chennai, Tamil Nadu - 600086",
+    "pincode": "600086",
+    "dob": "27/04/1979",
+    "father": "Rohan Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP50",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Naveen Gupta",
+      "phone": "8821020976",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 64.14,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 64.14,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 143500.0,
+        "name": "Arjun Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 143000.0,
+        "name": "Arjun Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 143000.0,
+        "name": "Arjun Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 58,
+    "occupation": "software support engineer",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 817
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "61369742000030",
+    "ifsc": "UBIN0866781",
+    "requested_roi": 10.6
+  },
+  "flags": {
+    "payslips_bad_first": true,
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "payslips_bad_first",
+    "negotiate_roi_over_limit",
+    "negotiation_refused"
+  ]
+}

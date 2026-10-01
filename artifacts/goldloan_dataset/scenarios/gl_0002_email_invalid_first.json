@@ -1,0 +1,89 @@
+{
+  "id": "gl_0002_email_invalid_first",
+  "seed": 200002,
+  "start_epoch": 1790130586,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7106184930",
+    "name": "Arjun Reddy",
+    "email": "arjun.reddy68@example.com",
+    "aadhaar": "8622 6275 0928",
+    "pan": "NUAPR5801W",
+    "address": "Flat No- 838, Rajaji Street, Hyderabad, Telangana - 500044",
+    "pincode": "500044",
+    "dob": "14/10/1993",
+    "father": "Rohan Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP64",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Aarav Reddy",
+      "phone": "8240039361",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 99.54,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 99.54,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 129000.0,
+        "name": "Arjun Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 129000.0,
+        "name": "Arjun Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 128500.0,
+        "name": "Arjun Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 31,
+    "occupation": "accounts executive",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 718
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "226947773664",
+    "ifsc": "HDFC0506906"
+  },
+  "flags": {
+    "email_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "email_invalid_first"
+  ]
+}

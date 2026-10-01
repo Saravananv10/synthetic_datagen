@@ -1,0 +1,8 @@
+{
+  "scenario_id": "gl_0169_exit_stage_1",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_OTP"
+  ]
+}

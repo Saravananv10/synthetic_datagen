@@ -1,0 +1,16 @@
+{
+  "scenario_id": "gl_0201_wrong_mobile_otp_first+gold_weight_mismatch_first+email_inva",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_OTP",
+    "INVALID_EMAIL",
+    "INGEST_IDENTITY",
+    "INVALID_APPOINTMENT",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

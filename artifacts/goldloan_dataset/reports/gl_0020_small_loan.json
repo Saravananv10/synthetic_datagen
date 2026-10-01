@@ -1,0 +1,10 @@
+{
+  "scenario_id": "gl_0020_small_loan",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "BUREAU_REQUIRED"
+  ]
+}

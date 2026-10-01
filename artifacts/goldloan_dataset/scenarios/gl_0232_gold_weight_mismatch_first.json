@@ -1,0 +1,89 @@
+{
+  "id": "gl_0232_gold_weight_mismatch_first",
+  "seed": 200232,
+  "start_epoch": 1790157116,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7421497975",
+    "name": "Pooja Nair",
+    "email": "pooja.nair3@example.com",
+    "aadhaar": "3033 0370 2978",
+    "pan": "DMIPN7303R",
+    "address": "Flat No- 550, Ashok Colony, Vijayawada, Andhra Pradesh - 520097",
+    "pincode": "520097",
+    "dob": "12/08/1991",
+    "father": "Suresh Nair"
+  },
+  "profile": {
+    "appointment_id": "AP44",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Naveen Nair",
+      "phone": "7426913706",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 136.68,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 136.68,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 86500.0,
+        "name": "Pooja Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 86000.0,
+        "name": "Pooja Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 86500.0,
+        "name": "Pooja Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 48,
+    "occupation": "staff nurse",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 729
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "53284608810",
+    "ifsc": "SBIN0834663"
+  },
+  "flags": {
+    "gold_weight_mismatch_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "gold_weight_mismatch_first"
+  ]
+}

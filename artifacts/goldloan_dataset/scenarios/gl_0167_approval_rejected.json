@@ -1,0 +1,89 @@
+{
+  "id": "gl_0167_approval_rejected",
+  "seed": 200167,
+  "start_epoch": 1790124943,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8119616366",
+    "name": "Priya Reddy",
+    "email": "priya.reddy7@example.com",
+    "aadhaar": "2532 1965 7710",
+    "pan": "TFCPR8646E",
+    "address": "Flat No- 83, Lake View Road, Hyderabad, Telangana - 500076",
+    "pincode": "500076",
+    "dob": "05/08/1982",
+    "father": "Lakshmi Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP88",
+    "language": "English",
+    "nominee": {
+      "name": "Vivaan Reddy",
+      "phone": "6566468966",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 84.14,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 84.14,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 97000.0,
+        "name": "Priya Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 97000.0,
+        "name": "Priya Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 97500.0,
+        "name": "Priya Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 29,
+    "occupation": "accounts executive",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 704
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "01138360742",
+    "ifsc": "SBIN0635497"
+  },
+  "flags": {
+    "approval_rejected": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "approval_rejected"
+  ]
+}

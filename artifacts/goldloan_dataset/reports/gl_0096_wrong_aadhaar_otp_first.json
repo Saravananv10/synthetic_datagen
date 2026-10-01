@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0096_wrong_aadhaar_otp_first",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INVALID_OTP",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

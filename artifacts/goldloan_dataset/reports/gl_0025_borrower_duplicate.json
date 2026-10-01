@@ -1,0 +1,9 @@
+{
+  "scenario_id": "gl_0025_borrower_duplicate",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "DUPLICATE_FOUND"
+  ]
+}

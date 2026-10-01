@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0158_wrong_aadhaar_otp_first+payslips_bad_first+mobile_invalid_fi",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_MOBILE",
+    "INGEST_IDENTITY",
+    "INVALID_OTP",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

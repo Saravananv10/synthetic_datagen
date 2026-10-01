@@ -1,0 +1,113 @@
+{
+  "traces": [
+    {
+      "id": "golden_demo",
+      "mode": "scripted",
+      "status": "completed",
+      "outcome": "completed",
+      "turns": 36,
+      "stages_reached": 6,
+      "ok": true,
+      "error_codes": [],
+      "warn_codes": [],
+      "n_errors": 0,
+      "n_warns": 0,
+      "models": {
+        "agent": "scripted-oracle",
+        "human": "scripted-policy",
+        "vision": "deterministic"
+      },
+      "customer_name": "Venu Gopal Reddy",
+      "persona": null,
+      "tags": [],
+      "loan_amount": 399185.46
+    },
+    {
+      "id": "gl_0000_happy",
+      "mode": "llm",
+      "status": "completed",
+      "outcome": "exited",
+      "turns": 28,
+      "stages_reached": 5,
+      "ok": false,
+      "error_codes": [
+        "BUTTON_NOT_ALLOWED",
+        "HUMAN_SKIPPED_UPLOAD",
+        "OUTCOME_MISMATCH"
+      ],
+      "warn_codes": [
+        "REPAIRED_REPLY"
+      ],
+      "n_errors": 3,
+      "n_warns": 1,
+      "models": {
+        "agent": "soket/gpt",
+        "human": "soket/gpt",
+        "vision": "soket/gpt"
+      },
+      "customer_name": "Rahul Mishra",
+      "persona": "Support Engineer",
+      "tags": [
+        "happy",
+        "llm_persona"
+      ],
+      "loan_amount": 0.0
+    },
+    {
+      "id": "gl_0011_extra_ornament",
+      "mode": "llm",
+      "status": "completed",
+      "outcome": "completed",
+      "turns": 32,
+      "stages_reached": 6,
+      "ok": true,
+      "error_codes": [],
+      "warn_codes": [
+        "REPAIRED_REPLY"
+      ],
+      "n_errors": 0,
+      "n_warns": 1,
+      "models": {
+        "agent": "soket/gpt",
+        "human": "soket/gpt",
+        "vision": "soket/gpt"
+      },
+      "customer_name": "Arvind Kumar",
+      "persona": "Logistics Coordinator",
+      "tags": [
+        "extra_ornament",
+        "llm_persona"
+      ],
+      "loan_amount": 351600.0
+    },
+    {
+      "id": "gl_0016_ocr_noise_first",
+      "mode": "llm",
+      "status": "completed",
+      "outcome": "completed",
+      "turns": 36,
+      "stages_reached": 6,
+      "ok": false,
+      "error_codes": [
+        "BUTTON_NOT_ALLOWED"
+      ],
+      "warn_codes": [
+        "REPAIRED_REPLY"
+      ],
+      "n_errors": 1,
+      "n_warns": 1,
+      "models": {
+        "agent": "soket/gpt",
+        "human": "soket/gpt",
+        "vision": "soket/gpt"
+      },
+      "customer_name": "Sarath Menon",
+      "persona": "Factory Supervisor",
+      "tags": [
+        "llm_persona",
+        "ocr_noise_first"
+      ],
+      "loan_amount": 531613.64
+    }
+  ]
+}

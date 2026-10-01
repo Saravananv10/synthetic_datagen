@@ -1,0 +1,87 @@
+{
+  "id": "gl_0229_happy",
+  "seed": 200229,
+  "start_epoch": 1790100517,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9270749089",
+    "name": "Sneha Menon",
+    "email": "sneha.menon6@example.com",
+    "aadhaar": "5472 5486 5788",
+    "pan": "EAZPM2140F",
+    "address": "Flat No- 239, Lake View Road, Kochi, Kerala - 682022",
+    "pincode": "682022",
+    "dob": "11/11/1985",
+    "father": "Mahesh Menon"
+  },
+  "profile": {
+    "appointment_id": "AP87",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Ananya Menon",
+      "phone": "8279579089",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 84.45,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 84.45,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 149000.0,
+        "name": "Sneha Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 149500.0,
+        "name": "Sneha Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 149000.0,
+        "name": "Sneha Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 25,
+    "occupation": "staff nurse",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 746
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "76739475577955",
+    "ifsc": "ICIC0341276"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "happy"
+  ]
+}

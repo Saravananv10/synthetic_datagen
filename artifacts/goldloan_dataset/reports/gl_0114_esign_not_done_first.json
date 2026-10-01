@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0114_esign_not_done_first",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "ESIGN_PENDING"
+  ]
+}

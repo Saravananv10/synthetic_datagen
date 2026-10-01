@@ -1,0 +1,89 @@
+{
+  "id": "gl_0004_wrong_email_otp_first",
+  "seed": 200004,
+  "start_epoch": 1790121185,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6675239279",
+    "name": "Anjali Reddy",
+    "email": "anjali.reddy1@example.com",
+    "aadhaar": "4330 9173 2469",
+    "pan": "SGHPR9525J",
+    "address": "Flat No- 857, Gandhi Nagar, Pune, Maharashtra - 411082",
+    "pincode": "411082",
+    "dob": "01/06/1972",
+    "father": "Mahesh Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP05",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Suresh Reddy",
+      "phone": "8523893397",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 104.59,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 104.59,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 63000.0,
+        "name": "Anjali Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 63500.0,
+        "name": "Anjali Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 63500.0,
+        "name": "Anjali Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 49,
+    "occupation": "school teacher",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 748
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "72271427818",
+    "ifsc": "ICIC0408831"
+  },
+  "flags": {
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_email_otp_first"
+  ]
+}

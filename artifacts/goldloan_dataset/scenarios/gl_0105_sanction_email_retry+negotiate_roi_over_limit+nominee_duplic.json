@@ -1,0 +1,106 @@
+{
+  "id": "gl_0105_sanction_email_retry+negotiate_roi_over_limit+nominee_duplic",
+  "seed": 200105,
+  "start_epoch": 1790142313,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9914050951",
+    "name": "Lakshmi Pillai",
+    "email": "lakshmi.pillai88@example.com",
+    "aadhaar": "9406 2323 7106",
+    "pan": "WEOPP5615M",
+    "address": "Flat No- 535, Gandhi Nagar, Kochi, Kerala - 682072",
+    "pincode": "682072",
+    "dob": "08/02/1972",
+    "father": "Venkat Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP55",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Mahesh Pillai",
+      "phone": "7049230629",
+      "relation": "sibling"
+    },
+    "nominee_alt": {
+      "name": "Rohan Pillai",
+      "phone": "6278201373",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 135.14,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 135.14,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 60000.0,
+        "name": "Lakshmi Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 59500.0,
+        "name": "Lakshmi Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 60000.0,
+        "name": "Lakshmi Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 37,
+    "occupation": "staff nurse",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 738
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "44930828193455",
+    "ifsc": "HDFC0811147",
+    "requested_roi": 11.1
+  },
+  "flags": {
+    "negotiate_roi": true,
+    "nominee_duplicate_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "sanction_email_retry",
+    "negotiate_roi_over_limit",
+    "negotiation_refused",
+    "nominee_duplicate_first"
+  ]
+}

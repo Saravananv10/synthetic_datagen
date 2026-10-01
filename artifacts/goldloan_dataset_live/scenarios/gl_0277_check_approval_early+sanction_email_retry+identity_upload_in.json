@@ -1,0 +1,101 @@
+{
+  "id": "gl_0277_check_approval_early+sanction_email_retry+identity_upload_in",
+  "seed": 200277,
+  "start_epoch": 1790120929,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7154480263",
+    "name": "Sneha Joshi",
+    "email": "sneha.joshi8@example.com",
+    "aadhaar": "5248 6143 4672",
+    "pan": "JWDPJ6445T",
+    "address": "Flat No- 124, Temple Street, Chennai, Tamil Nadu - 600094",
+    "pincode": "600094",
+    "dob": "07/02/1986",
+    "father": "Divya Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP81",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Deepa Joshi",
+      "phone": "8776652990",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 130.53,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 130.53,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 83500.0,
+        "name": "Sneha Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 83500.0,
+        "name": "Sneha Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 82500.0,
+        "name": "Sneha Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 34,
+    "occupation": "staff nurse",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 816
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "327333883910",
+    "ifsc": "SBIN0265115"
+  },
+  "flags": {
+    "check_approval_early": true,
+    "identity_upload_incomplete_first": true,
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "check_approval_early",
+    "sanction_email_retry",
+    "identity_upload_incomplete_first",
+    "wrong_email_otp_first"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "gl_0104_small_loan",
+  "seed": 200104,
+  "start_epoch": 1790101298,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9931824396",
+    "name": "Suresh Kumar",
+    "email": "suresh.kumar36@example.com",
+    "aadhaar": "3924 4116 2126",
+    "pan": "TZCPK5901H",
+    "address": "Flat No- 518, Temple Street, Kochi, Kerala - 682055",
+    "pincode": "682055",
+    "dob": "12/03/1999",
+    "father": "Sneha Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP47",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Anjali Kumar",
+      "phone": "8726476933",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 28.56,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 28.56,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 109500.0,
+        "name": "Suresh Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 109000.0,
+        "name": "Suresh Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 110000.0,
+        "name": "Suresh Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 44,
+    "occupation": "school teacher",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 712
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "313376245407",
+    "ifsc": "SBIN0003298"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "small_loan"
+  ]
+}

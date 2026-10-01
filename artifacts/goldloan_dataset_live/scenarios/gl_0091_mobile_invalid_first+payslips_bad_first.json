@@ -1,0 +1,91 @@
+{
+  "id": "gl_0091_mobile_invalid_first+payslips_bad_first",
+  "seed": 200091,
+  "start_epoch": 1790161580,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8098557010",
+    "name": "Ramesh Gupta",
+    "email": "ramesh.gupta52@example.com",
+    "aadhaar": "6670 8046 9586",
+    "pan": "KZPPG9692V",
+    "address": "Flat No- 54, Ashok Colony, Bengaluru, Karnataka - 560063",
+    "pincode": "560063",
+    "dob": "03/02/1996",
+    "father": "Anjali Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP82",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Karthik Gupta",
+      "phone": "9745603011",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 96.44,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 96.44,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 95000.0,
+        "name": "Ramesh Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 95000.0,
+        "name": "Ramesh Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 95500.0,
+        "name": "Ramesh Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 46,
+    "occupation": "accounts executive",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 743
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "008770154737",
+    "ifsc": "HDFC0575444"
+  },
+  "flags": {
+    "mobile_invalid_first": true,
+    "payslips_bad_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "mobile_invalid_first",
+    "payslips_bad_first"
+  ]
+}

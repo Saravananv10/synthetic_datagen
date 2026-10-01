@@ -1,0 +1,90 @@
+{
+  "id": "gl_0278_imps_disbursement+override_address",
+  "seed": 200278,
+  "start_epoch": 1790106943,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6247567682",
+    "name": "Sneha Naidu",
+    "email": "sneha.naidu97@example.com",
+    "aadhaar": "5088 0574 8927",
+    "pan": "UUAPN9571I",
+    "address": "Flat No- 432, Lake View Road, Chennai, Tamil Nadu - 600057",
+    "pincode": "600057",
+    "dob": "11/06/1970",
+    "father": "Mahesh Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP28",
+    "language": "English",
+    "nominee": {
+      "name": "Venkat Naidu",
+      "phone": "7296992313",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 93.89,
+        "stone_deduction": 0.9,
+        "karat": 18,
+        "scale_reading": 93.89,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 71000.0,
+        "name": "Sneha Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 71000.0,
+        "name": "Sneha Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 71000.0,
+        "name": "Sneha Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 34,
+    "occupation": "accounts executive",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 702
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "IMPS",
+    "account_number": "59158682016",
+    "ifsc": "UBIN0803580"
+  },
+  "flags": {
+    "override_address": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "imps_disbursement",
+    "override_address"
+  ]
+}

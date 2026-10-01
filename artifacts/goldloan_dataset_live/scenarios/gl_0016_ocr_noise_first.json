@@ -1,0 +1,89 @@
+{
+  "id": "gl_0016_ocr_noise_first",
+  "seed": 200016,
+  "start_epoch": 1790112360,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6615040392",
+    "name": "Aarav Rao",
+    "email": "aarav.rao46@example.com",
+    "aadhaar": "7214 9112 9304",
+    "pan": "YNDPR3659W",
+    "address": "Flat No- 606, Ashok Colony, Kochi, Kerala - 682003",
+    "pincode": "682003",
+    "dob": "23/01/1989",
+    "father": "Ananya Rao"
+  },
+  "profile": {
+    "appointment_id": "AP12",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Kavya Rao",
+      "phone": "9597774299",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 81.48,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 81.48,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 110500.0,
+        "name": "Aarav Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 110500.0,
+        "name": "Aarav Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 110000.0,
+        "name": "Aarav Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 61,
+    "occupation": "factory supervisor",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 783
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "90364529975",
+    "ifsc": "SBIN0443115"
+  },
+  "flags": {
+    "ocr_noise_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "ocr_noise_first"
+  ]
+}

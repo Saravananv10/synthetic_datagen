@@ -1,0 +1,87 @@
+{
+  "id": "gl_0282_happy",
+  "seed": 200282,
+  "start_epoch": 1790168064,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7436095877",
+    "name": "Lakshmi Joshi",
+    "email": "lakshmi.joshi22@example.com",
+    "aadhaar": "2989 0800 5757",
+    "pan": "CEDPJ4203N",
+    "address": "Flat No- 826, Green Park, Hyderabad, Telangana - 500069",
+    "pincode": "500069",
+    "dob": "14/07/1981",
+    "father": "Kavya Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP68",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Venkat Joshi",
+      "phone": "9864607814",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 131.2,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 131.2,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 29000.0,
+        "name": "Lakshmi Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 29500.0,
+        "name": "Lakshmi Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 29000.0,
+        "name": "Lakshmi Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 45,
+    "occupation": "logistics coordinator",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 755
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "576219139805",
+    "ifsc": "HDFC0658377"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

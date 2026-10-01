@@ -1,0 +1,87 @@
+{
+  "id": "gl_0065_imps_disbursement",
+  "seed": 200065,
+  "start_epoch": 1790131990,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8675697609",
+    "name": "Rohan Iyer",
+    "email": "rohan.iyer89@example.com",
+    "aadhaar": "6949 7801 3575",
+    "pan": "RGYPI4747P",
+    "address": "Flat No- 718, Gandhi Nagar, Hyderabad, Telangana - 500024",
+    "pincode": "500024",
+    "dob": "21/06/1978",
+    "father": "Aarav Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP37",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Karthik Iyer",
+      "phone": "8867384031",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 94.2,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 94.2,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 142000.0,
+        "name": "Rohan Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 142500.0,
+        "name": "Rohan Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 142500.0,
+        "name": "Rohan Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 52,
+    "occupation": "logistics coordinator",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 742
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "IMPS",
+    "account_number": "333262366282",
+    "ifsc": "ICIC0950767"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "imps_disbursement"
+  ]
+}

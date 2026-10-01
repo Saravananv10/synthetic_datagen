@@ -1,0 +1,92 @@
+{
+  "id": "gl_0289_override_address+negotiate_roi",
+  "seed": 200289,
+  "start_epoch": 1790142430,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6726094310",
+    "name": "Priya Nair",
+    "email": "priya.nair52@example.com",
+    "aadhaar": "2360 3203 0070",
+    "pan": "GXNPN3053M",
+    "address": "Flat No- 165, Rajaji Street, Pune, Maharashtra - 411018",
+    "pincode": "411018",
+    "dob": "09/10/1989",
+    "father": "Arjun Nair"
+  },
+  "profile": {
+    "appointment_id": "AP55",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Priya Nair",
+      "phone": "9668059971",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 131.16,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 131.16,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 44000.0,
+        "name": "Priya Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 44000.0,
+        "name": "Priya Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 43500.0,
+        "name": "Priya Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 26,
+    "occupation": "accounts executive",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 810
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "21144285240",
+    "ifsc": "ICIC0776572",
+    "requested_roi": 11.7
+  },
+  "flags": {
+    "override_address": true,
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "override_address",
+    "negotiate_roi"
+  ]
+}

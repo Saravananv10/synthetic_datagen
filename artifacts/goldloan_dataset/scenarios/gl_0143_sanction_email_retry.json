@@ -1,0 +1,94 @@
+{
+  "id": "gl_0143_sanction_email_retry",
+  "seed": 200143,
+  "start_epoch": 1790101879,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7643504045",
+    "name": "Venkat Menon",
+    "email": "venkat.menon91@example.com",
+    "aadhaar": "9481 3896 4872",
+    "pan": "VSZPM4127E",
+    "address": "Flat No- 588, MG Road, Kochi, Kerala - 682056",
+    "pincode": "682056",
+    "dob": "17/03/1991",
+    "father": "Suresh Menon"
+  },
+  "profile": {
+    "appointment_id": "AP44",
+    "language": "English",
+    "nominee": {
+      "name": "Meena Menon",
+      "phone": "6922523022",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 89.43,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 89.43,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 47500.0,
+        "name": "Venkat Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 48000.0,
+        "name": "Venkat Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 47500.0,
+        "name": "Venkat Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 55,
+    "occupation": "accounts executive",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 734
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "90552809305",
+    "ifsc": "UBIN0181303"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "sanction_email_retry"
+  ]
+}

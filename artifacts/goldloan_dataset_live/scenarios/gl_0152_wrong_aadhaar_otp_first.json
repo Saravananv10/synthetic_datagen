@@ -1,0 +1,89 @@
+{
+  "id": "gl_0152_wrong_aadhaar_otp_first",
+  "seed": 200152,
+  "start_epoch": 1790106837,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8974392139",
+    "name": "Rohan Menon",
+    "email": "rohan.menon93@example.com",
+    "aadhaar": "8088 8058 2494",
+    "pan": "HLKPM8013N",
+    "address": "Flat No- 799, Green Park, Pune, Maharashtra - 411075",
+    "pincode": "411075",
+    "dob": "05/11/1994",
+    "father": "Divya Menon"
+  },
+  "profile": {
+    "appointment_id": "AP08",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Ganesh Menon",
+      "phone": "9230265016",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 90.04,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 90.04,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 100000.0,
+        "name": "Rohan Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 99500.0,
+        "name": "Rohan Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 100000.0,
+        "name": "Rohan Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "accounts executive",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 708
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "47190958738512",
+    "ifsc": "HDFC0971041"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "wrong_aadhaar_otp_first"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0230_imps_disbursement+negotiate_roi_over_limit+mobile_invalid_fi",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_MOBILE",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "NEGOTIATION_LIMIT",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "ESIGN_PENDING"
+  ]
+}

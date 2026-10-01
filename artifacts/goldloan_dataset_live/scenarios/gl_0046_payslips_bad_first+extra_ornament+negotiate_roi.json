@@ -1,0 +1,113 @@
+{
+  "id": "gl_0046_payslips_bad_first+extra_ornament+negotiate_roi",
+  "seed": 200046,
+  "start_epoch": 1790138448,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8770090682",
+    "name": "Lakshmi Gupta",
+    "email": "lakshmi.gupta51@example.com",
+    "aadhaar": "3830 1908 6804",
+    "pan": "SERPG5651T",
+    "address": "Flat No- 283, Temple Street, Bengaluru, Karnataka - 560079",
+    "pincode": "560079",
+    "dob": "11/09/1974",
+    "father": "Lakshmi Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP69",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Aditya Gupta",
+      "phone": "8261860972",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 84.41,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 84.41,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 24.37,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 24.37,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 25.72,
+        "stone_deduction": 0.5,
+        "karat": 20,
+        "scale_reading": 25.72,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 146500.0,
+        "name": "Lakshmi Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 146500.0,
+        "name": "Lakshmi Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 146000.0,
+        "name": "Lakshmi Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 55,
+    "occupation": "accounts executive",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 792
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "58318311794",
+    "ifsc": "ICIC0431592",
+    "requested_roi": 10.7
+  },
+  "flags": {
+    "payslips_bad_first": true,
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "payslips_bad_first",
+    "extra_ornament",
+    "negotiate_roi"
+  ]
+}

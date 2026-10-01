@@ -1,0 +1,89 @@
+{
+  "id": "gl_0200_wrong_aadhaar_otp_first",
+  "seed": 200200,
+  "start_epoch": 1790132844,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8304666284",
+    "name": "Suresh Menon",
+    "email": "suresh.menon41@example.com",
+    "aadhaar": "8916 7248 1463",
+    "pan": "FGGPM6789X",
+    "address": "Flat No- 614, Temple Street, Chennai, Tamil Nadu - 600032",
+    "pincode": "600032",
+    "dob": "18/09/1974",
+    "father": "Vivaan Menon"
+  },
+  "profile": {
+    "appointment_id": "AP37",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Divya Menon",
+      "phone": "9360194282",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 70.09,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 70.09,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 81000.0,
+        "name": "Suresh Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 82000.0,
+        "name": "Suresh Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 81500.0,
+        "name": "Suresh Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 33,
+    "occupation": "staff nurse",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 796
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "39143629115772",
+    "ifsc": "UBIN0228402"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "wrong_aadhaar_otp_first"
+  ]
+}

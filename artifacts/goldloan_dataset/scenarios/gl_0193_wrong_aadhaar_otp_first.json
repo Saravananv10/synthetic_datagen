@@ -1,0 +1,96 @@
+{
+  "id": "gl_0193_wrong_aadhaar_otp_first",
+  "seed": 200193,
+  "start_epoch": 1790137539,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7993757932",
+    "name": "Sai Patel",
+    "email": "sai.patel75@example.com",
+    "aadhaar": "8103 5413 9938",
+    "pan": "FYVPP4328K",
+    "address": "Flat No- 104, Ashok Colony, Chennai, Tamil Nadu - 600094",
+    "pincode": "600094",
+    "dob": "21/06/1972",
+    "father": "Kavya Patel"
+  },
+  "profile": {
+    "appointment_id": "AP63",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Divya Patel",
+      "phone": "6113975186",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 137.41,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 137.41,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 104500.0,
+        "name": "Sai Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 104500.0,
+        "name": "Sai Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 104500.0,
+        "name": "Sai Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "logistics coordinator",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 757
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "40790589374",
+    "ifsc": "HDFC0106562"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "wrong_aadhaar_otp_first"
+  ]
+}

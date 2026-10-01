@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0206_change_scheme_once+override_address+extra_ornament",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_ADDRESS_PROOF",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

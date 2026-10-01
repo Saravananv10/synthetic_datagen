@@ -1,0 +1,96 @@
+{
+  "id": "gl_0045_email_invalid_first",
+  "seed": 200045,
+  "start_epoch": 1790161387,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8963959873",
+    "name": "Aarav Patel",
+    "email": "aarav.patel98@example.com",
+    "aadhaar": "9171 5534 8501",
+    "pan": "XKTPP7283H",
+    "address": "Flat No- 804, Lake View Road, Vijayawada, Andhra Pradesh - 520008",
+    "pincode": "520008",
+    "dob": "05/12/1983",
+    "father": "Ramesh Patel"
+  },
+  "profile": {
+    "appointment_id": "AP94",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Sneha Patel",
+      "phone": "6767588513",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 83.47,
+        "stone_deduction": 0.9,
+        "karat": 18,
+        "scale_reading": 83.47,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 35000.0,
+        "name": "Aarav Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 34500.0,
+        "name": "Aarav Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 35000.0,
+        "name": "Aarav Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 33,
+    "occupation": "software support engineer",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 750
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "17277000433043",
+    "ifsc": "ICIC0037304"
+  },
+  "flags": {
+    "email_invalid_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "email_invalid_first"
+  ]
+}

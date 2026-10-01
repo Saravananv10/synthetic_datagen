@@ -1,0 +1,101 @@
+{
+  "id": "gl_0120_change_scheme_once+gold_weight_mismatch_first+mobile_invalid",
+  "seed": 200120,
+  "start_epoch": 1790130104,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9688695602",
+    "name": "Divya Reddy",
+    "email": "divya.reddy60@example.com",
+    "aadhaar": "6110 7497 3366",
+    "pan": "JPJPR5883F",
+    "address": "Flat No- 302, Gandhi Nagar, Pune, Maharashtra - 411036",
+    "pincode": "411036",
+    "dob": "14/06/1976",
+    "father": "Anjali Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP62",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Divya Reddy",
+      "phone": "8684351345",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 138.74,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 138.74,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 68500.0,
+        "name": "Divya Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 67500.0,
+        "name": "Divya Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 68000.0,
+        "name": "Divya Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 36,
+    "occupation": "school teacher",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 758
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "04953824006",
+    "ifsc": "ICIC0643080",
+    "first_offer_id": "GL_FULL_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true,
+    "gold_weight_mismatch_first": true,
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "change_scheme_once",
+    "gold_weight_mismatch_first",
+    "mobile_invalid_first"
+  ]
+}

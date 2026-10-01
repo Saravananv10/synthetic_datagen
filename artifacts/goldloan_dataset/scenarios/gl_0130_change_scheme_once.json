@@ -1,0 +1,90 @@
+{
+  "id": "gl_0130_change_scheme_once",
+  "seed": 200130,
+  "start_epoch": 1790128348,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9838578038",
+    "name": "Karthik Reddy",
+    "email": "karthik.reddy26@example.com",
+    "aadhaar": "7803 3207 5924",
+    "pan": "IEHPR3170T",
+    "address": "Flat No- 269, Ashok Colony, Vijayawada, Andhra Pradesh - 520058",
+    "pincode": "520058",
+    "dob": "10/08/1999",
+    "father": "Divya Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP03",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Deepa Reddy",
+      "phone": "6135040809",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 81.53,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 81.53,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 91000.0,
+        "name": "Karthik Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 90500.0,
+        "name": "Karthik Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 91000.0,
+        "name": "Karthik Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "factory supervisor",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 711
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "22972879004",
+    "ifsc": "UBIN0532893",
+    "first_offer_id": "GL_REV_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "change_scheme_once"
+  ]
+}

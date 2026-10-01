@@ -1,0 +1,90 @@
+{
+  "id": "gl_0055_negotiate_roi",
+  "seed": 200055,
+  "start_epoch": 1790159648,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7427286931",
+    "name": "Ananya Patel",
+    "email": "ananya.patel14@example.com",
+    "aadhaar": "9723 9442 2344",
+    "pan": "ZPDPP4205U",
+    "address": "Flat No- 192, Temple Street, Hyderabad, Telangana - 500066",
+    "pincode": "500066",
+    "dob": "07/07/1997",
+    "father": "Suresh Patel"
+  },
+  "profile": {
+    "appointment_id": "AP85",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Pooja Patel",
+      "phone": "6485257615",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 127.47,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 127.47,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 75500.0,
+        "name": "Ananya Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 76000.0,
+        "name": "Ananya Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 76500.0,
+        "name": "Ananya Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 42,
+    "occupation": "logistics coordinator",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 746
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "506093396404",
+    "ifsc": "UBIN0893055",
+    "requested_roi": 11.2
+  },
+  "flags": {
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "negotiate_roi"
+  ]
+}

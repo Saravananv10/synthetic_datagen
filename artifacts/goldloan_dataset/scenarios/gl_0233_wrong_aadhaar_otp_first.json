@@ -1,0 +1,89 @@
+{
+  "id": "gl_0233_wrong_aadhaar_otp_first",
+  "seed": 200233,
+  "start_epoch": 1790121155,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6820044296",
+    "name": "Pooja Menon",
+    "email": "pooja.menon75@example.com",
+    "aadhaar": "2404 4963 2374",
+    "pan": "WVAPM7008H",
+    "address": "Flat No- 838, Ashok Colony, Hyderabad, Telangana - 500016",
+    "pincode": "500016",
+    "dob": "10/08/1981",
+    "father": "Venkat Menon"
+  },
+  "profile": {
+    "appointment_id": "AP67",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Sneha Menon",
+      "phone": "8842204771",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 135.04,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 135.04,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 32500.0,
+        "name": "Pooja Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 32500.0,
+        "name": "Pooja Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 32500.0,
+        "name": "Pooja Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 50,
+    "occupation": "staff nurse",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 812
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "74710695224165",
+    "ifsc": "HDFC0016822"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "wrong_aadhaar_otp_first"
+  ]
+}

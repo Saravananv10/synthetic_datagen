@@ -1,0 +1,94 @@
+{
+  "id": "gl_0149_imps_disbursement+email_invalid_first+wrong_aadhaar_otp_firs",
+  "seed": 200149,
+  "start_epoch": 1790106064,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8276143722",
+    "name": "Deepa Sharma",
+    "email": "deepa.sharma3@example.com",
+    "aadhaar": "5922 2653 3892",
+    "pan": "DOGPS1264A",
+    "address": "Flat No- 249, Temple Street, Vijayawada, Andhra Pradesh - 520010",
+    "pincode": "520010",
+    "dob": "21/09/1998",
+    "father": "Harish Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP72",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Anjali Sharma",
+      "phone": "8876116944",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 138.0,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 138.0,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 69500.0,
+        "name": "Deepa Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 69500.0,
+        "name": "Deepa Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 68500.0,
+        "name": "Deepa Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 27,
+    "occupation": "school teacher",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 763
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "IMPS",
+    "account_number": "883678209139",
+    "ifsc": "HDFC0698862"
+  },
+  "flags": {
+    "email_invalid_first": true,
+    "wrong_aadhaar_otp_first": true,
+    "gold_weight_mismatch_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "imps_disbursement",
+    "email_invalid_first",
+    "wrong_aadhaar_otp_first",
+    "gold_weight_mismatch_first"
+  ]
+}

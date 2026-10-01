@@ -1,0 +1,89 @@
+{
+  "id": "gl_0141_identity_upload_incomplete_first",
+  "seed": 200141,
+  "start_epoch": 1790101772,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7467007137",
+    "name": "Arjun Sharma",
+    "email": "arjun.sharma34@example.com",
+    "aadhaar": "6521 9887 1519",
+    "pan": "YPZPS1193W",
+    "address": "Flat No- 408, Green Park, Kochi, Kerala - 682069",
+    "pincode": "682069",
+    "dob": "01/05/1981",
+    "father": "Naveen Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP72",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Arjun Sharma",
+      "phone": "9397948672",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 83.17,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 83.17,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 39500.0,
+        "name": "Arjun Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 38500.0,
+        "name": "Arjun Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 39000.0,
+        "name": "Arjun Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 31,
+    "occupation": "logistics coordinator",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 721
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "962288539377",
+    "ifsc": "SBIN0708702"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

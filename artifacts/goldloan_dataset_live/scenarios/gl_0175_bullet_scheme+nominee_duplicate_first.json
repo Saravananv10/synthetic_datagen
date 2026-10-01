@@ -1,0 +1,95 @@
+{
+  "id": "gl_0175_bullet_scheme+nominee_duplicate_first",
+  "seed": 200175,
+  "start_epoch": 1790171082,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6040857471",
+    "name": "Divya Menon",
+    "email": "divya.menon4@example.com",
+    "aadhaar": "2223 9741 6896",
+    "pan": "TYNPM1273O",
+    "address": "Flat No- 759, Green Park, Bengaluru, Karnataka - 560068",
+    "pincode": "560068",
+    "dob": "04/08/1993",
+    "father": "Ganesh Menon"
+  },
+  "profile": {
+    "appointment_id": "AP48",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Sneha Menon",
+      "phone": "6736730325",
+      "relation": "spouse"
+    },
+    "nominee_alt": {
+      "name": "Priya Menon",
+      "phone": "6006064146",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 97.91,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 97.91,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 103500.0,
+        "name": "Divya Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 104000.0,
+        "name": "Divya Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 104000.0,
+        "name": "Divya Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 34,
+    "occupation": "software support engineer",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 741
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "914935918341",
+    "ifsc": "SBIN0267062"
+  },
+  "flags": {
+    "nominee_duplicate_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "bullet_scheme",
+    "nominee_duplicate_first"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0235_borrower_duplicate",
+  "seed": 200235,
+  "start_epoch": 1790116878,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9561987448",
+    "name": "Anjali Das",
+    "email": "anjali.das24@example.com",
+    "aadhaar": "2005 3113 0043",
+    "pan": "HEIPD5135S",
+    "address": "Flat No- 858, Gandhi Nagar, Hyderabad, Telangana - 500075",
+    "pincode": "500075",
+    "dob": "18/12/1979",
+    "father": "Vivaan Das"
+  },
+  "profile": {
+    "appointment_id": "AP16",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Venkat Das",
+      "phone": "9426611305",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 68.75,
+        "stone_deduction": 2.1,
+        "karat": 22,
+        "scale_reading": 68.75,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 63000.0,
+        "name": "Anjali Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 62500.0,
+        "name": "Anjali Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 62500.0,
+        "name": "Anjali Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 37,
+    "occupation": "factory supervisor",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 745
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "493651054725",
+    "ifsc": "UBIN0640907"
+  },
+  "flags": {
+    "borrower_duplicate": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "borrower_duplicate"
+  ]
+}

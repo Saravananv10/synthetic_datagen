@@ -1,0 +1,89 @@
+{
+  "id": "gl_0263_wrong_mobile_otp_first",
+  "seed": 200263,
+  "start_epoch": 1790134286,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7172720672",
+    "name": "Kavya Pillai",
+    "email": "kavya.pillai33@example.com",
+    "aadhaar": "2977 2285 7421",
+    "pan": "LQQPP7360A",
+    "address": "Flat No- 820, Temple Street, Bengaluru, Karnataka - 560046",
+    "pincode": "560046",
+    "dob": "27/01/1996",
+    "father": "Vivaan Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP96",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Meena Pillai",
+      "phone": "9576567246",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 119.58,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 119.58,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 40500.0,
+        "name": "Kavya Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 40500.0,
+        "name": "Kavya Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 41000.0,
+        "name": "Kavya Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 45,
+    "occupation": "factory supervisor",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 813
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "59665654407586",
+    "ifsc": "ICIC0741206"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "wrong_mobile_otp_first"
+  ]
+}

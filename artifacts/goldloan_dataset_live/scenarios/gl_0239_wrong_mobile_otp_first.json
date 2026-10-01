@@ -1,0 +1,89 @@
+{
+  "id": "gl_0239_wrong_mobile_otp_first",
+  "seed": 200239,
+  "start_epoch": 1790122763,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8404996022",
+    "name": "Deepa Naidu",
+    "email": "deepa.naidu58@example.com",
+    "aadhaar": "3929 0556 9860",
+    "pan": "JKFPN1355Q",
+    "address": "Flat No- 288, Rajaji Street, Pune, Maharashtra - 411056",
+    "pincode": "411056",
+    "dob": "25/05/1970",
+    "father": "Ganesh Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP66",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Priya Naidu",
+      "phone": "6615514482",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 102.0,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 102.0,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 86500.0,
+        "name": "Deepa Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 86500.0,
+        "name": "Deepa Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 85500.0,
+        "name": "Deepa Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "staff nurse",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 713
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "51057999292",
+    "ifsc": "HDFC0866387"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_mobile_otp_first"
+  ]
+}

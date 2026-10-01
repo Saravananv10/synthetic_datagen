@@ -1,0 +1,103 @@
+{
+  "id": "gl_0140_negotiate_roi_over_limit+ocr_noise_first+sanction_email_retr",
+  "seed": 200140,
+  "start_epoch": 1790164318,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9412499434",
+    "name": "Arjun Nair",
+    "email": "arjun.nair93@example.com",
+    "aadhaar": "7699 4396 3475",
+    "pan": "BWXPN2705D",
+    "address": "Flat No- 129, Ashok Colony, Chennai, Tamil Nadu - 600041",
+    "pincode": "600041",
+    "dob": "10/12/1994",
+    "father": "Priya Nair"
+  },
+  "profile": {
+    "appointment_id": "AP92",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Deepa Nair",
+      "phone": "9640067567",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 134.58,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 134.58,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 98500.0,
+        "name": "Arjun Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 98500.0,
+        "name": "Arjun Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 99000.0,
+        "name": "Arjun Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "software support engineer",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 768
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "87291204570729",
+    "ifsc": "UBIN0592725",
+    "requested_roi": 10.1
+  },
+  "flags": {
+    "negotiate_roi": true,
+    "ocr_noise_first": true,
+    "gold_weight_mismatch_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "negotiate_roi_over_limit",
+    "negotiation_refused",
+    "ocr_noise_first",
+    "sanction_email_retry",
+    "gold_weight_mismatch_first"
+  ]
+}

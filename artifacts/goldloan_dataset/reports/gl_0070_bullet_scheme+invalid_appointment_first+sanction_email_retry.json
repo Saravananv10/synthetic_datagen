@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0070_bullet_scheme+invalid_appointment_first+sanction_email_retry",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INVALID_APPOINTMENT",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

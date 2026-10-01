@@ -27,11 +27,20 @@ pub fn http_client() -> reqwest::Client {
 /// Has a connect timeout but **no** overall request timeout so streams can run
 /// as long as needed. Individual chunk-level timeouts are applied in the SSE
 /// reader loop.
+///
+/// `pool_max_idle_per_host(0)` disables idle connection reuse entirely: a
+/// process making many sequential completions over hours (e.g. batch dataset
+/// generation) was observed hitting client-side "error sending request"
+/// failures consistent with the server/an intermediate proxy closing pooled
+/// connections before `pool_idle_timeout` evicted them. A fresh TCP/TLS
+/// handshake per request costs tens of ms, negligible next to multi-second
+/// completion latency, and removes the whole failure class.
 pub fn streaming_http_client() -> reqwest::Client {
     reqwest::Client::builder()
         .connect_timeout(CONNECT_TIMEOUT)
         .tcp_keepalive(TCP_KEEPALIVE)
         .pool_idle_timeout(POOL_IDLE_TIMEOUT)
+        .pool_max_idle_per_host(0)
         .build()
         .unwrap_or_default()
 }

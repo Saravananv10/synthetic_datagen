@@ -1,0 +1,89 @@
+{
+  "id": "gl_0048_identity_upload_incomplete_first",
+  "seed": 200048,
+  "start_epoch": 1790108701,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8019243806",
+    "name": "Kavya Gupta",
+    "email": "kavya.gupta65@example.com",
+    "aadhaar": "3148 2517 8701",
+    "pan": "ODMPG9904B",
+    "address": "Flat No- 801, MG Road, Chennai, Tamil Nadu - 600041",
+    "pincode": "600041",
+    "dob": "04/04/1980",
+    "father": "Sneha Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP70",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Anjali Gupta",
+      "phone": "6177706473",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 137.11,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 137.11,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 89500.0,
+        "name": "Kavya Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 90500.0,
+        "name": "Kavya Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 90500.0,
+        "name": "Kavya Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 54,
+    "occupation": "factory supervisor",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 720
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "04019562062403",
+    "ifsc": "UBIN0897224"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

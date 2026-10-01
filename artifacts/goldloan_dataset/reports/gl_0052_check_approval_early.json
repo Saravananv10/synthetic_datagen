@@ -1,0 +1,13 @@
+{
+  "scenario_id": "gl_0052_check_approval_early",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "APPROVAL_PENDING"
+  ]
+}

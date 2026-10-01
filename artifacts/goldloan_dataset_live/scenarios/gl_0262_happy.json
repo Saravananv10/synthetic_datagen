@@ -1,0 +1,94 @@
+{
+  "id": "gl_0262_happy",
+  "seed": 200262,
+  "start_epoch": 1790157792,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7679836878",
+    "name": "Mahesh Iyer",
+    "email": "mahesh.iyer5@example.com",
+    "aadhaar": "8084 9474 2397",
+    "pan": "NWCPI5066C",
+    "address": "Flat No- 221, Rajaji Street, Bengaluru, Karnataka - 560002",
+    "pincode": "560002",
+    "dob": "28/02/1996",
+    "father": "Harish Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP16",
+    "language": "English",
+    "nominee": {
+      "name": "Priya Iyer",
+      "phone": "6803268375",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 69.67,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 69.67,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 31500.0,
+        "name": "Mahesh Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 32000.0,
+        "name": "Mahesh Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 31500.0,
+        "name": "Mahesh Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 26,
+    "occupation": "school teacher",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 718
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "87870619737",
+    "ifsc": "HDFC0601789"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "happy"
+  ]
+}

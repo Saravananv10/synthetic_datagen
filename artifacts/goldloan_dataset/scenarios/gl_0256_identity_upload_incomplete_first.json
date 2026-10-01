@@ -1,0 +1,89 @@
+{
+  "id": "gl_0256_identity_upload_incomplete_first",
+  "seed": 200256,
+  "start_epoch": 1790146683,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9732794020",
+    "name": "Suresh Patel",
+    "email": "suresh.patel27@example.com",
+    "aadhaar": "6994 2589 6359",
+    "pan": "SCLPP5593E",
+    "address": "Flat No- 357, Rajaji Street, Hyderabad, Telangana - 500083",
+    "pincode": "500083",
+    "dob": "26/08/1998",
+    "father": "Vivaan Patel"
+  },
+  "profile": {
+    "appointment_id": "AP84",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Priya Patel",
+      "phone": "9246357702",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 98.56,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 98.56,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 135500.0,
+        "name": "Suresh Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 135500.0,
+        "name": "Suresh Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 135500.0,
+        "name": "Suresh Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 55,
+    "occupation": "staff nurse",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 771
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "56696560116268",
+    "ifsc": "UBIN0440019"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

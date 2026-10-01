@@ -1,0 +1,87 @@
+{
+  "id": "gl_0199_small_loan",
+  "seed": 200199,
+  "start_epoch": 1790174629,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8942028812",
+    "name": "Ramesh Reddy",
+    "email": "ramesh.reddy44@example.com",
+    "aadhaar": "3480 9404 0662",
+    "pan": "ETJPR3561F",
+    "address": "Flat No- 386, Ashok Colony, Hyderabad, Telangana - 500067",
+    "pincode": "500067",
+    "dob": "22/05/1974",
+    "father": "Vivaan Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP64",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Anjali Reddy",
+      "phone": "9742104092",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 24.38,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 24.38,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 65500.0,
+        "name": "Ramesh Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 65000.0,
+        "name": "Ramesh Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 65000.0,
+        "name": "Ramesh Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 32,
+    "occupation": "accounts executive",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 811
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "52513649530",
+    "ifsc": "UBIN0869176"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "small_loan"
+  ]
+}

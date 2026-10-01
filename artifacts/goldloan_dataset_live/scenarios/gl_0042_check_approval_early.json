@@ -1,0 +1,96 @@
+{
+  "id": "gl_0042_check_approval_early",
+  "seed": 200042,
+  "start_epoch": 1790179177,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8240595624",
+    "name": "Karthik Patel",
+    "email": "karthik.patel80@example.com",
+    "aadhaar": "8581 9446 4319",
+    "pan": "RNCPP4916H",
+    "address": "Flat No- 551, Lake View Road, Hyderabad, Telangana - 500057",
+    "pincode": "500057",
+    "dob": "11/12/1978",
+    "father": "Aarav Patel"
+  },
+  "profile": {
+    "appointment_id": "AP36",
+    "language": "English",
+    "nominee": {
+      "name": "Naveen Patel",
+      "phone": "9112566804",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 77.23,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 77.23,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 47000.0,
+        "name": "Karthik Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 47000.0,
+        "name": "Karthik Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 46000.0,
+        "name": "Karthik Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "staff nurse",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 702
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "75222989318",
+    "ifsc": "UBIN0869070"
+  },
+  "flags": {
+    "check_approval_early": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "check_approval_early"
+  ]
+}

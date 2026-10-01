@@ -1,0 +1,89 @@
+{
+  "id": "gl_0261_identity_upload_incomplete_first",
+  "seed": 200261,
+  "start_epoch": 1790151421,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8910309730",
+    "name": "Vivaan Kumar",
+    "email": "vivaan.kumar12@example.com",
+    "aadhaar": "8329 7586 5943",
+    "pan": "PIMPK1242G",
+    "address": "Flat No- 771, Temple Street, Hyderabad, Telangana - 500077",
+    "pincode": "500077",
+    "dob": "13/07/1972",
+    "father": "Lakshmi Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP07",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Naveen Kumar",
+      "phone": "7533261811",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 64.38,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 64.38,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 76500.0,
+        "name": "Vivaan Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 76500.0,
+        "name": "Vivaan Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 76500.0,
+        "name": "Vivaan Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 51,
+    "occupation": "factory supervisor",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 808
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "24916977584641",
+    "ifsc": "HDFC0472464"
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "identity_upload_incomplete_first"
+  ]
+}

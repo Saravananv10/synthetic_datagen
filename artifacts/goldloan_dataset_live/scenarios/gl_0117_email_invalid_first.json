@@ -1,0 +1,89 @@
+{
+  "id": "gl_0117_email_invalid_first",
+  "seed": 200117,
+  "start_epoch": 1790174440,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7627535719",
+    "name": "Meena Pillai",
+    "email": "meena.pillai59@example.com",
+    "aadhaar": "9387 5227 8591",
+    "pan": "FJFPP7117K",
+    "address": "Flat No- 225, Gandhi Nagar, Bengaluru, Karnataka - 560088",
+    "pincode": "560088",
+    "dob": "19/03/1975",
+    "father": "Naveen Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP65",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Mahesh Pillai",
+      "phone": "8149824156",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 92.2,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 92.2,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 100500.0,
+        "name": "Meena Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 101000.0,
+        "name": "Meena Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 100500.0,
+        "name": "Meena Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 59,
+    "occupation": "accounts executive",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 730
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "42564515355405",
+    "ifsc": "HDFC0712682"
+  },
+  "flags": {
+    "email_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "email_invalid_first"
+  ]
+}

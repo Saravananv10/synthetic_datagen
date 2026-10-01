@@ -1,0 +1,89 @@
+{
+  "id": "gl_0293_ocr_noise_first",
+  "seed": 200293,
+  "start_epoch": 1790167180,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8909867661",
+    "name": "Venkat Patel",
+    "email": "venkat.patel85@example.com",
+    "aadhaar": "2260 9950 7590",
+    "pan": "NBBPP0213A",
+    "address": "Flat No- 455, Green Park, Bengaluru, Karnataka - 560076",
+    "pincode": "560076",
+    "dob": "21/06/1991",
+    "father": "Priya Patel"
+  },
+  "profile": {
+    "appointment_id": "AP60",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Anjali Patel",
+      "phone": "9960700210",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 107.39,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 107.39,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 38000.0,
+        "name": "Venkat Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 39000.0,
+        "name": "Venkat Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 39000.0,
+        "name": "Venkat Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "accounts executive",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 729
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "828908270570",
+    "ifsc": "ICIC0481604"
+  },
+  "flags": {
+    "ocr_noise_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "ocr_noise_first"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "gl_0012_change_scheme_once",
+  "seed": 200012,
+  "start_epoch": 1790110883,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6240406463",
+    "name": "Pooja Patel",
+    "email": "pooja.patel86@example.com",
+    "aadhaar": "8849 6640 4240",
+    "pan": "KQYPP9876Z",
+    "address": "Flat No- 204, Gandhi Nagar, Bengaluru, Karnataka - 560073",
+    "pincode": "560073",
+    "dob": "07/03/1985",
+    "father": "Ramesh Patel"
+  },
+  "profile": {
+    "appointment_id": "AP73",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Ganesh Patel",
+      "phone": "9679470878",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 64.87,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 64.87,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 69500.0,
+        "name": "Pooja Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 69500.0,
+        "name": "Pooja Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 68500.0,
+        "name": "Pooja Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 50,
+    "occupation": "logistics coordinator",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 813
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "20013616424360",
+    "ifsc": "UBIN0651372",
+    "first_offer_id": "GL_FULL_BULLET_12"
+  },
+  "flags": {
+    "change_scheme_once": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "change_scheme_once"
+  ]
+}

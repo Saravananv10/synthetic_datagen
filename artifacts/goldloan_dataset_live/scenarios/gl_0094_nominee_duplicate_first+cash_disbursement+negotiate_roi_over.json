@@ -1,0 +1,99 @@
+{
+  "id": "gl_0094_nominee_duplicate_first+cash_disbursement+negotiate_roi_over",
+  "seed": 200094,
+  "start_epoch": 1790144215,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6806045428",
+    "name": "Lakshmi Naidu",
+    "email": "lakshmi.naidu8@example.com",
+    "aadhaar": "4157 7302 7613",
+    "pan": "LABPN2500K",
+    "address": "Flat No- 67, Lake View Road, Chennai, Tamil Nadu - 600057",
+    "pincode": "600057",
+    "dob": "10/12/1982",
+    "father": "Rohan Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP73",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Arjun Naidu",
+      "phone": "7358087696",
+      "relation": "sibling"
+    },
+    "nominee_alt": {
+      "name": "Suresh Naidu",
+      "phone": "8157332616",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 117.81,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 117.81,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 35000.0,
+        "name": "Lakshmi Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 34500.0,
+        "name": "Lakshmi Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 34500.0,
+        "name": "Lakshmi Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 43,
+    "occupation": "software support engineer",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 723
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": "",
+    "requested_roi": 11.1
+  },
+  "flags": {
+    "nominee_duplicate_first": true,
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "nominee_duplicate_first",
+    "cash_disbursement",
+    "negotiate_roi_over_limit",
+    "negotiation_refused"
+  ]
+}

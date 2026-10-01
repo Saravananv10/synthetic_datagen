@@ -1,0 +1,89 @@
+{
+  "id": "gl_0138_ocr_noise_first",
+  "seed": 200138,
+  "start_epoch": 1790165403,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6075631288",
+    "name": "Divya Kumar",
+    "email": "divya.kumar41@example.com",
+    "aadhaar": "5185 1590 8321",
+    "pan": "GJEPK7489G",
+    "address": "Flat No- 389, Green Park, Kochi, Kerala - 682097",
+    "pincode": "682097",
+    "dob": "17/03/1986",
+    "father": "Meena Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP32",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Karthik Kumar",
+      "phone": "9815563262",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 120.33,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 120.33,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 122500.0,
+        "name": "Divya Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 122500.0,
+        "name": "Divya Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 122000.0,
+        "name": "Divya Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 36,
+    "occupation": "accounts executive",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 711
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "34524364993",
+    "ifsc": "ICIC0824563"
+  },
+  "flags": {
+    "ocr_noise_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "ocr_noise_first"
+  ]
+}

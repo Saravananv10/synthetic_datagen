@@ -1,0 +1,89 @@
+{
+  "id": "gl_0025_borrower_duplicate",
+  "seed": 200025,
+  "start_epoch": 1790153596,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8428125934",
+    "name": "Kavya Menon",
+    "email": "kavya.menon95@example.com",
+    "aadhaar": "6869 9573 1885",
+    "pan": "BHUPM4096P",
+    "address": "Flat No- 325, Green Park, Chennai, Tamil Nadu - 600017",
+    "pincode": "600017",
+    "dob": "19/02/1970",
+    "father": "Karthik Menon"
+  },
+  "profile": {
+    "appointment_id": "AP43",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Meena Menon",
+      "phone": "9317452718",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 119.1,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 119.1,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 128500.0,
+        "name": "Kavya Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 128500.0,
+        "name": "Kavya Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 128500.0,
+        "name": "Kavya Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "software support engineer",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 794
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "74419120917371",
+    "ifsc": "ICIC0798414"
+  },
+  "flags": {
+    "borrower_duplicate": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "borrower_duplicate"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "gl_0016_ocr_noise_first",
+  "seed": 100016,
+  "start_epoch": 1790161686,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6870649529",
+    "name": "Sarath Menon",
+    "email": "sarath.kumar43@example.com",
+    "aadhaar": "6195 6680 9910",
+    "pan": "GQMPI8533L",
+    "address": "12A, Vennala East, Kochi, Kerala - 682065",
+    "pincode": "682065",
+    "dob": "01/02/1986",
+    "father": "Krishnan Menon"
+  },
+  "profile": {
+    "appointment_id": "AP48",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Anitha Menon",
+      "phone": "9098196168",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 129.95,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 129.95,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kerala Metal Works Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 86000.0,
+        "name": "Sarath Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 86500.0,
+        "name": "Sarath Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 86500.0,
+        "name": "Sarath Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 43,
+    "occupation": "Factory Supervisor",
+    "temperament": "polite and concise",
+    "background": "I am a supervisor at a metal factory and need funds to cover my child's upcoming school fees and some medical expenses.",
+    "voice": "I type in a mix of Malayalam and English, using short sentences, occasional commas, and a few typos."
+  },
+  "bureau": {
+    "cibil": 781
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "17187588025532",
+    "ifsc": "HDFC0916586"
+  },
+  "flags": {
+    "ocr_noise_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "llm_persona",
+    "ocr_noise_first"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "gl_0020_small_loan",
+  "seed": 200020,
+  "start_epoch": 1790158826,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7364899050",
+    "name": "Karthik Singh",
+    "email": "karthik.singh48@example.com",
+    "aadhaar": "6647 5439 6247",
+    "pan": "REPPS8835Z",
+    "address": "Flat No- 642, Lake View Road, Kochi, Kerala - 682047",
+    "pincode": "682047",
+    "dob": "04/08/1990",
+    "father": "Arjun Singh"
+  },
+  "profile": {
+    "appointment_id": "AP93",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Meena Singh",
+      "phone": "8711950794",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 30.52,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 30.52,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 132500.0,
+        "name": "Karthik Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 133000.0,
+        "name": "Karthik Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 133000.0,
+        "name": "Karthik Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "staff nurse",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 763
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "49001921003",
+    "ifsc": "HDFC0805851"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "small_loan"
+  ]
+}

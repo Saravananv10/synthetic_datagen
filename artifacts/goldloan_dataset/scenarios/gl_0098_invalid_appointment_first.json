@@ -1,0 +1,89 @@
+{
+  "id": "gl_0098_invalid_appointment_first",
+  "seed": 200098,
+  "start_epoch": 1790174603,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9558303962",
+    "name": "Divya Pillai",
+    "email": "divya.pillai38@example.com",
+    "aadhaar": "2705 4799 1480",
+    "pan": "PHQPP7225P",
+    "address": "Flat No- 613, Gandhi Nagar, Pune, Maharashtra - 411050",
+    "pincode": "411050",
+    "dob": "05/06/1974",
+    "father": "Pooja Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP35",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Naveen Pillai",
+      "phone": "8363709754",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 93.15,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 93.15,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 124000.0,
+        "name": "Divya Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 123500.0,
+        "name": "Divya Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 123500.0,
+        "name": "Divya Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "accounts executive",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 734
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "550496176168",
+    "ifsc": "UBIN0839015"
+  },
+  "flags": {
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "invalid_appointment_first"
+  ]
+}

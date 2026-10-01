@@ -1,0 +1,94 @@
+{
+  "id": "gl_0051_happy",
+  "seed": 200051,
+  "start_epoch": 1790127899,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8262111016",
+    "name": "Pooja Joshi",
+    "email": "pooja.joshi51@example.com",
+    "aadhaar": "9581 9270 4862",
+    "pan": "YGRPJ5875B",
+    "address": "Flat No- 648, Lake View Road, Chennai, Tamil Nadu - 600009",
+    "pincode": "600009",
+    "dob": "28/09/1992",
+    "father": "Harish Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP40",
+    "language": "English",
+    "nominee": {
+      "name": "Aarav Joshi",
+      "phone": "9613785101",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 64.74,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 64.74,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 149000.0,
+        "name": "Pooja Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 149500.0,
+        "name": "Pooja Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 148500.0,
+        "name": "Pooja Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "logistics coordinator",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 706
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "056654311288",
+    "ifsc": "SBIN0914364"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "happy"
+  ]
+}

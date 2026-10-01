@@ -1,0 +1,94 @@
+{
+  "id": "gl_0288_wrong_email_otp_first+mobile_invalid_first+cash_disbursement",
+  "seed": 200288,
+  "start_epoch": 1790131499,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6356268300",
+    "name": "Karthik Gupta",
+    "email": "karthik.gupta86@example.com",
+    "aadhaar": "7103 4435 3579",
+    "pan": "LAMPG1627W",
+    "address": "Flat No- 265, Rajaji Street, Chennai, Tamil Nadu - 600077",
+    "pincode": "600077",
+    "dob": "15/05/1979",
+    "father": "Ganesh Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP16",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Meena Gupta",
+      "phone": "9029442722",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 122.55,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 122.55,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 148500.0,
+        "name": "Karthik Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 149500.0,
+        "name": "Karthik Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 149000.0,
+        "name": "Karthik Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 53,
+    "occupation": "logistics coordinator",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 804
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {
+    "wrong_email_otp_first": true,
+    "mobile_invalid_first": true,
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "wrong_email_otp_first",
+    "mobile_invalid_first",
+    "cash_disbursement",
+    "esign_not_done_first"
+  ]
+}

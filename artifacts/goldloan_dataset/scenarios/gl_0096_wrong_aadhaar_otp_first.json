@@ -1,0 +1,89 @@
+{
+  "id": "gl_0096_wrong_aadhaar_otp_first",
+  "seed": 200096,
+  "start_epoch": 1790160944,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7484387501",
+    "name": "Sai Reddy",
+    "email": "sai.reddy6@example.com",
+    "aadhaar": "7710 2939 9509",
+    "pan": "AWZPR4393P",
+    "address": "Flat No- 281, Rajaji Street, Kochi, Kerala - 682043",
+    "pincode": "682043",
+    "dob": "09/08/1979",
+    "father": "Karthik Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP45",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Lakshmi Reddy",
+      "phone": "6584434123",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 120.05,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 120.05,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 120000.0,
+        "name": "Sai Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 119500.0,
+        "name": "Sai Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 119500.0,
+        "name": "Sai Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 55,
+    "occupation": "school teacher",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 771
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "21435211079",
+    "ifsc": "HDFC0248763"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "wrong_aadhaar_otp_first"
+  ]
+}

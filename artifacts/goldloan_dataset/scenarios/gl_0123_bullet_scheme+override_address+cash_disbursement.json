@@ -1,0 +1,91 @@
+{
+  "id": "gl_0123_bullet_scheme+override_address+cash_disbursement",
+  "seed": 200123,
+  "start_epoch": 1790124298,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8108761550",
+    "name": "Ganesh Rao",
+    "email": "ganesh.rao3@example.com",
+    "aadhaar": "3775 1260 1518",
+    "pan": "EAYPR5982V",
+    "address": "Flat No- 611, MG Road, Kochi, Kerala - 682029",
+    "pincode": "682029",
+    "dob": "04/12/1974",
+    "father": "Mahesh Rao"
+  },
+  "profile": {
+    "appointment_id": "AP73",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Arjun Rao",
+      "phone": "6151467932",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 71.21,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 71.21,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 77000.0,
+        "name": "Ganesh Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 77500.0,
+        "name": "Ganesh Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 77500.0,
+        "name": "Ganesh Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 34,
+    "occupation": "staff nurse",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 775
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {
+    "override_address": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "bullet_scheme",
+    "override_address",
+    "cash_disbursement"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "gl_0230_imps_disbursement+negotiate_roi_over_limit+mobile_invalid_fi",
+  "seed": 200230,
+  "start_epoch": 1790155844,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7543650407",
+    "name": "Sneha Singh",
+    "email": "sneha.singh8@example.com",
+    "aadhaar": "8502 9681 3232",
+    "pan": "UABPS4300V",
+    "address": "Flat No- 317, Temple Street, Kochi, Kerala - 682040",
+    "pincode": "682040",
+    "dob": "21/05/1995",
+    "father": "Aditya Singh"
+  },
+  "profile": {
+    "appointment_id": "AP37",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Harish Singh",
+      "phone": "8633319559",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 98.39,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 98.39,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 124000.0,
+        "name": "Sneha Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 124000.0,
+        "name": "Sneha Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 124500.0,
+        "name": "Sneha Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "factory supervisor",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 752
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "IMPS",
+    "account_number": "68637049722069",
+    "ifsc": "HDFC0660600",
+    "requested_roi": 10.1
+  },
+  "flags": {
+    "negotiate_roi": true,
+    "mobile_invalid_first": true,
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "imps_disbursement",
+    "negotiate_roi_over_limit",
+    "negotiation_refused",
+    "mobile_invalid_first",
+    "esign_not_done_first"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "gl_0206_change_scheme_once+override_address+extra_ornament",
+  "seed": 200206,
+  "start_epoch": 1790156100,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7310265334",
+    "name": "Priya Joshi",
+    "email": "priya.joshi48@example.com",
+    "aadhaar": "9464 3648 2467",
+    "pan": "BLSPJ0235E",
+    "address": "Flat No- 882, Ashok Colony, Vijayawada, Andhra Pradesh - 520036",
+    "pincode": "520036",
+    "dob": "08/06/1984",
+    "father": "Divya Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP29",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Sai Joshi",
+      "phone": "6756613483",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 65.99,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 65.99,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 20.53,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 20.53,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 42.43,
+        "stone_deduction": 0.5,
+        "karat": 22,
+        "scale_reading": 42.43,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 34000.0,
+        "name": "Priya Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 34500.0,
+        "name": "Priya Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 33500.0,
+        "name": "Priya Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "logistics coordinator",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 770
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "43692210703295",
+    "ifsc": "SBIN0418259",
+    "first_offer_id": "GL_REV_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true,
+    "override_address": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "change_scheme_once",
+    "override_address",
+    "extra_ornament"
+  ]
+}

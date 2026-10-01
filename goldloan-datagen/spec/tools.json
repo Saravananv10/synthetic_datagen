@@ -1,0 +1,637 @@
+{
+  "tools": [
+    {
+      "name": "store_user_detail",
+      "stage": 1,
+      "provenance": "observed",
+      "description": "Store one onboarding field (mobile, name or email) in the session.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "field_name": {
+            "type": "string",
+            "enum": [
+              "mobile",
+              "name",
+              "email"
+            ]
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "field_name",
+          "value"
+        ]
+      }
+    },
+    {
+      "name": "send_otp",
+      "stage": 1,
+      "provenance": "observed",
+      "description": "Send a 6-digit OTP to the customer's mobile number or email (must be stored first).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "otp_type": {
+            "type": "string",
+            "enum": [
+              "mobile",
+              "email"
+            ]
+          },
+          "recipient": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "otp_type"
+        ]
+      }
+    },
+    {
+      "name": "verify_otp",
+      "stage": 1,
+      "provenance": "observed",
+      "description": "Verify the OTP the customer received on mobile or email.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "otp": {
+            "type": "string"
+          },
+          "otp_type": {
+            "type": "string",
+            "enum": [
+              "mobile",
+              "email"
+            ]
+          }
+        },
+        "required": [
+          "otp",
+          "otp_type"
+        ]
+      }
+    },
+    {
+      "name": "get_collection_status",
+      "stage": 1,
+      "provenance": "observed",
+      "description": "Check whether all onboarding fields are collected and verified.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "collect_identity_documents",
+      "stage": 2,
+      "provenance": "observed",
+      "description": "Persist the Aadhaar/PAN documents summarised by the upload ingest step.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "generate_aadhar_otp",
+      "stage": 2,
+      "provenance": "observed",
+      "description": "Send an OTP to the Aadhaar-linked mobile number (Aadhaar OTP eKYC).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "verify_aadhar_otp",
+      "stage": 2,
+      "provenance": "observed",
+      "description": "Verify the Aadhaar OTP.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "otp": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "otp"
+        ]
+      }
+    },
+    {
+      "name": "store_numbers",
+      "stage": 2,
+      "provenance": "observed",
+      "description": "After customer consent, verify the PAN-Aadhaar link and store the verified PAN/Aadhaar numbers.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "confirm_address",
+      "stage": 3,
+      "provenance": "observed",
+      "description": "Confirm the address (from Aadhaar, or override with a proof upload) or save the appointment id and preferred language.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "use_aadhaar",
+              "override",
+              "set_appointment"
+            ]
+          },
+          "appointment_id": {
+            "type": "string"
+          },
+          "preferred_language": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "run_dedupe",
+      "stage": 3,
+      "provenance": "observed",
+      "description": "Run the duplicate-customer check for the borrower or the nominee.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "borrower",
+              "nominee"
+            ]
+          }
+        },
+        "required": [
+          "role"
+        ]
+      }
+    },
+    {
+      "name": "store_nominee",
+      "stage": 3,
+      "provenance": "observed",
+      "description": "Store the nominee's name, 10-digit phone and relation.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "relation": {
+            "type": "string",
+            "description": "spouse, child, parent, sibling or other (any letter case; the demo passed 'Sibling')"
+          }
+        },
+        "required": [
+          "name",
+          "phone",
+          "relation"
+        ]
+      }
+    },
+    {
+      "name": "collect_gold_item",
+      "stage": 4,
+      "provenance": "observed",
+      "description": "Persist the ornament summarised by the gold-ingest step (photo on scale + certificate).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "value_gold",
+      "stage": 4,
+      "provenance": "observed",
+      "description": "Value all collected gold items and compute the maximum eligible loan.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "value"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "check_pledge",
+      "stage": 4,
+      "provenance": "observed",
+      "description": "Check that the gold is not already pledged.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "check"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "finalize_gold",
+      "stage": 4,
+      "provenance": "observed",
+      "description": "Close the gold stage after the last ornament.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "finalize"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "get_offers",
+      "stage": 5,
+      "provenance": "observed",
+      "description": "Load the available loan schemes.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "select_scheme",
+      "stage": 5,
+      "provenance": "observed",
+      "description": "Record the scheme the customer selected.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "offer_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "offer_id"
+        ]
+      }
+    },
+    {
+      "name": "calculate_offer",
+      "stage": 5,
+      "provenance": "observed",
+      "description": "quote: compute the plan for the selected scheme; negotiate: request a lower ROI; confirm: confirm the offer (fails until income and bureau steps are done).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "quote",
+              "negotiate",
+              "confirm"
+            ]
+          },
+          "tenure_months": {
+            "type": "string"
+          },
+          "requested_roi": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "capture_income",
+      "stage": 5,
+      "provenance": "inferred",
+      "description": "Record the customer's employment type (required for loans above the income threshold).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "employment_type": {
+            "type": "string",
+            "enum": [
+              "salaried",
+              "self_employed"
+            ]
+          },
+          "declared_income": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "employment_type"
+        ]
+      }
+    },
+    {
+      "name": "collect_payslips",
+      "stage": 5,
+      "provenance": "observed",
+      "description": "Persist the payslips summarised by the payslip-ingest step.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "get_bureau_score",
+      "stage": 5,
+      "provenance": "observed",
+      "description": "Fetch the customer's credit bureau (CIBIL) score.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "check_loan_eligibility",
+      "stage": 5,
+      "provenance": "observed",
+      "description": "Compute final loan eligibility from gold value, income and bureau score.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "run_pd_and_gdr",
+      "stage": 6,
+      "provenance": "observed",
+      "description": "pd: record that the personal discussion is complete; gdr: issue the Gold Description Receipt and start the cooling-off wait.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "pd",
+              "gdr"
+            ]
+          }
+        },
+        "required": [
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "check_approval_status",
+      "stage": 6,
+      "provenance": "observed",
+      "description": "Check approval after the cooling-off period.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "acknowledge_kfs",
+      "stage": 6,
+      "provenance": "observed",
+      "description": "Record whether the customer accepted or declined the Key Fact Statement.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "accept",
+              "decline"
+            ]
+          }
+        },
+        "required": [
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "generate_esign_url",
+      "stage": 6,
+      "provenance": "observed",
+      "description": "Generate the e-sign link for the customer.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "check_esign_status",
+      "stage": 6,
+      "provenance": "observed",
+      "description": "Check whether the customer completed the e-sign.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    },
+    {
+      "name": "allocate_and_disburse",
+      "stage": 6,
+      "provenance": "partial",
+      "description": "allocate: reserve a packet; disburse: soft-allocate the amount (mock transaction) in the chosen mode.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "allocate",
+              "disburse"
+            ]
+          },
+          "disbursement_mode": {
+            "type": "string",
+            "enum": [
+              "NEFT",
+              "IMPS",
+              "CASH"
+            ]
+          },
+          "account_number": {
+            "type": "string"
+          },
+          "ifsc": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "send_sanction_letter_email",
+      "stage": 6,
+      "provenance": "observed",
+      "description": "Email the sanction letter to the customer.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "trigger"
+            ]
+          }
+        },
+        "required": [
+          "trigger"
+        ]
+      }
+    }
+  ]
+}

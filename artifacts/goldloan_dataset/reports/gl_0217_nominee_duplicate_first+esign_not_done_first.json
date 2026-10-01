@@ -1,0 +1,14 @@
+{
+  "scenario_id": "gl_0217_nominee_duplicate_first+esign_not_done_first",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "DUPLICATE_FOUND",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "ESIGN_PENDING"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "scenario_id": "gl_0081_bullet_scheme+mobile_invalid_first+negotiate_roi+email_inval",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_MOBILE",
+    "INVALID_EMAIL",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "gl_0291_happy",
+  "seed": 200291,
+  "start_epoch": 1790156741,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6477015991",
+    "name": "Divya Kumar",
+    "email": "divya.kumar26@example.com",
+    "aadhaar": "8066 2012 4206",
+    "pan": "QXZPK8248I",
+    "address": "Flat No- 349, Rajaji Street, Chennai, Tamil Nadu - 600064",
+    "pincode": "600064",
+    "dob": "07/10/1980",
+    "father": "Ramesh Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP68",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Aditya Kumar",
+      "phone": "6974726226",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 82.65,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 82.65,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 45500.0,
+        "name": "Divya Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 46000.0,
+        "name": "Divya Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 45000.0,
+        "name": "Divya Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 32,
+    "occupation": "school teacher",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 740
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "76735370903",
+    "ifsc": "ICIC0811566"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

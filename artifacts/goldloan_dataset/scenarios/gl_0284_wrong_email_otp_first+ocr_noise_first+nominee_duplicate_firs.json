@@ -1,0 +1,100 @@
+{
+  "id": "gl_0284_wrong_email_otp_first+ocr_noise_first+nominee_duplicate_firs",
+  "seed": 200284,
+  "start_epoch": 1790124883,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6799114500",
+    "name": "Suresh Kumar",
+    "email": "suresh.kumar51@example.com",
+    "aadhaar": "8370 2072 4217",
+    "pan": "ZIYPK2142B",
+    "address": "Flat No- 161, Lake View Road, Kochi, Kerala - 682096",
+    "pincode": "682096",
+    "dob": "02/12/1976",
+    "father": "Sai Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP12",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Anjali Kumar",
+      "phone": "6501905880",
+      "relation": "parent"
+    },
+    "nominee_alt": {
+      "name": "Naveen Kumar",
+      "phone": "9701635515",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 67.12,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 67.12,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 113500.0,
+        "name": "Suresh Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 114000.0,
+        "name": "Suresh Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 113500.0,
+        "name": "Suresh Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "software support engineer",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 740
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "48780287208",
+    "ifsc": "ICIC0808643"
+  },
+  "flags": {
+    "wrong_email_otp_first": true,
+    "ocr_noise_first": true,
+    "nominee_duplicate_first": true,
+    "gold_weight_mismatch_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_email_otp_first",
+    "ocr_noise_first",
+    "nominee_duplicate_first",
+    "gold_weight_mismatch_first"
+  ]
+}

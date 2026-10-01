@@ -1,0 +1,104 @@
+{
+  "id": "gl_0178_bullet_scheme+nominee_duplicate_first+check_approval_early",
+  "seed": 200178,
+  "start_epoch": 1790162091,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7823091583",
+    "name": "Venkat Reddy",
+    "email": "venkat.reddy14@example.com",
+    "aadhaar": "5930 5414 8781",
+    "pan": "JNCPR4336A",
+    "address": "Flat No- 643, MG Road, Kochi, Kerala - 682014",
+    "pincode": "682014",
+    "dob": "23/02/1997",
+    "father": "Karthik Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP92",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Ramesh Reddy",
+      "phone": "7809541865",
+      "relation": "spouse"
+    },
+    "nominee_alt": {
+      "name": "Rohan Reddy",
+      "phone": "6641080622",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 131.36,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 131.36,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 80000.0,
+        "name": "Venkat Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 80000.0,
+        "name": "Venkat Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 80000.0,
+        "name": "Venkat Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 56,
+    "occupation": "staff nurse",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 726
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "34225538779",
+    "ifsc": "SBIN0826237"
+  },
+  "flags": {
+    "nominee_duplicate_first": true,
+    "check_approval_early": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "bullet_scheme",
+    "nominee_duplicate_first",
+    "check_approval_early"
+  ]
+}

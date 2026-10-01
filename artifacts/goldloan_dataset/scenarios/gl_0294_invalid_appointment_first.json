@@ -1,0 +1,89 @@
+{
+  "id": "gl_0294_invalid_appointment_first",
+  "seed": 200294,
+  "start_epoch": 1790134081,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7688272427",
+    "name": "Ananya Rao",
+    "email": "ananya.rao55@example.com",
+    "aadhaar": "6267 6522 5982",
+    "pan": "BUQPR9895T",
+    "address": "Flat No- 98, Green Park, Hyderabad, Telangana - 500020",
+    "pincode": "500020",
+    "dob": "27/03/1988",
+    "father": "Karthik Rao"
+  },
+  "profile": {
+    "appointment_id": "AP66",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Venkat Rao",
+      "phone": "7441248641",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 134.42,
+        "stone_deduction": 2.1,
+        "karat": 22,
+        "scale_reading": 134.42,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 38000.0,
+        "name": "Ananya Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 37500.0,
+        "name": "Ananya Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 37000.0,
+        "name": "Ananya Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 54,
+    "occupation": "software support engineer",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 792
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "42991787701",
+    "ifsc": "UBIN0610982"
+  },
+  "flags": {
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "invalid_appointment_first"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "gl_0122_mobile_invalid_first+payslips_bad_first+email_invalid_first+",
+  "seed": 200122,
+  "start_epoch": 1790134382,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9501030750",
+    "name": "Ganesh Iyer",
+    "email": "ganesh.iyer42@example.com",
+    "aadhaar": "9996 8920 3262",
+    "pan": "GWVPI2129C",
+    "address": "Flat No- 74, Green Park, Vijayawada, Andhra Pradesh - 520002",
+    "pincode": "520002",
+    "dob": "24/05/1985",
+    "father": "Harish Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP95",
+    "language": "English",
+    "nominee": {
+      "name": "Arjun Iyer",
+      "phone": "7559302410",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 108.06,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 108.06,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 39000.0,
+        "name": "Ganesh Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 39000.0,
+        "name": "Ganesh Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 38500.0,
+        "name": "Ganesh Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 30,
+    "occupation": "logistics coordinator",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 720
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "33081979351",
+    "ifsc": "UBIN0729073",
+    "requested_roi": 10.6
+  },
+  "flags": {
+    "mobile_invalid_first": true,
+    "payslips_bad_first": true,
+    "email_invalid_first": true,
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "mobile_invalid_first",
+    "payslips_bad_first",
+    "email_invalid_first",
+    "negotiate_roi_over_limit",
+    "negotiation_refused"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "gl_0082_wrong_aadhaar_otp_first+email_invalid_first",
+  "seed": 200082,
+  "start_epoch": 1790121129,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9843513734",
+    "name": "Priya Kumar",
+    "email": "priya.kumar18@example.com",
+    "aadhaar": "2504 2839 6520",
+    "pan": "FYXPK9031E",
+    "address": "Flat No- 487, Lake View Road, Vijayawada, Andhra Pradesh - 520060",
+    "pincode": "520060",
+    "dob": "06/06/1971",
+    "father": "Priya Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP31",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Priya Kumar",
+      "phone": "8639164476",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 78.24,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 78.24,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 114500.0,
+        "name": "Priya Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 115000.0,
+        "name": "Priya Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 115000.0,
+        "name": "Priya Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 45,
+    "occupation": "accounts executive",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 781
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "004493877600",
+    "ifsc": "UBIN0249256"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true,
+    "email_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "wrong_aadhaar_otp_first",
+    "email_invalid_first"
+  ]
+}

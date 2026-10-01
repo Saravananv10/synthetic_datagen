@@ -1,0 +1,87 @@
+{
+  "id": "gl_0083_happy",
+  "seed": 200083,
+  "start_epoch": 1790111702,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7518800791",
+    "name": "Ganesh Menon",
+    "email": "ganesh.menon28@example.com",
+    "aadhaar": "3775 6588 1178",
+    "pan": "JUSPM0356L",
+    "address": "Flat No- 274, Lake View Road, Pune, Maharashtra - 411023",
+    "pincode": "411023",
+    "dob": "19/08/1981",
+    "father": "Suresh Menon"
+  },
+  "profile": {
+    "appointment_id": "AP57",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Sai Menon",
+      "phone": "8517561253",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 81.15,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 81.15,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 114000.0,
+        "name": "Ganesh Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 114000.0,
+        "name": "Ganesh Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 114000.0,
+        "name": "Ganesh Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 49,
+    "occupation": "accounts executive",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 731
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "09992278412",
+    "ifsc": "ICIC0717272"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "happy"
+  ]
+}

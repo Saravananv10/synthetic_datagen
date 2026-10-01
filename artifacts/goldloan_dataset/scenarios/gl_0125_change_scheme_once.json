@@ -1,0 +1,90 @@
+{
+  "id": "gl_0125_change_scheme_once",
+  "seed": 200125,
+  "start_epoch": 1790126210,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6220140944",
+    "name": "Pooja Joshi",
+    "email": "pooja.joshi31@example.com",
+    "aadhaar": "3704 5204 2256",
+    "pan": "QIIPJ4657I",
+    "address": "Flat No- 354, Rajaji Street, Kochi, Kerala - 682002",
+    "pincode": "682002",
+    "dob": "01/09/1969",
+    "father": "Deepa Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP76",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Arjun Joshi",
+      "phone": "8060779349",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 104.37,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 104.37,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 49500.0,
+        "name": "Pooja Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 50000.0,
+        "name": "Pooja Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 49500.0,
+        "name": "Pooja Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 25,
+    "occupation": "software support engineer",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 813
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "45892104542",
+    "ifsc": "HDFC0146168",
+    "first_offer_id": "GL_FULL_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "change_scheme_once"
+  ]
+}

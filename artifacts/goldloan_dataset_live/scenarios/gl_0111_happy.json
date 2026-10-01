@@ -1,0 +1,87 @@
+{
+  "id": "gl_0111_happy",
+  "seed": 200111,
+  "start_epoch": 1790164818,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6629810113",
+    "name": "Arjun Kumar",
+    "email": "arjun.kumar48@example.com",
+    "aadhaar": "3802 0390 2180",
+    "pan": "QSLPK4279H",
+    "address": "Flat No- 725, Temple Street, Vijayawada, Andhra Pradesh - 520094",
+    "pincode": "520094",
+    "dob": "19/09/1968",
+    "father": "Deepa Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP35",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Ramesh Kumar",
+      "phone": "7167467225",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 117.92,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 117.92,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 52500.0,
+        "name": "Arjun Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 52000.0,
+        "name": "Arjun Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 52000.0,
+        "name": "Arjun Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "staff nurse",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 734
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "20470074581",
+    "ifsc": "HDFC0500486"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "happy"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0272_wrong_aadhaar_otp_first",
+  "seed": 200272,
+  "start_epoch": 1790119190,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6838436092",
+    "name": "Anjali Rao",
+    "email": "anjali.rao15@example.com",
+    "aadhaar": "4699 7122 4302",
+    "pan": "ETWPR7605M",
+    "address": "Flat No- 509, Lake View Road, Kochi, Kerala - 682013",
+    "pincode": "682013",
+    "dob": "16/10/1990",
+    "father": "Lakshmi Rao"
+  },
+  "profile": {
+    "appointment_id": "AP97",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Ramesh Rao",
+      "phone": "6460584844",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 71.03,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 71.03,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 143000.0,
+        "name": "Anjali Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 143500.0,
+        "name": "Anjali Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 143500.0,
+        "name": "Anjali Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 41,
+    "occupation": "school teacher",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 793
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "817900717497",
+    "ifsc": "SBIN0950088"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "wrong_aadhaar_otp_first"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "gl_0119_mobile_invalid_first+check_approval_early+wrong_email_otp_fi",
+  "seed": 200119,
+  "start_epoch": 1790130645,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6254526839",
+    "name": "Lakshmi Rao",
+    "email": "lakshmi.rao72@example.com",
+    "aadhaar": "7365 1778 4325",
+    "pan": "FTAPR3996D",
+    "address": "Flat No- 314, MG Road, Bengaluru, Karnataka - 560026",
+    "pincode": "560026",
+    "dob": "25/12/1971",
+    "father": "Sneha Rao"
+  },
+  "profile": {
+    "appointment_id": "AP46",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Ramesh Rao",
+      "phone": "7187924738",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 76.52,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 76.52,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 129500.0,
+        "name": "Lakshmi Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 129000.0,
+        "name": "Lakshmi Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 128500.0,
+        "name": "Lakshmi Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 45,
+    "occupation": "software support engineer",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 775
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "90162617604203",
+    "ifsc": "UBIN0686018"
+  },
+  "flags": {
+    "mobile_invalid_first": true,
+    "check_approval_early": true,
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "mobile_invalid_first",
+    "check_approval_early",
+    "wrong_email_otp_first"
+  ]
+}

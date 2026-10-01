@@ -1,0 +1,89 @@
+{
+  "id": "gl_0109_wrong_mobile_otp_first",
+  "seed": 200109,
+  "start_epoch": 1790103118,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9989440779",
+    "name": "Meena Singh",
+    "email": "meena.singh21@example.com",
+    "aadhaar": "8133 8546 8198",
+    "pan": "IKEPS9841O",
+    "address": "Flat No- 223, Ashok Colony, Bengaluru, Karnataka - 560061",
+    "pincode": "560061",
+    "dob": "27/07/1999",
+    "father": "Anjali Singh"
+  },
+  "profile": {
+    "appointment_id": "AP06",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Lakshmi Singh",
+      "phone": "7907145958",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 89.56,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 89.56,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 84000.0,
+        "name": "Meena Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 83000.0,
+        "name": "Meena Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 84000.0,
+        "name": "Meena Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 59,
+    "occupation": "staff nurse",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 702
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "83649219028294",
+    "ifsc": "UBIN0637900"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_mobile_otp_first"
+  ]
+}

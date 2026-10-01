@@ -1,0 +1,92 @@
+{
+  "id": "gl_0074_change_scheme_once+identity_upload_incomplete_first",
+  "seed": 200074,
+  "start_epoch": 1790138772,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6173642938",
+    "name": "Aarav Pillai",
+    "email": "aarav.pillai61@example.com",
+    "aadhaar": "7963 2065 6766",
+    "pan": "DLDPP2877Y",
+    "address": "Flat No- 504, Lake View Road, Kochi, Kerala - 682086",
+    "pincode": "682086",
+    "dob": "14/04/1999",
+    "father": "Deepa Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP77",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Vivaan Pillai",
+      "phone": "9721909632",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 114.95,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 114.95,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 114000.0,
+        "name": "Aarav Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 115000.0,
+        "name": "Aarav Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 114000.0,
+        "name": "Aarav Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 60,
+    "occupation": "accounts executive",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 750
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "629987086695",
+    "ifsc": "HDFC0671853",
+    "first_offer_id": "GL_FULL_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true,
+    "identity_upload_incomplete_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "change_scheme_once",
+    "identity_upload_incomplete_first"
+  ]
+}

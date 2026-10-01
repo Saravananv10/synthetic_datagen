@@ -1,0 +1,87 @@
+{
+  "id": "gl_0274_happy",
+  "seed": 200274,
+  "start_epoch": 1790108366,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8924787359",
+    "name": "Ganesh Iyer",
+    "email": "ganesh.iyer91@example.com",
+    "aadhaar": "6185 7525 7257",
+    "pan": "QYIPI5515P",
+    "address": "Flat No- 351, Rajaji Street, Bengaluru, Karnataka - 560039",
+    "pincode": "560039",
+    "dob": "08/02/1998",
+    "father": "Mahesh Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP79",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Aarav Iyer",
+      "phone": "9251721558",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 73.08,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 73.08,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 40000.0,
+        "name": "Ganesh Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 39500.0,
+        "name": "Ganesh Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 39500.0,
+        "name": "Ganesh Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "logistics coordinator",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 734
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "58090332257361",
+    "ifsc": "ICIC0135462"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "happy"
+  ]
+}

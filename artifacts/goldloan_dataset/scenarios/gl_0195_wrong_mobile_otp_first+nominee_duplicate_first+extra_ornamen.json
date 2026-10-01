@@ -1,0 +1,117 @@
+{
+  "id": "gl_0195_wrong_mobile_otp_first+nominee_duplicate_first+extra_ornamen",
+  "seed": 200195,
+  "start_epoch": 1790151006,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8124887815",
+    "name": "Anjali Gupta",
+    "email": "anjali.gupta78@example.com",
+    "aadhaar": "4365 5753 5524",
+    "pan": "RCGPG4983X",
+    "address": "Flat No- 601, Ashok Colony, Bengaluru, Karnataka - 560081",
+    "pincode": "560081",
+    "dob": "28/05/1970",
+    "father": "Arjun Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP97",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Mahesh Gupta",
+      "phone": "9123509578",
+      "relation": "child"
+    },
+    "nominee_alt": {
+      "name": "Ramesh Gupta",
+      "phone": "8894617916",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 60.82,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 60.82,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 37.5,
+        "stone_deduction": 1.2,
+        "karat": 22,
+        "scale_reading": 37.5,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 20.35,
+        "stone_deduction": 0.5,
+        "karat": 20,
+        "scale_reading": 20.35,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 116500.0,
+        "name": "Anjali Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 116500.0,
+        "name": "Anjali Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 116000.0,
+        "name": "Anjali Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 36,
+    "occupation": "factory supervisor",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 813
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "42868685535",
+    "ifsc": "UBIN0930657"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true,
+    "nominee_duplicate_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "wrong_mobile_otp_first",
+    "nominee_duplicate_first",
+    "extra_ornament"
+  ]
+}

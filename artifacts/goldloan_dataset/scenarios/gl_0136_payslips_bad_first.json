@@ -1,0 +1,96 @@
+{
+  "id": "gl_0136_payslips_bad_first",
+  "seed": 200136,
+  "start_epoch": 1790143322,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6286413302",
+    "name": "Ramesh Das",
+    "email": "ramesh.das72@example.com",
+    "aadhaar": "9249 1664 3110",
+    "pan": "TMLPD5016K",
+    "address": "Flat No- 238, MG Road, Pune, Maharashtra - 411058",
+    "pincode": "411058",
+    "dob": "06/01/1981",
+    "father": "Anjali Das"
+  },
+  "profile": {
+    "appointment_id": "AP34",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Venkat Das",
+      "phone": "8623586343",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 131.12,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 131.12,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 54500.0,
+        "name": "Ramesh Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 53500.0,
+        "name": "Ramesh Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 54000.0,
+        "name": "Ramesh Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 28,
+    "occupation": "staff nurse",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 799
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "59426719476879",
+    "ifsc": "SBIN0681386"
+  },
+  "flags": {
+    "payslips_bad_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "payslips_bad_first"
+  ]
+}

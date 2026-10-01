@@ -1,0 +1,89 @@
+{
+  "id": "gl_0214_invalid_appointment_first",
+  "seed": 200214,
+  "start_epoch": 1790126688,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9109045381",
+    "name": "Sai Pillai",
+    "email": "sai.pillai46@example.com",
+    "aadhaar": "2565 6621 5071",
+    "pan": "DOWPP0474Q",
+    "address": "Flat No- 664, Rajaji Street, Bengaluru, Karnataka - 560043",
+    "pincode": "560043",
+    "dob": "14/03/2000",
+    "father": "Sai Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP99",
+    "language": "English",
+    "nominee": {
+      "name": "Aarav Pillai",
+      "phone": "8844269804",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 93.75,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 93.75,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 131500.0,
+        "name": "Sai Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 131000.0,
+        "name": "Sai Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 131500.0,
+        "name": "Sai Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "factory supervisor",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 747
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "49692468948",
+    "ifsc": "UBIN0951652"
+  },
+  "flags": {
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "invalid_appointment_first"
+  ]
+}

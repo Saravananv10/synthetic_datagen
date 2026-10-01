@@ -1,0 +1,14 @@
+{
+  "scenario_id": "gl_0105_sanction_email_retry+negotiate_roi_over_limit+nominee_duplic",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "DUPLICATE_FOUND",
+    "INGEST_GOLD",
+    "NEGOTIATION_LIMIT",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

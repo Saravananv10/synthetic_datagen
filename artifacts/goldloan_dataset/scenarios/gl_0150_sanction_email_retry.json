@@ -1,0 +1,94 @@
+{
+  "id": "gl_0150_sanction_email_retry",
+  "seed": 200150,
+  "start_epoch": 1790111314,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6989297001",
+    "name": "Aarav Menon",
+    "email": "aarav.menon86@example.com",
+    "aadhaar": "2543 3294 4153",
+    "pan": "JGGPM4929H",
+    "address": "Flat No- 609, Lake View Road, Chennai, Tamil Nadu - 600030",
+    "pincode": "600030",
+    "dob": "14/11/1975",
+    "father": "Karthik Menon"
+  },
+  "profile": {
+    "appointment_id": "AP20",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Anjali Menon",
+      "phone": "6735687100",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 64.2,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 64.2,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 78000.0,
+        "name": "Aarav Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 79000.0,
+        "name": "Aarav Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 79000.0,
+        "name": "Aarav Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 25,
+    "occupation": "logistics coordinator",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 777
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "68758855931",
+    "ifsc": "UBIN0806372"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "sanction_email_retry"
+  ]
+}

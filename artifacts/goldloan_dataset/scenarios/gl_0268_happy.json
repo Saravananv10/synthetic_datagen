@@ -1,0 +1,87 @@
+{
+  "id": "gl_0268_happy",
+  "seed": 200268,
+  "start_epoch": 1790116922,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8729298048",
+    "name": "Naveen Joshi",
+    "email": "naveen.joshi30@example.com",
+    "aadhaar": "2794 0781 1134",
+    "pan": "ABLPJ2665G",
+    "address": "Flat No- 821, Temple Street, Kochi, Kerala - 682086",
+    "pincode": "682086",
+    "dob": "25/11/1998",
+    "father": "Ananya Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP02",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Harish Joshi",
+      "phone": "7225987281",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 82.89,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 82.89,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 120500.0,
+        "name": "Naveen Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 121000.0,
+        "name": "Naveen Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 121000.0,
+        "name": "Naveen Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 29,
+    "occupation": "factory supervisor",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 783
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "531446191690",
+    "ifsc": "SBIN0255537"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "happy"
+  ]
+}

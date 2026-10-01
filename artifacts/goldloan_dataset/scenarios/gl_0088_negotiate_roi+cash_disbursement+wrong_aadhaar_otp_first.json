@@ -1,0 +1,93 @@
+{
+  "id": "gl_0088_negotiate_roi+cash_disbursement+wrong_aadhaar_otp_first",
+  "seed": 200088,
+  "start_epoch": 1790160408,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7838719504",
+    "name": "Sai Kumar",
+    "email": "sai.kumar27@example.com",
+    "aadhaar": "2472 7815 1315",
+    "pan": "LIYPK1602Y",
+    "address": "Flat No- 235, Green Park, Chennai, Tamil Nadu - 600082",
+    "pincode": "600082",
+    "dob": "04/06/1972",
+    "father": "Aarav Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP16",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Aditya Kumar",
+      "phone": "6848091417",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 138.48,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 138.48,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 31000.0,
+        "name": "Sai Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 30500.0,
+        "name": "Sai Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 30000.0,
+        "name": "Sai Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 46,
+    "occupation": "factory supervisor",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 772
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": "",
+    "requested_roi": 11.2
+  },
+  "flags": {
+    "negotiate_roi": true,
+    "wrong_aadhaar_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "negotiate_roi",
+    "cash_disbursement",
+    "wrong_aadhaar_otp_first"
+  ]
+}

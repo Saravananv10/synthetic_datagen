@@ -1,0 +1,6 @@
+Loaded 100 scenario(s)
+Loaded 100 scenario(s)
+Loaded 100 scenario(s)
+gl_0000_happy -> /home/saravanan/Desktop/soket/loop/artifacts/goldloan_dataset_live/traces/gl_0000_happy.json (33 turns, outcome=completed, status=completed)
+gl_0002_email_invalid_first -> /home/saravanan/Desktop/soket/loop/artifacts/goldloan_dataset_live/traces/gl_0002_email_invalid_first.json (31 turns, outcome=completed, status=completed)
+gl_0001_mobile_invalid_first -> /home/saravanan/Desktop/soket/loop/artifacts/goldloan_dataset_live/traces/gl_0001_mobile_invalid_first.json (34 turns, outcome=completed, status=completed)

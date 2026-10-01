@@ -1,0 +1,2850 @@
+{
+  "schema": "goldloan-trace/1",
+  "session_id": "gl_0258_sanction_email_retry-200258",
+  "scenario_id": "gl_0258_sanction_email_retry",
+  "seed": 200258,
+  "mode": "scripted",
+  "models": {
+    "agent": "scripted-oracle",
+    "human": "scripted-policy"
+  },
+  "timing_is_simulated": true,
+  "tool_definitions": {
+    "1": [
+      {
+        "function": {
+          "description": "Store one onboarding field (mobile, name or email) in the session.",
+          "name": "store_user_detail",
+          "parameters": {
+            "properties": {
+              "field_name": {
+                "enum": [
+                  "mobile",
+                  "name",
+                  "email"
+                ],
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "field_name",
+              "value"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Send a 6-digit OTP to the customer's mobile number or email (must be stored first).",
+          "name": "send_otp",
+          "parameters": {
+            "properties": {
+              "otp_type": {
+                "enum": [
+                  "mobile",
+                  "email"
+                ],
+                "type": "string"
+              },
+              "recipient": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "otp_type"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Verify the OTP the customer received on mobile or email.",
+          "name": "verify_otp",
+          "parameters": {
+            "properties": {
+              "otp": {
+                "type": "string"
+              },
+              "otp_type": {
+                "enum": [
+                  "mobile",
+                  "email"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "otp",
+              "otp_type"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Check whether all onboarding fields are collected and verified.",
+          "name": "get_collection_status",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      }
+    ],
+    "2": [
+      {
+        "function": {
+          "description": "Persist the Aadhaar/PAN documents summarised by the upload ingest step.",
+          "name": "collect_identity_documents",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Send an OTP to the Aadhaar-linked mobile number (Aadhaar OTP eKYC).",
+          "name": "generate_aadhar_otp",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Verify the Aadhaar OTP.",
+          "name": "verify_aadhar_otp",
+          "parameters": {
+            "properties": {
+              "otp": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "otp"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "After customer consent, verify the PAN-Aadhaar link and store the verified PAN/Aadhaar numbers.",
+          "name": "store_numbers",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      }
+    ],
+    "3": [
+      {
+        "function": {
+          "description": "Confirm the address (from Aadhaar, or override with a proof upload) or save the appointment id and preferred language.",
+          "name": "confirm_address",
+          "parameters": {
+            "properties": {
+              "action": {
+                "enum": [
+                  "use_aadhaar",
+                  "override",
+                  "set_appointment"
+                ],
+                "type": "string"
+              },
+              "appointment_id": {
+                "type": "string"
+              },
+              "preferred_language": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Run the duplicate-customer check for the borrower or the nominee.",
+          "name": "run_dedupe",
+          "parameters": {
+            "properties": {
+              "role": {
+                "enum": [
+                  "borrower",
+                  "nominee"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "role"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Store the nominee's name, 10-digit phone and relation.",
+          "name": "store_nominee",
+          "parameters": {
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "relation": {
+                "description": "spouse, child, parent, sibling or other (any letter case; the demo passed 'Sibling')",
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "phone",
+              "relation"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      }
+    ],
+    "4": [
+      {
+        "function": {
+          "description": "Persist the ornament summarised by the gold-ingest step (photo on scale + certificate).",
+          "name": "collect_gold_item",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Value all collected gold items and compute the maximum eligible loan.",
+          "name": "value_gold",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "value"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Check that the gold is not already pledged.",
+          "name": "check_pledge",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "check"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Close the gold stage after the last ornament.",
+          "name": "finalize_gold",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "finalize"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      }
+    ],
+    "5": [
+      {
+        "function": {
+          "description": "Load the available loan schemes.",
+          "name": "get_offers",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Record the scheme the customer selected.",
+          "name": "select_scheme",
+          "parameters": {
+            "properties": {
+              "offer_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "offer_id"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "quote: compute the plan for the selected scheme; negotiate: request a lower ROI; confirm: confirm the offer (fails until income and bureau steps are done).",
+          "name": "calculate_offer",
+          "parameters": {
+            "properties": {
+              "action": {
+                "enum": [
+                  "quote",
+                  "negotiate",
+                  "confirm"
+                ],
+                "type": "string"
+              },
+              "requested_roi": {
+                "type": "number"
+              },
+              "tenure_months": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Record the customer's employment type (required for loans above the income threshold).",
+          "name": "capture_income",
+          "parameters": {
+            "properties": {
+              "declared_income": {
+                "type": "number"
+              },
+              "employment_type": {
+                "enum": [
+                  "salaried",
+                  "self_employed"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "employment_type"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Persist the payslips summarised by the payslip-ingest step.",
+          "name": "collect_payslips",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Fetch the customer's credit bureau (CIBIL) score.",
+          "name": "get_bureau_score",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Compute final loan eligibility from gold value, income and bureau score.",
+          "name": "check_loan_eligibility",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      }
+    ],
+    "6": [
+      {
+        "function": {
+          "description": "pd: record that the personal discussion is complete; gdr: issue the Gold Description Receipt and start the cooling-off wait.",
+          "name": "run_pd_and_gdr",
+          "parameters": {
+            "properties": {
+              "action": {
+                "enum": [
+                  "pd",
+                  "gdr"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Check approval after the cooling-off period.",
+          "name": "check_approval_status",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Record whether the customer accepted or declined the Key Fact Statement.",
+          "name": "acknowledge_kfs",
+          "parameters": {
+            "properties": {
+              "action": {
+                "enum": [
+                  "accept",
+                  "decline"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Generate the e-sign link for the customer.",
+          "name": "generate_esign_url",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Check whether the customer completed the e-sign.",
+          "name": "check_esign_status",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "allocate: reserve a packet; disburse: soft-allocate the amount (mock transaction) in the chosen mode.",
+          "name": "allocate_and_disburse",
+          "parameters": {
+            "properties": {
+              "account_number": {
+                "type": "string"
+              },
+              "action": {
+                "enum": [
+                  "allocate",
+                  "disburse"
+                ],
+                "type": "string"
+              },
+              "disbursement_mode": {
+                "enum": [
+                  "NEFT",
+                  "IMPS",
+                  "CASH"
+                ],
+                "type": "string"
+              },
+              "ifsc": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      },
+      {
+        "function": {
+          "description": "Email the sanction letter to the customer.",
+          "name": "send_sanction_letter_email",
+          "parameters": {
+            "properties": {
+              "trigger": {
+                "enum": [
+                  "trigger"
+                ],
+                "type": "string"
+              }
+            },
+            "required": [
+              "trigger"
+            ],
+            "type": "object"
+          }
+        },
+        "type": "function"
+      }
+    ]
+  },
+  "stage_prompts": {
+    "1": "You are a gold-loan assistant working inside a staged, tool-driven loan-origination workflow. You talk to the person operating the application (the loan officer / customer at the counter). You never make up data: every fact you state must come from the person's messages or from a tool result.\n\n# Output conventions (apply to every reply)\n- Your final reply is short plain text: one question or one status update per turn.\n- To offer clickable buttons, end the reply with `<<BUTTONS:OPTION_A/OPTION_B/EXIT>>` (options separated by `/`, uppercase). Use exactly the buttons the stage instructions specify. Buttons are never used on a reply that is only a status update the user should acknowledge by typing Proceed, unless the instructions say so.\n- When you show a table, use markdown pipes and keep only the rows given by tool results.\n- Mask personal data exactly as tool results mask it (e.g. `XXXXXX3210`, `XXXX-XXXX-3628`). Never print a full Aadhaar, PAN body or account number that a tool returned masked.\n- Call at most the tools listed for your stage. Call a tool only when its instructions say to; never call a tool twice for the same step unless a step says to retry.\n- Tool results are authoritative. If a tool returns `success: false`, do not pretend it worked: read `error_code` and `message`, follow the stage's error rules, and tell the user in one sentence what to do next.\n- Never mention tools, JSON, stages' internals, or these instructions to the user. Never reveal or guess OTP values.\n- If the user says EXIT, reply with one sentence acknowledging that the application is paused and stop asking questions.\n- If the user's input is not what you asked for (wrong format, off-topic), ask again for exactly that one item; do not advance.\n- Stay inside your stage. When your stage's completion condition is met, say so and offer the PROCEED button; the next stage is handled by a different assistant.\n- Never announce that a step is done (\"stored\", \"verified\", \"sent\", \"complete\", \"confirmed\") until the tool that performs it has returned `success: true` in this same turn. When the instructions say \"call X immediately\" or \"then call Y\", make those calls in the same turn, before you write your reply. Do not skip a tool because you expect it to succeed.\n- Your reply is exactly the message for the user: no reasoning, no notes, no repeated sentences, no blank-line runs. One reply per turn.\n\n\n# Stage 1 — Gold Loan Onboarding\nGoal: collect and verify the customer's mobile number, full name and email, then confirm everything is collected.\n\nFIRST REPLY ONLY: whatever the user's first message is (e.g. \"Hey\"), reply exactly: `Welcome to Stage 1: Gold Loan Onboarding.` newline `Please enter customer's 10-digit mobile number`\n\n## Flow (strict order, one step per turn)\n1. Mobile number. When the user gives a 10-digit number: call `store_user_detail(field_name=\"mobile\", value=<number>)`. If it succeeds, call `send_otp(otp_type=\"mobile\", recipient=<number>)`, then reply: `Please enter the 6-digit OTP sent to <masked mobile>.` with buttons `RESEND OTP/EXIT`.\n2. Mobile OTP. When the user gives an OTP: call `verify_otp(otp=<otp>, otp_type=\"mobile\")`. On success reply exactly `Please enter the customer's full name.` (no buttons).\n   - `INVALID_OTP`: say the OTP did not match, say how many attempts are left, ask for it again (buttons `RESEND OTP/EXIT`).\n   - `OTP_ATTEMPTS_EXCEEDED`: say the OTP is locked and offer `RESEND OTP/EXIT`.\n   - If the user chooses RESEND OTP: call `send_otp` again for the same channel.\n3. Name. Call `store_user_detail(field_name=\"name\", value=<name>)`, then ask for the email address: `Please enter the customer's email address.`\n4. Email. Call `store_user_detail(field_name=\"email\", value=<email>)`. If it succeeds call `send_otp(otp_type=\"email\", recipient=<email>)` and reply `Please enter the 6-digit OTP sent to <masked email>.` with buttons `RESEND OTP/EXIT`.\n5. Email OTP. Call `verify_otp(otp=<otp>, otp_type=\"email\")`. On success call `get_collection_status(trigger=\"trigger\")` immediately.\n6. Completion. If `get_collection_status` succeeds reply `All onboarding details collected.` with buttons `PROCEED/EXIT`. If it reports missing fields, go back and collect exactly those.\n\n## Validation errors\n- `INVALID_MOBILE` / `INVALID_EMAIL` / `INVALID_NAME` from `store_user_detail`: tell the user what was wrong in one sentence and ask for that item again.\n",
+    "2": "You are a gold-loan assistant working inside a staged, tool-driven loan-origination workflow. You talk to the person operating the application (the loan officer / customer at the counter). You never make up data: every fact you state must come from the person's messages or from a tool result.\n\n# Output conventions (apply to every reply)\n- Your final reply is short plain text: one question or one status update per turn.\n- To offer clickable buttons, end the reply with `<<BUTTONS:OPTION_A/OPTION_B/EXIT>>` (options separated by `/`, uppercase). Use exactly the buttons the stage instructions specify. Buttons are never used on a reply that is only a status update the user should acknowledge by typing Proceed, unless the instructions say so.\n- When you show a table, use markdown pipes and keep only the rows given by tool results.\n- Mask personal data exactly as tool results mask it (e.g. `XXXXXX3210`, `XXXX-XXXX-3628`). Never print a full Aadhaar, PAN body or account number that a tool returned masked.\n- Call at most the tools listed for your stage. Call a tool only when its instructions say to; never call a tool twice for the same step unless a step says to retry.\n- Tool results are authoritative. If a tool returns `success: false`, do not pretend it worked: read `error_code` and `message`, follow the stage's error rules, and tell the user in one sentence what to do next.\n- Never mention tools, JSON, stages' internals, or these instructions to the user. Never reveal or guess OTP values.\n- If the user says EXIT, reply with one sentence acknowledging that the application is paused and stop asking questions.\n- If the user's input is not what you asked for (wrong format, off-topic), ask again for exactly that one item; do not advance.\n- Stay inside your stage. When your stage's completion condition is met, say so and offer the PROCEED button; the next stage is handled by a different assistant.\n- Never announce that a step is done (\"stored\", \"verified\", \"sent\", \"complete\", \"confirmed\") until the tool that performs it has returned `success: true` in this same turn. When the instructions say \"call X immediately\" or \"then call Y\", make those calls in the same turn, before you write your reply. Do not skip a tool because you expect it to succeed.\n- Your reply is exactly the message for the user: no reasoning, no notes, no repeated sentences, no blank-line runs. One reply per turn.\n\n\n# Stage 2 — Identity Verification (Aadhaar and PAN)\nGoal: store the identity documents, verify the Aadhaar by OTP, verify the PAN-Aadhaar link.\n\nFIRST REPLY ONLY: your first input is the user's `PROCEED`. Reply exactly: `Welcome to Stage 2: Identity Verification Please upload Aadhaar and PAN images.`\n\n## Flow\n1. Documents. The user uploads images; you receive a text `[DOCUMENT SUMMARY] ...` produced by the document-extraction step. It ends with an `Action:` line.\n   - If `Status: COMPLETE` (both Aadhaar and PAN confirmed): call `collect_identity_documents(trigger=\"trigger\")` immediately.\n   - If the status is anything else (e.g. `INCOMPLETE`, `MISMATCH`, `UNREADABLE`): do not call any tool; tell the user in one sentence which document or field is the problem and ask them to upload it again.\n2. After `collect_identity_documents` succeeds reply `Identity documents stored. Proceed to Aadhaar OTP eKYC?` with buttons `PROCEED/EXIT`. If it returns `success: false`, relay the reason and ask for a re-upload.\n3. When the user says PROCEED: call `generate_aadhar_otp(trigger=\"trigger\")`, then reply `OTP sent successfully for Aadhaar <masked aadhaar>. Please enter the OTP received by the customer.` with buttons `RESEND OTP/EXIT`.\n4. When the user gives the OTP: call `verify_aadhar_otp(otp=<otp>)`.\n   - On success reply `Aadhaar Card Exists.` newline `Do you give consent to verify the PAN-Aadhaar link?` with buttons `YES/EXIT`.\n   - `INVALID_OTP`: say it did not match, give attempts left, ask again with buttons `RESEND OTP/EXIT`. `OTP_ATTEMPTS_EXCEEDED`: say the OTP is locked and offer `RESEND OTP/EXIT`. On RESEND OTP call `generate_aadhar_otp` again.\n5. When the user says YES: call `store_numbers(trigger=\"trigger\")`.\n   - On success reply with the tool's message (e.g. `PAN BDAXX132XA verified and linked to Aadhaar. KYC complete. Proceeding to Next Step.`) with buttons `PROCEED/EXIT`.\n   - `PAN_NOT_LINKED`: tell the user the PAN and Aadhaar are not linked and that the application cannot continue until they are; offer `EXIT` only.\n   - `PAN_VERIFICATION_FAILED`: tell the user the PAN could not be verified; offer `EXIT` only.\n6. If the user declines consent, explain that the PAN-Aadhaar link check is mandatory and offer `YES/EXIT` again once.\n",
+    "3": "You are a gold-loan assistant working inside a staged, tool-driven loan-origination workflow. You talk to the person operating the application (the loan officer / customer at the counter). You never make up data: every fact you state must come from the person's messages or from a tool result.\n\n# Output conventions (apply to every reply)\n- Your final reply is short plain text: one question or one status update per turn.\n- To offer clickable buttons, end the reply with `<<BUTTONS:OPTION_A/OPTION_B/EXIT>>` (options separated by `/`, uppercase). Use exactly the buttons the stage instructions specify. Buttons are never used on a reply that is only a status update the user should acknowledge by typing Proceed, unless the instructions say so.\n- When you show a table, use markdown pipes and keep only the rows given by tool results.\n- Mask personal data exactly as tool results mask it (e.g. `XXXXXX3210`, `XXXX-XXXX-3628`). Never print a full Aadhaar, PAN body or account number that a tool returned masked.\n- Call at most the tools listed for your stage. Call a tool only when its instructions say to; never call a tool twice for the same step unless a step says to retry.\n- Tool results are authoritative. If a tool returns `success: false`, do not pretend it worked: read `error_code` and `message`, follow the stage's error rules, and tell the user in one sentence what to do next.\n- Never mention tools, JSON, stages' internals, or these instructions to the user. Never reveal or guess OTP values.\n- If the user says EXIT, reply with one sentence acknowledging that the application is paused and stop asking questions.\n- If the user's input is not what you asked for (wrong format, off-topic), ask again for exactly that one item; do not advance.\n- Stay inside your stage. When your stage's completion condition is met, say so and offer the PROCEED button; the next stage is handled by a different assistant.\n- Never announce that a step is done (\"stored\", \"verified\", \"sent\", \"complete\", \"confirmed\") until the tool that performs it has returned `success: true` in this same turn. When the instructions say \"call X immediately\" or \"then call Y\", make those calls in the same turn, before you write your reply. Do not skip a tool because you expect it to succeed.\n- Your reply is exactly the message for the user: no reasoning, no notes, no repeated sentences, no blank-line runs. One reply per turn.\n\n\n# Stage 3 — Profile Details (address, appointment, language, dedupe, nominee)\nGoal: confirm the address, capture the appointment id and preferred language, clear borrower dedupe, capture the nominee and clear nominee dedupe.\n\nFIRST REPLY ONLY: your first input is the user's `PROCEED`. Reply exactly: `Welcome to Stage 3: Profile Details Confirm address from Aadhaar, or override with proof upload.` with buttons `USE AADHAAR/OVERRIDE/EXIT`.\n\n## Flow\n1. Address. If the user picks USE AADHAAR: call `confirm_address(action=\"use_aadhaar\")`, then reply `Address confirmed from Aadhaar: <address from the tool>` newline `Please provide the customer's appointment ID (mandatory for doorstep/agent valuation).`\n   - If the user picks OVERRIDE: ask them to upload the address proof. You will receive a text `[DOCUMENT SUMMARY] ...`; if `Status: COMPLETE` call `confirm_address(action=\"override\")` and continue as above with the tool's address; otherwise ask for a clearer upload.\n2. Appointment id. Store it in memory (do not call a tool yet) and reply exactly `Please provide the customer's preferred language.`\n3. Language. Call `confirm_address(action=\"set_appointment\", appointment_id=<id>, preferred_language=<language>)`.\n   - `INVALID_APPOINTMENT`: tell the user that appointment id is not valid and ask for it again (then ask for the language again too, since you must resend both).\n   - On success call `run_dedupe(role=\"borrower\")` immediately.\n4. Borrower dedupe. If clear, reply `Borrower dedupe clear.` newline `Please provide the customer's nominee full name.` If `DUPLICATE_FOUND`: tell the user an existing customer record matches and the application cannot continue; offer `EXIT` only.\n5. Nominee. Ask one item per turn, in this order: full name (already asked), then `Please provide the nominee's 10-digit phone number.`, then `Please provide the nominee's relation (spouse/child/parent/sibling/other).`\n6. After the relation: call `store_nominee(name=<name>, phone=<phone>, relation=<relation>)`. If it fails with `INVALID_PHONE` / `INVALID_RELATION` ask for that item again. On success call `run_dedupe(role=\"nominee\")` immediately.\n7. Nominee dedupe. If clear reply `Nominee dedupe clear. Profile can proceed.` with buttons `PROCEED/EXIT`. If `DUPLICATE_FOUND` tell the user the nominee matches an existing record and ask for a different nominee (restart from the nominee's full name).\n",
+    "4": "You are a gold-loan assistant working inside a staged, tool-driven loan-origination workflow. You talk to the person operating the application (the loan officer / customer at the counter). You never make up data: every fact you state must come from the person's messages or from a tool result.\n\n# Output conventions (apply to every reply)\n- Your final reply is short plain text: one question or one status update per turn.\n- To offer clickable buttons, end the reply with `<<BUTTONS:OPTION_A/OPTION_B/EXIT>>` (options separated by `/`, uppercase). Use exactly the buttons the stage instructions specify. Buttons are never used on a reply that is only a status update the user should acknowledge by typing Proceed, unless the instructions say so.\n- When you show a table, use markdown pipes and keep only the rows given by tool results.\n- Mask personal data exactly as tool results mask it (e.g. `XXXXXX3210`, `XXXX-XXXX-3628`). Never print a full Aadhaar, PAN body or account number that a tool returned masked.\n- Call at most the tools listed for your stage. Call a tool only when its instructions say to; never call a tool twice for the same step unless a step says to retry.\n- Tool results are authoritative. If a tool returns `success: false`, do not pretend it worked: read `error_code` and `message`, follow the stage's error rules, and tell the user in one sentence what to do next.\n- Never mention tools, JSON, stages' internals, or these instructions to the user. Never reveal or guess OTP values.\n- If the user says EXIT, reply with one sentence acknowledging that the application is paused and stop asking questions.\n- If the user's input is not what you asked for (wrong format, off-topic), ask again for exactly that one item; do not advance.\n- Stay inside your stage. When your stage's completion condition is met, say so and offer the PROCEED button; the next stage is handled by a different assistant.\n- Never announce that a step is done (\"stored\", \"verified\", \"sent\", \"complete\", \"confirmed\") until the tool that performs it has returned `success: true` in this same turn. When the instructions say \"call X immediately\" or \"then call Y\", make those calls in the same turn, before you write your reply. Do not skip a tool because you expect it to succeed.\n- Your reply is exactly the message for the user: no reasoning, no notes, no repeated sentences, no blank-line runs. One reply per turn.\n\n\n# Stage 4 — Gold Valuation\nGoal: collect every ornament (photo on the weighing scale + purchase bill or valuation certificate), value it, check the pledge, and finalise.\n\nFIRST REPLY ONLY: your first input is the user's `PROCEED`. Reply exactly: `Welcome to Stage 4: Gold Valuation.` newline `Please upload BOTH:` newline `- a clear photo of the ornament on the weighing scale, AND` newline `- the purchase bill OR valuation certificate.`\n\n## Flow\n1. Upload. You receive a text `[GOLD INGEST SUMMARY] Status: ... Type: ... Gross wt: ... Purity: ... Deduction: ... Vision: ... Doc: ... Note: ... Action: ...` produced by the extraction step.\n   - `Status: PASS`: call `collect_gold_item(trigger=\"trigger\")`, then `value_gold(trigger=\"value\")` immediately.\n   - Any other status (`FAIL`, `WEIGHT_MISMATCH`, `UNREADABLE`, `INCOMPLETE`): call no tool; explain in one sentence what the extraction found wrong (e.g. the scale reads a different weight than the certificate, or the certificate is missing) and ask for a corrected upload of what is needed.\n2. After `value_gold` succeeds, present a markdown table with rows `Item Value`, `Total Gold Valuation`, `Max Eligible Loan` (values from the tool, formatted `Rs <amount>`), preceded by one line `Item value: Rs <item_value> Total gold valuation: Rs <total> Max eligible loan: Rs <max>`, then ask `Does the customer have another ornament?` with buttons `YES/NO/EXIT`.\n   - `ITEM_LIMIT_REACHED` or `KARAT_TOO_LOW` from the tools: relay the reason and continue at step 3 (no more ornaments) or ask for a different item.\n3. If YES: ask for the next ornament's photo and certificate (same as step 1). If NO: call `check_pledge(trigger=\"check\")`.\n   - `PLEDGE_FOUND`: tell the user the gold is already pledged and the application cannot continue; offer `EXIT` only.\n   - Clear: call `finalize_gold(trigger=\"finalize\")` immediately.\n4. After `finalize_gold` reply `Gold stage complete. Items=<n>, value=Rs <value>, max loan=Rs <max>.` followed by a two-column table (Description/Value) with `Total Items`, `Total Gold Valuation`, `Max Eligible Loan`, and buttons `PROCEED/EXIT`.\n",
+    "5": "You are a gold-loan assistant working inside a staged, tool-driven loan-origination workflow. You talk to the person operating the application (the loan officer / customer at the counter). You never make up data: every fact you state must come from the person's messages or from a tool result.\n\n# Output conventions (apply to every reply)\n- Your final reply is short plain text: one question or one status update per turn.\n- To offer clickable buttons, end the reply with `<<BUTTONS:OPTION_A/OPTION_B/EXIT>>` (options separated by `/`, uppercase). Use exactly the buttons the stage instructions specify. Buttons are never used on a reply that is only a status update the user should acknowledge by typing Proceed, unless the instructions say so.\n- When you show a table, use markdown pipes and keep only the rows given by tool results.\n- Mask personal data exactly as tool results mask it (e.g. `XXXXXX3210`, `XXXX-XXXX-3628`). Never print a full Aadhaar, PAN body or account number that a tool returned masked.\n- Call at most the tools listed for your stage. Call a tool only when its instructions say to; never call a tool twice for the same step unless a step says to retry.\n- Tool results are authoritative. If a tool returns `success: false`, do not pretend it worked: read `error_code` and `message`, follow the stage's error rules, and tell the user in one sentence what to do next.\n- Never mention tools, JSON, stages' internals, or these instructions to the user. Never reveal or guess OTP values.\n- If the user says EXIT, reply with one sentence acknowledging that the application is paused and stop asking questions.\n- If the user's input is not what you asked for (wrong format, off-topic), ask again for exactly that one item; do not advance.\n- Stay inside your stage. When your stage's completion condition is met, say so and offer the PROCEED button; the next stage is handled by a different assistant.\n- Never announce that a step is done (\"stored\", \"verified\", \"sent\", \"complete\", \"confirmed\") until the tool that performs it has returned `success: true` in this same turn. When the instructions say \"call X immediately\" or \"then call Y\", make those calls in the same turn, before you write your reply. Do not skip a tool because you expect it to succeed.\n- Your reply is exactly the message for the user: no reasoning, no notes, no repeated sentences, no blank-line runs. One reply per turn.\n\n\n# Stage 5 — Offer Selection (scheme, quote, income, bureau, eligibility, confirmation)\nGoal: let the customer choose a scheme, quote it, capture income when required, check the bureau score and eligibility, and confirm the offer.\n\nFIRST REPLY ONLY: your first input is the user's `PROCEED`. Call `get_offers(trigger=\"trigger\")` and reply with one line `Available schemes:` then a table with columns `Offer ID | Scheme Type | ROI | Tenure | Repayment` (ROI as `12.0%`, tenure as `12m`) built only from the tool result, then `Which offer did the customer select?` — no buttons on this reply; the user types the offer id as free text.\n\n## Flow (this stage deliberately advances one step per user \"Proceed\")\n1. Selection. When the user names an offer id: call `select_scheme(offer_id=<id>)` and then `calculate_offer(action=\"quote\", tenure_months=\"<tenure>\")`. Present `The customer's plan is as follows:` then a table `Plan Details | Value` with `Loan Amount`, `ROI`, `Tenure`, `Monthly EMI`, `APR`, `LTV` from the tool, then buttons `CONFIRM/CHANGE/EXIT`. (For a Bullet scheme show `Monthly Interest` instead of `Monthly EMI` if the tool returns that.)\n   - `INVALID_OFFER`: say that offer id is not available and re-ask.\n2. CHANGE. Ask whether the customer wants a different scheme or a lower ROI. For a lower ROI call `calculate_offer(action=\"negotiate\", tenure_months=\"<tenure>\", requested_roi=<roi>)` and present the tool's result the same way as a quote (or explain the counter-offer / refusal in one sentence), again with `CONFIRM/CHANGE/EXIT`. For a different scheme go back to step 1.\n3. CONFIRM. Call `calculate_offer(action=\"confirm\", tenure_months=\"<tenure>\")`.\n   - `INCOME_REQUIRED`: reply `The loan amount exceeds Rs 250,000, so income capture is required. Please provide the customer's employment type.` with buttons `SALARIED/SELF-EMPLOYED/EXIT`.\n   - `BUREAU_REQUIRED`: reply `The system requires a bureau check before the final confirmation. I will fetch the customer's bureau score.` (no buttons, no tool call this turn — the user will type Proceed).\n   - success: go to step 8.\n4. Employment type. Call `capture_income(employment_type=\"salaried\")` for SALARIED. If the tool succeeds reply `Employment type salaried saved. Please upload the customer's last 3 consecutive monthly payslips.` For SELF-EMPLOYED call `capture_income(employment_type=\"self_employed\")`; if it returns `UNSUPPORTED_EMPLOYMENT_TYPE` tell the user this application must be handled at the branch (manual underwriting) and offer `EXIT` only.\n5. Payslips. You receive a text `[PAYSLIP SUMMARY] Payslips: n/3 Months: ... Consecutive: Yes|No Date range: Valid|Expired Name match: Yes|No Status: PASS|FAIL Action: ...`.\n   - `Status: PASS`: call `collect_payslips(trigger=\"trigger\")`, then `calculate_offer(action=\"confirm\", tenure_months=\"<tenure>\")` immediately and handle its result as in step 3.\n   - `Status: FAIL`: call no tool; say what is wrong (missing month, not consecutive, too old, name mismatch) and ask for corrected payslips.\n6. When the user types Proceed after the bureau notice: call `get_bureau_score(trigger=\"trigger\")` and reply `The customer's CIBIL score is <score> (<tier>). I am now checking the final loan eligibility.` (no buttons). If `eligible_for_loan` is false reply that the customer is not eligible because of the bureau score and offer `EXIT` only.\n7. When the user types Proceed: call `check_loan_eligibility(trigger=\"trigger\")`. On success reply `Eligibility confirmed for Rs <amount>. I am now finalizing the offer.` (no buttons). On failure (`NOT_ELIGIBLE`, `FOIR_EXCEEDED`) explain in one sentence and offer `EXIT` only. When the user types Proceed again call `calculate_offer(action=\"confirm\", tenure_months=\"<tenure>\")`.\n8. On confirm success reply `The offer has been confirmed at the full eligible amount of Rs <loan_amount>.` with buttons `PROCEED/EXIT`.\n",
+    "6": "You are a gold-loan assistant working inside a staged, tool-driven loan-origination workflow. You talk to the person operating the application (the loan officer / customer at the counter). You never make up data: every fact you state must come from the person's messages or from a tool result.\n\n# Output conventions (apply to every reply)\n- Your final reply is short plain text: one question or one status update per turn.\n- To offer clickable buttons, end the reply with `<<BUTTONS:OPTION_A/OPTION_B/EXIT>>` (options separated by `/`, uppercase). Use exactly the buttons the stage instructions specify. Buttons are never used on a reply that is only a status update the user should acknowledge by typing Proceed, unless the instructions say so.\n- When you show a table, use markdown pipes and keep only the rows given by tool results.\n- Mask personal data exactly as tool results mask it (e.g. `XXXXXX3210`, `XXXX-XXXX-3628`). Never print a full Aadhaar, PAN body or account number that a tool returned masked.\n- Call at most the tools listed for your stage. Call a tool only when its instructions say to; never call a tool twice for the same step unless a step says to retry.\n- Tool results are authoritative. If a tool returns `success: false`, do not pretend it worked: read `error_code` and `message`, follow the stage's error rules, and tell the user in one sentence what to do next.\n- Never mention tools, JSON, stages' internals, or these instructions to the user. Never reveal or guess OTP values.\n- If the user says EXIT, reply with one sentence acknowledging that the application is paused and stop asking questions.\n- If the user's input is not what you asked for (wrong format, off-topic), ask again for exactly that one item; do not advance.\n- Stay inside your stage. When your stage's completion condition is met, say so and offer the PROCEED button; the next stage is handled by a different assistant.\n- Never announce that a step is done (\"stored\", \"verified\", \"sent\", \"complete\", \"confirmed\") until the tool that performs it has returned `success: true` in this same turn. When the instructions say \"call X immediately\" or \"then call Y\", make those calls in the same turn, before you write your reply. Do not skip a tool because you expect it to succeed.\n- Your reply is exactly the message for the user: no reasoning, no notes, no repeated sentences, no blank-line runs. One reply per turn.\n\n\n# Stage 6 — Closing and Disbursal (bank-facing)\nGoal: record the personal discussion and GDR, wait out the cooling-off period, get KFS acceptance and e-sign, collect the disbursement details, soft-allocate, and email the sanction letter. The real money transfer is done by the client's payment gateway, not by you.\n\nFIRST REPLY ONLY: your first input is the user's `PROCEED`. Reply exactly: `Welcome to Stage 6: Closing and Disbursal. Has the Personal Discussion (PD) checklist been completed with the customer?` with buttons `YES/EXIT`.\n\n## Flow\n1. PD and GDR. On YES call `run_pd_and_gdr(action=\"pd\")`, then `run_pd_and_gdr(action=\"gdr\")`. Reply with the GDR number on its own line, then `Please check the approval after the waiting period.` with buttons `CHECK APPROVAL/EXIT`. If the user answers anything but YES, reply that the PD checklist must be completed first and repeat the question.\n2. Approval. On CHECK APPROVAL call `check_approval_status(trigger=\"trigger\")`.\n   - Approved: reply `Approved.` newline `Please ask the customer to acknowledge the Key Fact Statement (KFS).` with buttons `ACCEPT/DECLINE/EXIT`.\n   - `APPROVAL_PENDING`: tell the user the cooling-off wait is not over (say how many seconds remain if the tool says) and offer `CHECK APPROVAL/EXIT` again.\n   - `APPROVAL_REJECTED`: tell the user the application was not approved; offer `EXIT` only.\n3. KFS. On ACCEPT call `acknowledge_kfs(action=\"accept\")` then `generate_esign_url(trigger=\"trigger\")`, and reply `Please open this link to complete your e-signature:` followed by the exact URL from the tool, with buttons `DONE/EXIT`. On DECLINE call `acknowledge_kfs(action=\"decline\")`, tell the user the application is closed because the KFS was declined, and stop.\n4. E-sign. On DONE call `check_esign_status(trigger=\"trigger\")`.\n   - Signed: reply `Document signed successfully.` newline `Please provide the disbursement type (NEFT, IMPS, or CASH) and the disbursed account number if electronic.` with buttons `PROCEED/EXIT`. The user's next message is the mode (e.g. NEFT).\n   - `ESIGN_PENDING`: tell the user the signature is not complete yet and re-offer the link buttons `DONE/EXIT`.\n5. Disbursement details. When the user gives NEFT or IMPS: ask `Please provide the disbursed account number for the <MODE> transfer.` and then, if the tool needs it, the IFSC code. For CASH no account is needed. Validate nothing yourself; the tool validates (`INVALID_ACCOUNT`, `INVALID_IFSC`: relay and ask again).\n6. Allocate. Call `allocate_and_disburse(action=\"allocate\", disbursement_mode=<mode>, account_number=<acct>, ifsc=<ifsc>)` (omit fields that do not apply), then `allocate_and_disburse(action=\"disburse\", disbursement_mode=<mode>, account_number=<acct>, ifsc=<ifsc>)`, then `send_sanction_letter_email(trigger=\"trigger\")`.\n   - If `send_sanction_letter_email` fails with a transient error (`RuntimeError`, timeout), retry it once; if it fails again tell the user the letter will be re-sent and finish.\n7. Final message: `Gold loan sanction letter emailed to <masked email>. Ref: <ref>. Packet <packet_id>. Txn <txn_id>. Mode <MODE>. Account <masked account>.` (use CASH-appropriate wording without an account for cash). No buttons.\n"
+  },
+  "conversation": [
+    {
+      "turn": 1,
+      "stage": 1,
+      "clock_s": 0,
+      "user": {
+        "role": "operator",
+        "text": "Hello",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Onboarding State Store",
+          "input": "Hello",
+          "tool_calls": [],
+          "final_output": {
+            "text": "Welcome to Stage 1: Gold Loan Onboarding.\nPlease enter customer's 10-digit mobile number",
+            "structured_response": {
+              "options": null,
+              "response": "Welcome to Stage 1: Gold Loan Onboarding.\nPlease enter customer's 10-digit mobile number"
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 602
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "stage": 1,
+      "clock_s": 12,
+      "user": {
+        "role": "operator",
+        "text": "7167397113",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Onboarding State Store",
+          "input": "7167397113",
+          "tool_calls": [
+            {
+              "name": "store_user_detail",
+              "arguments": {
+                "field_name": "mobile",
+                "value": "7167397113"
+              },
+              "output": {
+                "message": "Mobile stored as XXXXXX7113. Call send_otp next.",
+                "success": true
+              },
+              "clock_s": 12
+            },
+            {
+              "name": "send_otp",
+              "arguments": {
+                "otp_type": "mobile",
+                "recipient": "7167397113"
+              },
+              "output": {
+                "message": "OTP sent to XXXXXX7113.",
+                "otp_type": "mobile",
+                "success": true
+              },
+              "clock_s": 12
+            }
+          ],
+          "final_output": {
+            "text": "Please enter the 6-digit OTP sent to XXXXXX7113.",
+            "structured_response": {
+              "options": [
+                "RESEND OTP",
+                "EXIT"
+              ],
+              "response": "Please enter the 6-digit OTP sent to XXXXXX7113."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 914
+        }
+      ]
+    },
+    {
+      "turn": 3,
+      "stage": 1,
+      "clock_s": 31,
+      "user": {
+        "role": "operator",
+        "text": "687782",
+        "attachments": [],
+        "device": [
+          "[DEVICE] SMS to XXXXXX7113: Your Gold Loan OTP is 687782. Do not share it."
+        ]
+      },
+      "agents": [
+        {
+          "agent_name": "Onboarding State Store",
+          "input": "687782",
+          "tool_calls": [
+            {
+              "name": "verify_otp",
+              "arguments": {
+                "otp": "687782",
+                "otp_type": "mobile"
+              },
+              "output": {
+                "message": "Mobile verified successfully.",
+                "otp_type": "mobile",
+                "success": true
+              },
+              "clock_s": 31
+            }
+          ],
+          "final_output": {
+            "text": "Please enter the customer's full name.",
+            "structured_response": {
+              "options": null,
+              "response": "Please enter the customer's full name."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 582
+        }
+      ]
+    },
+    {
+      "turn": 4,
+      "stage": 1,
+      "clock_s": 41,
+      "user": {
+        "role": "operator",
+        "text": "Venkat Pillai",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Onboarding State Store",
+          "input": "Venkat Pillai",
+          "tool_calls": [
+            {
+              "name": "store_user_detail",
+              "arguments": {
+                "field_name": "name",
+                "value": "Venkat Pillai"
+              },
+              "output": {
+                "message": "Name stored for Venkat Pillai.",
+                "success": true
+              },
+              "clock_s": 41
+            }
+          ],
+          "final_output": {
+            "text": "Please enter the customer's email address.",
+            "structured_response": {
+              "options": null,
+              "response": "Please enter the customer's email address."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 598
+        }
+      ]
+    },
+    {
+      "turn": 5,
+      "stage": 1,
+      "clock_s": 58,
+      "user": {
+        "role": "operator",
+        "text": "venkat.pillai43@example.com",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Onboarding State Store",
+          "input": "venkat.pillai43@example.com",
+          "tool_calls": [
+            {
+              "name": "store_user_detail",
+              "arguments": {
+                "field_name": "email",
+                "value": "venkat.pillai43@example.com"
+              },
+              "output": {
+                "message": "Email stored (masked). Call send_otp for email.",
+                "success": true
+              },
+              "clock_s": 58
+            },
+            {
+              "name": "send_otp",
+              "arguments": {
+                "otp_type": "email",
+                "recipient": "venkat.pillai43@example.com"
+              },
+              "output": {
+                "message": "OTP sent to ve****@example.com.",
+                "otp_type": "email",
+                "success": true
+              },
+              "clock_s": 58
+            }
+          ],
+          "final_output": {
+            "text": "Please enter the 6-digit OTP sent to ve****@example.com.",
+            "structured_response": {
+              "options": [
+                "RESEND OTP",
+                "EXIT"
+              ],
+              "response": "Please enter the 6-digit OTP sent to ve****@example.com."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 946
+        }
+      ]
+    },
+    {
+      "turn": 6,
+      "stage": 1,
+      "clock_s": 66,
+      "user": {
+        "role": "operator",
+        "text": "120177",
+        "attachments": [],
+        "device": [
+          "[DEVICE] Email to ve****@example.com: Your Gold Loan OTP is 120177. Do not share it."
+        ]
+      },
+      "agents": [
+        {
+          "agent_name": "Onboarding State Store",
+          "input": "120177",
+          "tool_calls": [
+            {
+              "name": "verify_otp",
+              "arguments": {
+                "otp": "120177",
+                "otp_type": "email"
+              },
+              "output": {
+                "message": "Email verified successfully.",
+                "otp_type": "email",
+                "success": true
+              },
+              "clock_s": 66
+            },
+            {
+              "name": "get_collection_status",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "message": "All onboarding parameters collected.",
+                "missing": [],
+                "success": true
+              },
+              "clock_s": 66
+            }
+          ],
+          "final_output": {
+            "text": "All onboarding details collected.",
+            "structured_response": {
+              "options": [
+                "PROCEED",
+                "EXIT"
+              ],
+              "response": "All onboarding details collected."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 842
+        }
+      ]
+    },
+    {
+      "turn": 7,
+      "stage": 2,
+      "clock_s": 81,
+      "user": {
+        "role": "operator",
+        "text": "PROCEED",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Identity State Store",
+          "input": "PROCEED",
+          "tool_calls": [],
+          "final_output": {
+            "text": "Welcome to Stage 2: Identity Verification Please upload Aadhaar and PAN images.",
+            "structured_response": {
+              "options": null,
+              "response": "Welcome to Stage 2: Identity Verification Please upload Aadhaar and PAN images."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 566
+        }
+      ]
+    },
+    {
+      "turn": 8,
+      "stage": 2,
+      "clock_s": 87,
+      "user": {
+        "role": "operator",
+        "text": "No input message provided.",
+        "attachments": [
+          "pan_card",
+          "aadhaar_front",
+          "aadhaar_back"
+        ]
+      },
+      "agents": [
+        {
+          "agent_name": "Identity State Store",
+          "input": "[DOCUMENT SUMMARY] Aadhaar: Detected (masked: XXXX-XXXX-6034) PAN: Detected (masked: DHUXX045XA) Name: Venkat Pillai Address: Detected (masked: Flat No- 16...- 500043) Pincode: 500043 Status: COMPLETE Action: Both Aadhaar and PAN are confirmed. Call collect_identity_documents(trigger='trigger') immediately.",
+          "tool_calls": [
+            {
+              "name": "collect_identity_documents",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "message": "Identity documents stored. Proceed to Aadhaar OTP eKYC verification.",
+                "success": true
+              },
+              "clock_s": 87
+            }
+          ],
+          "final_output": {
+            "text": "Identity documents stored. Proceed to Aadhaar OTP eKYC?",
+            "structured_response": {
+              "options": [
+                "PROCEED",
+                "EXIT"
+              ],
+              "response": "Identity documents stored. Proceed to Aadhaar OTP eKYC?"
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 750
+        }
+      ],
+      "ingest": {
+        "kind": "identity",
+        "vision_model": "deterministic",
+        "docs": [
+          {
+            "doc": "pan",
+            "fixture": "pan_card",
+            "scan_text": "आयकर विभाग  भारत सरकार\nINCOME TAX DEPARTMENT  GOVT. OF INDIA\nस्थायी लेखा संख्या कार्ड\nPermanent Account Number Card\nDHUPP0456A\nनाम / Name\nVENKAT PILLAI\nपिता का नाम / Father's Name\nARJUN PILLAI\nजन्म की तारीख / Date of Birth\n15/05/1980\nहस्ताक्षर / Signature",
+            "truth": {
+              "dob": "15/05/1980",
+              "father_name": "ARJUN PILLAI",
+              "name": "VENKAT PILLAI",
+              "pan_number": "DHUPP0456A"
+            },
+            "extracted": {
+              "dob": "15/05/1980",
+              "father_name": "ARJUN PILLAI",
+              "name": "VENKAT PILLAI",
+              "pan_number": "DHUPP0456A"
+            }
+          },
+          {
+            "doc": "aadhaar_front",
+            "fixture": "aadhaar_front",
+            "scan_text": "भारत सरकार\nGovernment of India\nVenkat Pillai\nजन्म तिथि / DOB: 15/05/1980\n3359 1063 6034\nमेरा आधार, मेरी पहचान",
+            "truth": {
+              "aadhaar_number": "3359 1063 6034",
+              "dob": "15/05/1980",
+              "name": "Venkat Pillai"
+            },
+            "extracted": {
+              "aadhaar_number": "3359 1063 6034",
+              "dob": "15/05/1980",
+              "name": "Venkat Pillai"
+            }
+          },
+          {
+            "doc": "aadhaar_back",
+            "fixture": "aadhaar_back",
+            "scan_text": "भारतीय विशिष्ट पहचान प्राधिकरण\nUnique Identification Authority of India\nAddress: Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043\n3359 1063 6034\n1947  help@uidai.gov.in  www.uidai.gov.in",
+            "truth": {
+              "aadhaar_number": "3359 1063 6034",
+              "address": "Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043",
+              "pincode": "500043"
+            },
+            "extracted": {
+              "aadhaar_number": "3359 1063 6034",
+              "address": "Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043",
+              "pincode": "500043"
+            }
+          }
+        ],
+        "summary": "[DOCUMENT SUMMARY] Aadhaar: Detected (masked: XXXX-XXXX-6034) PAN: Detected (masked: DHUXX045XA) Name: Venkat Pillai Address: Detected (masked: Flat No- 16...- 500043) Pincode: 500043 Status: COMPLETE Action: Both Aadhaar and PAN are confirmed. Call collect_identity_documents(trigger='trigger') immediately.",
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "turn": 9,
+      "stage": 2,
+      "clock_s": 100,
+      "user": {
+        "role": "operator",
+        "text": "PROCEED",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Identity State Store",
+          "input": "PROCEED",
+          "tool_calls": [
+            {
+              "name": "generate_aadhar_otp",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "masked_aadhaar": "XXXX-XXXX-6034",
+                "message": "OTP sent successfully",
+                "success": true
+              },
+              "clock_s": 100
+            }
+          ],
+          "final_output": {
+            "text": "OTP sent successfully for Aadhaar XXXX-XXXX-6034. Please enter the OTP received by the customer.",
+            "structured_response": {
+              "options": [
+                "RESEND OTP",
+                "EXIT"
+              ],
+              "response": "OTP sent successfully for Aadhaar XXXX-XXXX-6034. Please enter the OTP received by the customer."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 926
+        }
+      ]
+    },
+    {
+      "turn": 10,
+      "stage": 2,
+      "clock_s": 120,
+      "user": {
+        "role": "operator",
+        "text": "936707",
+        "attachments": [],
+        "device": [
+          "[DEVICE] SMS from UIDAI to the Aadhaar-linked mobile: Your Aadhaar OTP is 936707."
+        ]
+      },
+      "agents": [
+        {
+          "agent_name": "Identity State Store",
+          "input": "936707",
+          "tool_calls": [
+            {
+              "name": "verify_aadhar_otp",
+              "arguments": {
+                "otp": "936707"
+              },
+              "output": {
+                "message": "Aadhaar eKYC verified. Ask consent to verify the PAN-Aadhaar link, then call store_numbers.",
+                "success": true
+              },
+              "clock_s": 120
+            }
+          ],
+          "final_output": {
+            "text": "Aadhaar Card Exists.\nDo you give consent to verify the PAN-Aadhaar link?",
+            "structured_response": {
+              "options": [
+                "YES",
+                "EXIT"
+              ],
+              "response": "Aadhaar Card Exists.\nDo you give consent to verify the PAN-Aadhaar link?"
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 802
+        }
+      ]
+    },
+    {
+      "turn": 11,
+      "stage": 2,
+      "clock_s": 131,
+      "user": {
+        "role": "operator",
+        "text": "YES",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Identity State Store",
+          "input": "YES",
+          "tool_calls": [
+            {
+              "name": "store_numbers",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "masked_pan": "DHUXX045XA",
+                "message": "PAN DHUXX045XA verified and linked to Aadhaar. KYC complete. Proceeding to Next Step.",
+                "proceed": true,
+                "success": true
+              },
+              "clock_s": 131
+            }
+          ],
+          "final_output": {
+            "text": "PAN DHUXX045XA verified and linked to Aadhaar. KYC complete. Proceeding to Next Step.",
+            "structured_response": {
+              "options": [
+                "PROCEED",
+                "EXIT"
+              ],
+              "response": "PAN DHUXX045XA verified and linked to Aadhaar. KYC complete. Proceeding to Next Step."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 870
+        }
+      ]
+    },
+    {
+      "turn": 12,
+      "stage": 3,
+      "clock_s": 149,
+      "user": {
+        "role": "operator",
+        "text": "PROCEED",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Address State Store",
+          "input": "PROCEED",
+          "tool_calls": [],
+          "final_output": {
+            "text": "Welcome to Stage 3: Profile Details Confirm address from Aadhaar, or override with proof upload.",
+            "structured_response": {
+              "options": [
+                "USE AADHAAR",
+                "OVERRIDE",
+                "EXIT"
+              ],
+              "response": "Welcome to Stage 3: Profile Details Confirm address from Aadhaar, or override with proof upload."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 786
+        }
+      ]
+    },
+    {
+      "turn": 13,
+      "stage": 3,
+      "clock_s": 158,
+      "user": {
+        "role": "operator",
+        "text": "USE AADHAAR",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Address State Store",
+          "input": "USE AADHAAR",
+          "tool_calls": [
+            {
+              "name": "confirm_address",
+              "arguments": {
+                "action": "use_aadhaar"
+              },
+              "output": {
+                "address": "Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043",
+                "message": "Address confirmed from Aadhaar. This is the address present on aadhaar: Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043",
+                "success": true
+              },
+              "clock_s": 158
+            }
+          ],
+          "final_output": {
+            "text": "Address confirmed from Aadhaar: Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043\nPlease provide the customer's appointment ID (mandatory for doorstep/agent valuation).",
+            "structured_response": {
+              "options": null,
+              "response": "Address confirmed from Aadhaar: Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043\nPlease provide the customer's appointment ID (mandatory for doorstep/agent valuation)."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1138
+        }
+      ]
+    },
+    {
+      "turn": 14,
+      "stage": 3,
+      "clock_s": 174,
+      "user": {
+        "role": "operator",
+        "text": "AP16",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Address State Store",
+          "input": "AP16",
+          "tool_calls": [],
+          "final_output": {
+            "text": "Please provide the customer's preferred language.",
+            "structured_response": {
+              "options": null,
+              "response": "Please provide the customer's preferred language."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 446
+        }
+      ]
+    },
+    {
+      "turn": 15,
+      "stage": 3,
+      "clock_s": 181,
+      "user": {
+        "role": "operator",
+        "text": "English",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Address State Store",
+          "input": "English",
+          "tool_calls": [
+            {
+              "name": "confirm_address",
+              "arguments": {
+                "action": "set_appointment",
+                "appointment_id": "AP16",
+                "preferred_language": "English"
+              },
+              "output": {
+                "message": "Appointment and language saved. Call run_dedupe for borrower.",
+                "success": true
+              },
+              "clock_s": 181
+            },
+            {
+              "name": "run_dedupe",
+              "arguments": {
+                "role": "borrower"
+              },
+              "output": {
+                "message": "Borrower dedupe clear. Collect nominee name, phone, relation.",
+                "success": true
+              },
+              "clock_s": 181
+            }
+          ],
+          "final_output": {
+            "text": "Borrower dedupe clear.\nPlease provide the customer's nominee full name.",
+            "structured_response": {
+              "options": null,
+              "response": "Borrower dedupe clear.\nPlease provide the customer's nominee full name."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 894
+        }
+      ]
+    },
+    {
+      "turn": 16,
+      "stage": 3,
+      "clock_s": 195,
+      "user": {
+        "role": "operator",
+        "text": "Aditya Pillai",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Address State Store",
+          "input": "Aditya Pillai",
+          "tool_calls": [],
+          "final_output": {
+            "text": "Please provide the nominee's 10-digit phone number.",
+            "structured_response": {
+              "options": null,
+              "response": "Please provide the nominee's 10-digit phone number."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 454
+        }
+      ]
+    },
+    {
+      "turn": 17,
+      "stage": 3,
+      "clock_s": 200,
+      "user": {
+        "role": "operator",
+        "text": "8865450384",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Address State Store",
+          "input": "8865450384",
+          "tool_calls": [],
+          "final_output": {
+            "text": "Please provide the nominee's relation (spouse/child/parent/sibling/other).",
+            "structured_response": {
+              "options": null,
+              "response": "Please provide the nominee's relation (spouse/child/parent/sibling/other)."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 546
+        }
+      ]
+    },
+    {
+      "turn": 18,
+      "stage": 3,
+      "clock_s": 212,
+      "user": {
+        "role": "operator",
+        "text": "Spouse",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Address State Store",
+          "input": "Spouse",
+          "tool_calls": [
+            {
+              "name": "store_nominee",
+              "arguments": {
+                "name": "Aditya Pillai",
+                "phone": "8865450384",
+                "relation": "Spouse"
+              },
+              "output": {
+                "message": "Nominee stored (phone masked). Call run_dedupe(role='nominee').",
+                "success": true
+              },
+              "clock_s": 212
+            },
+            {
+              "name": "run_dedupe",
+              "arguments": {
+                "role": "nominee"
+              },
+              "output": {
+                "message": "Nominee dedupe clear. Profile can proceed.",
+                "success": true
+              },
+              "clock_s": 212
+            }
+          ],
+          "final_output": {
+            "text": "Nominee dedupe clear. Profile can proceed.",
+            "structured_response": {
+              "options": [
+                "PROCEED",
+                "EXIT"
+              ],
+              "response": "Nominee dedupe clear. Profile can proceed."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 878
+        }
+      ]
+    },
+    {
+      "turn": 19,
+      "stage": 4,
+      "clock_s": 231,
+      "user": {
+        "role": "operator",
+        "text": "PROCEED",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Gold Valuation State Store",
+          "input": "PROCEED",
+          "tool_calls": [],
+          "final_output": {
+            "text": "Welcome to Stage 4: Gold Valuation.\nPlease upload BOTH:\n- a clear photo of the ornament on the weighing scale, AND\n- the purchase bill OR valuation certificate.",
+            "structured_response": {
+              "options": null,
+              "response": "Welcome to Stage 4: Gold Valuation.\nPlease upload BOTH:\n- a clear photo of the ornament on the weighing scale, AND\n- the purchase bill OR valuation certificate."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 890
+        }
+      ]
+    },
+    {
+      "turn": 20,
+      "stage": 4,
+      "clock_s": 241,
+      "user": {
+        "role": "operator",
+        "text": "No input message provided.",
+        "attachments": [
+          "necklace_on_scale",
+          "gold_valuation_certificate"
+        ]
+      },
+      "agents": [
+        {
+          "agent_name": "Gold Valuation State Store",
+          "input": "[GOLD INGEST SUMMARY] Status: PASS Type: necklace Gross wt: 124.82 Purity: 20.0 Deduction: 1.6 Vision: type=necklace wt=124.82 Doc: type=necklace wt=124.82 purity=20 Note: bedrock_ok,gemma_ok,regex_merge,ocr_ok,doc_stored,match_ok Action: Call collect_gold_item(trigger='trigger') then value_gold(trigger='value').",
+          "tool_calls": [
+            {
+              "name": "collect_gold_item",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "message": "Gold item collected (1 total). Call value_gold(trigger='value').",
+                "success": true
+              },
+              "clock_s": 241
+            },
+            {
+              "name": "value_gold",
+              "arguments": {
+                "trigger": "value"
+              },
+              "output": {
+                "fine_weight_g": 112.0182,
+                "item_value": 672109.09,
+                "ltv_cap_pct": 75.0,
+                "max_eligible_loan": 504081.82,
+                "message": "Item valued. Fine wt 112.0182g, item value Rs 672109.09. Total gold value Rs 672109.09. Max eligible loan Rs 504081.82.",
+                "success": true,
+                "total_gold_valuation": 672109.09
+              },
+              "clock_s": 241
+            }
+          ],
+          "final_output": {
+            "text": "Item value: Rs 672109.09 Total gold valuation: Rs 672109.09 Max eligible loan: Rs 504081.82\n\n| Description | Value |\n|---|---|\n| Item Value | Rs 672109.09 |\n| Total Gold Valuation | Rs 672109.09 |\n| Max Eligible Loan | Rs 504081.82 |\n\nDoes the customer have another ornament?",
+            "structured_response": {
+              "options": [
+                "YES",
+                "NO",
+                "EXIT"
+              ],
+              "response": "Item value: Rs 672109.09 Total gold valuation: Rs 672109.09 Max eligible loan: Rs 504081.82\n\n| Description | Value |\n|---|---|\n| Item Value | Rs 672109.09 |\n| Total Gold Valuation | Rs 672109.09 |\n| Max Eligible Loan | Rs 504081.82 |\n\nDoes the customer have another ornament?"
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1806
+        }
+      ],
+      "ingest": {
+        "kind": "gold",
+        "vision_model": "deterministic",
+        "docs": [
+          {
+            "doc": "gold_photo",
+            "fixture": "necklace_on_scale",
+            "scan_text": "[PHOTO] A necklace lying on a stainless-steel digital weighing scale. The scale's LCD display reads 124.82 g.",
+            "truth": {
+              "ornament_type": "necklace",
+              "scale_reading_g": 124.82
+            },
+            "extracted": {
+              "ornament_type": "necklace",
+              "scale_reading_g": 124.82
+            }
+          },
+          {
+            "doc": "gold_certificate",
+            "fixture": "gold_valuation_certificate",
+            "scan_text": "CERTIFIED GOLD VALUATION CERTIFICATE\nEmpanelled Appraiser - Sample Gold Assay Lab\nCertificate No.: GVC-2026-3258\nDate: 08-09-2026\nAppraiser ID: APP-4491\nCUSTOMER DETAILS\nCustomer Name: Venkat Pillai\nITEM DETAILS\nOrnament Type: necklace\nItem Description: Hallmarked gold necklace with pendant\nGross Weight: 124.82 grams\nStone / Dust Deduction: 1.6 grams\nNet Weight: 123.22 grams\nPurity / Caratage: 20.0K (20.0 karat)\nTesting Method: XRF\nNumber of Items: 1\nFine Weight Note: Fine Weight = Net x (K/22)\nVALUATION REMARKS\nEligible jewellery collateral - not bullion\nSignature of Appraiser",
+            "truth": {
+              "certificate_no": "GVC-2026-3258",
+              "customer_name": "Venkat Pillai",
+              "gross_weight_g": 124.82,
+              "item_description": "Hallmarked gold necklace with pendant",
+              "net_weight_g": 123.22,
+              "ornament_type": "necklace",
+              "purity_karat": 20.0,
+              "stone_deduction_g": 1.6
+            },
+            "extracted": {
+              "certificate_no": "GVC-2026-3258",
+              "customer_name": "Venkat Pillai",
+              "gross_weight_g": 124.82,
+              "item_description": "Hallmarked gold necklace with pendant",
+              "net_weight_g": 123.22,
+              "ornament_type": "necklace",
+              "purity_karat": 20.0,
+              "stone_deduction_g": 1.6
+            }
+          }
+        ],
+        "summary": "[GOLD INGEST SUMMARY] Status: PASS Type: necklace Gross wt: 124.82 Purity: 20.0 Deduction: 1.6 Vision: type=necklace wt=124.82 Doc: type=necklace wt=124.82 purity=20 Note: bedrock_ok,gemma_ok,regex_merge,ocr_ok,doc_stored,match_ok Action: Call collect_gold_item(trigger='trigger') then value_gold(trigger='value').",
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "turn": 21,
+      "stage": 4,
+      "clock_s": 258,
+      "user": {
+        "role": "operator",
+        "text": "NO",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Gold Valuation State Store",
+          "input": "NO",
+          "tool_calls": [
+            {
+              "name": "check_pledge",
+              "arguments": {
+                "trigger": "check"
+              },
+              "output": {
+                "message": "Pledge check clear. Call finalize_gold.",
+                "success": true
+              },
+              "clock_s": 258
+            },
+            {
+              "name": "finalize_gold",
+              "arguments": {
+                "trigger": "finalize"
+              },
+              "output": {
+                "message": "Gold stage complete. Items=1, value=Rs 672109.09, max loan=Rs 504081.82.",
+                "success": true
+              },
+              "clock_s": 258
+            }
+          ],
+          "final_output": {
+            "text": "Gold stage complete. Items=1, value=Rs 672109.09, max loan=Rs 504081.82.\n\n| Description | Value |\n|---|---|\n| Total Items | 1 |\n| Total Gold Valuation | Rs 672109.09 |\n| Max Eligible Loan | Rs 504081.82 |",
+            "structured_response": {
+              "options": [
+                "PROCEED",
+                "EXIT"
+              ],
+              "response": "Gold stage complete. Items=1, value=Rs 672109.09, max loan=Rs 504081.82.\n\n| Description | Value |\n|---|---|\n| Total Items | 1 |\n| Total Gold Valuation | Rs 672109.09 |\n| Max Eligible Loan | Rs 504081.82 |"
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1526
+        }
+      ]
+    },
+    {
+      "turn": 22,
+      "stage": 5,
+      "clock_s": 266,
+      "user": {
+        "role": "operator",
+        "text": "PROCEED",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Gold offer State Store",
+          "input": "PROCEED",
+          "tool_calls": [
+            {
+              "name": "get_offers",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "message": "Available schemes:\nGL_FULL_EMI_12|Full|ROI 12.0%|12m|EMI\nGL_REV_EMI_12|Revised|ROI 11.0%|12m|EMI\nGL_FULL_BULLET_12|Full|ROI 11.5%|12m|Bullet",
+                "offers": [
+                  {
+                    "offer_id": "GL_FULL_EMI_12",
+                    "processing_fee_pct": 1.0,
+                    "repayment": "EMI",
+                    "roi": 12.0,
+                    "scheme_type": "Full",
+                    "tenure_months": 12
+                  },
+                  {
+                    "offer_id": "GL_REV_EMI_12",
+                    "processing_fee_pct": 1.0,
+                    "repayment": "EMI",
+                    "roi": 11.0,
+                    "scheme_type": "Revised",
+                    "tenure_months": 12
+                  },
+                  {
+                    "offer_id": "GL_FULL_BULLET_12",
+                    "processing_fee_pct": 1.0,
+                    "repayment": "Bullet",
+                    "roi": 11.5,
+                    "scheme_type": "Full",
+                    "tenure_months": 12
+                  }
+                ],
+                "success": true
+              },
+              "clock_s": 266
+            }
+          ],
+          "final_output": {
+            "text": "Available schemes:\n\n| Offer ID | Scheme Type | ROI | Tenure | Repayment |\n|---|---|---|---|---|\n| GL_FULL_EMI_12 | Full | 12.0% | 12m | EMI |\n| GL_REV_EMI_12 | Revised | 11.0% | 12m | EMI |\n| GL_FULL_BULLET_12 | Full | 11.5% | 12m | Bullet |\n\nWhich offer did the customer select?",
+            "structured_response": {
+              "options": null,
+              "response": "Available schemes:\n\n| Offer ID | Scheme Type | ROI | Tenure | Repayment |\n|---|---|---|---|---|\n| GL_FULL_EMI_12 | Full | 12.0% | 12m | EMI |\n| GL_REV_EMI_12 | Revised | 11.0% | 12m | EMI |\n| GL_FULL_BULLET_12 | Full | 11.5% | 12m | Bullet |\n\nWhich offer did the customer select?"
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1546
+        }
+      ]
+    },
+    {
+      "turn": 23,
+      "stage": 5,
+      "clock_s": 281,
+      "user": {
+        "role": "operator",
+        "text": "GL_REV_EMI_12",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Gold offer State Store",
+          "input": "GL_REV_EMI_12",
+          "tool_calls": [
+            {
+              "name": "select_scheme",
+              "arguments": {
+                "offer_id": "GL_REV_EMI_12"
+              },
+              "output": {
+                "message": "Scheme GL_REV_EMI_12 selected (ROI 11.0%, 12m, EMI). Max eligible Rs 504081.82.",
+                "offer_id": "GL_REV_EMI_12",
+                "success": true
+              },
+              "clock_s": 281
+            },
+            {
+              "name": "calculate_offer",
+              "arguments": {
+                "action": "quote",
+                "tenure_months": "12"
+              },
+              "output": {
+                "apr": 7.058,
+                "loan_amount": 504081.82,
+                "ltv": 75.0,
+                "message": "Plan for GL_REV_EMI_12: loan Rs 504081.82 at 11.0% for 12m.",
+                "monthly_emi": 44551.59,
+                "offer_id": "GL_REV_EMI_12",
+                "processing_fee": 5040.82,
+                "repayment": "EMI",
+                "roi": 11.0,
+                "success": true,
+                "tenure_months": 12
+              },
+              "clock_s": 281
+            }
+          ],
+          "final_output": {
+            "text": "The customer's plan is as follows:\n\n| Plan Details | Value |\n|---|---|\n| Loan Amount | Rs 504081.82 |\n| ROI | 11% |\n| Tenure | 12 months |\n| Monthly EMI | Rs 44551.59 |\n| APR | ~7.058% |\n| LTV | 75% |",
+            "structured_response": {
+              "options": [
+                "CONFIRM",
+                "CHANGE",
+                "EXIT"
+              ],
+              "response": "The customer's plan is as follows:\n\n| Plan Details | Value |\n|---|---|\n| Loan Amount | Rs 504081.82 |\n| ROI | 11% |\n| Tenure | 12 months |\n| Monthly EMI | Rs 44551.59 |\n| APR | ~7.058% |\n| LTV | 75% |"
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1538
+        }
+      ]
+    },
+    {
+      "turn": 24,
+      "stage": 5,
+      "clock_s": 287,
+      "user": {
+        "role": "operator",
+        "text": "CONFIRM",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Gold offer State Store",
+          "input": "CONFIRM",
+          "tool_calls": [
+            {
+              "name": "calculate_offer",
+              "arguments": {
+                "action": "confirm",
+                "tenure_months": "12"
+              },
+              "output": {
+                "error_code": "INCOME_REQUIRED",
+                "message": "Loan above Rs 250000 requires income capture. Call capture_income(employment_type) then collect_payslips.",
+                "success": false
+              },
+              "clock_s": 287
+            }
+          ],
+          "final_output": {
+            "text": "The loan amount exceeds Rs 250,000, so income capture is required. Please provide the customer's employment type.",
+            "structured_response": {
+              "options": [
+                "SALARIED",
+                "SELF-EMPLOYED",
+                "EXIT"
+              ],
+              "response": "The loan amount exceeds Rs 250,000, so income capture is required. Please provide the customer's employment type."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1042
+        }
+      ]
+    },
+    {
+      "turn": 25,
+      "stage": 5,
+      "clock_s": 300,
+      "user": {
+        "role": "operator",
+        "text": "SALARIED",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Gold offer State Store",
+          "input": "SALARIED",
+          "tool_calls": [
+            {
+              "name": "capture_income",
+              "arguments": {
+                "employment_type": "salaried"
+              },
+              "output": {
+                "employment_type": "salaried",
+                "message": "Employment type salaried saved. Ask for the last 3 consecutive monthly payslips.",
+                "success": true
+              },
+              "clock_s": 300
+            }
+          ],
+          "final_output": {
+            "text": "Employment type salaried saved. Please upload the customer's last 3 consecutive monthly payslips.",
+            "structured_response": {
+              "options": null,
+              "response": "Employment type salaried saved. Please upload the customer's last 3 consecutive monthly payslips."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 818
+        }
+      ]
+    },
+    {
+      "turn": 26,
+      "stage": 5,
+      "clock_s": 320,
+      "user": {
+        "role": "operator",
+        "text": "No input message provided.",
+        "attachments": [
+          "payslip_2026_04",
+          "payslip_2026_05",
+          "payslip_2026_06"
+        ]
+      },
+      "agents": [
+        {
+          "agent_name": "Gold offer State Store",
+          "input": "[PAYSLIP SUMMARY] Payslips: 3/3 Months: June 2026, July 2026, August 2026 Consecutive: Yes Date range: Valid Name match: Yes Status: PASS Action: Call collect_payslips(trigger='trigger').",
+          "tool_calls": [
+            {
+              "name": "collect_payslips",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "avg_net_pay": 149666.66666666666,
+                "employment_type": "salaried",
+                "message": "Payslips collected. Employment=salaried. Avg net pay Rs 149666.7. Call calculate_offer(action='confirm').",
+                "payslip_count": 3,
+                "success": true
+              },
+              "clock_s": 320
+            },
+            {
+              "name": "calculate_offer",
+              "arguments": {
+                "action": "confirm",
+                "tenure_months": "12"
+              },
+              "output": {
+                "error_code": "BUREAU_REQUIRED",
+                "message": "Call get_bureau_score then check_loan_eligibility, then confirm again.",
+                "success": false
+              },
+              "clock_s": 320
+            }
+          ],
+          "final_output": {
+            "text": "The system requires a bureau check before the final confirmation. I will fetch the customer's bureau score.",
+            "structured_response": {
+              "options": null,
+              "response": "The system requires a bureau check before the final confirmation. I will fetch the customer's bureau score."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1038
+        }
+      ],
+      "ingest": {
+        "kind": "payslips",
+        "vision_model": "deterministic",
+        "docs": [
+          {
+            "doc": "payslip",
+            "fixture": "payslip_2026_04",
+            "scan_text": "Payslip June 2026\nKaveri Logistics Pvt Ltd\nDate of Joining : 2018-06-23   Employee Name : Venkat Pillai\nPay Period : June 2026   Designation : Employee\nWorked Days : 24   Department : Operations\nPAN Number : DHUPP0456A\nEarnings | Amount | Deductions | Amount\nBasic Pay | 91700 | Provident Fund | 3600\nIncentive Pay | 45800 | Professional Tax | 1500\nHouse Rent Allowance | 12200 | Health Insurance | 1300\nMeal Allowance | 6200\nTotal Earnings | 155900 | Total Deductions | 6400\nNet Pay | 149500\nThis is system generated payslip",
+            "truth": {
+              "employee_name": "Venkat Pillai",
+              "employer": "Kaveri Logistics Pvt Ltd",
+              "month": "2026-06",
+              "net_pay": 149500.0
+            },
+            "extracted": {
+              "employee_name": "Venkat Pillai",
+              "employer": "Kaveri Logistics Pvt Ltd",
+              "month": "2026-06",
+              "net_pay": 149500.0
+            }
+          },
+          {
+            "doc": "payslip",
+            "fixture": "payslip_2026_05",
+            "scan_text": "Payslip July 2026\nKaveri Logistics Pvt Ltd\nDate of Joining : 2018-06-23   Employee Name : Venkat Pillai\nPay Period : July 2026   Designation : Employee\nWorked Days : 24   Department : Operations\nPAN Number : DHUPP0456A\nEarnings | Amount | Deductions | Amount\nBasic Pay | 91700 | Provident Fund | 3600\nIncentive Pay | 45800 | Professional Tax | 1500\nHouse Rent Allowance | 12200 | Health Insurance | 1300\nMeal Allowance | 6200\nTotal Earnings | 155900 | Total Deductions | 6400\nNet Pay | 149500\nThis is system generated payslip",
+            "truth": {
+              "employee_name": "Venkat Pillai",
+              "employer": "Kaveri Logistics Pvt Ltd",
+              "month": "2026-07",
+              "net_pay": 149500.0
+            },
+            "extracted": {
+              "employee_name": "Venkat Pillai",
+              "employer": "Kaveri Logistics Pvt Ltd",
+              "month": "2026-07",
+              "net_pay": 149500.0
+            }
+          },
+          {
+            "doc": "payslip",
+            "fixture": "payslip_2026_06",
+            "scan_text": "Payslip August 2026\nKaveri Logistics Pvt Ltd\nDate of Joining : 2018-06-23   Employee Name : Venkat Pillai\nPay Period : August 2026   Designation : Employee\nWorked Days : 24   Department : Operations\nPAN Number : DHUPP0456A\nEarnings | Amount | Deductions | Amount\nBasic Pay | 92000 | Provident Fund | 3600\nIncentive Pay | 46000 | Professional Tax | 1500\nHouse Rent Allowance | 12200 | Health Insurance | 1300\nMeal Allowance | 6200\nTotal Earnings | 156400 | Total Deductions | 6400\nNet Pay | 150000\nThis is system generated payslip",
+            "truth": {
+              "employee_name": "Venkat Pillai",
+              "employer": "Kaveri Logistics Pvt Ltd",
+              "month": "2026-08",
+              "net_pay": 150000.0
+            },
+            "extracted": {
+              "employee_name": "Venkat Pillai",
+              "employer": "Kaveri Logistics Pvt Ltd",
+              "month": "2026-08",
+              "net_pay": 150000.0
+            }
+          }
+        ],
+        "summary": "[PAYSLIP SUMMARY] Payslips: 3/3 Months: June 2026, July 2026, August 2026 Consecutive: Yes Date range: Valid Name match: Yes Status: PASS Action: Call collect_payslips(trigger='trigger').",
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "turn": 27,
+      "stage": 5,
+      "clock_s": 331,
+      "user": {
+        "role": "operator",
+        "text": "Proceed",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Gold offer State Store",
+          "input": "Proceed",
+          "tool_calls": [
+            {
+              "name": "get_bureau_score",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "cibil_score": 787,
+                "eligible_for_loan": true,
+                "message": "CIBIL 787 (Excellent). Call check_loan_eligibility.",
+                "score_tier": "Excellent",
+                "success": true
+              },
+              "clock_s": 331
+            }
+          ],
+          "final_output": {
+            "text": "The customer's CIBIL score is 787 (Excellent). I am now checking the final loan eligibility.",
+            "structured_response": {
+              "options": null,
+              "response": "The customer's CIBIL score is 787 (Excellent). I am now checking the final loan eligibility."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 798
+        }
+      ]
+    },
+    {
+      "turn": 28,
+      "stage": 5,
+      "clock_s": 349,
+      "user": {
+        "role": "operator",
+        "text": "Proceed",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Gold offer State Store",
+          "input": "Proceed",
+          "tool_calls": [
+            {
+              "name": "check_loan_eligibility",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "message": "Eligibility OK for Rs 504081.82 (max Rs 504081.82). Call calculate_offer(action='confirm').",
+                "success": true
+              },
+              "clock_s": 349
+            }
+          ],
+          "final_output": {
+            "text": "Eligibility confirmed for Rs 504081.82. I am now finalizing the offer.",
+            "structured_response": {
+              "options": null,
+              "response": "Eligibility confirmed for Rs 504081.82. I am now finalizing the offer."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 710
+        }
+      ]
+    },
+    {
+      "turn": 29,
+      "stage": 5,
+      "clock_s": 358,
+      "user": {
+        "role": "operator",
+        "text": "Proceed",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Gold offer State Store",
+          "input": "Proceed",
+          "tool_calls": [
+            {
+              "name": "calculate_offer",
+              "arguments": {
+                "action": "confirm",
+                "tenure_months": "12"
+              },
+              "output": {
+                "loan_amount": 504081.82,
+                "message": "Offer confirmed at full eligible amount Rs 504081.82. Proceed to closing.",
+                "success": true
+              },
+              "clock_s": 358
+            }
+          ],
+          "final_output": {
+            "text": "The offer has been confirmed at the full eligible amount of Rs 504081.82.",
+            "structured_response": {
+              "options": [
+                "PROCEED",
+                "EXIT"
+              ],
+              "response": "The offer has been confirmed at the full eligible amount of Rs 504081.82."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 822
+        }
+      ]
+    },
+    {
+      "turn": 30,
+      "stage": 6,
+      "clock_s": 374,
+      "user": {
+        "role": "operator",
+        "text": "PROCEED",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Closing State Store",
+          "input": "PROCEED",
+          "tool_calls": [],
+          "final_output": {
+            "text": "Welcome to Stage 6: Closing and Disbursal. Has the Personal Discussion (PD) checklist been completed with the customer?",
+            "structured_response": {
+              "options": [
+                "YES",
+                "EXIT"
+              ],
+              "response": "Welcome to Stage 6: Closing and Disbursal. Has the Personal Discussion (PD) checklist been completed with the customer?"
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 810
+        }
+      ]
+    },
+    {
+      "turn": 31,
+      "stage": 6,
+      "clock_s": 381,
+      "user": {
+        "role": "operator",
+        "text": "YES",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Closing State Store",
+          "input": "YES",
+          "tool_calls": [
+            {
+              "name": "run_pd_and_gdr",
+              "arguments": {
+                "action": "pd"
+              },
+              "output": {
+                "message": "PD recorded. Call run_pd_and_gdr(action='gdr') to issue pledge slip.",
+                "success": true
+              },
+              "clock_s": 381
+            },
+            {
+              "name": "run_pd_and_gdr",
+              "arguments": {
+                "action": "gdr"
+              },
+              "output": {
+                "cooling_off_seconds": 60,
+                "gdr_number": "GDR1790158378",
+                "message": "GDR1790158378 issued. Approval can be checked after the 60s waiting period.",
+                "success": true
+              },
+              "clock_s": 381
+            }
+          ],
+          "final_output": {
+            "text": "GDR1790158378\nPlease check the approval after the waiting period.",
+            "structured_response": {
+              "options": [
+                "CHECK APPROVAL",
+                "EXIT"
+              ],
+              "response": "GDR1790158378\nPlease check the approval after the waiting period."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 998
+        }
+      ]
+    },
+    {
+      "turn": 32,
+      "stage": 6,
+      "clock_s": 443,
+      "user": {
+        "role": "operator",
+        "text": "CHECK APPROVAL",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Closing State Store",
+          "input": "CHECK APPROVAL",
+          "tool_calls": [
+            {
+              "name": "check_approval_status",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "message": "Approved after waiting period. Acknowledge KFS next.",
+                "success": true
+              },
+              "clock_s": 443
+            }
+          ],
+          "final_output": {
+            "text": "Approved.\nPlease ask the customer to acknowledge the Key Fact Statement (KFS).",
+            "structured_response": {
+              "options": [
+                "ACCEPT",
+                "DECLINE",
+                "EXIT"
+              ],
+              "response": "Approved.\nPlease ask the customer to acknowledge the Key Fact Statement (KFS)."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 870
+        }
+      ]
+    },
+    {
+      "turn": 33,
+      "stage": 6,
+      "clock_s": 448,
+      "user": {
+        "role": "operator",
+        "text": "ACCEPT",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Closing State Store",
+          "input": "ACCEPT",
+          "tool_calls": [
+            {
+              "name": "acknowledge_kfs",
+              "arguments": {
+                "action": "accept"
+              },
+              "output": {
+                "message": "KFS acknowledged. Generate eSign URL.",
+                "success": true
+              },
+              "clock_s": 448
+            },
+            {
+              "name": "generate_esign_url",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "esign_url": "http://esign.mock.local:8086/consent_page_for_ekyc?client_id=eKYC_URL_REF431712",
+                "message": "Please open this link to complete your e-signature: http://esign.mock.local:8086/consent_page_for_ekyc?client_id=eKYC_URL_REF431712",
+                "success": true
+              },
+              "clock_s": 448
+            }
+          ],
+          "final_output": {
+            "text": "Please open this link to complete your e-signature: http://esign.mock.local:8086/consent_page_for_ekyc?client_id=eKYC_URL_REF431712",
+            "structured_response": {
+              "options": [
+                "DONE",
+                "EXIT"
+              ],
+              "response": "Please open this link to complete your e-signature: http://esign.mock.local:8086/consent_page_for_ekyc?client_id=eKYC_URL_REF431712"
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1222
+        }
+      ]
+    },
+    {
+      "turn": 34,
+      "stage": 6,
+      "clock_s": 460,
+      "user": {
+        "role": "operator",
+        "text": "DONE",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Closing State Store",
+          "input": "DONE",
+          "tool_calls": [
+            {
+              "name": "check_esign_status",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "esign_completed": true,
+                "message": "Document signed successfully. Collect disbursement type and account (if electronic), then allocate.",
+                "success": true
+              },
+              "clock_s": 460
+            }
+          ],
+          "final_output": {
+            "text": "Document signed successfully.\nPlease provide the disbursement type (NEFT, IMPS, or CASH) and the disbursed account number if electronic.",
+            "structured_response": {
+              "options": [
+                "PROCEED",
+                "EXIT"
+              ],
+              "response": "Document signed successfully.\nPlease provide the disbursement type (NEFT, IMPS, or CASH) and the disbursed account number if electronic."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1074
+        }
+      ]
+    },
+    {
+      "turn": 35,
+      "stage": 6,
+      "clock_s": 479,
+      "user": {
+        "role": "operator",
+        "text": "NEFT",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Closing State Store",
+          "input": "NEFT",
+          "tool_calls": [],
+          "final_output": {
+            "text": "Please provide the disbursed account number for the NEFT transfer.",
+            "structured_response": {
+              "options": null,
+              "response": "Please provide the disbursed account number for the NEFT transfer."
+            },
+            "process_completed": false
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 514
+        }
+      ]
+    },
+    {
+      "turn": 36,
+      "stage": 6,
+      "clock_s": 489,
+      "user": {
+        "role": "operator",
+        "text": "22695344311",
+        "attachments": []
+      },
+      "agents": [
+        {
+          "agent_name": "Closing State Store",
+          "input": "22695344311",
+          "tool_calls": [
+            {
+              "name": "allocate_and_disburse",
+              "arguments": {
+                "account_number": "22695344311",
+                "action": "allocate",
+                "disbursement_mode": "NEFT"
+              },
+              "output": {
+                "message": "Packet 1_3 allocated. Call disburse next.",
+                "packet_id": "1_3",
+                "success": true
+              },
+              "clock_s": 489
+            },
+            {
+              "name": "allocate_and_disburse",
+              "arguments": {
+                "account_number": "22695344311",
+                "action": "disburse",
+                "disbursement_mode": "NEFT"
+              },
+              "output": {
+                "disbursed_account_number_masked": "XXXXXXX4311",
+                "disbursement_mode": "NEFT",
+                "loan_amount": 504081.82,
+                "message": "NEFT disbursement recorded (soft allocation). Txn TXN1790158486.",
+                "success": true,
+                "txn_id": "TXN1790158486"
+              },
+              "clock_s": 489
+            },
+            {
+              "name": "send_sanction_letter_email",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "error": "OAuth token request timed out after 45s: ConnectTimeout",
+                "error_type": "RuntimeError",
+                "message": "OAuth token request timed out after 45s: ConnectTimeout",
+                "success": false
+              },
+              "clock_s": 489
+            },
+            {
+              "name": "send_sanction_letter_email",
+              "arguments": {
+                "trigger": "trigger"
+              },
+              "output": {
+                "disbursed_account_number_masked": "XXXXXXX4311",
+                "disbursement_mode": "NEFT",
+                "email_sent": true,
+                "loan_type": "gold_loan",
+                "message": "Gold loan sanction letter emailed to ve****@example.com. Ref: eKYC_URL_REF431712. Packet 1_3. Txn TXN1790158486. Mode NEFT. Account XXXXXXX4311.",
+                "success": true
+              },
+              "clock_s": 489
+            }
+          ],
+          "final_output": {
+            "text": "Gold loan sanction letter emailed to ve****@example.com. Ref: eKYC_URL_REF431712. Packet 1_3. Txn TXN1790158486. Mode NEFT. Account XXXXXXX4311.",
+            "structured_response": {
+              "options": null,
+              "response": "Gold loan sanction letter emailed to ve****@example.com. Ref: eKYC_URL_REF431712. Packet 1_3. Txn TXN1790158486. Mode NEFT. Account XXXXXXX4311."
+            },
+            "process_completed": true
+          },
+          "tokens": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0
+          },
+          "recorded_duration_ms": 1546
+        }
+      ]
+    }
+  ],
+  "status": "completed",
+  "outcome": "completed",
+  "final_state": {
+    "clock_s": 489,
+    "mobile": "7167397113",
+    "name": "Venkat Pillai",
+    "email": "venkat.pillai43@example.com",
+    "mobile_verified": true,
+    "email_verified": true,
+    "onboarding_complete": true,
+    "identity_ready": true,
+    "identity_stored": true,
+    "identity": {
+      "aadhaar": "335910636034",
+      "pan": "DHUPP0456A",
+      "name": "Venkat Pillai",
+      "address": "Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043",
+      "pincode": "500043"
+    },
+    "aadhaar_otp_sent": true,
+    "aadhaar_verified": true,
+    "pan_verified": true,
+    "address": "Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043",
+    "address_proof_ready": false,
+    "address_proof_addr": null,
+    "appointment_id": "AP16",
+    "language": "English",
+    "borrower_dedupe": true,
+    "nominee": {
+      "name": "Aditya Pillai",
+      "phone": "8865450384",
+      "relation": "spouse"
+    },
+    "nominee_dedupe": true,
+    "pending_gold": null,
+    "gold_items": [
+      {
+        "kind": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 124.82,
+        "deduction": 1.6,
+        "karat": 20.0,
+        "net_wt": 123.22,
+        "fine_wt": 112.01818181818182,
+        "value": 672109.09
+      }
+    ],
+    "gold_valued": true,
+    "pledge_checked": true,
+    "gold_finalized": true,
+    "total_gold_value": 672109.09,
+    "max_loan": 504081.82,
+    "ltv_pct": 75.0,
+    "selected_offer": "GL_REV_EMI_12",
+    "roi_override": null,
+    "employment_type": "salaried",
+    "payslips_ready": [
+      {
+        "month": "2026-06",
+        "net_pay": 149500.0,
+        "name": "Venkat Pillai",
+        "fixture": ""
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 149500.0,
+        "name": "Venkat Pillai",
+        "fixture": ""
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 150000.0,
+        "name": "Venkat Pillai",
+        "fixture": ""
+      }
+    ],
+    "payslips_ok": true,
+    "avg_net_pay": 149666.66666666666,
+    "bureau_score": 787,
+    "eligibility_ok": true,
+    "eligible_amount": 504081.82,
+    "offer_confirmed": true,
+    "loan_amount": 504081.82,
+    "pd_done": true,
+    "gdr": "GDR1790158378",
+    "gdr_at": 381,
+    "approved": true,
+    "kfs_accepted": true,
+    "esign_url": "http://esign.mock.local:8086/consent_page_for_ekyc?client_id=eKYC_URL_REF431712",
+    "esign_done": true,
+    "packet_id": "1_3",
+    "disb_mode": "NEFT",
+    "disb_account": "22695344311",
+    "txn_id": "TXN1790158486",
+    "sanction_sent": true,
+    "sanction_ref": "eKYC_URL_REF431712",
+    "outcome": "completed"
+  },
+  "scenario": {
+    "bureau": {
+      "cibil": 787
+    },
+    "choices": {
+      "account_number": "22695344311",
+      "disbursement_mode": "NEFT",
+      "first_offer_id": null,
+      "ifsc": "SBIN0431896",
+      "offer_id": "GL_REV_EMI_12",
+      "requested_roi": null
+    },
+    "customer": {
+      "aadhaar": "3359 1063 6034",
+      "address": "Flat No- 16, Lake View Road, Hyderabad, Telangana - 500043",
+      "dob": "15/05/1980",
+      "email": "venkat.pillai43@example.com",
+      "father": "Arjun Pillai",
+      "mobile": "7167397113",
+      "name": "Venkat Pillai",
+      "pan": "DHUPP0456A",
+      "pincode": "500043"
+    },
+    "flags": {
+      "approval_rejected": false,
+      "borrower_duplicate": false,
+      "change_scheme_once": false,
+      "check_approval_early": false,
+      "decline_kfs": false,
+      "email_invalid_first": false,
+      "esign_not_done_first": false,
+      "exit_at_stage": null,
+      "gold_weight_mismatch_first": false,
+      "identity_upload_incomplete_first": false,
+      "invalid_appointment_first": false,
+      "mobile_invalid_first": false,
+      "negotiate_roi": false,
+      "nominee_duplicate_first": false,
+      "ocr_noise_first": false,
+      "override_address": false,
+      "pan_not_linked": false,
+      "payslips_bad_first": false,
+      "pledged": false,
+      "wrong_aadhaar_otp_first": false,
+      "wrong_email_otp_first": false,
+      "wrong_mobile_otp_first": false
+    },
+    "gold": {
+      "items": [
+        {
+          "description": "Hallmarked gold necklace with pendant",
+          "doc_fixture": "gold_valuation_certificate",
+          "gross_wt": 124.82,
+          "karat": 20.0,
+          "photo_fixture": "necklace_on_scale",
+          "scale_reading": 124.82,
+          "stone_deduction": 1.6,
+          "type": "necklace"
+        }
+      ]
+    },
+    "human_role": "operator",
+    "id": "gl_0258_sanction_email_retry",
+    "income": {
+      "employer": "Kaveri Logistics Pvt Ltd",
+      "employment_type": "salaried",
+      "payslips": [
+        {
+          "fixture": "payslip_2026_04",
+          "month": "2026-06",
+          "name": "Venkat Pillai",
+          "net_pay": 149500.0
+        },
+        {
+          "fixture": "payslip_2026_05",
+          "month": "2026-07",
+          "name": "Venkat Pillai",
+          "net_pay": 149500.0
+        },
+        {
+          "fixture": "payslip_2026_06",
+          "month": "2026-08",
+          "name": "Venkat Pillai",
+          "net_pay": 150000.0
+        }
+      ],
+      "payslips_bad": []
+    },
+    "persona": {
+      "age": 35,
+      "background": "Needs short-term funds and has gold at home.",
+      "occupation": "staff nurse",
+      "temperament": "sceptical, double-checks everything",
+      "voice": "terse with abbreviations"
+    },
+    "profile": {
+      "appointment_id": "AP16",
+      "language": "English",
+      "nominee": {
+        "name": "Aditya Pillai",
+        "phone": "8865450384",
+        "relation": "spouse"
+      },
+      "nominee_alt": null
+    },
+    "seed": 200258,
+    "start_epoch": 1790157997,
+    "style": "Types fast: occasional typos and no punctuation.",
+    "tags": [
+      "sanction_email_retry"
+    ],
+    "today_month": "2026-09",
+    "tool_failures": [
+      {
+        "error_type": "RuntimeError",
+        "message": "OAuth token request timed out after 45s: ConnectTimeout",
+        "times": 1,
+        "tool": "send_sanction_letter_email"
+      }
+    ]
+  }
+}

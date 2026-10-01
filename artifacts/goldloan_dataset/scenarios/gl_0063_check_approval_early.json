@@ -1,0 +1,89 @@
+{
+  "id": "gl_0063_check_approval_early",
+  "seed": 200063,
+  "start_epoch": 1790140635,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9662168910",
+    "name": "Pooja Singh",
+    "email": "pooja.singh55@example.com",
+    "aadhaar": "8577 0087 9894",
+    "pan": "FBIPS7291I",
+    "address": "Flat No- 268, Green Park, Pune, Maharashtra - 411065",
+    "pincode": "411065",
+    "dob": "08/12/1982",
+    "father": "Meena Singh"
+  },
+  "profile": {
+    "appointment_id": "AP35",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Mahesh Singh",
+      "phone": "6148742892",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 91.08,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 91.08,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 71000.0,
+        "name": "Pooja Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 71000.0,
+        "name": "Pooja Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 70500.0,
+        "name": "Pooja Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 28,
+    "occupation": "school teacher",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 758
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "254421320278",
+    "ifsc": "ICIC0692537"
+  },
+  "flags": {
+    "check_approval_early": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "check_approval_early"
+  ]
+}

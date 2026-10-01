@@ -1,0 +1,94 @@
+{
+  "id": "gl_0249_bullet_scheme+wrong_mobile_otp_first+check_approval_early+es",
+  "seed": 200249,
+  "start_epoch": 1790157098,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8189497438",
+    "name": "Suresh Pillai",
+    "email": "suresh.pillai42@example.com",
+    "aadhaar": "5559 0375 2589",
+    "pan": "QFNPP6137Q",
+    "address": "Flat No- 371, Green Park, Vijayawada, Andhra Pradesh - 520023",
+    "pincode": "520023",
+    "dob": "15/05/1966",
+    "father": "Aditya Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP89",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Ganesh Pillai",
+      "phone": "8421076628",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 75.74,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 75.74,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 112500.0,
+        "name": "Suresh Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 113000.0,
+        "name": "Suresh Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 112500.0,
+        "name": "Suresh Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 38,
+    "occupation": "school teacher",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 818
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "39791857029",
+    "ifsc": "SBIN0380995"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true,
+    "check_approval_early": true,
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "bullet_scheme",
+    "wrong_mobile_otp_first",
+    "check_approval_early",
+    "esign_not_done_first"
+  ]
+}

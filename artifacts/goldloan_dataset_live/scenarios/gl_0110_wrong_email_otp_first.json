@@ -1,0 +1,89 @@
+{
+  "id": "gl_0110_wrong_email_otp_first",
+  "seed": 200110,
+  "start_epoch": 1790120618,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9527987181",
+    "name": "Sai Reddy",
+    "email": "sai.reddy71@example.com",
+    "aadhaar": "3553 8324 5725",
+    "pan": "AFUPR9050W",
+    "address": "Flat No- 38, Green Park, Hyderabad, Telangana - 500089",
+    "pincode": "500089",
+    "dob": "01/01/1997",
+    "father": "Rohan Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP91",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Deepa Reddy",
+      "phone": "8307954364",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 66.75,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 66.75,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 100500.0,
+        "name": "Sai Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 101000.0,
+        "name": "Sai Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 100500.0,
+        "name": "Sai Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 26,
+    "occupation": "logistics coordinator",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 704
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "86725768494",
+    "ifsc": "SBIN0617619"
+  },
+  "flags": {
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "wrong_email_otp_first"
+  ]
+}

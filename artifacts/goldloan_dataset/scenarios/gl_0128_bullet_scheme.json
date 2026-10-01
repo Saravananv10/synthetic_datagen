@@ -1,0 +1,87 @@
+{
+  "id": "gl_0128_bullet_scheme",
+  "seed": 200128,
+  "start_epoch": 1790157436,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6817794960",
+    "name": "Rohan Das",
+    "email": "rohan.das45@example.com",
+    "aadhaar": "5611 6900 1304",
+    "pan": "ARCPD4912Z",
+    "address": "Flat No- 795, MG Road, Hyderabad, Telangana - 500012",
+    "pincode": "500012",
+    "dob": "15/08/1976",
+    "father": "Lakshmi Das"
+  },
+  "profile": {
+    "appointment_id": "AP38",
+    "language": "English",
+    "nominee": {
+      "name": "Vivaan Das",
+      "phone": "7256969741",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 139.98,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 139.98,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 126000.0,
+        "name": "Rohan Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 126500.0,
+        "name": "Rohan Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 126500.0,
+        "name": "Rohan Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 50,
+    "occupation": "accounts executive",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 739
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "66950669700",
+    "ifsc": "ICIC0519681"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "bullet_scheme"
+  ]
+}

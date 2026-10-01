@@ -1,0 +1,15 @@
+{
+  "scenario_id": "gl_0249_bullet_scheme+wrong_mobile_otp_first+check_approval_early+es",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_OTP",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED",
+    "APPROVAL_PENDING",
+    "ESIGN_PENDING"
+  ]
+}

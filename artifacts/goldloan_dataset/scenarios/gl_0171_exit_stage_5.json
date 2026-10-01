@@ -1,0 +1,89 @@
+{
+  "id": "gl_0171_exit_stage_5",
+  "seed": 200171,
+  "start_epoch": 1790105988,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7789536915",
+    "name": "Karthik Iyer",
+    "email": "karthik.iyer78@example.com",
+    "aadhaar": "8980 3868 2734",
+    "pan": "TGSPI2801O",
+    "address": "Flat No- 879, Temple Street, Hyderabad, Telangana - 500065",
+    "pincode": "500065",
+    "dob": "04/09/1991",
+    "father": "Arjun Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP92",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Meena Iyer",
+      "phone": "7248472410",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 89.53,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 89.53,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 130000.0,
+        "name": "Karthik Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 130500.0,
+        "name": "Karthik Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 130000.0,
+        "name": "Karthik Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 34,
+    "occupation": "logistics coordinator",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 703
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "92618025102",
+    "ifsc": "UBIN0116294"
+  },
+  "flags": {
+    "exit_at_stage": 5
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "exit_stage_5"
+  ]
+}

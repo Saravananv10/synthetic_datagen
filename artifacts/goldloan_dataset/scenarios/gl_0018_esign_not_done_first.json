@@ -1,0 +1,89 @@
+{
+  "id": "gl_0018_esign_not_done_first",
+  "seed": 200018,
+  "start_epoch": 1790141642,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9842124965",
+    "name": "Sneha Joshi",
+    "email": "sneha.joshi72@example.com",
+    "aadhaar": "9194 7418 9441",
+    "pan": "ALTPJ5340B",
+    "address": "Flat No- 894, MG Road, Vijayawada, Andhra Pradesh - 520081",
+    "pincode": "520081",
+    "dob": "18/12/1971",
+    "father": "Anjali Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP53",
+    "language": "English",
+    "nominee": {
+      "name": "Priya Joshi",
+      "phone": "7759495428",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 91.18,
+        "stone_deduction": 2.1,
+        "karat": 22,
+        "scale_reading": 91.18,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 43500.0,
+        "name": "Sneha Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 42500.0,
+        "name": "Sneha Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 43500.0,
+        "name": "Sneha Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 49,
+    "occupation": "school teacher",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 775
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "35378475565088",
+    "ifsc": "UBIN0373879"
+  },
+  "flags": {
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "esign_not_done_first"
+  ]
+}

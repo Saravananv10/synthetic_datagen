@@ -1,0 +1,96 @@
+{
+  "id": "gl_0217_nominee_duplicate_first+esign_not_done_first",
+  "seed": 200217,
+  "start_epoch": 1790107829,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6162700442",
+    "name": "Ananya Reddy",
+    "email": "ananya.reddy50@example.com",
+    "aadhaar": "8783 1969 4834",
+    "pan": "BDIPR2982C",
+    "address": "Flat No- 479, Temple Street, Bengaluru, Karnataka - 560063",
+    "pincode": "560063",
+    "dob": "10/04/1996",
+    "father": "Kavya Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP87",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Kavya Reddy",
+      "phone": "9816192475",
+      "relation": "parent"
+    },
+    "nominee_alt": {
+      "name": "Pooja Reddy",
+      "phone": "8312475715",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 108.41,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 108.41,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 125000.0,
+        "name": "Ananya Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 124500.0,
+        "name": "Ananya Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 124500.0,
+        "name": "Ananya Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 61,
+    "occupation": "accounts executive",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 764
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "35929747357433",
+    "ifsc": "HDFC0646190"
+  },
+  "flags": {
+    "nominee_duplicate_first": true,
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "nominee_duplicate_first",
+    "esign_not_done_first"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0075_mobile_invalid_first",
+  "seed": 200075,
+  "start_epoch": 1790116392,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8758587525",
+    "name": "Ramesh Menon",
+    "email": "ramesh.menon40@example.com",
+    "aadhaar": "7961 0930 8026",
+    "pan": "GDKPM9203H",
+    "address": "Flat No- 530, Ashok Colony, Hyderabad, Telangana - 500051",
+    "pincode": "500051",
+    "dob": "28/09/1992",
+    "father": "Ramesh Menon"
+  },
+  "profile": {
+    "appointment_id": "AP46",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Karthik Menon",
+      "phone": "9667380920",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 76.63,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 76.63,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 140500.0,
+        "name": "Ramesh Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 140500.0,
+        "name": "Ramesh Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 141000.0,
+        "name": "Ramesh Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 56,
+    "occupation": "staff nurse",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 814
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "649052362282",
+    "ifsc": "UBIN0405379"
+  },
+  "flags": {
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "mobile_invalid_first"
+  ]
+}

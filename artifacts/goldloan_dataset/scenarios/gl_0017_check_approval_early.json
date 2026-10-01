@@ -1,0 +1,89 @@
+{
+  "id": "gl_0017_check_approval_early",
+  "seed": 200017,
+  "start_epoch": 1790151805,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8117221684",
+    "name": "Aarav Menon",
+    "email": "aarav.menon67@example.com",
+    "aadhaar": "8070 2302 7703",
+    "pan": "LLJPM7802V",
+    "address": "Flat No- 840, Temple Street, Chennai, Tamil Nadu - 600083",
+    "pincode": "600083",
+    "dob": "18/12/1980",
+    "father": "Venkat Menon"
+  },
+  "profile": {
+    "appointment_id": "AP68",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Harish Menon",
+      "phone": "6626618565",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 138.63,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 138.63,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 62500.0,
+        "name": "Aarav Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 62500.0,
+        "name": "Aarav Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 62500.0,
+        "name": "Aarav Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 44,
+    "occupation": "factory supervisor",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 775
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "87347127034",
+    "ifsc": "ICIC0900958"
+  },
+  "flags": {
+    "check_approval_early": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "check_approval_early"
+  ]
+}

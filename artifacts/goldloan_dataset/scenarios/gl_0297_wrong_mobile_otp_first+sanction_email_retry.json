@@ -1,0 +1,97 @@
+{
+  "id": "gl_0297_wrong_mobile_otp_first+sanction_email_retry",
+  "seed": 200297,
+  "start_epoch": 1790118607,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9660884944",
+    "name": "Deepa Patel",
+    "email": "deepa.patel53@example.com",
+    "aadhaar": "3405 3477 5621",
+    "pan": "FCVPP6990X",
+    "address": "Flat No- 856, Lake View Road, Pune, Maharashtra - 411059",
+    "pincode": "411059",
+    "dob": "10/06/1971",
+    "father": "Venkat Patel"
+  },
+  "profile": {
+    "appointment_id": "AP14",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Kavya Patel",
+      "phone": "7271478702",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 95.75,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 95.75,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 147500.0,
+        "name": "Deepa Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 147500.0,
+        "name": "Deepa Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 147500.0,
+        "name": "Deepa Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 45,
+    "occupation": "accounts executive",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 741
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "954853562416",
+    "ifsc": "SBIN0296148"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "wrong_mobile_otp_first",
+    "sanction_email_retry"
+  ]
+}

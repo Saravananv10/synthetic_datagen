@@ -1,0 +1,93 @@
+{
+  "id": "gl_0059_bullet_scheme+change_scheme_once+payslips_bad_first",
+  "seed": 200059,
+  "start_epoch": 1790114922,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9703659729",
+    "name": "Venkat Reddy",
+    "email": "venkat.reddy69@example.com",
+    "aadhaar": "6447 1463 6493",
+    "pan": "CJFPR6698H",
+    "address": "Flat No- 138, Rajaji Street, Vijayawada, Andhra Pradesh - 520087",
+    "pincode": "520087",
+    "dob": "07/07/1972",
+    "father": "Sneha Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP06",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Mahesh Reddy",
+      "phone": "8234305648",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 126.23,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 126.23,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 55000.0,
+        "name": "Venkat Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 54000.0,
+        "name": "Venkat Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 54500.0,
+        "name": "Venkat Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "software support engineer",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 759
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "36156590263",
+    "ifsc": "ICIC0749130",
+    "first_offer_id": "GL_FULL_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true,
+    "payslips_bad_first": true
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "bullet_scheme",
+    "change_scheme_once",
+    "payslips_bad_first"
+  ]
+}

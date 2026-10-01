@@ -193,6 +193,8 @@ async fn run_stream(
         }
     }
 
+    dump_request(&url, &headers, &payload);
+
     let req = client.post(&url).headers(headers).json(&payload);
     // Do not set an overall reqwest timeout here — it would abort long SSE bodies.
     // Bound only time-to-first-byte (headers) via `response_header_timeout_ms`.
@@ -730,6 +732,37 @@ fn partial_raw_fallback(raw: &str, has_tools: bool) -> StopReason {
         StopReason::ToolUse
     } else {
         StopReason::Stop
+    }
+}
+
+/// When `LOOP_DUMP_REQUESTS_DIR` is set, write every chat-completions request exactly as it is
+/// about to be sent: `<dir>/<metadata.session_id>/<unix-ms>-<seq>.json` holding the URL, the
+/// headers (Authorization redacted) and the body - the same `Value` `reqwest` serializes next,
+/// so `body` is byte-for-byte what the server receives. Best-effort: failures are ignored.
+fn dump_request(url: &str, headers: &HeaderMap, payload: &Value) {
+    static SEQ: std::sync::atomic::AtomicU64 = std::sync::atomic::AtomicU64::new(0);
+    let Some(dir) = std::env::var_os("LOOP_DUMP_REQUESTS_DIR") else { return };
+    let session = payload
+        .pointer("/metadata/session_id")
+        .and_then(|v| v.as_str())
+        .unwrap_or("no-session")
+        .replace(['/', '\\'], "_");
+    let dir = std::path::Path::new(&dir).join(session);
+    if std::fs::create_dir_all(&dir).is_err() {
+        return;
+    }
+    let headers: serde_json::Map<String, Value> = headers
+        .iter()
+        .map(|(k, v)| {
+            let v = if *k == AUTHORIZATION { "Bearer [redacted]" } else { v.to_str().unwrap_or("[binary]") };
+            (k.to_string(), json!(v))
+        })
+        .collect();
+    let seq = SEQ.fetch_add(1, std::sync::atomic::Ordering::Relaxed);
+    let ms = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).map(|d| d.as_millis()).unwrap_or(0);
+    let record = json!({"method": "POST", "url": url, "headers": headers, "body": payload});
+    if let Ok(text) = serde_json::to_string_pretty(&record) {
+        let _ = std::fs::write(dir.join(format!("{ms}-{seq:04}.json")), text);
     }
 }
 

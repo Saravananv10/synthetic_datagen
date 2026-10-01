@@ -9,7 +9,10 @@ members = [
     "crates/loop-telemetry",
     "crates/loop-test-support",
     "crates/loop-cli",
-    "crates/loop-desktop"
+    "crates/loop-desktop",
+    "crates/loop-datagen-server",
+    "crates/loop-conversation-gen",
+    "crates/loop-goldloan-gen",
 ]
 
 [workspace.package]
@@ -76,6 +79,10 @@ tokio-stream = { version = "0.1", features = ["sync"] }
 rmcp = { git = "https://github.com/modelcontextprotocol/rust-sdk", branch = "main", default-features = false, features = ["client", "server", "macros", "transport-io", "transport-child-process", "transport-streamable-http-server", "transport-streamable-http-client-reqwest", "reqwest"] }
 axum = "0.8"
 tower = "0.5"
+tonic = "0.12"
+tonic-build = "0.12"
+prost = "0.13"
+dashmap = "6"
 
 # GPUI desktop
 gpui = { git = "https://github.com/zed-industries/zed", package = "gpui" }

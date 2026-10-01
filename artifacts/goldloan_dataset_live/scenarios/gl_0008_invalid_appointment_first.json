@@ -1,0 +1,89 @@
+{
+  "id": "gl_0008_invalid_appointment_first",
+  "seed": 200008,
+  "start_epoch": 1790101169,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7329680941",
+    "name": "Aditya Naidu",
+    "email": "aditya.naidu31@example.com",
+    "aadhaar": "5033 2902 1933",
+    "pan": "AALPN3987N",
+    "address": "Flat No- 289, Lake View Road, Kochi, Kerala - 682020",
+    "pincode": "682020",
+    "dob": "23/02/1978",
+    "father": "Venkat Naidu"
+  },
+  "profile": {
+    "appointment_id": "AP17",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Aarav Naidu",
+      "phone": "6204410905",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 132.37,
+        "stone_deduction": 2.1,
+        "karat": 22,
+        "scale_reading": 132.37,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 40500.0,
+        "name": "Aditya Naidu",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 40500.0,
+        "name": "Aditya Naidu",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 41000.0,
+        "name": "Aditya Naidu",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 30,
+    "occupation": "factory supervisor",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 746
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "23364013945484",
+    "ifsc": "SBIN0417829"
+  },
+  "flags": {
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "invalid_appointment_first"
+  ]
+}

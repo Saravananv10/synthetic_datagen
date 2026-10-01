@@ -1,0 +1,89 @@
+{
+  "id": "gl_0079_approval_rejected",
+  "seed": 200079,
+  "start_epoch": 1790155992,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9988595475",
+    "name": "Divya Nair",
+    "email": "divya.nair21@example.com",
+    "aadhaar": "7562 0451 4864",
+    "pan": "BZCPN0914D",
+    "address": "Flat No- 103, Temple Street, Bengaluru, Karnataka - 560029",
+    "pincode": "560029",
+    "dob": "04/02/1979",
+    "father": "Lakshmi Nair"
+  },
+  "profile": {
+    "appointment_id": "AP81",
+    "language": "Tamil",
+    "nominee": {
+      "name": "Sai Nair",
+      "phone": "8245427756",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 84.82,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 84.82,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 97500.0,
+        "name": "Divya Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 97000.0,
+        "name": "Divya Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 96500.0,
+        "name": "Divya Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "logistics coordinator",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 706
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "07302877254675",
+    "ifsc": "HDFC0650171"
+  },
+  "flags": {
+    "approval_rejected": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "approval_rejected"
+  ]
+}

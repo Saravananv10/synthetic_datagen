@@ -1,0 +1,89 @@
+{
+  "id": "gl_0194_esign_not_done_first",
+  "seed": 200194,
+  "start_epoch": 1790154963,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9548594492",
+    "name": "Naveen Rao",
+    "email": "naveen.rao63@example.com",
+    "aadhaar": "4222 3594 3275",
+    "pan": "CDMPR2052Q",
+    "address": "Flat No- 660, Green Park, Pune, Maharashtra - 411077",
+    "pincode": "411077",
+    "dob": "25/08/1976",
+    "father": "Aditya Rao"
+  },
+  "profile": {
+    "appointment_id": "AP17",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Harish Rao",
+      "phone": "9512942470",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 132.02,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 132.02,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 44000.0,
+        "name": "Naveen Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 43500.0,
+        "name": "Naveen Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 44000.0,
+        "name": "Naveen Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 60,
+    "occupation": "school teacher",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 811
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "71359947832",
+    "ifsc": "ICIC0923122"
+  },
+  "flags": {
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "esign_not_done_first"
+  ]
+}

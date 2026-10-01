@@ -1,0 +1,99 @@
+{
+  "id": "gl_0186_identity_upload_incomplete_first+negotiate_roi+nominee_dupli",
+  "seed": 200186,
+  "start_epoch": 1790149649,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8801460095",
+    "name": "Kavya Joshi",
+    "email": "kavya.joshi78@example.com",
+    "aadhaar": "2528 9478 3641",
+    "pan": "ZEKPJ9138A",
+    "address": "Flat No- 351, Lake View Road, Chennai, Tamil Nadu - 600034",
+    "pincode": "600034",
+    "dob": "11/06/1981",
+    "father": "Aditya Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP49",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Ananya Joshi",
+      "phone": "6240267231",
+      "relation": "other"
+    },
+    "nominee_alt": {
+      "name": "Rohan Joshi",
+      "phone": "7273886187",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 118.67,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 118.67,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 91000.0,
+        "name": "Kavya Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 91000.0,
+        "name": "Kavya Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 90500.0,
+        "name": "Kavya Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 62,
+    "occupation": "school teacher",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 747
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "56467957276",
+    "ifsc": "HDFC0030053",
+    "requested_roi": 11.7
+  },
+  "flags": {
+    "identity_upload_incomplete_first": true,
+    "negotiate_roi": true,
+    "nominee_duplicate_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "identity_upload_incomplete_first",
+    "negotiate_roi",
+    "nominee_duplicate_first"
+  ]
+}

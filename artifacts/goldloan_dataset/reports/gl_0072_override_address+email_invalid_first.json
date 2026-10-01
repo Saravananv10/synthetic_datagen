@@ -1,0 +1,14 @@
+{
+  "scenario_id": "gl_0072_override_address+email_invalid_first",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INVALID_EMAIL",
+    "INGEST_IDENTITY",
+    "INGEST_ADDRESS_PROOF",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

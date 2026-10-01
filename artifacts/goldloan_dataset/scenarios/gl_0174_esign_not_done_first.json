@@ -1,0 +1,89 @@
+{
+  "id": "gl_0174_esign_not_done_first",
+  "seed": 200174,
+  "start_epoch": 1790131405,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8612356866",
+    "name": "Sai Sharma",
+    "email": "sai.sharma51@example.com",
+    "aadhaar": "5480 8574 3626",
+    "pan": "EPKPS7835H",
+    "address": "Flat No- 484, Temple Street, Kochi, Kerala - 682053",
+    "pincode": "682053",
+    "dob": "21/06/1968",
+    "father": "Divya Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP55",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Karthik Sharma",
+      "phone": "9127580786",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 107.02,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 107.02,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 119500.0,
+        "name": "Sai Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 118500.0,
+        "name": "Sai Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 118500.0,
+        "name": "Sai Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 50,
+    "occupation": "factory supervisor",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 804
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "01290810976",
+    "ifsc": "ICIC0131762"
+  },
+  "flags": {
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "esign_not_done_first"
+  ]
+}

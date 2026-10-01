@@ -1,0 +1,87 @@
+{
+  "id": "gl_0212_low_cibil",
+  "seed": 200212,
+  "start_epoch": 1790175561,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6237338430",
+    "name": "Karthik Sharma",
+    "email": "karthik.sharma19@example.com",
+    "aadhaar": "8655 9362 9866",
+    "pan": "FLEPS2019W",
+    "address": "Flat No- 142, Gandhi Nagar, Pune, Maharashtra - 411089",
+    "pincode": "411089",
+    "dob": "26/07/1975",
+    "father": "Ramesh Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP70",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Venkat Sharma",
+      "phone": "8819184937",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 101.98,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 101.98,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 102500.0,
+        "name": "Karthik Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 103000.0,
+        "name": "Karthik Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 103000.0,
+        "name": "Karthik Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 36,
+    "occupation": "logistics coordinator",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 607
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "03101115667",
+    "ifsc": "UBIN0779961"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "low_cibil"
+  ]
+}

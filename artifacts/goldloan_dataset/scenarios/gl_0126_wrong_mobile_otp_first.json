@@ -1,0 +1,89 @@
+{
+  "id": "gl_0126_wrong_mobile_otp_first",
+  "seed": 200126,
+  "start_epoch": 1790149297,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8795273641",
+    "name": "Arjun Pillai",
+    "email": "arjun.pillai33@example.com",
+    "aadhaar": "5780 8642 0206",
+    "pan": "JPOPP6397J",
+    "address": "Flat No- 750, Rajaji Street, Hyderabad, Telangana - 500036",
+    "pincode": "500036",
+    "dob": "15/03/1972",
+    "father": "Anjali Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP45",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Aditya Pillai",
+      "phone": "7045046204",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 129.1,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 129.1,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 51500.0,
+        "name": "Arjun Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 52000.0,
+        "name": "Arjun Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 51500.0,
+        "name": "Arjun Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 41,
+    "occupation": "software support engineer",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 740
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "73181868668",
+    "ifsc": "SBIN0417277"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "wrong_mobile_otp_first"
+  ]
+}

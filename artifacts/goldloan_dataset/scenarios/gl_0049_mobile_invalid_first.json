@@ -1,0 +1,89 @@
+{
+  "id": "gl_0049_mobile_invalid_first",
+  "seed": 200049,
+  "start_epoch": 1790162007,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9634402451",
+    "name": "Ramesh Gupta",
+    "email": "ramesh.gupta7@example.com",
+    "aadhaar": "2040 6509 1833",
+    "pan": "ATWPG0209T",
+    "address": "Flat No- 23, Temple Street, Pune, Maharashtra - 411047",
+    "pincode": "411047",
+    "dob": "14/02/1987",
+    "father": "Arjun Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP03",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Pooja Gupta",
+      "phone": "7777362305",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 110.64,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 110.64,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 99000.0,
+        "name": "Ramesh Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 99500.0,
+        "name": "Ramesh Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 99500.0,
+        "name": "Ramesh Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 42,
+    "occupation": "software support engineer",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 788
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "670267466517",
+    "ifsc": "SBIN0503251"
+  },
+  "flags": {
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "mobile_invalid_first"
+  ]
+}

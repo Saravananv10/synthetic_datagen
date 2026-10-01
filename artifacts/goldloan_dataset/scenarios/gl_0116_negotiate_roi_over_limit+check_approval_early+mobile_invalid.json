@@ -1,0 +1,95 @@
+{
+  "id": "gl_0116_negotiate_roi_over_limit+check_approval_early+mobile_invalid",
+  "seed": 200116,
+  "start_epoch": 1790171158,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6453443483",
+    "name": "Suresh Reddy",
+    "email": "suresh.reddy58@example.com",
+    "aadhaar": "3570 3436 8456",
+    "pan": "PNBPR8609Z",
+    "address": "Flat No- 410, MG Road, Pune, Maharashtra - 411008",
+    "pincode": "411008",
+    "dob": "08/11/2001",
+    "father": "Venkat Reddy"
+  },
+  "profile": {
+    "appointment_id": "AP60",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Vivaan Reddy",
+      "phone": "7799048411",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 130.88,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 130.88,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 111500.0,
+        "name": "Suresh Reddy",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 111500.0,
+        "name": "Suresh Reddy",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 111500.0,
+        "name": "Suresh Reddy",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 35,
+    "occupation": "accounts executive",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 792
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "28157397177",
+    "ifsc": "UBIN0824147",
+    "requested_roi": 10.1
+  },
+  "flags": {
+    "negotiate_roi": true,
+    "check_approval_early": true,
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "negotiate_roi_over_limit",
+    "negotiation_refused",
+    "check_approval_early",
+    "mobile_invalid_first"
+  ]
+}

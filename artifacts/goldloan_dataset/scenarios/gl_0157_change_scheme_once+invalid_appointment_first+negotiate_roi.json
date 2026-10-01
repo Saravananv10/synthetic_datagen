@@ -1,0 +1,95 @@
+{
+  "id": "gl_0157_change_scheme_once+invalid_appointment_first+negotiate_roi",
+  "seed": 200157,
+  "start_epoch": 1790109623,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7012015898",
+    "name": "Sai Rao",
+    "email": "sai.rao88@example.com",
+    "aadhaar": "4171 9889 1459",
+    "pan": "EZEPR2692G",
+    "address": "Flat No- 464, Ashok Colony, Vijayawada, Andhra Pradesh - 520074",
+    "pincode": "520074",
+    "dob": "19/06/1979",
+    "father": "Sneha Rao"
+  },
+  "profile": {
+    "appointment_id": "AP01",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Lakshmi Rao",
+      "phone": "6732721136",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 118.02,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 118.02,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 133500.0,
+        "name": "Sai Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 134500.0,
+        "name": "Sai Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 134000.0,
+        "name": "Sai Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 59,
+    "occupation": "software support engineer",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 765
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "922730475326",
+    "ifsc": "UBIN0644869",
+    "first_offer_id": "GL_REV_EMI_12",
+    "requested_roi": 11.2
+  },
+  "flags": {
+    "change_scheme_once": true,
+    "invalid_appointment_first": true,
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "change_scheme_once",
+    "invalid_appointment_first",
+    "negotiate_roi"
+  ]
+}

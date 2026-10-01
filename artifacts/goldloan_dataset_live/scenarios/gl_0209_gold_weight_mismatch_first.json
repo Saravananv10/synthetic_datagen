@@ -1,0 +1,89 @@
+{
+  "id": "gl_0209_gold_weight_mismatch_first",
+  "seed": 200209,
+  "start_epoch": 1790126827,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7739195862",
+    "name": "Anjali Menon",
+    "email": "anjali.menon94@example.com",
+    "aadhaar": "5717 6857 4226",
+    "pan": "TSGPM9402U",
+    "address": "Flat No- 699, Rajaji Street, Chennai, Tamil Nadu - 600029",
+    "pincode": "600029",
+    "dob": "18/04/2000",
+    "father": "Karthik Menon"
+  },
+  "profile": {
+    "appointment_id": "AP54",
+    "language": "English",
+    "nominee": {
+      "name": "Sneha Menon",
+      "phone": "7105212727",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 127.97,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 127.97,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 134000.0,
+        "name": "Anjali Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 133500.0,
+        "name": "Anjali Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 134500.0,
+        "name": "Anjali Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 26,
+    "occupation": "software support engineer",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 720
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "13647315263509",
+    "ifsc": "HDFC0528123"
+  },
+  "flags": {
+    "gold_weight_mismatch_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "gold_weight_mismatch_first"
+  ]
+}

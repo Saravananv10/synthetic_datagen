@@ -1,0 +1,89 @@
+{
+  "id": "gl_0044_exit_stage_2",
+  "seed": 200044,
+  "start_epoch": 1790133162,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6298413337",
+    "name": "Venkat Das",
+    "email": "venkat.das64@example.com",
+    "aadhaar": "6533 9813 4131",
+    "pan": "JVYPD1978N",
+    "address": "Flat No- 279, Lake View Road, Chennai, Tamil Nadu - 600082",
+    "pincode": "600082",
+    "dob": "20/03/1991",
+    "father": "Sneha Das"
+  },
+  "profile": {
+    "appointment_id": "AP64",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Lakshmi Das",
+      "phone": "8846738460",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 86.17,
+        "stone_deduction": 0.9,
+        "karat": 18,
+        "scale_reading": 86.17,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 71000.0,
+        "name": "Venkat Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 71000.0,
+        "name": "Venkat Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 70500.0,
+        "name": "Venkat Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 56,
+    "occupation": "accounts executive",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 761
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "73275764797927",
+    "ifsc": "UBIN0477670"
+  },
+  "flags": {
+    "exit_at_stage": 2
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "exit_stage_2"
+  ]
+}

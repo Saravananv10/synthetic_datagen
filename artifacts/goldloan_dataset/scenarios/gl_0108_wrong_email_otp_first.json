@@ -1,0 +1,89 @@
+{
+  "id": "gl_0108_wrong_email_otp_first",
+  "seed": 200108,
+  "start_epoch": 1790126075,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6421410894",
+    "name": "Divya Kumar",
+    "email": "divya.kumar94@example.com",
+    "aadhaar": "4788 9475 7121",
+    "pan": "SNCPK0812T",
+    "address": "Flat No- 142, MG Road, Bengaluru, Karnataka - 560095",
+    "pincode": "560095",
+    "dob": "01/01/1987",
+    "father": "Harish Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP51",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Lakshmi Kumar",
+      "phone": "9386628968",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 90.84,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 90.84,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 149500.0,
+        "name": "Divya Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 150500.0,
+        "name": "Divya Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 150000.0,
+        "name": "Divya Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 29,
+    "occupation": "staff nurse",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 820
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "500596361468",
+    "ifsc": "ICIC0793518"
+  },
+  "flags": {
+    "wrong_email_otp_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "wrong_email_otp_first"
+  ]
+}

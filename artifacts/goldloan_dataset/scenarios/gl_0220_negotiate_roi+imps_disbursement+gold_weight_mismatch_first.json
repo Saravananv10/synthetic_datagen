@@ -1,0 +1,100 @@
+{
+  "id": "gl_0220_negotiate_roi+imps_disbursement+gold_weight_mismatch_first",
+  "seed": 200220,
+  "start_epoch": 1790164218,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8096098557",
+    "name": "Anjali Nair",
+    "email": "anjali.nair87@example.com",
+    "aadhaar": "5986 8125 7262",
+    "pan": "UOPPN2545Q",
+    "address": "Flat No- 360, MG Road, Bengaluru, Karnataka - 560090",
+    "pincode": "560090",
+    "dob": "04/11/1991",
+    "father": "Rohan Nair"
+  },
+  "profile": {
+    "appointment_id": "AP60",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Ganesh Nair",
+      "phone": "6180993747",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 112.22,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 112.22,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 136500.0,
+        "name": "Anjali Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 136000.0,
+        "name": "Anjali Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 136000.0,
+        "name": "Anjali Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "accounts executive",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 778
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "IMPS",
+    "account_number": "40709223582374",
+    "ifsc": "ICIC0807057",
+    "requested_roi": 11.7
+  },
+  "flags": {
+    "negotiate_roi": true,
+    "gold_weight_mismatch_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "",
+  "tags": [
+    "negotiate_roi",
+    "imps_disbursement",
+    "gold_weight_mismatch_first"
+  ]
+}

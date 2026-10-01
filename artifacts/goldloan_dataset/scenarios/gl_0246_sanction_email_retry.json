@@ -1,0 +1,94 @@
+{
+  "id": "gl_0246_sanction_email_retry",
+  "seed": 200246,
+  "start_epoch": 1790111104,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8354052792",
+    "name": "Harish Singh",
+    "email": "harish.singh22@example.com",
+    "aadhaar": "8193 6419 9887",
+    "pan": "VUMPS1016U",
+    "address": "Flat No- 580, Gandhi Nagar, Vijayawada, Andhra Pradesh - 520020",
+    "pincode": "520020",
+    "dob": "27/06/1978",
+    "father": "Lakshmi Singh"
+  },
+  "profile": {
+    "appointment_id": "AP14",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Sai Singh",
+      "phone": "8738264113",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 77.55,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 77.55,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 78000.0,
+        "name": "Harish Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 78000.0,
+        "name": "Harish Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 77500.0,
+        "name": "Harish Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 25,
+    "occupation": "school teacher",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 802
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "66463958545",
+    "ifsc": "UBIN0159498"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "sanction_email_retry"
+  ]
+}

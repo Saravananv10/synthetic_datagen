@@ -1,0 +1,98 @@
+{
+  "scenario_id": "gl_0016_ocr_noise_first",
+  "ok": false,
+  "violations": [
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 3,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 4,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 5,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 13,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 15,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 17,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 20,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "BUTTON_NOT_ALLOWED",
+      "turn": 24,
+      "msg": "stage 5 showed ['SELF\u2011EMPLOYED']",
+      "severity": "error"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 25,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 27,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 28,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 32,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 33,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    },
+    {
+      "code": "REPAIRED_REPLY",
+      "turn": 34,
+      "msg": "repeated tail collapsed (informational)",
+      "severity": "warn"
+    }
+  ],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "INGEST_PAYSLIPS",
+    "BUREAU_REQUIRED"
+  ]
+}

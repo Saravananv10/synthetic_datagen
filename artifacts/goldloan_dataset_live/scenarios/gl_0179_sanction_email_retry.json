@@ -1,0 +1,94 @@
+{
+  "id": "gl_0179_sanction_email_retry",
+  "seed": 200179,
+  "start_epoch": 1790147174,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7510881802",
+    "name": "Harish Joshi",
+    "email": "harish.joshi41@example.com",
+    "aadhaar": "8940 4574 1747",
+    "pan": "CTEPJ1296L",
+    "address": "Flat No- 761, Green Park, Kochi, Kerala - 682077",
+    "pincode": "682077",
+    "dob": "03/12/1966",
+    "father": "Naveen Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP57",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Meena Joshi",
+      "phone": "8215785657",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 86.56,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 86.56,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Lakshmi General Hospital",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 132000.0,
+        "name": "Harish Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 131500.0,
+        "name": "Harish Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 132000.0,
+        "name": "Harish Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "software support engineer",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 744
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "55150655145209",
+    "ifsc": "ICIC0979727"
+  },
+  "flags": {},
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "sanction_email_retry"
+  ]
+}

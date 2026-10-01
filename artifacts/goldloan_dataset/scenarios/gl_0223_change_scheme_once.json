@@ -1,0 +1,90 @@
+{
+  "id": "gl_0223_change_scheme_once",
+  "seed": 200223,
+  "start_epoch": 1790145176,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8503689564",
+    "name": "Sai Sharma",
+    "email": "sai.sharma34@example.com",
+    "aadhaar": "9753 5471 6805",
+    "pan": "ZJDPS5130O",
+    "address": "Flat No- 669, Gandhi Nagar, Kochi, Kerala - 682055",
+    "pincode": "682055",
+    "dob": "23/12/1967",
+    "father": "Arjun Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP72",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Mahesh Sharma",
+      "phone": "9411370256",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 94.81,
+        "stone_deduction": 2.1,
+        "karat": 22,
+        "scale_reading": 94.81,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 104000.0,
+        "name": "Sai Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 103500.0,
+        "name": "Sai Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 103000.0,
+        "name": "Sai Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 30,
+    "occupation": "logistics coordinator",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 759
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "014035789253",
+    "ifsc": "UBIN0217045",
+    "first_offer_id": "GL_REV_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "change_scheme_once"
+  ]
+}

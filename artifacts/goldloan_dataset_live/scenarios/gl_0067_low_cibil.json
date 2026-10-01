@@ -1,0 +1,87 @@
+{
+  "id": "gl_0067_low_cibil",
+  "seed": 200067,
+  "start_epoch": 1790176728,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8018853491",
+    "name": "Divya Iyer",
+    "email": "divya.iyer42@example.com",
+    "aadhaar": "7915 2132 9722",
+    "pan": "KHAPI2029J",
+    "address": "Flat No- 641, Lake View Road, Vijayawada, Andhra Pradesh - 520079",
+    "pincode": "520079",
+    "dob": "13/01/1974",
+    "father": "Priya Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP03",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Rohan Iyer",
+      "phone": "6941546072",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 74.36,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 74.36,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 135500.0,
+        "name": "Divya Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 135500.0,
+        "name": "Divya Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 135000.0,
+        "name": "Divya Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 25,
+    "occupation": "software support engineer",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 595
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "69905592874108",
+    "ifsc": "ICIC0426315"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "low_cibil"
+  ]
+}

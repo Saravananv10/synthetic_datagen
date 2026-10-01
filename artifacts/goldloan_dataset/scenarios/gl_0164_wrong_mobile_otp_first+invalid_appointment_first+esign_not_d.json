@@ -1,0 +1,94 @@
+{
+  "id": "gl_0164_wrong_mobile_otp_first+invalid_appointment_first+esign_not_d",
+  "seed": 200164,
+  "start_epoch": 1790101391,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6000887894",
+    "name": "Aditya Gupta",
+    "email": "aditya.gupta48@example.com",
+    "aadhaar": "5720 0110 7116",
+    "pan": "IJPPG5166A",
+    "address": "Flat No- 171, Lake View Road, Kochi, Kerala - 682039",
+    "pincode": "682039",
+    "dob": "17/10/1974",
+    "father": "Venkat Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP95",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Deepa Gupta",
+      "phone": "6526098974",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 63.94,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 63.94,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 36500.0,
+        "name": "Aditya Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 35500.0,
+        "name": "Aditya Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 36000.0,
+        "name": "Aditya Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 25,
+    "occupation": "factory supervisor",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 718
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true,
+    "invalid_appointment_first": true,
+    "esign_not_done_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "wrong_mobile_otp_first",
+    "invalid_appointment_first",
+    "esign_not_done_first",
+    "cash_disbursement"
+  ]
+}

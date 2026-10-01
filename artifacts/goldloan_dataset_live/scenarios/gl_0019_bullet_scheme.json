@@ -1,0 +1,87 @@
+{
+  "id": "gl_0019_bullet_scheme",
+  "seed": 200019,
+  "start_epoch": 1790125281,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9788011646",
+    "name": "Karthik Sharma",
+    "email": "karthik.sharma42@example.com",
+    "aadhaar": "6838 6113 0716",
+    "pan": "EMSPS6296K",
+    "address": "Flat No- 637, Ashok Colony, Pune, Maharashtra - 411069",
+    "pincode": "411069",
+    "dob": "22/10/1969",
+    "father": "Naveen Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP45",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Aarav Sharma",
+      "phone": "6505466329",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 89.79,
+        "stone_deduction": 3.2,
+        "karat": 20,
+        "scale_reading": 89.79,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 41500.0,
+        "name": "Karthik Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 41500.0,
+        "name": "Karthik Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 41500.0,
+        "name": "Karthik Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "factory supervisor",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 761
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "64030780298676",
+    "ifsc": "ICIC0234660"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "bullet_scheme"
+  ]
+}

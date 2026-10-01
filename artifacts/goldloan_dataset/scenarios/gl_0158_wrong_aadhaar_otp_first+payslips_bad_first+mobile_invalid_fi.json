@@ -1,0 +1,94 @@
+{
+  "id": "gl_0158_wrong_aadhaar_otp_first+payslips_bad_first+mobile_invalid_fi",
+  "seed": 200158,
+  "start_epoch": 1790112967,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9900627269",
+    "name": "Sneha Rao",
+    "email": "sneha.rao2@example.com",
+    "aadhaar": "4116 7524 1135",
+    "pan": "UQWPR2945W",
+    "address": "Flat No- 136, Rajaji Street, Bengaluru, Karnataka - 560036",
+    "pincode": "560036",
+    "dob": "23/08/1970",
+    "father": "Meena Rao"
+  },
+  "profile": {
+    "appointment_id": "AP28",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Anjali Rao",
+      "phone": "6389591137",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 74.38,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 74.38,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 137000.0,
+        "name": "Sneha Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 137000.0,
+        "name": "Sneha Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 137000.0,
+        "name": "Sneha Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 49,
+    "occupation": "accounts executive",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 701
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true,
+    "payslips_bad_first": true,
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_aadhaar_otp_first",
+    "payslips_bad_first",
+    "mobile_invalid_first",
+    "cash_disbursement"
+  ]
+}

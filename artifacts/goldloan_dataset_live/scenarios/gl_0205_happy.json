@@ -1,0 +1,87 @@
+{
+  "id": "gl_0205_happy",
+  "seed": 200205,
+  "start_epoch": 1790130424,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7937688087",
+    "name": "Ganesh Nair",
+    "email": "ganesh.nair15@example.com",
+    "aadhaar": "2892 4644 1247",
+    "pan": "FXZPN2213F",
+    "address": "Flat No- 586, MG Road, Vijayawada, Andhra Pradesh - 520072",
+    "pincode": "520072",
+    "dob": "05/10/1978",
+    "father": "Vivaan Nair"
+  },
+  "profile": {
+    "appointment_id": "AP92",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Arjun Nair",
+      "phone": "9430592653",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 59.58,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 59.58,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 112000.0,
+        "name": "Ganesh Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 112000.0,
+        "name": "Ganesh Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 112000.0,
+        "name": "Ganesh Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 36,
+    "occupation": "staff nurse",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 817
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "821922855760",
+    "ifsc": "ICIC0546272"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0068_borrower_duplicate",
+  "seed": 200068,
+  "start_epoch": 1790104737,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7281218109",
+    "name": "Venkat Iyer",
+    "email": "venkat.iyer48@example.com",
+    "aadhaar": "4708 2751 6381",
+    "pan": "LXYPI8924N",
+    "address": "Flat No- 680, MG Road, Chennai, Tamil Nadu - 600036",
+    "pincode": "600036",
+    "dob": "19/05/1981",
+    "father": "Ananya Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP72",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Aarav Iyer",
+      "phone": "8606356015",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 132.49,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 132.49,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 78000.0,
+        "name": "Venkat Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 78000.0,
+        "name": "Venkat Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 77500.0,
+        "name": "Venkat Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 53,
+    "occupation": "software support engineer",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 763
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "053580721625",
+    "ifsc": "SBIN0052467"
+  },
+  "flags": {
+    "borrower_duplicate": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "borrower_duplicate"
+  ]
+}

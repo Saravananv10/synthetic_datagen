@@ -1,0 +1,103 @@
+syntax = "proto3";
+
+package loopagent.v1;
+
+// Agent service compatible with the headless-harness Chakra contract
+// (client/proto/chakra.proto) so `adapter/loop/` can be a near-line-for-line
+// port of `adapter/chakra/`.
+service AgentService {
+  // Bidirectional stream: client sends tasks and answers to agent prompts,
+  // server streams text tokens, tool states, and requests permissions.
+  //
+  // One stream per TURN, not per conversation: the client opens a fresh
+  // stream for each turn and carries continuity across turns via
+  // ChatRequest.session_id, which the server resolves against its session
+  // store.
+  rpc Chat(stream ClientMessage) returns (stream ServerMessage);
+}
+
+// ---------------------------------------------------------
+// MESSAGES FROM CLIENT (Input)
+// ---------------------------------------------------------
+message ClientMessage {
+  oneof payload {
+    ChatRequest request = 2;
+    UserInput input = 3;
+    CancelSignal cancel = 4;
+  }
+}
+
+message ChatRequest {
+  string message = 1;
+  string working_directory = 2; // Where the agent should execute commands
+  reserved 3;
+  optional string model = 4;
+  string session_id = 5; // Non-empty = cross-stream session persistence
+}
+
+message UserInput {
+  string reply = 1;     // Text response (e.g. "y", "no", or clarification)
+  string prompt_id = 2; // ID of the prompt we are responding to
+}
+
+message CancelSignal {
+  string reason = 1;
+}
+
+// ---------------------------------------------------------
+// MESSAGES FROM SERVER (Output / Events)
+// ---------------------------------------------------------
+message ServerMessage {
+  oneof event {
+    TextChunk text_chunk = 1;
+    ToolCallStart tool_start = 2;
+    ToolCallResult tool_result = 3;
+    ActionRequired action_required = 4;
+    FinalResponse done = 5;
+    ErrorResponse error = 6;
+  }
+}
+
+message TextChunk {
+  string text = 1;
+}
+
+message ToolCallStart {
+  string tool_name = 1;
+  string arguments_json = 2;
+  string tool_use_id = 3;
+}
+
+message ToolCallResult {
+  string tool_name = 1;
+  string output = 2;
+  bool is_error = 3;
+  string tool_use_id = 4;
+}
+
+// Agent paused work and is waiting for a client decision. `tool_use_id` is
+// additive over the Chakra contract: when set it names the exact pending
+// tool call this prompt concerns, so a consumer need not fall back to
+// positional inference (the last ToolCallStart seen) the way
+// headless-harness's `tool_approver.py` does today for the Chakra backend.
+message ActionRequired {
+  string prompt_id = 1;
+  string question = 2;
+  enum ActionType {
+    CONFIRM_COMMAND = 0;
+    REQUEST_INFORMATION = 1;
+  }
+  ActionType type = 3;
+  string tool_use_id = 4;
+}
+
+message FinalResponse {
+  string full_text = 1;
+  int32 prompt_tokens = 2;
+  int32 completion_tokens = 3;
+}
+
+message ErrorResponse {
+  string message = 1;
+  string code = 2;
+}

@@ -1,0 +1,97 @@
+{
+  "id": "gl_0011_extra_ornament",
+  "seed": 200011,
+  "start_epoch": 1790179282,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7096152883",
+    "name": "Harish Iyer",
+    "email": "harish.iyer14@example.com",
+    "aadhaar": "6457 4735 8090",
+    "pan": "JTEPI8182A",
+    "address": "Flat No- 768, MG Road, Kochi, Kerala - 682023",
+    "pincode": "682023",
+    "dob": "24/10/1971",
+    "father": "Lakshmi Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP55",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Aditya Iyer",
+      "phone": "7295503903",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 117.55,
+        "stone_deduction": 0.0,
+        "karat": 22,
+        "scale_reading": 117.55,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 24.62,
+        "stone_deduction": 1.2,
+        "karat": 22,
+        "scale_reading": 24.62,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 63000.0,
+        "name": "Harish Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 62500.0,
+        "name": "Harish Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 62500.0,
+        "name": "Harish Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 27,
+    "occupation": "software support engineer",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 758
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "604002953318",
+    "ifsc": "ICIC0450154"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "extra_ornament"
+  ]
+}

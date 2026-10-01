@@ -1,0 +1,89 @@
+{
+  "id": "gl_0033_exit_stage_3",
+  "seed": 200033,
+  "start_epoch": 1790104781,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7179165719",
+    "name": "Deepa Patel",
+    "email": "deepa.patel28@example.com",
+    "aadhaar": "6878 1043 9910",
+    "pan": "MOBPP1975P",
+    "address": "Flat No- 30, Green Park, Kochi, Kerala - 682042",
+    "pincode": "682042",
+    "dob": "02/11/1995",
+    "father": "Divya Patel"
+  },
+  "profile": {
+    "appointment_id": "AP82",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Venkat Patel",
+      "phone": "7414553744",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 104.28,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 104.28,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 98000.0,
+        "name": "Deepa Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 98000.0,
+        "name": "Deepa Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 98000.0,
+        "name": "Deepa Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 37,
+    "occupation": "logistics coordinator",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 710
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "506478311073",
+    "ifsc": "ICIC0695744"
+  },
+  "flags": {
+    "exit_at_stage": 3
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "exit_stage_3"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0032_exit_stage_2",
+  "seed": 200032,
+  "start_epoch": 1790106468,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8132798680",
+    "name": "Anjali Rao",
+    "email": "anjali.rao49@example.com",
+    "aadhaar": "9845 3460 0618",
+    "pan": "EXYPR3944U",
+    "address": "Flat No- 53, Gandhi Nagar, Chennai, Tamil Nadu - 600019",
+    "pincode": "600019",
+    "dob": "22/11/1966",
+    "father": "Rohan Rao"
+  },
+  "profile": {
+    "appointment_id": "AP99",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Divya Rao",
+      "phone": "8711923172",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 85.19,
+        "stone_deduction": 0.9,
+        "karat": 22,
+        "scale_reading": 85.19,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 127000.0,
+        "name": "Anjali Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 128000.0,
+        "name": "Anjali Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 127500.0,
+        "name": "Anjali Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 46,
+    "occupation": "staff nurse",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 717
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "32028857852885",
+    "ifsc": "ICIC0250912"
+  },
+  "flags": {
+    "exit_at_stage": 2
+  },
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "exit_stage_2"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "gl_0057_ocr_noise_first",
+  "seed": 200057,
+  "start_epoch": 1790177172,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9967178260",
+    "name": "Deepa Singh",
+    "email": "deepa.singh54@example.com",
+    "aadhaar": "3149 6240 8583",
+    "pan": "AAUPS8636Z",
+    "address": "Flat No- 577, Rajaji Street, Bengaluru, Karnataka - 560070",
+    "pincode": "560070",
+    "dob": "26/05/1983",
+    "father": "Naveen Singh"
+  },
+  "profile": {
+    "appointment_id": "AP86",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Aarav Singh",
+      "phone": "9672726323",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 76.91,
+        "stone_deduction": 1.6,
+        "karat": 18,
+        "scale_reading": 76.91,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 36000.0,
+        "name": "Deepa Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 35500.0,
+        "name": "Deepa Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 35500.0,
+        "name": "Deepa Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 61,
+    "occupation": "logistics coordinator",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 808
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "32348153194",
+    "ifsc": "SBIN0477184"
+  },
+  "flags": {
+    "ocr_noise_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "ocr_noise_first"
+  ]
+}

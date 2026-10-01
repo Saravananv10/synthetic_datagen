@@ -1,0 +1,87 @@
+{
+  "id": "gl_0137_happy",
+  "seed": 200137,
+  "start_epoch": 1790160084,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7076105968",
+    "name": "Divya Menon",
+    "email": "divya.menon66@example.com",
+    "aadhaar": "8841 3412 7711",
+    "pan": "XYIPM4939V",
+    "address": "Flat No- 415, Rajaji Street, Pune, Maharashtra - 411005",
+    "pincode": "411005",
+    "dob": "04/07/1992",
+    "father": "Ananya Menon"
+  },
+  "profile": {
+    "appointment_id": "AP35",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Priya Menon",
+      "phone": "7677779449",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 68.76,
+        "stone_deduction": 3.2,
+        "karat": 22,
+        "scale_reading": 68.76,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Shree Ganesh Traders",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 59500.0,
+        "name": "Divya Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 59000.0,
+        "name": "Divya Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 59000.0,
+        "name": "Divya Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 33,
+    "occupation": "factory supervisor",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 701
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "61911967242724",
+    "ifsc": "SBIN0408066"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "happy"
+  ]
+}

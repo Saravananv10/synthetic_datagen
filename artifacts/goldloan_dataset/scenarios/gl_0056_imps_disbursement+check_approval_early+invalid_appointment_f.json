@@ -1,0 +1,92 @@
+{
+  "id": "gl_0056_imps_disbursement+check_approval_early+invalid_appointment_f",
+  "seed": 200056,
+  "start_epoch": 1790155687,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8407585913",
+    "name": "Naveen Kumar",
+    "email": "naveen.kumar28@example.com",
+    "aadhaar": "5601 1474 1915",
+    "pan": "UQOPK0357F",
+    "address": "Flat No- 465, Green Park, Chennai, Tamil Nadu - 600090",
+    "pincode": "600090",
+    "dob": "18/02/1978",
+    "father": "Aarav Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP83",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Aditya Kumar",
+      "phone": "9128687649",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 108.35,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 108.35,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 92000.0,
+        "name": "Naveen Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 92000.0,
+        "name": "Naveen Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 92500.0,
+        "name": "Naveen Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 49,
+    "occupation": "software support engineer",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 788
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "IMPS",
+    "account_number": "76477936027930",
+    "ifsc": "SBIN0652818"
+  },
+  "flags": {
+    "check_approval_early": true,
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "imps_disbursement",
+    "check_approval_early",
+    "invalid_appointment_first"
+  ]
+}

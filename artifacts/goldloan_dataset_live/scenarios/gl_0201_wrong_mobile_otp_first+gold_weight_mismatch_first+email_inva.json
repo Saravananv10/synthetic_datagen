@@ -1,0 +1,95 @@
+{
+  "id": "gl_0201_wrong_mobile_otp_first+gold_weight_mismatch_first+email_inva",
+  "seed": 200201,
+  "start_epoch": 1790105154,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9702014296",
+    "name": "Ganesh Menon",
+    "email": "ganesh.menon13@example.com",
+    "aadhaar": "3414 4718 0326",
+    "pan": "NXMPM6667Q",
+    "address": "Flat No- 796, Green Park, Chennai, Tamil Nadu - 600033",
+    "pincode": "600033",
+    "dob": "20/10/1980",
+    "father": "Mahesh Menon"
+  },
+  "profile": {
+    "appointment_id": "AP30",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Naveen Menon",
+      "phone": "9811256360",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 131.33,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 131.33,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 77500.0,
+        "name": "Ganesh Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 78500.0,
+        "name": "Ganesh Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 78000.0,
+        "name": "Ganesh Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 35,
+    "occupation": "factory supervisor",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 739
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "29882292064",
+    "ifsc": "UBIN0787018"
+  },
+  "flags": {
+    "wrong_mobile_otp_first": true,
+    "gold_weight_mismatch_first": true,
+    "email_invalid_first": true,
+    "invalid_appointment_first": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "wrong_mobile_otp_first",
+    "gold_weight_mismatch_first",
+    "email_invalid_first",
+    "invalid_appointment_first"
+  ]
+}

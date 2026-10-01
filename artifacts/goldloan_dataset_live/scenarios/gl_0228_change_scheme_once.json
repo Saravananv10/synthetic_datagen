@@ -1,0 +1,90 @@
+{
+  "id": "gl_0228_change_scheme_once",
+  "seed": 200228,
+  "start_epoch": 1790151758,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6384357923",
+    "name": "Anjali Pillai",
+    "email": "anjali.pillai1@example.com",
+    "aadhaar": "2757 3747 6281",
+    "pan": "QIKPP0720V",
+    "address": "Flat No- 592, Ashok Colony, Hyderabad, Telangana - 500003",
+    "pincode": "500003",
+    "dob": "06/02/1992",
+    "father": "Karthik Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP03",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Ramesh Pillai",
+      "phone": "9896884480",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 91.65,
+        "stone_deduction": 0.9,
+        "karat": 18,
+        "scale_reading": 91.65,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 76500.0,
+        "name": "Anjali Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 76000.0,
+        "name": "Anjali Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 76000.0,
+        "name": "Anjali Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 35,
+    "occupation": "factory supervisor",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 740
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "42756183894021",
+    "ifsc": "SBIN0286752",
+    "first_offer_id": "GL_REV_EMI_12"
+  },
+  "flags": {
+    "change_scheme_once": true
+  },
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "change_scheme_once"
+  ]
+}

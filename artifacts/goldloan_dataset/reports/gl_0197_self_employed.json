@@ -1,0 +1,11 @@
+{
+  "scenario_id": "gl_0197_self_employed",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD",
+    "INCOME_REQUIRED",
+    "UNSUPPORTED_EMPLOYMENT_TYPE"
+  ]
+}

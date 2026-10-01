@@ -1,0 +1,87 @@
+{
+  "id": "gl_0226_happy",
+  "seed": 200226,
+  "start_epoch": 1790121685,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6607666182",
+    "name": "Rohan Iyer",
+    "email": "rohan.iyer70@example.com",
+    "aadhaar": "3042 8306 8743",
+    "pan": "EGMPI4045I",
+    "address": "Flat No- 417, Gandhi Nagar, Bengaluru, Karnataka - 560057",
+    "pincode": "560057",
+    "dob": "25/06/1991",
+    "father": "Naveen Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP74",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Karthik Iyer",
+      "phone": "7476813639",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 102.93,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 102.93,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 66000.0,
+        "name": "Rohan Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 65500.0,
+        "name": "Rohan Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 65500.0,
+        "name": "Rohan Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 56,
+    "occupation": "staff nurse",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 814
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "62063471518",
+    "ifsc": "HDFC0052301"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "happy"
+  ]
+}

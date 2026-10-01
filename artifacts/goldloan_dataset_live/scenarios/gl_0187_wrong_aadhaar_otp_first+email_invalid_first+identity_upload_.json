@@ -1,0 +1,95 @@
+{
+  "id": "gl_0187_wrong_aadhaar_otp_first+email_invalid_first+identity_upload_",
+  "seed": 200187,
+  "start_epoch": 1790163388,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9026587832",
+    "name": "Pooja Iyer",
+    "email": "pooja.iyer33@example.com",
+    "aadhaar": "4475 6662 8665",
+    "pan": "EWJPI6701A",
+    "address": "Flat No- 108, Rajaji Street, Pune, Maharashtra - 411002",
+    "pincode": "411002",
+    "dob": "27/09/1994",
+    "father": "Meena Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP71",
+    "language": "English",
+    "nominee": {
+      "name": "Naveen Iyer",
+      "phone": "9271925598",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 85.92,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 85.92,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 123500.0,
+        "name": "Pooja Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 123500.0,
+        "name": "Pooja Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 123500.0,
+        "name": "Pooja Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 30,
+    "occupation": "school teacher",
+    "temperament": "hurried and impatient",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 807
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "73669264053081",
+    "ifsc": "SBIN0678107"
+  },
+  "flags": {
+    "wrong_aadhaar_otp_first": true,
+    "email_invalid_first": true,
+    "identity_upload_incomplete_first": true,
+    "ocr_noise_first": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_aadhaar_otp_first",
+    "email_invalid_first",
+    "identity_upload_incomplete_first",
+    "ocr_noise_first"
+  ]
+}

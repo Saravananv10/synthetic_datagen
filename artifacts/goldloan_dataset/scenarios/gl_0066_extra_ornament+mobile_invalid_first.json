@@ -1,0 +1,110 @@
+{
+  "id": "gl_0066_extra_ornament+mobile_invalid_first",
+  "seed": 200066,
+  "start_epoch": 1790166936,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7999258105",
+    "name": "Ramesh Singh",
+    "email": "ramesh.singh82@example.com",
+    "aadhaar": "3450 4874 7150",
+    "pan": "DHJPS5005H",
+    "address": "Flat No- 829, MG Road, Hyderabad, Telangana - 500075",
+    "pincode": "500075",
+    "dob": "15/07/1988",
+    "father": "Sai Singh"
+  },
+  "profile": {
+    "appointment_id": "AP81",
+    "language": "English",
+    "nominee": {
+      "name": "Ananya Singh",
+      "phone": "7386619946",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 73.77,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 73.77,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 54.77,
+        "stone_deduction": 0.5,
+        "karat": 22,
+        "scale_reading": 54.77,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 26.66,
+        "stone_deduction": 0.5,
+        "karat": 20,
+        "scale_reading": 26.66,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Metro Care Clinic",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 65500.0,
+        "name": "Ramesh Singh",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 66000.0,
+        "name": "Ramesh Singh",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 66000.0,
+        "name": "Ramesh Singh",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 48,
+    "occupation": "software support engineer",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 735
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "48279238902",
+    "ifsc": "HDFC0211232"
+  },
+  "flags": {
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "extra_ornament",
+    "mobile_invalid_first"
+  ]
+}

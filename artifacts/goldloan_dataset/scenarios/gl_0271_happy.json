@@ -1,0 +1,87 @@
+{
+  "id": "gl_0271_happy",
+  "seed": 200271,
+  "start_epoch": 1790170040,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6382819935",
+    "name": "Divya Iyer",
+    "email": "divya.iyer83@example.com",
+    "aadhaar": "6156 5815 9680",
+    "pan": "XNWPI8825V",
+    "address": "Flat No- 358, Rajaji Street, Kochi, Kerala - 682068",
+    "pincode": "682068",
+    "dob": "08/09/1985",
+    "father": "Naveen Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP63",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Vivaan Iyer",
+      "phone": "7012694987",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 118.03,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 118.03,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 51000.0,
+        "name": "Divya Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 50500.0,
+        "name": "Divya Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 51000.0,
+        "name": "Divya Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 43,
+    "occupation": "software support engineer",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 762
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "75245538661",
+    "ifsc": "SBIN0327900"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

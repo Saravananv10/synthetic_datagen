@@ -1,0 +1,87 @@
+{
+  "id": "gl_0215_imps_disbursement",
+  "seed": 200215,
+  "start_epoch": 1790136288,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8573220400",
+    "name": "Lakshmi Kumar",
+    "email": "lakshmi.kumar38@example.com",
+    "aadhaar": "6668 1342 0266",
+    "pan": "PZDPK6575L",
+    "address": "Flat No- 191, Green Park, Pune, Maharashtra - 411014",
+    "pincode": "411014",
+    "dob": "20/01/1991",
+    "father": "Suresh Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP41",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Pooja Kumar",
+      "phone": "8418032723",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 87.76,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 87.76,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 38000.0,
+        "name": "Lakshmi Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 38500.0,
+        "name": "Lakshmi Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 38500.0,
+        "name": "Lakshmi Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 39,
+    "occupation": "staff nurse",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 798
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "IMPS",
+    "account_number": "39178030195976",
+    "ifsc": "SBIN0053154"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "imps_disbursement"
+  ]
+}

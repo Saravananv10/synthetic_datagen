@@ -1,0 +1,97 @@
+{
+  "id": "gl_0115_sanction_email_retry+override_address",
+  "seed": 200115,
+  "start_epoch": 1790148151,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9571086847",
+    "name": "Mahesh Das",
+    "email": "mahesh.das58@example.com",
+    "aadhaar": "4020 1566 4377",
+    "pan": "QNZPD9825C",
+    "address": "Flat No- 108, Rajaji Street, Bengaluru, Karnataka - 560055",
+    "pincode": "560055",
+    "dob": "11/07/2000",
+    "father": "Ramesh Das"
+  },
+  "profile": {
+    "appointment_id": "AP01",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Vivaan Das",
+      "phone": "6921837404",
+      "relation": "child"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 115.77,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 115.77,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 75000.0,
+        "name": "Mahesh Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 74500.0,
+        "name": "Mahesh Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 74500.0,
+        "name": "Mahesh Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 37,
+    "occupation": "staff nurse",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 739
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "57272945912",
+    "ifsc": "UBIN0669594"
+  },
+  "flags": {
+    "override_address": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "sanction_email_retry",
+    "override_address"
+  ]
+}

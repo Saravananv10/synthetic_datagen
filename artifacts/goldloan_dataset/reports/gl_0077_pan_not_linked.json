@@ -1,0 +1,9 @@
+{
+  "scenario_id": "gl_0077_pan_not_linked",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "PAN_NOT_LINKED"
+  ]
+}

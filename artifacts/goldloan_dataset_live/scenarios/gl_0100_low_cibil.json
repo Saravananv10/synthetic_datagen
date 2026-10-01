@@ -1,0 +1,87 @@
+{
+  "id": "gl_0100_low_cibil",
+  "seed": 200100,
+  "start_epoch": 1790109445,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9556023145",
+    "name": "Vivaan Rao",
+    "email": "vivaan.rao82@example.com",
+    "aadhaar": "2842 0256 6883",
+    "pan": "TTLPR3708K",
+    "address": "Flat No- 279, MG Road, Hyderabad, Telangana - 500038",
+    "pincode": "500038",
+    "dob": "19/07/1983",
+    "father": "Ganesh Rao"
+  },
+  "profile": {
+    "appointment_id": "AP80",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Vivaan Rao",
+      "phone": "9865376741",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 79.43,
+        "stone_deduction": 3.2,
+        "karat": 18,
+        "scale_reading": 79.43,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 124000.0,
+        "name": "Vivaan Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 124000.0,
+        "name": "Vivaan Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 124000.0,
+        "name": "Vivaan Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 60,
+    "occupation": "staff nurse",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 585
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "87950026421",
+    "ifsc": "UBIN0197639"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "low_cibil"
+  ]
+}

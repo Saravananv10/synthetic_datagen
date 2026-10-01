@@ -1,0 +1,96 @@
+{
+  "id": "gl_0106_mobile_invalid_first",
+  "seed": 200106,
+  "start_epoch": 1790137444,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9712608132",
+    "name": "Divya Sharma",
+    "email": "divya.sharma60@example.com",
+    "aadhaar": "6128 4836 5782",
+    "pan": "ISHPS1287O",
+    "address": "Flat No- 411, Green Park, Pune, Maharashtra - 411003",
+    "pincode": "411003",
+    "dob": "17/02/1977",
+    "father": "Anjali Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP34",
+    "language": "English",
+    "nominee": {
+      "name": "Rohan Sharma",
+      "phone": "9852507995",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 121.43,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 121.43,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 126500.0,
+        "name": "Divya Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 127000.0,
+        "name": "Divya Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 126000.0,
+        "name": "Divya Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 36,
+    "occupation": "accounts executive",
+    "temperament": "sceptical, double-checks everything",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 776
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "94418260458146",
+    "ifsc": "HDFC0797008"
+  },
+  "flags": {
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "mobile_invalid_first"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "gl_0127_ocr_noise_first",
+  "seed": 200127,
+  "start_epoch": 1790127887,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9613198996",
+    "name": "Mahesh Kumar",
+    "email": "mahesh.kumar36@example.com",
+    "aadhaar": "7648 8432 0416",
+    "pan": "RGGPK0952Z",
+    "address": "Flat No- 730, MG Road, Pune, Maharashtra - 411084",
+    "pincode": "411084",
+    "dob": "07/08/1983",
+    "father": "Ananya Kumar"
+  },
+  "profile": {
+    "appointment_id": "AP20",
+    "language": "Kannada",
+    "nominee": {
+      "name": "Rohan Kumar",
+      "phone": "7722278034",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 79.12,
+        "stone_deduction": 0.9,
+        "karat": 18,
+        "scale_reading": 79.12,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 150000.0,
+        "name": "Mahesh Kumar",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 150500.0,
+        "name": "Mahesh Kumar",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 150500.0,
+        "name": "Mahesh Kumar",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "logistics coordinator",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 814
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "39035648890",
+    "ifsc": "HDFC0429061"
+  },
+  "flags": {
+    "ocr_noise_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "ocr_noise_first"
+  ]
+}

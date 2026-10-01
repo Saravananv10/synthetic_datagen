@@ -1,0 +1,88 @@
+{
+  "id": "gl_0000_happy",
+  "seed": 100000,
+  "start_epoch": 1790121830,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7459845551",
+    "name": "Rahul Mishra",
+    "email": "rahul.mishra26@example.com",
+    "aadhaar": "5972 9815 0616",
+    "pan": "GPDPM6487A",
+    "address": "Flat 12B, Shanti Nagar, Pune, Maharashtra - 411076",
+    "pincode": "411076",
+    "dob": "05/03/1986",
+    "father": "Sanjay Mishra"
+  },
+  "profile": {
+    "appointment_id": "AP79",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Anita Mishra",
+      "phone": "7416858783",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 108.19,
+        "stone_deduction": 1.6,
+        "karat": 20,
+        "scale_reading": 108.19,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "NovaTech Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 53500.0,
+        "name": "Rahul Mishra",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 53500.0,
+        "name": "Rahul Mishra",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 53500.0,
+        "name": "Rahul Mishra",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 26,
+    "occupation": "Support Engineer",
+    "temperament": "polite and detail\u2011oriented",
+    "background": "Working as a support engineer, I need to fund my sister\u2019s upcoming wedding and need quick cash without disrupting my monthly budgeting.",
+    "voice": "I type in a mix of English and a few Hindi words, short sentences, occasional ellipsis\u2026 and sometimes miss a comma."
+  },
+  "bureau": {
+    "cibil": 773
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "91454981741",
+    "ifsc": "SBIN0409016"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "",
+  "tags": [
+    "happy",
+    "llm_persona"
+  ]
+}

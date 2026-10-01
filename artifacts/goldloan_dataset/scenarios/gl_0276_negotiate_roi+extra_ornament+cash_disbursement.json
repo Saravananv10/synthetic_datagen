@@ -1,0 +1,112 @@
+{
+  "id": "gl_0276_negotiate_roi+extra_ornament+cash_disbursement",
+  "seed": 200276,
+  "start_epoch": 1790106992,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6450820918",
+    "name": "Sai Rao",
+    "email": "sai.rao82@example.com",
+    "aadhaar": "3043 4008 4958",
+    "pan": "WJOPR3645C",
+    "address": "Flat No- 333, Lake View Road, Vijayawada, Andhra Pradesh - 520010",
+    "pincode": "520010",
+    "dob": "02/07/1986",
+    "father": "Suresh Rao"
+  },
+  "profile": {
+    "appointment_id": "AP75",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Sai Rao",
+      "phone": "8738047910",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "mangalsutra",
+        "description": "Hallmarked gold mangalsutra",
+        "gross_wt": 116.14,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 116.14,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 53.84,
+        "stone_deduction": 0.5,
+        "karat": 18,
+        "scale_reading": 53.84,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 51.9,
+        "stone_deduction": 0.5,
+        "karat": 18,
+        "scale_reading": 51.9,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 103500.0,
+        "name": "Sai Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 103000.0,
+        "name": "Sai Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 103500.0,
+        "name": "Sai Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 54,
+    "occupation": "software support engineer",
+    "temperament": "anxious first-time borrower",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "terse with abbreviations"
+  },
+  "bureau": {
+    "cibil": 768
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": "",
+    "requested_roi": 11.7
+  },
+  "flags": {
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "negotiate_roi",
+    "extra_ornament",
+    "cash_disbursement"
+  ]
+}

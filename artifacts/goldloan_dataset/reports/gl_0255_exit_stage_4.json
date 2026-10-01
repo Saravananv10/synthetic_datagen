@@ -1,0 +1,9 @@
+{
+  "scenario_id": "gl_0255_exit_stage_4",
+  "ok": true,
+  "violations": [],
+  "coverage": [
+    "INGEST_IDENTITY",
+    "INGEST_GOLD"
+  ]
+}

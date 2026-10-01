@@ -1,0 +1,94 @@
+{
+  "id": "gl_0142_nominee_duplicate_first",
+  "seed": 200142,
+  "start_epoch": 1790145801,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6936065405",
+    "name": "Aditya Das",
+    "email": "aditya.das73@example.com",
+    "aadhaar": "9224 9849 2449",
+    "pan": "FDAPD4961F",
+    "address": "Flat No- 322, MG Road, Pune, Maharashtra - 411044",
+    "pincode": "411044",
+    "dob": "17/07/1978",
+    "father": "Karthik Das"
+  },
+  "profile": {
+    "appointment_id": "AP08",
+    "language": "English",
+    "nominee": {
+      "name": "Sneha Das",
+      "phone": "8652943141",
+      "relation": "spouse"
+    },
+    "nominee_alt": {
+      "name": "Rohan Das",
+      "phone": "8282179827",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 102.06,
+        "stone_deduction": 0.9,
+        "karat": 18,
+        "scale_reading": 102.06,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Sunrise Infosystems Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 82500.0,
+        "name": "Aditya Das",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 82500.0,
+        "name": "Aditya Das",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 83000.0,
+        "name": "Aditya Das",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 29,
+    "occupation": "school teacher",
+    "temperament": "tech-savvy and terse",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 732
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "586637589523",
+    "ifsc": "ICIC0156439"
+  },
+  "flags": {
+    "nominee_duplicate_first": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "nominee_duplicate_first"
+  ]
+}

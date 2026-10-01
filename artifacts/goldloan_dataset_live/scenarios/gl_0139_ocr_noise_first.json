@@ -1,0 +1,89 @@
+{
+  "id": "gl_0139_ocr_noise_first",
+  "seed": 200139,
+  "start_epoch": 1790110317,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9865446787",
+    "name": "Venkat Iyer",
+    "email": "venkat.iyer17@example.com",
+    "aadhaar": "3752 6374 7317",
+    "pan": "OQEPI4528O",
+    "address": "Flat No- 855, MG Road, Kochi, Kerala - 682032",
+    "pincode": "682032",
+    "dob": "17/01/1993",
+    "father": "Meena Iyer"
+  },
+  "profile": {
+    "appointment_id": "AP59",
+    "language": "English",
+    "nominee": {
+      "name": "Meena Iyer",
+      "phone": "9918924012",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 75.2,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 75.2,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 76000.0,
+        "name": "Venkat Iyer",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 75500.0,
+        "name": "Venkat Iyer",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 75500.0,
+        "name": "Venkat Iyer",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 24,
+    "occupation": "school teacher",
+    "temperament": "chatty and friendly",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 779
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "208784468771",
+    "ifsc": "ICIC0953399"
+  },
+  "flags": {
+    "ocr_noise_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "ocr_noise_first"
+  ]
+}

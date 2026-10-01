@@ -1,0 +1,114 @@
+{
+  "id": "gl_0241_change_scheme_once+cash_disbursement+email_invalid_first+ext",
+  "seed": 200241,
+  "start_epoch": 1790171752,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6820349811",
+    "name": "Priya Joshi",
+    "email": "priya.joshi51@example.com",
+    "aadhaar": "5868 9205 5484",
+    "pan": "OICPJ3463G",
+    "address": "Flat No- 21, Ashok Colony, Kochi, Kerala - 682016",
+    "pincode": "682016",
+    "dob": "25/11/1980",
+    "father": "Suresh Joshi"
+  },
+  "profile": {
+    "appointment_id": "AP03",
+    "language": "Marathi",
+    "nominee": {
+      "name": "Divya Joshi",
+      "phone": "6534397250",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 88.08,
+        "stone_deduction": 1.6,
+        "karat": 22,
+        "scale_reading": 88.08,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 38.1,
+        "stone_deduction": 1.2,
+        "karat": 22,
+        "scale_reading": 38.1,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      },
+      {
+        "type": "earrings",
+        "description": "Hallmarked gold earrings",
+        "gross_wt": 20.79,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 20.79,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 75500.0,
+        "name": "Priya Joshi",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 75500.0,
+        "name": "Priya Joshi",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 75500.0,
+        "name": "Priya Joshi",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 44,
+    "occupation": "accounts executive",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 813
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": "",
+    "first_offer_id": "GL_FULL_BULLET_12"
+  },
+  "flags": {
+    "change_scheme_once": true,
+    "email_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "change_scheme_once",
+    "cash_disbursement",
+    "email_invalid_first",
+    "extra_ornament"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "gl_0121_wrong_email_otp_first+gold_weight_mismatch_first+override_ad",
+  "seed": 200121,
+  "start_epoch": 1790124720,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8046737772",
+    "name": "Rohan Nair",
+    "email": "rohan.nair36@example.com",
+    "aadhaar": "9404 8165 0013",
+    "pan": "TRQPN9844W",
+    "address": "Flat No- 835, Temple Street, Pune, Maharashtra - 411032",
+    "pincode": "411032",
+    "dob": "06/06/1983",
+    "father": "Sneha Nair"
+  },
+  "profile": {
+    "appointment_id": "AP69",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Harish Nair",
+      "phone": "9952362356",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "necklace",
+        "description": "Hallmarked gold necklace with pendant",
+        "gross_wt": 104.58,
+        "stone_deduction": 0.4,
+        "karat": 22,
+        "scale_reading": 104.58,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Kaveri Logistics Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 58500.0,
+        "name": "Rohan Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 58000.0,
+        "name": "Rohan Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 58000.0,
+        "name": "Rohan Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 53,
+    "occupation": "accounts executive",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 732
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "77475068670188",
+    "ifsc": "ICIC0477139"
+  },
+  "flags": {
+    "wrong_email_otp_first": true,
+    "gold_weight_mismatch_first": true,
+    "override_address": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "wrong_email_otp_first",
+    "gold_weight_mismatch_first",
+    "override_address"
+  ]
+}

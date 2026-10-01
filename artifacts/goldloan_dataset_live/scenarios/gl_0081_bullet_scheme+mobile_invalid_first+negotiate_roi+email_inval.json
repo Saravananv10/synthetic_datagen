@@ -1,0 +1,102 @@
+{
+  "id": "gl_0081_bullet_scheme+mobile_invalid_first+negotiate_roi+email_inval",
+  "seed": 200081,
+  "start_epoch": 1790169823,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "9085610670",
+    "name": "Naveen Menon",
+    "email": "naveen.menon48@example.com",
+    "aadhaar": "8532 1479 0690",
+    "pan": "KXOPM4409Q",
+    "address": "Flat No- 894, Rajaji Street, Chennai, Tamil Nadu - 600099",
+    "pincode": "600099",
+    "dob": "27/10/2000",
+    "father": "Harish Menon"
+  },
+  "profile": {
+    "appointment_id": "AP24",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Sai Menon",
+      "phone": "8575170596",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 98.6,
+        "stone_deduction": 0.9,
+        "karat": 20,
+        "scale_reading": 98.6,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Anand Textiles",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 112000.0,
+        "name": "Naveen Menon",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 112500.0,
+        "name": "Naveen Menon",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 112500.0,
+        "name": "Naveen Menon",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "factory supervisor",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 706
+  },
+  "choices": {
+    "offer_id": "GL_FULL_BULLET_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "91488058182361",
+    "ifsc": "ICIC0817842",
+    "requested_roi": 11.2
+  },
+  "flags": {
+    "mobile_invalid_first": true,
+    "negotiate_roi": true,
+    "email_invalid_first": true
+  },
+  "tool_failures": [
+    {
+      "tool": "send_sanction_letter_email",
+      "times": 1,
+      "error_type": "RuntimeError",
+      "message": "OAuth token request timed out after 45s: ConnectTimeout"
+    }
+  ],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "bullet_scheme",
+    "mobile_invalid_first",
+    "negotiate_roi",
+    "email_invalid_first"
+  ]
+}

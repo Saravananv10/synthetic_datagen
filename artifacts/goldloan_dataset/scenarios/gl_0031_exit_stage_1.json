@@ -1,0 +1,89 @@
+{
+  "id": "gl_0031_exit_stage_1",
+  "seed": 200031,
+  "start_epoch": 1790169637,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "7447667961",
+    "name": "Ganesh Pillai",
+    "email": "ganesh.pillai60@example.com",
+    "aadhaar": "7617 8029 3898",
+    "pan": "LUUPP6154A",
+    "address": "Flat No- 265, MG Road, Bengaluru, Karnataka - 560065",
+    "pincode": "560065",
+    "dob": "02/03/1998",
+    "father": "Ramesh Pillai"
+  },
+  "profile": {
+    "appointment_id": "AP07",
+    "language": "Hindi",
+    "nominee": {
+      "name": "Aditya Pillai",
+      "phone": "7122334099",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 119.87,
+        "stone_deduction": 0.4,
+        "karat": 18,
+        "scale_reading": 119.87,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 41500.0,
+        "name": "Ganesh Pillai",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 42000.0,
+        "name": "Ganesh Pillai",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 41500.0,
+        "name": "Ganesh Pillai",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 56,
+    "occupation": "logistics coordinator",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 738
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "481426673829",
+    "ifsc": "SBIN0366440"
+  },
+  "flags": {
+    "exit_at_stage": 1
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "exit_stage_1"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "gl_0177_mobile_invalid_first+cash_disbursement",
+  "seed": 200177,
+  "start_epoch": 1790135923,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6636028762",
+    "name": "Naveen Rao",
+    "email": "naveen.rao61@example.com",
+    "aadhaar": "4145 8913 9592",
+    "pan": "XKQPR2942V",
+    "address": "Flat No- 483, Gandhi Nagar, Hyderabad, Telangana - 500020",
+    "pincode": "500020",
+    "dob": "16/04/1975",
+    "father": "Suresh Rao"
+  },
+  "profile": {
+    "appointment_id": "AP73",
+    "language": "Bengali",
+    "nominee": {
+      "name": "Naveen Rao",
+      "phone": "9411866364",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 82.21,
+        "stone_deduction": 0.0,
+        "karat": 18,
+        "scale_reading": 82.21,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Vidya Bharati School",
+    "payslips": [
+      {
+        "month": "2026-05",
+        "net_pay": 42500.0,
+        "name": "Naveen Rao",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-06",
+        "net_pay": 42000.0,
+        "name": "Naveen Rao",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 42500.0,
+        "name": "Naveen Rao",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 47,
+    "occupation": "accounts executive",
+    "temperament": "distracted, answers half-attentively",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 791
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {
+    "mobile_invalid_first": true
+  },
+  "tool_failures": [],
+  "style": "Terse and businesslike, lowercase is fine.",
+  "tags": [
+    "mobile_invalid_first",
+    "cash_disbursement"
+  ]
+}

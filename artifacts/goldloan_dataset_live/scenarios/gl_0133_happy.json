@@ -1,0 +1,87 @@
+{
+  "id": "gl_0133_happy",
+  "seed": 200133,
+  "start_epoch": 1790108961,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6165167999",
+    "name": "Sneha Gupta",
+    "email": "sneha.gupta6@example.com",
+    "aadhaar": "3302 9549 1369",
+    "pan": "SGIPG9473U",
+    "address": "Flat No- 165, Temple Street, Hyderabad, Telangana - 500037",
+    "pincode": "500037",
+    "dob": "28/08/1968",
+    "father": "Arjun Gupta"
+  },
+  "profile": {
+    "appointment_id": "AP49",
+    "language": "English",
+    "nominee": {
+      "name": "Naveen Gupta",
+      "phone": "7714260305",
+      "relation": "other"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 121.14,
+        "stone_deduction": 2.1,
+        "karat": 18,
+        "scale_reading": 121.14,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Horizon Pharma Distributors",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 98000.0,
+        "name": "Sneha Gupta",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 97500.0,
+        "name": "Sneha Gupta",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 98000.0,
+        "name": "Sneha Gupta",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 57,
+    "occupation": "logistics coordinator",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "full formal sentences"
+  },
+  "bureau": {
+    "cibil": 780
+  },
+  "choices": {
+    "offer_id": "GL_FULL_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "15457657187993",
+    "ifsc": "UBIN0037214"
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Formal, uses the customer's full details exactly as given.",
+  "tags": [
+    "happy"
+  ]
+}

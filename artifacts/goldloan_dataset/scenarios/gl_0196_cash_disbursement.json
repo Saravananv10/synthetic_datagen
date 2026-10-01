@@ -1,0 +1,87 @@
+{
+  "id": "gl_0196_cash_disbursement",
+  "seed": 200196,
+  "start_epoch": 1790157931,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8728655527",
+    "name": "Karthik Nair",
+    "email": "karthik.nair42@example.com",
+    "aadhaar": "6306 5366 0413",
+    "pan": "OVRPN8539G",
+    "address": "Flat No- 539, Green Park, Chennai, Tamil Nadu - 600048",
+    "pincode": "600048",
+    "dob": "10/08/1984",
+    "father": "Pooja Nair"
+  },
+  "profile": {
+    "appointment_id": "AP83",
+    "language": "Malayalam",
+    "nominee": {
+      "name": "Suresh Nair",
+      "phone": "6650361963",
+      "relation": "sibling"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "chain",
+        "description": "Hallmarked gold chain",
+        "gross_wt": 129.1,
+        "stone_deduction": 0.0,
+        "karat": 20,
+        "scale_reading": 129.1,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 100500.0,
+        "name": "Karthik Nair",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 100500.0,
+        "name": "Karthik Nair",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 101000.0,
+        "name": "Karthik Nair",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 51,
+    "occupation": "logistics coordinator",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with light Hinglish"
+  },
+  "bureau": {
+    "cibil": 789
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "CASH",
+    "account_number": "",
+    "ifsc": ""
+  },
+  "flags": {},
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "cash_disbursement"
+  ]
+}

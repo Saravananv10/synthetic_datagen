@@ -1,0 +1,91 @@
+{
+  "id": "gl_0162_negotiate_roi_over_limit",
+  "seed": 200162,
+  "start_epoch": 1790100687,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "6182812479",
+    "name": "Meena Patel",
+    "email": "meena.patel10@example.com",
+    "aadhaar": "4948 5452 1009",
+    "pan": "KUPPP0307R",
+    "address": "Flat No- 172, Ashok Colony, Bengaluru, Karnataka - 560067",
+    "pincode": "560067",
+    "dob": "17/11/1995",
+    "father": "Meena Patel"
+  },
+  "profile": {
+    "appointment_id": "AP69",
+    "language": "Telugu",
+    "nominee": {
+      "name": "Vivaan Patel",
+      "phone": "6163129012",
+      "relation": "spouse"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "bangle",
+        "description": "Hallmarked gold bangles (pair)",
+        "gross_wt": 135.86,
+        "stone_deduction": 2.1,
+        "karat": 20,
+        "scale_reading": 135.86,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Greenfield Auto Components",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 48500.0,
+        "name": "Meena Patel",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 49000.0,
+        "name": "Meena Patel",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 49500.0,
+        "name": "Meena Patel",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 55,
+    "occupation": "logistics coordinator",
+    "temperament": "easily confused by jargon",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "English with the occasional typo"
+  },
+  "bureau": {
+    "cibil": 724
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "58777876988124",
+    "ifsc": "SBIN0670961",
+    "requested_roi": 10.1
+  },
+  "flags": {
+    "negotiate_roi": true
+  },
+  "tool_failures": [],
+  "style": "Types fast: occasional typos and no punctuation.",
+  "tags": [
+    "negotiate_roi_over_limit",
+    "negotiation_refused"
+  ]
+}

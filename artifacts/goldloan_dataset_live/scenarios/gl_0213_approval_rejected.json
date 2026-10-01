@@ -1,0 +1,89 @@
+{
+  "id": "gl_0213_approval_rejected",
+  "seed": 200213,
+  "start_epoch": 1790152159,
+  "today_month": "2026-09",
+  "human_role": "operator",
+  "customer": {
+    "mobile": "8934979213",
+    "name": "Pooja Sharma",
+    "email": "pooja.sharma93@example.com",
+    "aadhaar": "6495 2129 9324",
+    "pan": "EPEPS3804T",
+    "address": "Flat No- 109, Rajaji Street, Pune, Maharashtra - 411016",
+    "pincode": "411016",
+    "dob": "19/03/1967",
+    "father": "Lakshmi Sharma"
+  },
+  "profile": {
+    "appointment_id": "AP90",
+    "language": "Gujarati",
+    "nominee": {
+      "name": "Lakshmi Sharma",
+      "phone": "6664523816",
+      "relation": "parent"
+    }
+  },
+  "gold": {
+    "items": [
+      {
+        "type": "ring",
+        "description": "Hallmarked gold ring",
+        "gross_wt": 96.57,
+        "stone_deduction": 0.4,
+        "karat": 20,
+        "scale_reading": 96.57,
+        "photo_fixture": "necklace_on_scale",
+        "doc_fixture": "gold_valuation_certificate"
+      }
+    ]
+  },
+  "income": {
+    "employment_type": "salaried",
+    "employer": "Bluewave Solutions Pvt Ltd",
+    "payslips": [
+      {
+        "month": "2026-06",
+        "net_pay": 93500.0,
+        "name": "Pooja Sharma",
+        "fixture": "payslip_2026_04"
+      },
+      {
+        "month": "2026-07",
+        "net_pay": 93000.0,
+        "name": "Pooja Sharma",
+        "fixture": "payslip_2026_05"
+      },
+      {
+        "month": "2026-08",
+        "net_pay": 93000.0,
+        "name": "Pooja Sharma",
+        "fixture": "payslip_2026_06"
+      }
+    ]
+  },
+  "persona": {
+    "age": 55,
+    "occupation": "accounts executive",
+    "temperament": "very polite and formal",
+    "background": "Needs short-term funds and has gold at home.",
+    "voice": "plain English, lowercase, little punctuation"
+  },
+  "bureau": {
+    "cibil": 800
+  },
+  "choices": {
+    "offer_id": "GL_REV_EMI_12",
+    "disbursement_mode": "NEFT",
+    "account_number": "72836988764",
+    "ifsc": "UBIN0597870"
+  },
+  "flags": {
+    "approval_rejected": true
+  },
+  "tool_failures": [],
+  "style": "Polite and slightly wordy, full sentences where natural.",
+  "tags": [
+    "approval_rejected"
+  ]
+}
