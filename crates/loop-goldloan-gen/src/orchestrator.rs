@@ -1,10 +1,14 @@
 //! One conversation: human <-> stage agents over the mock backend.
 //!
-//! Routing rules (from the demo): stage 1 starts on the first message; every
-//! later stage starts when the human sends PROCEED after the previous stage's
-//! completion message. Uploads appear in the chat as "No input message
-//! provided." + attachments, while the agent receives the ingest step's text
-//! summary.
+//! Routing rules: stage 1 starts on the first message; every later stage starts
+//! on the human's next message once the backend marks the previous stage done
+//! (the agent has asked whether to continue), unless that message stops the
+//! application. There is no on-screen UI: the human writes naturally, and the
+//! three device actions (upload, check approval, exit) arrive as a trailing
+//! `[[upload]]` / `[[check_approval]]` / `[[exit]]` tag that is stripped here,
+//! before the message reaches the agent, the trace or Langfuse. Upload turns
+//! show the human's own words + the attachments; the agent receives those words
+//! followed by the ingest step's text summary.
 
 use std::path::Path;
 use std::sync::Arc;
@@ -65,11 +69,13 @@ pub async fn run(
     lf: Langfuse,
 ) -> anyhow::Result<Trace> {
     let session_id = format!("{}-{}", sc.id, sc.seed);
-    // Two Langfuse sessions per run of this scenario, one per side, so each can be reviewed and
-    // processed on its own: the application side (stage agents + vision extraction + the run's
-    // `conversation` summary) and the simulated human.
+    // Separate Langfuse sessions per run of this scenario so the two sides never mingle and each
+    // can be reviewed and processed on its own: the gold-loan assistant (stage agents + vision
+    // extraction), the simulated human (loan officer / customer), and the run's `conversation`
+    // summary, which holds both sides' messages and so lives in neither.
     let lf_session = format!("{session_id}-{}", opts.run_id);
     let (lf_agent_session, lf_human_session) = (format!("{lf_session}-agent"), format!("{lf_session}-human"));
+    let lf_conversation_session = format!("{lf_session}-conversation");
     let run_start = chrono::Utc::now();
     let backend = Arc::new(Mutex::new(Backend::new(rules.clone(), sc.clone())));
     let mut agent = match opts.mode {
@@ -191,10 +197,11 @@ pub async fn run(
                 break;
             }
         };
-        let upper = human_text.trim().to_uppercase();
+        let (human_text, action) = split_action(&human_text);
+        let upper = human_text.to_uppercase();
 
         // Virtual clock: typing time, plus the cooling-off wait when the human polls for approval.
-        let delay = if upper == "CHECK APPROVAL" {
+        let delay = if action == Some(Action::CheckApproval) {
             if sc.flags.check_approval_early && !early_check_done {
                 early_check_done = true;
                 8
@@ -206,16 +213,26 @@ pub async fn run(
         };
         backend.lock().advance(delay);
 
-        if upper == "EXIT" {
+        if action == Some(Action::Exit) {
             pending_exit = true;
         }
-        user = UserMsg { role: sc.human_role.clone(), text: human_text.trim().to_string(), attachments: vec![], device: device_seen.clone() };
-        agent_input = human_text.trim().to_string();
-        if upper == "UPLOAD" {
+        user = UserMsg { role: sc.human_role.clone(), text: human_text.clone(), attachments: vec![], device: device_seen.clone() };
+        agent_input = human_text.clone();
+        if action == Some(Action::Upload) {
             match do_upload(&backend, &mut vision, stage, sc).await {
                 Ok(Some(up)) => {
-                    user = UserMsg { role: sc.human_role.clone(), text: "No input message provided.".into(), attachments: up.attachments, device: device_seen.clone() };
-                    agent_input = up.rec.summary.clone();
+                    // A bare keyword (the scripted human's "UPLOAD") carries no words of its own.
+                    let said = if human_text.is_empty() || upper == "UPLOAD" { None } else { Some(human_text.clone()) };
+                    user = UserMsg {
+                        role: sc.human_role.clone(),
+                        text: said.clone().unwrap_or_else(|| "No input message provided.".into()),
+                        attachments: up.attachments,
+                        device: device_seen.clone(),
+                    };
+                    agent_input = match said {
+                        Some(w) => format!("{w}\n\n{}", up.rec.summary),
+                        None => up.rec.summary.clone(),
+                    };
                     next_ingest = Some(up.rec);
                 }
                 Ok(None) => {}
@@ -226,7 +243,9 @@ pub async fn run(
                 }
             }
         }
-        if upper == "PROCEED" && stage < 6 && backend.lock().stage_done(stage) {
+        // The stage is done and its agent has asked whether to continue: any reply that does not
+        // stop the application moves on (the scripted human still answers "PROCEED").
+        if action != Some(Action::Exit) && stage < 6 && backend.lock().stage_done(stage) {
             stage += 1;
             turn_in_stage = 0;
         }
@@ -238,11 +257,11 @@ pub async fn run(
     };
     if let Some(c) = &lf {
         c.conversation(
-            &lf_agent_session,
+            &lf_conversation_session,
             run_start,
             chat_messages(&conversation),
             json!({"outcome": outcome_s, "status": status, "turns": conversation.len(), "loan_amount": final_state.loan_amount}),
-            json!({"scenario": sc.id, "seed": sc.seed, "final_stage": stage, "human_session": lf_human_session, "mode": match opts.mode { Mode::Scripted => "scripted", Mode::Llm => "llm" },
+            json!({"scenario": sc.id, "seed": sc.seed, "final_stage": stage, "agent_session": lf_agent_session, "human_session": lf_human_session, "mode": match opts.mode { Mode::Scripted => "scripted", Mode::Llm => "llm" },
                    "agent_model": opts.agent_model, "human_model": opts.human_model, "vision_model": opts.vision_model, "customer": sc.customer.name}),
             sc.tags.clone(),
         );
@@ -357,4 +376,57 @@ fn chat_messages(conversation: &[Turn]) -> serde_json::Value {
         }
     }
     serde_json::Value::Array(msgs)
+}
+
+/// A device action the human takes alongside (or instead of) typing.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+enum Action {
+    Upload,
+    CheckApproval,
+    Exit,
+}
+
+/// Split the human's message into the text that goes into the conversation and the device
+/// action it carries: a trailing `[[upload]]` / `[[check_approval]]` / `[[exit]]` tag (LLM
+/// human; removed from the text), or a whole-message keyword (scripted human).
+fn split_action(raw: &str) -> (String, Option<Action>) {
+    let tag = regex::Regex::new(r"(?i)\[\[\s*([a-z_ ]+?)\s*\]\]").unwrap();
+    let mut action = None;
+    for c in tag.captures_iter(raw) {
+        action = action.or(match c[1].to_lowercase().replace(' ', "_").as_str() {
+            "upload" => Some(Action::Upload),
+            "check_approval" => Some(Action::CheckApproval),
+            "exit" => Some(Action::Exit),
+            _ => None,
+        });
+    }
+    let text = tag.replace_all(raw, "").split_whitespace().collect::<Vec<_>>().join(" ");
+    let text = text.trim().to_string();
+    if action.is_none() {
+        action = match text.to_uppercase().as_str() {
+            "UPLOAD" => Some(Action::Upload),
+            "CHECK APPROVAL" => Some(Action::CheckApproval),
+            "EXIT" => Some(Action::Exit),
+            _ => None,
+        };
+    }
+    (text, action)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn strips_action_tags_from_the_conversation() {
+        assert_eq!(split_action("here are the PAN and Aadhaar photos [[upload]]"), ("here are the PAN and Aadhaar photos".into(), Some(Action::Upload)));
+        assert_eq!(split_action("please check the approval now [[Check_Approval]]"), ("please check the approval now".into(), Some(Action::CheckApproval)));
+        assert_eq!(split_action("let's stop here for now [[ exit ]]"), ("let's stop here for now".into(), Some(Action::Exit)));
+        assert_eq!(split_action("yes, go ahead"), ("yes, go ahead".into(), None));
+        // scripted human keywords
+        assert_eq!(split_action("UPLOAD"), ("UPLOAD".into(), Some(Action::Upload)));
+        assert_eq!(split_action("EXIT"), ("EXIT".into(), Some(Action::Exit)));
+        // stray unknown tags never reach the conversation
+        assert_eq!(split_action("ok [[click]]"), ("ok".into(), None));
+    }
 }

@@ -44,20 +44,20 @@ BUTTONS = {
 CLAIMS = [
     (r"Identity documents stored", "collect_identity_documents"),
     (r"OTP sent successfully for Aadhaar", "generate_aadhar_otp"),
-    (r"Aadhaar Card Exists", "verify_aadhar_otp"),
+    (r"Aadhaar Card Exists|Aadhaar verified", "verify_aadhar_otp"),
     (r"verified and linked to Aadhaar", "store_numbers"),
-    (r"All onboarding details collected", "get_collection_status"),
+    (r"All onboarding details (are )?collected", "get_collection_status"),
     (r"Address confirmed from", "confirm_address"),
-    (r"Borrower dedupe clear", "run_dedupe"),
-    (r"Nominee dedupe clear", "run_dedupe"),
-    (r"Gold stage complete", "finalize_gold"),
+    (r"Borrower dedupe (check is )?clear", "run_dedupe"),
+    (r"Nominee dedupe (check is )?clear", "run_dedupe"),
+    (r"Gold stage complete|Gold valuation is complete", "finalize_gold"),
     (r"Employment type salaried saved", "capture_income"),
     (r"CIBIL score is", "get_bureau_score"),
     (r"Eligibility confirmed", "check_loan_eligibility"),
     (r"The offer has been confirmed", "calculate_offer:confirm"),
-    (r"^Approved\.", "check_approval_status"),
-    (r"Please open this link to complete your e-signature", "generate_esign_url"),
-    (r"Document signed successfully", "check_esign_status"),
+    (r"^Approved\.|^The loan is approved", "check_approval_status"),
+    (r"Please open this link to complete (your|the) e-signature", "generate_esign_url"),
+    (r"Document signed successfully|The document is signed", "check_esign_status"),
     (r"sanction letter emailed", "send_sanction_letter_email"),
 ]
 
@@ -241,8 +241,10 @@ def verify(trace: dict, rules: dict | None = None) -> Report:
         if stage == prev_stage + 1:
             if i == 0 or conv[i - 1]["agents"][0]["tool_calls"] is None:
                 pass
-            if t["user"]["text"].strip().upper() != "PROCEED":
-                rep.add("STAGE_ENTRY_NOT_PROCEED", tn, f"stage {stage} entered on {t['user']['text']!r}")
+            # No on-screen buttons: a stage is entered on any natural "continue" reply (the
+            # scripted human still says PROCEED); only a stop request must never advance.
+            if re.search(r"\b(exit|stop|quit|pause)\b", t["user"]["text"], re.I):
+                rep.add("STAGE_ENTRY_ON_EXIT", tn, f"stage {stage} entered on {t['user']['text']!r}")
             if not _stage_done_by(conv[:i], prev_stage):
                 rep.add("STAGE_EXIT_INCOMPLETE", tn, f"left stage {prev_stage} before its completion condition")
         prev_stage = stage
@@ -295,7 +297,11 @@ def verify(trace: dict, rules: dict | None = None) -> Report:
 
         # buttons
         opts = a["final_output"]["structured_response"].get("options")
-        if opts:
+        if opts and trace.get("mode") == "llm":
+            # LLM agents are prompted for plain conversation with no on-screen UI; a stray
+            # <<BUTTONS:...>> was stripped from the text but means the prompt was not followed.
+            rep.add("BUTTONS_IN_LLM_REPLY", tn, f"stage {stage} reply carried buttons {opts}", "warn")
+        elif opts:
             bad = set(opts) - BUTTONS[stage]
             if bad:
                 rep.add("BUTTON_NOT_ALLOWED", tn, f"stage {stage} showed {sorted(bad)}")
@@ -359,7 +365,7 @@ def verify(trace: dict, rules: dict | None = None) -> Report:
 
         # human message hygiene
         u = t["user"]["text"]
-        if re.search(r"\[(ASSISTANT|USER|DEVICE|BUTTONS)", u) or "The application assistant" in u:
+        if re.search(r"\[(ASSISTANT|USER|DEVICE|BUTTONS)|\[\[|<<", u) or "The application assistant" in u:
             rep.add("HUMAN_TRANSCRIPT_LEAK", tn, f"human message contains transcript framing: {u[:70]!r}")
         if not u.strip():
             rep.add("HUMAN_EMPTY", tn, "human sent an empty message")

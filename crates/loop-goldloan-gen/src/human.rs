@@ -269,6 +269,18 @@ pub fn persona_text(sc: &Scenario) -> String {
     }
 }
 
+/// How the human refers to a stage in a deviation (there are no stage numbers on screen).
+fn stage_label(s: u8) -> &'static str {
+    match s {
+        1 => "While giving the onboarding details (mobile, name, email)",
+        2 => "During the identity verification (Aadhaar/PAN)",
+        3 => "During the profile details (address, nominee)",
+        4 => "During the gold valuation",
+        5 => "During the loan offer selection",
+        _ => "During the closing and disbursal",
+    }
+}
+
 pub fn deviations(sc: &Scenario) -> String {
     let f = &sc.flags;
     let mut v: Vec<String> = vec![];
@@ -277,13 +289,13 @@ pub fn deviations(sc: &Scenario) -> String {
     if f.wrong_mobile_otp_first { v.push("The first time you enter the mobile OTP, change its last digit (wrong OTP). Enter the correct one when asked again.".into()); }
     if f.wrong_email_otp_first { v.push("The first time you enter the email OTP, change its last digit. Enter the correct one when asked again.".into()); }
     if f.wrong_aadhaar_otp_first { v.push("The first time you enter the Aadhaar OTP, change its last digit. Enter the correct one when asked again.".into()); }
-    if f.override_address { v.push("When offered USE AADHAAR / OVERRIDE for the address, choose OVERRIDE and then upload.".into()); }
+    if f.override_address { v.push("When asked whether to use the Aadhaar address, say you want to use a different address and then upload the proof.".into()); }
     if f.invalid_appointment_first { v.push("The first time you are asked for the appointment ID, type APX. Give the real one after the assistant objects.".into()); }
-    if f.change_scheme_once { v.push("First name a different scheme than the one you want; on the plan screen choose CHANGE and then name your real scheme.".into()); }
-    if f.negotiate_roi { if let Some(r) = sc.choices.requested_roi { v.push(format!("On the plan screen choose CHANGE and ask for a lower ROI of {r}%; accept whatever counter offer is made by choosing CONFIRM.")); } }
+    if f.change_scheme_once { v.push("First name a different scheme than the one you want; when the plan is shown, say you want to change it and then name your real scheme.".into()); }
+    if f.negotiate_roi { if let Some(r) = sc.choices.requested_roi { v.push(format!("When the plan is shown, say you want to change it and ask for a lower ROI of {r}%; accept whatever counter offer is made by confirming it.")); } }
     if f.ocr_noise_first { v.push("(No action needed from you: the first scan of your identity documents may come out unreadable; just upload again when asked.)".into()); }
-    if f.decline_kfs { v.push("When asked to accept or decline the Key Fact Statement, choose DECLINE.".into()); }
-    if let Some(s) = f.exit_at_stage { v.push(format!("During stage {s}, after one or two exchanges, choose EXIT.")); }
+    if f.decline_kfs { v.push("When asked whether the customer accepts the Key Fact Statement, say the customer declines it.".into()); }
+    if let Some(s) = f.exit_at_stage { v.push(format!("{}: after one or two exchanges in this part of the application, say you want to stop for now (end that message with [[exit]]).", stage_label(s))); }
     if v.is_empty() { "None. Behave normally and cooperatively.".into() } else { v.iter().map(|x| format!("- {x}")).collect::<Vec<_>>().join("\n") }
 }
 
@@ -330,9 +342,6 @@ impl LlmHuman {
             input += &format!("{d}\n");
         }
         input += &format!("The application assistant just wrote:\n\"\"\"\n{}\n\"\"\"\n", v.agent_text);
-        if let Some(o) = v.options {
-            input += &format!("Buttons on screen: {}\n", o.join(" | "));
-        }
         input += "Type your next message (one line - only the text you would type, nothing else):";
         let history = match &self.rec {
             Some(r) => r.begin(&self.harness).await,
@@ -377,6 +386,8 @@ impl LlmHuman {
 }
 
 fn clean(s: &str) -> String {
+    // An action tag ([[upload]] etc.) may land on a later line than the message; keep it.
+    let tag = Regex::new(r"(?i)\[\[\s*(upload|exit|check_approval)\s*\]\]").unwrap().find(s).map(|m| m.as_str().to_lowercase());
     // Cut anything after a role tag the model may hallucinate ("...com[ASSISTANT]: ...").
     let cut = Regex::new(r"\[(ASSISTANT|USER|DEVICE|BUTTONS)[^\]]*\]|The application assistant just wrote").unwrap();
     let s = match cut.find(s) {
@@ -386,7 +397,11 @@ fn clean(s: &str) -> String {
     let line = s.lines().map(|l| l.trim()).find(|l| !l.is_empty()).unwrap_or("");
     let line = line.trim_matches(|c| c == '"' || c == '`' || c == '\'');
     let out: String = line.trim_start_matches("[USER]:").trim_start_matches("USER:").trim().chars().take(240).collect();
-    undouble(&out)
+    let out = undouble(&out);
+    match tag {
+        Some(t) if !out.to_lowercase().contains(&t) => format!("{out} {t}").trim().to_string(),
+        _ => out,
+    }
 }
 
 /// "PROCEEDProceed" / "YESYES" -> the first half (case-insensitive doubled token).

@@ -155,7 +155,7 @@ impl LlmAgents {
                                 system: &system,
                                 prompt: input,
                                 tools: json!(tools::definitions_for_stage(stage)),
-                                output: json!({"text": fixed, "options": options, "repaired": raw_text.is_some()}),
+                                output: json!({"text": fixed, "repaired": raw_text.is_some()}),
                                 steps,
                                 tool_runs,
                                 start: wall_start,

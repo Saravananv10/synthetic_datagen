@@ -6,9 +6,10 @@
 //!
 //! Layout, matching what the Soket LiteLLM proxy's own logger writes to its
 //! "LLM Logging" project, so the two read the same:
-//! - two **sessions** per scenario run, one per side: `<scenario>-<seed>-<run_id>-agent`
-//!   (stage agents, vision extraction, and the run's `conversation` trace) and
-//!   `<scenario>-<seed>-<run_id>-human` (the simulated human);
+//! - separate **sessions** per scenario run so the sides never mingle:
+//!   `<scenario>-<seed>-<run_id>-agent` (stage agents + vision extraction),
+//!   `<scenario>-<seed>-<run_id>-human` (the simulated human) and
+//!   `<scenario>-<seed>-<run_id>-conversation` (the run summary, both sides);
 //! - one **trace per model call** (a stage agent's turn, the human-sim's turn, one
 //!   document's vision extraction): input `{system, prompt}`, the parsed output,
 //!   and inside it an `agent-response` generation (model, tokens, latency), an

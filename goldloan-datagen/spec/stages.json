@@ -13,5 +13,5 @@
     {"id": 6, "name": "Closing and Disbursal", "agent_label": "Closing State Store",        "prompt": "prompts/stage6_closing.md",
      "welcome": "Welcome to Stage 6: Closing and Disbursal. Has the Personal Discussion (PD) checklist been completed with the customer?"}
   ],
-  "_comment": "Stage entry is triggered when the human sends PROCEED after the previous stage's completion message. Stage 1 starts on the first message (a greeting). Tool sets come from tools.json (`stage` field)."
+  "_comment": "Stage entry is triggered by the human's next message once the previous stage is done (its agent asks whether to continue); there are no on-screen buttons, and a reply that stops the application never advances. Stage 1 starts on the first message (a greeting). Tool sets come from tools.json (`stage` field)."
 }

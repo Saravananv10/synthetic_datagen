@@ -120,15 +120,15 @@ was *accepted*, and only warns when validation caught it.
 
 `conversation[].{turn, stage, clock_s, user{role,text,attachments}, agents[]{agent_name, input, tool_calls[]{name,arguments,output}, final_output{text, structured_response{response,options}, process_completed}, tokens, recorded_duration_ms, raw_text?}}`
 plus `tool_definitions`/`stage_prompts` per stage, the full `scenario`, `final_state`, `outcome`.
-Upload turns render as "No input message provided." + attachments in `user`, while `agents[0].input` is the ingest summary text — as in the demo.
+There is no on-screen UI in LLM mode: agents ask plain questions and the human answers in their own words (no `<<BUTTONS:...>>`, no `PROCEED`). The human's device actions ride on a trailing `[[upload]]` / `[[check_approval]]` / `[[exit]]` tag that the orchestrator strips before anything is recorded. Upload turns show the human's own words + attachments in `user`, while `agents[0].input` is those words followed by the ingest summary text. (Scripted mode, the deterministic oracle, still uses button labels internally and shows bare "No input message provided." on uploads.)
 `timing_is_simulated` is true for scripted runs (durations are synthetic).
 
 ## Verifier checks
 
-stage order & PROCEED hand-offs · tool belongs to its stage · arguments validate against the schema · no premature calls ·
+stage order & hand-offs only after the stage is done (never on a stop request) · tool belongs to its stage · arguments validate against the schema · no premature calls ·
 income/bureau rules before confirm · closing-chain order · valuation/LTV/EMI/APR recomputed from rules ·
 **every `Rs <amount>` the agent says traces to a tool result** · no full Aadhaar/PAN/mobile/email/account in agent text ·
-welcome text on stage entry · buttons allowed for the stage · glued sentences / leaked meta-text ·
+welcome text on stage entry · buttons allowed for the stage (scripted) / stray buttons in LLM replies (warning) · glued sentences / leaked meta-text ·
 outcome matches what the scenario's ground truth implies · scripted deviations actually happened (warn) ·
 the human never skips a document it's supposed to have (`HUMAN_SKIPPED_UPLOAD`) · a step is never claimed before its tool succeeded
 (`CLAIM_WITHOUT_TOOL`) · vision/OCR extraction checked per document against the hidden truth (wrong-but-*accepted* extractions are an
