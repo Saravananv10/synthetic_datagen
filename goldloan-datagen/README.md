@@ -55,7 +55,7 @@ python3 -m goldloan_gen.run_batch --n 40 --mode llm --llm-personas --workers 4 -
 
 | Var | What it's for |
 |---|---|
-| `GOLDLOAN_SOKET_API_KEY` | The Soket/GPT key `loop-goldloan-gen` uses, for every role (agents, human, vision) and for `persona_llm.py`. Loaded explicitly (`dotenvy::from_filename`, not the generic `dotenv()` every other binary in this workspace calls) and force-set as `SOKET_API_KEY` for that process only — `loop-ai`'s `env_api_key_auth` checks that env var before the shared `~/.loop/agent/auth.json` credential, so this overrides it without ever reading or writing that shared file. Falls back to `headless-harness/.env`'s `OPENAI_API_KEY` on the Python side (`persona_llm.py`) if unset. |
+| `GOLDLOAN_SOKET_API_KEY` | The Soket/GPT key `loop-goldloan-gen` uses, for every role (agents, human, vision) and for `persona_llm.py`. Loaded explicitly (`dotenvy::from_filename`, not the generic `dotenv()` every other binary in this workspace calls) and force-set as `SOKET_API_KEY` for that process only — `loop-ai`'s `env_api_key_auth` checks that env var before the shared `~/.loop/agent/auth.json` credential, so this overrides it without ever reading or writing that shared file. Falls back to `conversation-gen/.env`'s `OPENAI_API_KEY` on the Python side (`persona_llm.py`) if unset. |
 | `LANGFUSE_PUBLIC_KEY` / `LANGFUSE_SECRET_KEY` / `LANGFUSE_BASE_URL` | Trace export via `--langfuse` (below). |
 
 ## Langfuse trace export

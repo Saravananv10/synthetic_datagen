@@ -1,0 +1,62 @@
+{
+  "conversation_id": "hindi__agriculture__00001",
+  "topic": "My rice crop near Lucknow is showing yellowing leaves. What should I do?\n\nWrite your entire reply in Hindi (हिन्दी), using its native script. Do not switch to English or transliterate — write natively in Hindi the way a fluent speaker from the Gangetic plains, North India actually would.",
+  "created_at": "2026-09-24T08:24:19.761189217+00:00",
+  "personas": [
+    {
+      "name": "Manoj",
+      "model": "soket/qwen3-8-27b",
+      "allow_web_search": false
+    },
+    {
+      "name": "Pooja",
+      "model": "soket/gpt",
+      "allow_web_search": true
+    }
+  ],
+  "transcript": [
+    {
+      "round": 1,
+      "persona": "Manoj",
+      "text": "\n\nनमस्ते, मैं यहीं लखनऊ के पास धान उगाता हूँ और मेरे खेत में भी तीन दिन से पत्ते पीले पड़ रहे हैं, इसलिए मैं भी परेशान हूँ। सबसे पहले पानी देखिए—हमारे यहाँ नीचे वाले खेतों में बारिश या सिंचाई का पानी थहरा रहता है, तब जड़ें सड़ती हैं और पत्तियाँ पीली हो जाती हैं। अगर पानी जमा है तो दो-तीन दिन तक पानी कम कर दें, नाली साफ़ करें, फिर पत्तियों पर ध्यान से देखिए कि पीलिया पहले पुरानी पत्तियों पर दिखी या नई, और पत्ती के किनारे सूखे हैं, कोई धब्बा है, या छोटे-छोटे कीट/फफूंदी जैसा कुछ दिखता है। आप बताइए, आपका खेत गहरी मिट्टी का है या हल्की का, आपने हाल में खाद या उर्वरक डाला था, और पानी कितने दिन से जमा है?",
+      "tool_calls": [],
+      "usage": {
+        "input": 438,
+        "output": 4153
+      }
+    },
+    {
+      "round": 1,
+      "persona": "Pooja",
+      "text": "भइया मनोज,  \nआपके धान के पत्तों का पीला पड़ना कई कारणों से हो सकता है, लेकिन आपके विवरण से दो बात सबसे ज़्यादा मालूम पड़ती हैं—पानी का जमा होना और संभवतः पोषक तत्वों की कमी या रोग।\n\n**1. पानी का जमाव (जलजमाव)**\n- इस समय लखनऊ में मौसम साफ़‑सुथरा है, अगले 3‑दिन में बारिश की संभावना लगभग 0 % है, तापमान 30‑33 °C के आसपास रहेगा। इसलिए अगर आपके खेत में अभी भी पानी जमा है, तो जड़ें सड़ रही होंगी और पत्तियाँ पीली दिखेंगी।  \n- **क्या कर सकते हैं:**  \n  - दो‑तीन दिन में जल निकासी की नालियों को पूरी तरह साफ़ करें, अगर संभव हो तो फ़व्वारा या पम्प से अतिरिक्त पानी निकाल दें।  \n  - हल्की फिर से पानी देना तभी शुरू करें जब मिट्टी की सतह से 2‑3 इंच ऊपर तक नम हो, फिर 5‑6 दिन तक ख़ुराक‑मुक्त रखें।\n\n**2. पोषक तनाव (न्यूट्रिएंट डिफिशियंसी)**\n- जलजमाव के बाद जड़ें ठीक नहीं हो पातीं, इसलिए नाइट्रोजन, ज़िंक, मैंगनीज आदि की कमी दिखती है।  \n- **सुझाव:**  \n  - स्ट्रिप्ड डोज़ में यूरेआ (N‑46) का **30 kg/हैक्टेयर** दो‑तीन हफ़्ते बाद दें।  \n  - ज़िंक सल्फेट (ज़िंक सल्फेट मोनोसॉल्ट) **15 kg/हैक्टेयर** की दालें, जिससे पत्तियों का पीला‐हरा रंग वापस आएगा।  \n  - अगर पत्तियों के किनारे छोटे‑छोटे धब्बे दिखें तो मैंगनीज सल्फेट (5 kg/हैक्टेयर) भी जोड़ सकते हैं।\n\n**3. रोग‑कीट जांच**\n- अगर पीलापन नई पत्तियों पर शुरू हुआ है, किनारे पर सूखापन या हल्का सफ़ेद/भूरा धब्बा है, तो यह ब्लीडिंग (ब्रॉडबैंड) या फ्यूज़ारियोमाइटिस (तिलचट्टे) हो सकता है।  \n- **क्या करे:**  \n  - 0.1 % इमिडाक्लोफेन+एडोफ़ेन (या समान फंगीसाइड) की स्प्रे दो‑तीन दिन में दो बार दें।  \n  - कीटों (जैसे टॉमेटो बग, लीफ़हॉपर) के संकेत दिखें तो 0.05 % इमिडाक्लोफेन + डाइमेंडॉलीन (फ्लोयर) की स्प्रे लागू करें।\n\n**4. मिट्टी की सही जानकारी**\n- कृपया बताइए: आपका खेत गहरी (लेपोइट) या हल्की (रेत्याली) मिट्टी का है? आपने पिछले 2‑3 हफ़्ते में कौन‑सी उर्वरक या जैविक खाद (कीटनाशक‑रहित) डाली है?  \n\n**5. बाज़ार मूल्य**\n- वर्तमान में लखनऊ में चावल की औसत कीमत **₹4,048 / क्विंटल** (24 सितंबर 2026) है। अगर आपका उत्पादन अच्छी क्वालिटी का होगा तो नगद बाज़ार में अच्छी दर मिल सकती है।  \n\nतो कृपया ऊपर पूछे गए बिंदुओं के बारे में थोड़ी और जानकारी दें, जिससे मैं आपको और सटीक सुझाव दे सकूँ। आपकी फसल जल्दी स्वस्थ हो, यही कामना है।",
+      "tool_calls": [
+        {
+          "tool": "web_search",
+          "query": "Lucknow weather forecast next 3 days",
+          "result_preview": "Search results for \"Lucknow weather forecast next 3 days\":\n\nSummary: Lucknow will have sunny weather with temperatures around 33°C on the next three days. Rain is unlikely. Humidity will be moderate.\n\n1. Weather in Lucknow\n   https://www.weatherapi.com/\n   {'location': {'name': 'Lucknow', 'region': 'Uttar Pradesh', 'country': 'India', 'lat': 26.85, 'lon': 80.917, 'tz_id': 'Asia/Kolkata', 'localtim"
+        },
+        {
+          "tool": "web_search",
+          "query": "Lucknow rice market price per quintal 2026 September",
+          "result_preview": "Search results for \"Lucknow rice market price per quintal 2026 September\":\n\nSummary: As of September 24, 2026, the average price of rice in Lucknow is ₹4047.52 per quintal. Internationally, rice is priced at $16.32 per cwt. These prices reflect both local and global market trends.\n\n1. Rice market price Today (24 September 2026)\n   https://www.commodityonline.com/mandiprices/rice\n   Rice Price in P"
+        }
+      ],
+      "usage": {
+        "input": 2519,
+        "output": 1009
+      }
+    }
+  ],
+  "status": "error",
+  "error": "Manoj: provider error after 5 attempts: HTTP 502: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.18.0 (Ubuntu)</center>\r\n</body>\r\n</html>\r\n",
+  "usage_totals": {
+    "Pooja": {
+      "input": 2519,
+      "output": 1009
+    },
+    "Manoj": {
+      "input": 438,
+      "output": 4153
+    }
+  }
+}

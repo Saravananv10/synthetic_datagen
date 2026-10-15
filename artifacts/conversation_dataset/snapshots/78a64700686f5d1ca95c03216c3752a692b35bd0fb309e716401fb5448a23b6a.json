@@ -1,0 +1,98 @@
+{
+  "dataset_id": "78a64700686f5d1ca95c03216c3752a692b35bd0fb309e716401fb5448a23b6a",
+  "created_at": "2026-09-18T08:31:54.840487+00:00",
+  "entry_count": 10,
+  "completed_count": 2,
+  "entries": [
+    {
+      "conversation_id": "farmer_001_my-tomato-plants-have-curling-yellow-leaves-and-i-m-seeing-t",
+      "topic_hash": "4e39c857dcca54e17c8643a451d40b283f603944aeac694848119b15a26098a1",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 6,
+      "status": "error",
+      "recorded_at": "2026-09-18T02:21:41.864286+00:00"
+    },
+    {
+      "conversation_id": "farmer_001_my-tomato-plants-have-curling-yellow-leaves-and-i-m-seeing-t",
+      "topic_hash": "4e39c857dcca54e17c8643a451d40b283f603944aeac694848119b15a26098a1",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 1,
+      "status": "error",
+      "recorded_at": "2026-09-18T05:28:41.899117+00:00"
+    },
+    {
+      "conversation_id": "farmer_001_my-tomato-plants-have-curling-yellow-leaves-and-i-m-seeing-t",
+      "topic_hash": "4e39c857dcca54e17c8643a451d40b283f603944aeac694848119b15a26098a1",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 0,
+      "status": "error",
+      "recorded_at": "2026-09-18T05:51:20.116483+00:00"
+    },
+    {
+      "conversation_id": "farmer_001_my-tomato-plants-have-curling-yellow-leaves-and-i-m-seeing-t",
+      "topic_hash": "4e39c857dcca54e17c8643a451d40b283f603944aeac694848119b15a26098a1",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 4,
+      "status": "error",
+      "recorded_at": "2026-09-18T07:08:57.176719+00:00"
+    },
+    {
+      "conversation_id": "farmer_001_my-tomato-plants-have-curling-yellow-leaves-and-i-m-seeing-t",
+      "topic_hash": "4e39c857dcca54e17c8643a451d40b283f603944aeac694848119b15a26098a1",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 8,
+      "status": "completed",
+      "recorded_at": "2026-09-18T08:21:57.218287+00:00"
+    },
+    {
+      "conversation_id": "farmer_002_it-hasn-t-rained-in-three-weeks-and-my-irrigation-bill-is-cl",
+      "topic_hash": "4200960851e10fc6b32c6e3f8cdb5d6eefdc5906a937cbc4f4270b86aefef1f3",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 0,
+      "status": "error",
+      "recorded_at": "2026-09-18T02:21:42.783021+00:00"
+    },
+    {
+      "conversation_id": "farmer_002_it-hasn-t-rained-in-three-weeks-and-my-irrigation-bill-is-cl",
+      "topic_hash": "4200960851e10fc6b32c6e3f8cdb5d6eefdc5906a937cbc4f4270b86aefef1f3",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 0,
+      "status": "error",
+      "recorded_at": "2026-09-18T05:28:42.925476+00:00"
+    },
+    {
+      "conversation_id": "farmer_002_it-hasn-t-rained-in-three-weeks-and-my-irrigation-bill-is-cl",
+      "topic_hash": "4200960851e10fc6b32c6e3f8cdb5d6eefdc5906a937cbc4f4270b86aefef1f3",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 0,
+      "status": "error",
+      "recorded_at": "2026-09-18T05:51:36.802840+00:00"
+    },
+    {
+      "conversation_id": "farmer_002_it-hasn-t-rained-in-three-weeks-and-my-irrigation-bill-is-cl",
+      "topic_hash": "4200960851e10fc6b32c6e3f8cdb5d6eefdc5906a937cbc4f4270b86aefef1f3",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 0,
+      "status": "error",
+      "recorded_at": "2026-09-18T07:09:13.561567+00:00"
+    },
+    {
+      "conversation_id": "farmer_002_it-hasn-t-rained-in-three-weeks-and-my-irrigation-bill-is-cl",
+      "topic_hash": "4200960851e10fc6b32c6e3f8cdb5d6eefdc5906a937cbc4f4270b86aefef1f3",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 8,
+      "status": "completed",
+      "recorded_at": "2026-09-18T08:31:54.838956+00:00"
+    }
+  ]
+}

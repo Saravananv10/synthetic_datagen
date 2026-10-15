@@ -1,0 +1,21 @@
+{
+  "conversation_id": "job-seeker_003_i-m-not-sure-if-i-should-stay-in-my-old-field-or-pivot-entir",
+  "topic": "I'm not sure if I should stay in my old field or pivot entirely. How do I even decide that?",
+  "created_at": "2026-09-18T10:08:32.167260247+00:00",
+  "personas": [
+    {
+      "name": "Job Seeker",
+      "model": "soket/qwen3-8-27b",
+      "allow_web_search": false
+    },
+    {
+      "name": "Career Coach",
+      "model": "soket/gpt",
+      "allow_web_search": true
+    }
+  ],
+  "transcript": [],
+  "status": "error",
+  "error": "Job Seeker: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)",
+  "usage_totals": {}
+}

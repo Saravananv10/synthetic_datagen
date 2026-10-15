@@ -1,0 +1,21 @@
+{
+  "conversation_id": "new-homeowner_001_there-s-a-musty-smell-in-my-basement-after-it-rained-last-we",
+  "topic": "There's a musty smell in my basement after it rained last week. Is this something I need to worry about?",
+  "created_at": "2026-09-18T10:09:47.359148825+00:00",
+  "personas": [
+    {
+      "name": "New Homeowner",
+      "model": "soket/qwen3-8-27b",
+      "allow_web_search": false
+    },
+    {
+      "name": "Home Improvement Expert",
+      "model": "soket/gpt",
+      "allow_web_search": true
+    }
+  ],
+  "transcript": [],
+  "status": "error",
+  "error": "New Homeowner: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)",
+  "usage_totals": {}
+}

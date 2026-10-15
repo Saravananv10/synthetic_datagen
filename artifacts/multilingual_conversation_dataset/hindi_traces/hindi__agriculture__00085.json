@@ -1,0 +1,21 @@
+{
+  "conversation_id": "hindi__agriculture__00085",
+  "topic": "My rice crop near Varanasi is showing a pest infestation. What should I do?\n\nWrite your entire reply in Hindi (हिन्दी), using its native script. Do not switch to English or transliterate — write natively in Hindi the way a fluent speaker from the Gangetic plains, North India actually would.",
+  "created_at": "2026-09-24T21:01:51.695135882+00:00",
+  "personas": [
+    {
+      "name": "Rekha",
+      "model": "soket/qwen3-8-27b",
+      "allow_web_search": false
+    },
+    {
+      "name": "Manoj",
+      "model": "soket/gpt",
+      "allow_web_search": true
+    }
+  ],
+  "transcript": [],
+  "status": "error",
+  "error": "Rekha: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)",
+  "usage_totals": {}
+}

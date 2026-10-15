@@ -1,0 +1,21 @@
+{
+  "conversation_id": "job-seeker_002_i-keep-getting-to-final-interviews-and-then-not-getting-offe",
+  "topic": "I keep getting to final interviews and then not getting offers. What am I doing wrong?",
+  "created_at": "2026-09-18T10:07:16.929293208+00:00",
+  "personas": [
+    {
+      "name": "Job Seeker",
+      "model": "soket/qwen3-8-27b",
+      "allow_web_search": false
+    },
+    {
+      "name": "Career Coach",
+      "model": "soket/gpt",
+      "allow_web_search": true
+    }
+  ],
+  "transcript": [],
+  "status": "error",
+  "error": "Job Seeker: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)",
+  "usage_totals": {}
+}

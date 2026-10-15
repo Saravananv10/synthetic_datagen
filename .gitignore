@@ -18,3 +18,7 @@
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Too large for GitHub (kept local only)
+artifacts/multilingual_task_bank/
+*.mp4

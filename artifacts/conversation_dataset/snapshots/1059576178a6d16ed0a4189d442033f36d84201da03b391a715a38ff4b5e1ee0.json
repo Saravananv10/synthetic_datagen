@@ -1,0 +1,26 @@
+{
+  "dataset_id": "1059576178a6d16ed0a4189d442033f36d84201da03b391a715a38ff4b5e1ee0",
+  "created_at": "2026-09-18T02:21:42.783557+00:00",
+  "entry_count": 2,
+  "completed_count": 0,
+  "entries": [
+    {
+      "conversation_id": "farmer_001_my-tomato-plants-have-curling-yellow-leaves-and-i-m-seeing-t",
+      "topic_hash": "4e39c857dcca54e17c8643a451d40b283f603944aeac694848119b15a26098a1",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 6,
+      "status": "error",
+      "recorded_at": "2026-09-18T02:21:41.864286+00:00"
+    },
+    {
+      "conversation_id": "farmer_002_it-hasn-t-rained-in-three-weeks-and-my-irrigation-bill-is-cl",
+      "topic_hash": "4200960851e10fc6b32c6e3f8cdb5d6eefdc5906a937cbc4f4270b86aefef1f3",
+      "personas": "Farmer(soket/qwen3-8-27b) vs Agronomy Expert(soket/gpt)",
+      "round_count": 4,
+      "total_turns": 0,
+      "status": "error",
+      "recorded_at": "2026-09-18T02:21:42.783021+00:00"
+    }
+  ]
+}

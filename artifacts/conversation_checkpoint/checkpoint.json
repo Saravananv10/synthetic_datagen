@@ -1,0 +1,164 @@
+{
+  "farmer_001_my-tomato-plants-have-curling-yellow-leaves-and-i-m-seeing-t": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T08:21:57.218444+00:00",
+    "detail": ""
+  },
+  "farmer_002_it-hasn-t-rained-in-three-weeks-and-my-irrigation-bill-is-cl": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T08:31:54.839399+00:00",
+    "detail": ""
+  },
+  "farmer_003_grain-prices-have-been-dropping-and-i-m-not-sure-whether-to-": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T09:06:23.005700+00:00",
+    "detail": ""
+  },
+  "farmer_004_i-want-to-add-a-cover-crop-this-fall-but-i-ve-never-done-it-": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T09:19:19.927376+00:00",
+    "detail": ""
+  },
+  "farmer_005_my-soil-test-came-back-showing-low-nitrogen-and-slightly-aci": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T09:28:13.134076+00:00",
+    "detail": ""
+  },
+  "farmer_pest_advice_001": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T09:35:04.977949+00:00",
+    "detail": ""
+  },
+  "home-cook_001_every-time-i-sear-meat-it-either-sticks-to-the-pan-or-ends-u": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T09:41:58.970773+00:00",
+    "detail": ""
+  },
+  "home-cook_002_i-want-to-meal-prep-for-the-week-but-everything-tastes-the-s": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T09:50:57.087502+00:00",
+    "detail": ""
+  },
+  "home-cook_003_my-bread-always-comes-out-dense-no-matter-what-recipe-i-foll": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T09:59:50.793077+00:00",
+    "detail": ""
+  },
+  "job-seeker_001_i-ve-been-out-of-the-workforce-for-three-years-and-i-don-t-k": {
+    "status": "failed",
+    "run_id": "",
+    "updated_at": "2026-09-18T10:07:06.916523+00:00",
+    "detail": "Job Seeker: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)"
+  },
+  "job-seeker_002_i-keep-getting-to-final-interviews-and-then-not-getting-offe": {
+    "status": "failed",
+    "run_id": "",
+    "updated_at": "2026-09-18T10:08:22.145149+00:00",
+    "detail": "Job Seeker: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)"
+  },
+  "job-seeker_003_i-m-not-sure-if-i-should-stay-in-my-old-field-or-pivot-entir": {
+    "status": "failed",
+    "run_id": "",
+    "updated_at": "2026-09-18T10:09:37.346376+00:00",
+    "detail": "Job Seeker: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)"
+  },
+  "new-homeowner_001_there-s-a-musty-smell-in-my-basement-after-it-rained-last-we": {
+    "status": "failed",
+    "run_id": "",
+    "updated_at": "2026-09-18T10:10:52.528847+00:00",
+    "detail": "New Homeowner: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)"
+  },
+  "new-homeowner_002_my-energy-bills-are-way-higher-than-the-previous-owner-said-": {
+    "status": "failed",
+    "run_id": "",
+    "updated_at": "2026-09-18T10:12:07.736072+00:00",
+    "detail": "New Homeowner: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)"
+  },
+  "new-homeowner_003_i-want-to-redo-my-kitchen-but-i-don-t-know-what-actually-nee": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T10:26:20.671541+00:00",
+    "detail": ""
+  },
+  "new-homeowner_004_the-inspector-flagged-minor-foundation-settling-before-i-bou": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T10:31:40.763926+00:00",
+    "detail": ""
+  },
+  "new-pet-owner_001_my-new-dog-barks-and-scratches-at-the-door-every-time-i-leav": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T10:45:00.932087+00:00",
+    "detail": ""
+  },
+  "new-pet-owner_002_i-m-not-sure-how-much-to-feed-him-the-bag-says-one-thing-but": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T10:56:31.606797+00:00",
+    "detail": ""
+  },
+  "new-pet-owner_003_he-s-great-with-me-but-growls-at-other-dogs-on-walks-how-do-": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T11:07:57.073182+00:00",
+    "detail": ""
+  },
+  "small-business-owner_001_my-rent-just-went-up-20-and-i-m-trying-to-figure-out-if-i-ne": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T11:16:36.131039+00:00",
+    "detail": ""
+  },
+  "small-business-owner_002_i-want-to-start-doing-local-delivery-but-i-don-t-know-how-to": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T11:26:46.443270+00:00",
+    "detail": ""
+  },
+  "small-business-owner_003_a-competitor-just-opened-two-blocks-away-with-lower-prices-h": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T11:35:01.043820+00:00",
+    "detail": ""
+  },
+  "small-business-owner_004_i-m-thinking-about-hiring-my-first-employee-but-i-m-nervous-": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T11:45:18.328109+00:00",
+    "detail": ""
+  },
+  "student_001_i-have-to-write-a-literature-review-for-my-thesis-and-i-don-": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T11:54:33.203070+00:00",
+    "detail": ""
+  },
+  "student_002_my-advisor-said-my-research-question-is-too-broad-how-do-i-a": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T12:02:48.823175+00:00",
+    "detail": ""
+  },
+  "student_003_i-keep-getting-told-my-writing-is-too-informal-for-academic-": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T12:09:17.118180+00:00",
+    "detail": ""
+  },
+  "student_004_i-m-three-weeks-from-my-thesis-deadline-and-i-still-don-t-ha": {
+    "status": "done",
+    "run_id": "",
+    "updated_at": "2026-09-18T12:17:24.444999+00:00",
+    "detail": ""
+  }
+}

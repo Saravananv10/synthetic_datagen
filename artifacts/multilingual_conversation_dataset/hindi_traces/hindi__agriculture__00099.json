@@ -1,0 +1,21 @@
+{
+  "conversation_id": "hindi__agriculture__00099",
+  "topic": "My rice crop near Kanpur is showing irregular rainfall damage. What should I do?\n\nWrite your entire reply in Hindi (हिन्दी), using its native script. Do not switch to English or transliterate — write natively in Hindi the way a fluent speaker from the Gangetic plains, North India actually would.",
+  "created_at": "2026-09-25T02:07:56.743768906+00:00",
+  "personas": [
+    {
+      "name": "Sandeep",
+      "model": "soket/qwen3-8-27b",
+      "allow_web_search": false
+    },
+    {
+      "name": "Anjali",
+      "model": "soket/gpt",
+      "allow_web_search": true
+    }
+  ],
+  "transcript": [],
+  "status": "error",
+  "error": "Sandeep: provider error after 5 attempts: error sending request for url (https://api.tensorstudio.ai/v1/chat/completions)",
+  "usage_totals": {}
+}

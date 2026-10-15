@@ -6,9 +6,9 @@ rewrites the scenario consistently (name, father, email, address, nominee, paysl
 employer, persona card). Numeric identifiers (mobile, Aadhaar, PAN, account) stay machine-made.
 Anything GPT returns that fails validation is ignored and the rule-based value is kept.
 
-Uses the OpenAI-compatible endpoint (base URL from headless-harness/.env's OPENAI_BASE_URL;
+Uses the OpenAI-compatible endpoint (base URL from conversation-gen/.env's OPENAI_BASE_URL;
 API key from goldloan-datagen/.env's GOLDLOAN_SOKET_API_KEY if set - the key scoped to this
-project alone - else falls back to headless-harness/.env's OPENAI_API_KEY).
+project alone - else falls back to conversation-gen/.env's OPENAI_API_KEY).
 """
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-SHARED_ENV = Path(__file__).resolve().parents[2] / "headless-harness" / ".env"
+SHARED_ENV = Path(__file__).resolve().parents[2] / "conversation-gen" / ".env"
 PROJECT_ENV = Path(__file__).resolve().parents[1] / ".env"
 
 PROMPT = """You are helping build a realistic synthetic dataset for testing a gold-loan chatbot.
